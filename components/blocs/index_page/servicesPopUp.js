@@ -4,7 +4,7 @@ export default function ServicesPopUp() {
         <div>
             <h2>Ce que nous faisont</h2>
             <div>
-                
+
             </div>
 
         </div>
