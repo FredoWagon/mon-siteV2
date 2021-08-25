@@ -1,0 +1,9 @@
+.speed_fade_in {
+  opacity: 0;
+  transform: translateX(20px);
+  &.isFadeIn {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.05s ease, transform 0.3s ease;
+  }
+}

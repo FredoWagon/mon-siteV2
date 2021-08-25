@@ -1,0 +1,48 @@
+.header_bloc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14rem;
+
+  .header_bloc__left {
+    width: 50%;
+    margin: 0 30px;
+
+    h1 {
+      font-weight: 400;
+      font-size: 6.5rem;
+      line-height: 6.5rem;
+      margin: unset;
+    }
+    p {
+      margin: 2rem 0 0 0;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+
+    }
+
+    button {
+      margin-top: 3rem;
+      background-color: black;
+      border: unset;
+      color: white;
+      padding: 1.3rem 2.9rem;
+      font-size: 1.5rem;
+      transition: opacity 0.3s ease;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+    }
+
+  }
+  .header_bloc__right {
+    width: 50%;
+    margin: 0 30px;
+
+
+
+  }
+
+}
