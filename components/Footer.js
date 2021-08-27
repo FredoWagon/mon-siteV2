@@ -10,6 +10,7 @@ export default function Footer() {
 
     return (
         <div className={style.footer}>
+            <div className={style.footer_desktop}>
             <div className={style.footer__top}>
                 <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>
                 <div className={style.footer__sitemap}>
@@ -55,6 +56,13 @@ export default function Footer() {
                 <Image src={logo}/>
 
                 <h1>pokoù Web</h1>
+            </div>
+            </div>
+            <div className={style.footer_mobile}>
+                <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>
+
+                <h1>pokoù Web</h1>
+
             </div>
         </div>
     )

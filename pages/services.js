@@ -5,7 +5,7 @@ import ServiceHeaderBloc from "../components/blocs/service_page/serviceHeaderBlo
 export default function Services() {
 
     return (
-        <Layout navbarStyle="background--red">
+        <Layout currentPage="services" navbarStyle="background--red">
             <ServiceHeaderBloc/>
 
 

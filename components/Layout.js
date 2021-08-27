@@ -23,7 +23,7 @@ export default function Layout(props) {
                     rel="stylesheet"/>
 
             </Head>
-            <Navbar backgroundColor={props.navbarStyle}/>
+            <Navbar currentPage={props.currentPage} backgroundColor={props.navbarStyle}/>
             <main>{props.children}</main>
             <Footer/>
         </>

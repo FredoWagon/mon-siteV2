@@ -1,93 +1,132 @@
 .footer {
   width: 100%;
   background-color: black;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  padding: 0 17.5rem;
 
-  .footer__top {
-    padding: 2rem 0 0 0;
+  .footer_desktop {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    p {
-      font-size: 1.5rem;
-      margin: unset;
-      max-width: 17rem;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin: auto;
+    padding: 0 2rem;
+    
+    @media (min-width: 1440px)  {
+      max-width: 1440px;
     }
-
-    .footer__sitemap {
+    @media (min-width: 960px) and (max-width: 1439px) {
+      max-width: 960px;
+    }
+     @media (min-width: 720px) and (max-width: 989px) {
+       max-width: 720px;
+     }
+    @media (max-width: 719px) {
+      display: none;
+    }
+    .footer__top {
+      padding: 2rem 0 0 0;
       display: flex;
-      .sitemap_item {
-        margin: 0 2rem;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-size: 1.5rem;
+        margin: unset;
+        max-width: 17rem;
+      }
+
+      .footer__sitemap {
+        display: flex;
+        .sitemap_item {
+          margin: 0 0 0 2rem;
+          display: flex;
+          flex-direction: column;
+          max-width: 8rem;
+
+          @media (max-width: 989px) {
+            font-size: 0.9rem;
+          }
+          a {
+            width: fit-content;
+            transition: opacity 0.3s ease;
+            &:hover {
+              opacity: 0.5;
+              transition: opacity 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+    .footer__middle {
+      border-top: 1px solid white;
+      padding: 3rem 0 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 989px) {
+        font-size: 0.9rem;
+      }
+      .footer__mail {
+        max-width: 20rem;
+        p {
+          margin: unset;
+        }
+      }
+
+      .footer__social_links {
         display: flex;
         flex-direction: column;
-
-        a {
-          transition: opacity 0.3s ease;
-          &:hover {
-            opacity: 0.5;
+        span {
+          display: flex;
+          align-items: center;
+          img {
+            width: 1rem;
+          }
+          a {
+            margin-left: 1rem;
             transition: opacity 0.3s ease;
+            &:hover {
+              opacity: 0.5;
+              transition: opacity 0.3s ease;
+            }
           }
         }
       }
-    }
-  }
-  .footer__middle {
-    border-top: 1px solid white;
-    padding: 3rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .footer__mail {
-      max-width: 20rem;
-      p {
-        margin: unset;
+      .footer__adress {
+        p {
+          margin: unset;
+        }
       }
-    }
 
-    .footer__social_links {
+    }
+    .footer__bottom {
+
       display: flex;
-      flex-direction: column;
-      span {
-        display: flex;
-        align-items: center;
-        img {
-          width: 1rem;
-        }
-        a {
-          margin-left: 1rem;
-          transition: opacity 0.3s ease;
-          &:hover {
-            opacity: 0.5;
-            transition: opacity 0.3s ease;
-          }
-        }
-      }
-    }
-    .footer__adress {
-      p {
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      h1 {
+        font-size: 5rem;
         margin: unset;
       }
-    }
+      img {
+        filter: invert(1);
+        width: 7rem;
+      }
 
+    }
   }
-  .footer__bottom {
-
+  .footer_mobile {
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    padding: 2rem;
-    h1 {
-      font-size: 5rem;
-      margin: unset;
-    }
-    img {
-      filter: invert(1);
-      width: 7rem;
+    flex-direction: column;
+    color: white;
+    margin: auto;
+    padding: 0 2rem;
+
+    @media (min-width: 720px) {
+      display: none;
     }
 
   }

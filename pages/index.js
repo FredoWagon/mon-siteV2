@@ -7,17 +7,18 @@ import ServicesPopUp from "../components/blocs/index_page/servicesPopUp";
 
 export default function Home() {
     return (
-        <Layout>
-            <div className={styles.container}>
+        <Layout currentPage="index" navbarStyle="background--white">
+
+            {/* <ServicesPopUp/>
+            */}
                 <IndexHeaderBloc/>
-                <ServicesPopUp/>
 
 
 
 
 
 
-            </div>
+
         </Layout>
 
 
