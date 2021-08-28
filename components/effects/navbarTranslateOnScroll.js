@@ -8,12 +8,11 @@ export default function TranslateOnScroll(props) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     const handdleMenuSize = () => {
-            if (mobileMenuOpen) {
-                setTimeout(() => {
-                    setMobileMenuOpen(false)
-                }, 500)
-            } else {
+
+            if (!mobileMenuOpen) {
                 setMobileMenuOpen(true)
+            } else {
+                setMobileMenuOpen(false)
             }
     }
 

@@ -12,8 +12,11 @@ export default function SpeedFadeIn( {children}) {
 
 
     return (
-        <div className={` ${style.speed_fade_in} ${style[transition]}`}>
-            {children}
+        <div className={style.speed_fade_in}>
+            <div className={` ${style.speed_fade_in__content} ${style[transition]}`}>
+                {children}
+            </div>
         </div>
+
 )
 }

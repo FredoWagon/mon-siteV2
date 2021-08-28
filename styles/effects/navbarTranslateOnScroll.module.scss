@@ -1,9 +1,11 @@
 .navbar_top {
   position: fixed;
   top: 0;
+
   width: 100%;
   transition: top 1s ease;
   z-index: 10;
+
 
   &.burger_menu_size {
     height: -webkit-fill-available;;

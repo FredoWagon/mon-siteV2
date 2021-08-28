@@ -1,4 +1,15 @@
+
+
 .speed_fade_in {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: 74em;
+
+
+.speed_fade_in__content {
+  width: 100%;
+  position: absolute;
   opacity: 0;
   transform: translateX(20px);
   &.isFadeIn {
@@ -6,4 +17,5 @@
     transform: translateX(0px);
     transition: opacity 0.05s ease, transform 0.3s ease;
   }
+}
 }

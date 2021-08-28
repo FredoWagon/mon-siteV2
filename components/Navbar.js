@@ -81,8 +81,10 @@ export default function Navbar(props) {
             setLogoSize(value * 0.8)
         } else if (body > 101 && body < 145 ) {
             setLogoSize(value * 0.6)
-        } else if (body > 145) {
+        } else if (body > 145 && body < 160) {
             setLogoSize(value * 0.5)
+
+        } else if (body > 160) {
             setIsNotOnTop(true)
         }
     }
@@ -118,17 +120,15 @@ export default function Navbar(props) {
         <TranslateOnScroll isBurgerOpen={burgerOpen}>
             <div className={`${style.navbar} ${isNotOnTop ? style.navbar__grey_line : ""} ${style[backgroundColor]} ${burgerOpen ? style.menu_opened : "" }`}>
                 <div className={style.navbar_container}>
-                    <Link href="/">
-                        <a>
-                            <div className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ` }>
-                                <div className={style.navbar__top__img}>
-                                    <Image alt="logo" layout='fill'
-                                           src={logo}/>
-                                </div>
-                                <h1 style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>Poukoù web</h1>
-                            </div>
-                        </a>
-                    </Link>
+
+                    <div className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ` }>
+                        <Link href="/">
+                            <a>
+                                <h1 style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>POUKOÙ WEB</h1>
+                            </a>
+                        </Link>
+                    </div>
+
                     <div className={style.navbar__bottom}>
                         <div className={style.navbar__bottom__desktop}>
                             <div className={style.nav__links_left}>
