@@ -1,0 +1,65 @@
+.blue_bloc__container {
+  background-color: #b4cce8;
+  padding: 7.5rem 0;
+
+  .blue_bloc {
+    margin: auto;
+    display: flex;
+
+    @media (min-width: 1440px)  {
+      max-width: 1440px;
+    }
+    @media (min-width: 960px) and (max-width: 1439px) {
+      max-width: 960px;
+    }
+    @media (min-width: 720px) and (max-width: 989px) {
+      max-width: 720px;
+    }
+    @media (max-width: 719px) {
+      display: none;
+    }
+
+    .blue_bloc__left {
+      display: flex;
+      flex-direction: column;
+
+      width: 36%;
+      margin: 0 30px;
+
+      h2 {
+        color: #1c524f;
+        font-size: 4.5rem;
+        font-weight: unset;
+        line-height: 4.5rem;
+        margin: unset;
+      }
+      p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        max-width: 28rem;
+
+      }
+      button {
+        width: fit-content;
+        margin-top: 2rem;
+        background-color: #1c524f;
+        border: unset;
+        color: white;
+        padding: 1.5rem 3.4rem;
+        font-size: 1.3rem;
+        transition: opacity 0.3s ease;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.6;
+          transition: opacity 0.3s ease;
+        }
+      }
+
+    }
+    .blue_bloc__right {
+      width: 66%;
+
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.services_popup__container {
+  margin: 10rem 0;
+
+  .services_popup {
+    margin: auto;
+    padding-top: 2rem;
+
+
+
+    @media (min-width: 1440px)  {
+      max-width: 1440px;
+    }
+    @media (min-width: 960px) and (max-width: 1439px) {
+      max-width: 960px;
+    }
+    @media (min-width: 720px) and (max-width: 989px) {
+      max-width: 720px;
+    }
+    @media (max-width: 719px) {
+      display: none;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 4.5rem;
+      font-weight: unset;
+    }
+    mark {
+      background-color: unset;
+      padding: unset;
+      font-weight: 500;
+    }
+    .services_popup__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .services_popup__item {
+        position: relative;
+        margin-top: 3rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+          cursor: pointer;
+          border-radius: 32px;
+          background-color: white;
+          transition: background-color 1s;
+          .background_animation {
+            width: 118%;
+            height: 110%;
+            transition: width 1s ease;
+            opacity: 1;
+          }
+          .popup_more_info {
+            p {
+              transform: translateX(-26px);
+              transition: transform 1s ease;
+            }
+          }
+          .popup_images {
+            transform: scale(1.1);
+            transition: transform 0.8s ease;
+          }
+        }
+
+        .background_animation {
+          position: absolute;
+          background-color: #fff7f2;
+          border-radius: 32px;
+          z-index: -1;
+          top: -1rem;
+          width: 0%;
+          height: 110%;
+          opacity: 0;
+          transition: width 0.5s ease, opacity 0.3s ease;
+
+
+        }
+
+        h3 {
+          font-weight: unset;
+          font-size: 2rem;
+          margin: unset;
+        }
+
+        p {
+          text-align: center;
+          color: #000000c9;
+        }
+        .popup_images{
+          transition: transform 0.8s ease;
+
+          width: 100%;
+         // background-color: #F6F8FE;
+          border-radius: 26px;
+          margin-bottom: 1rem;
+
+
+        }
+        .popup_more_info {
+          align-self: flex-end;
+          position: relative;
+          padding: 0 0.8rem;
+          display: flex;
+          justify-content: flex-end;
+
+
+
+          p {
+            transform: translateX(0);
+            background-color: white;
+            transition: transform 1s ease;
+            padding: 0 0.5rem;
+            z-index: 2;
+          }
+          span {
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            background-color: black;
+            height: 2px;
+
+          }
+        }
+      }
+    }
+  }
+}

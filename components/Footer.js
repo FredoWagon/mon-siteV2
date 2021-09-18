@@ -8,6 +8,7 @@ import Link from 'next/link';
 
 export default function Footer() {
 
+
     return (
         <div className={style.footer}>
             <div className={style.footer_desktop}>

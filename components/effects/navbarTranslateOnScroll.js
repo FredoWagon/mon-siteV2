@@ -19,7 +19,7 @@ export default function TranslateOnScroll(props) {
 
     const handleScroll = () => {
         const currentPosition = window.scrollY
-        if (currentPosition > 150 &&  window.innerWidth > 719) {
+        if (currentPosition > 150 ) {
         if (previousPosition.current > currentPosition && !goingUp ) {
             setGoingUp(true)
         } else if (previousPosition.current < currentPosition && goingUp) {

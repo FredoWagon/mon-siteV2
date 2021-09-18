@@ -1,6 +1,8 @@
 import style from "/styles/blocs/index_page/Indexheader.module.scss"
 import Image from 'next/image'
 import illuTest from '/public/illu_test.png'
+import illuArabica from '/public/illu_index_arabica.png'
+
 import SpeedFadeIn from "../../effects/SpeedFadeIn";
 import Link from 'next/link'
 
@@ -21,7 +23,7 @@ export default function IndexHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.header_bloc__right}>
-                        <Image  src={illuTest}/>
+                        <Image  src={illuArabica}/>
                     </div>
                 </div>
             </div>

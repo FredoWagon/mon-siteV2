@@ -1,0 +1,43 @@
+.trust_bloc__container {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+
+
+
+  .trust_bloc {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+
+    @media (min-width: 1440px)  {
+      max-width: 1440px;
+    }
+    @media (min-width: 960px) and (max-width: 1439px) {
+      max-width: 960px;
+    }
+    @media (min-width: 720px) and (max-width: 989px) {
+      max-width: 720px;
+    }
+    @media (max-width: 719px) {
+      display: none;
+    }
+
+    h5 {
+      font-weight: unset;
+      font-size: 1.5rem;
+    }
+    .trust_items {
+      display: flex;
+      justify-content: space-around;
+      img {
+        filter: grayscale(1);
+        opacity: 0.5;
+      width: 15rem;
+
+      }
+
+    }
+  }
+}
