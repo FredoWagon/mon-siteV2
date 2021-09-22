@@ -22,7 +22,7 @@ export default function ServicesPopUp() {
                 <FadeTranslateTopWhenVisible tresholdOption={1} animation="middle_mark_saumon">
                     <h2>Ce que nous <mark>faisons</mark> </h2>
                 </FadeTranslateTopWhenVisible>
-                <FadeTranslateTopWhenVisible tresholdOption={0.3} animation="slow">
+                <FadeTranslateTopWhenVisible tresholdOption={0} animation="slow">
                 <div className={style.services_popup__content}>
                     <Link href="/">
                     <div className={style.services_popup__item} >

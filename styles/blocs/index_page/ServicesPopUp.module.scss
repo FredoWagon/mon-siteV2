@@ -1,6 +1,20 @@
 .services_popup__container {
   margin: 10rem 0;
 
+
+  @media (min-width: 1440px)  {
+
+  }
+  @media (min-width: 960px) and (max-width: 1439px) {
+
+  }
+  @media (min-width: 720px) and (max-width: 989px) {
+
+  }
+  @media (max-width: 719px) {
+    margin: unset;
+  }
+
   .services_popup {
     margin: auto;
     padding-top: 2rem;
@@ -17,13 +31,27 @@
       max-width: 720px;
     }
     @media (max-width: 719px) {
-      display: none;
+
     }
 
     h2 {
       text-align: center;
       font-size: 4.5rem;
+      margin-bottom: 6.5rem;
       font-weight: unset;
+      @media (min-width: 720px) and (max-width: 989px) {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+      }
+      @media (max-width: 719px) {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+
+
+
+      }
+
+
     }
     mark {
       background-color: unset;
@@ -32,38 +60,56 @@
     }
     .services_popup__content {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-around;
+
       .services_popup__item {
         position: relative;
-        margin-top: 3rem;
+
         padding: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 22.5rem;
+        min-width: 22.5rem;
+        width: 25%;
+        @media (min-width: 960px) and (max-width: 1439px) {
+          width: 50%;
+        }
+        @media (max-width: 719px) {
+          width: 100%;
+          padding-top: unset;
 
-        &:hover {
-          cursor: pointer;
-          border-radius: 32px;
-          background-color: white;
-          transition: background-color 1s;
-          .background_animation {
-            width: 118%;
-            height: 110%;
-            transition: width 1s ease;
-            opacity: 1;
-          }
-          .popup_more_info {
-            p {
-              transform: translateX(-26px);
-              transition: transform 1s ease;
+
+        }
+        @media (min-width: 720px) {
+          &:hover {
+            cursor: pointer;
+            border-radius: 32px;
+            background-color: white;
+            transition: background-color 1.5s ease;
+            .background_animation {
+              width: 118%;
+              height: 110%;
+              transition: width 1s ease;
+              opacity: 1;
+            }
+            .popup_more_info {
+              p {
+                transform: translateX(-26px);
+                transition: transform 1s ease;
+              }
+            }
+            .popup_images {
+              transform: scale(1.1);
+              transition: transform 0.8s ease;
             }
           }
-          .popup_images {
-            transform: scale(1.1);
-            transition: transform 0.8s ease;
-          }
+
         }
+
+
 
         .background_animation {
           position: absolute;
@@ -116,6 +162,7 @@
             z-index: 2;
           }
           span {
+            border-radius: 10px;
             z-index: 1;
             position: absolute;
             top: 50%;

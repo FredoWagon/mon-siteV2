@@ -132,7 +132,7 @@ export default function Navbar(props) {
                     <div className={style.navbar__bottom}>
                         <div className={style.navbar__bottom__desktop}>
                             <div className={style.nav__links_left}>
-                                <Link href="/services">Nos services</Link>
+                                <Link  href="/services">Nos services</Link>
                                 <Link href="/">Travaux</Link>
                                 <Link href="/">A propos de nous</Link>
                             </div>

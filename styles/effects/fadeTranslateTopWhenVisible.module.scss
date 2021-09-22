@@ -3,7 +3,7 @@
   transform: translateY(60px);
   &.slow_entering {
     opacity: 1;
-    transition: opacity 2.5s ease, transform 2.5s ease;
+    transition: opacity 3.5s ease, transform 2.5s ease;
     transform: translateY(0px);
   }
   &.middle_entering {

@@ -1,0 +1,260 @@
+.our_team_container {
+  background-color: #292728;
+
+  position: relative;
+  margin-top: 15rem;
+
+
+  transition: transform 1s ease;
+
+  &.our_team_container__animation {
+    transition: transform 1s ease;
+    transform: translateY(20rem);
+  }
+
+
+
+
+
+  .our_team {
+    margin: auto;
+    padding: 13rem 2rem 35rem 2rem;
+
+    z-index: 2;
+
+    @media (min-width: 1440px)  {
+      max-width: 1440px;
+    }
+    @media (min-width: 960px) and (max-width: 1439px) {
+      max-width: 960px;
+    }
+    @media (min-width: 720px) and (max-width: 989px) {
+      max-width: 720px;
+    }
+    @media (max-width: 719px) {
+
+    }
+
+    .our_team__agency {
+      position: relative;
+      margin-bottom: 50rem;
+
+      .our_team__agency_title {
+
+        .title__animation_item {
+          position: absolute;
+          top: -18rem;
+
+          z-index: -1;
+          transform: translateY(0px);
+          font-size: 4.5rem;
+          font-weight: unset;
+          margin-bottom: 2rem;
+          line-height: 5rem;
+          transition: transform 1s ease;
+          @media (min-width: 720px) and (max-width: 989px) {
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+          }
+          @media (max-width: 719px) {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+
+          }
+
+          &.start_animation {
+            transform: translateY(66px);
+            transition: transform 1s ease;
+          }
+          &.end_animation {
+            transform: translateY(80px);
+            transition: transform 0.5s ;
+          }
+
+        }
+
+        .agence_title {
+          transform: translateY(-80px);
+          opacity: 0;
+
+          &.agence_title_animation {
+            transform: translateY(0px);
+            opacity: 1;
+            transition: transform 0.5s, opacity 0.3s ease ;
+
+
+          }
+
+        }
+        .collectif_title {
+          font-weight: 500;
+          color: #fad10a;
+          opacity: 0;
+          &.collectif_title__animation {
+            opacity: 1;
+            transition: opacity 1s ease;
+          }
+        }
+
+        h2 {
+          overflow: hidden;
+          transform: translateY(-208px);
+          margin-top: 0;
+          margin-bottom: 2rem;
+          color: white;
+          font-size: 4.5rem;
+          font-weight: unset;
+
+          line-height: 5rem;
+          @media (min-width: 720px) and (max-width: 989px) {
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+          }
+          @media (max-width: 719px) {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+
+          }
+          span {
+            display: block;
+          }
+
+          &.end_animation {
+            transform: translateY(0px);
+            transition: transform 0.9s;
+          }
+
+        }
+        p {
+          color: white;
+        }
+
+
+      }
+    }
+
+    .our_team__steps_container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .our_team__left {
+        width: 50%;
+        display: flex;
+        @media (max-width: 719px) {
+          display: none;
+
+        }
+
+        .our_team__menu_container {
+          position: static;
+          height: fit-content;
+          &.our_team__fixed {
+            position: fixed;
+
+
+          }
+          &.our_team__bottom {
+            position: static;
+            align-self: flex-end;
+
+          }
+          ul {
+            color: white;
+            list-style: none;
+            li {
+
+              font-size: 2rem;
+              color: #c5c5c55c;
+              font-weight: unset;
+              transition: color 0.3s ease, transform 0.3s ease;
+
+              h3 {
+                margin: unset;
+                font-weight: unset;
+                font-size: 2rem;
+              }
+              &.active_step {
+
+                color: #fad10a;
+                transform: translate(92px, 0px) scale(1.5);
+                font-weight: 500;
+                text-shadow: unset;
+
+                transition: color 0.3s ease, transform 0.3s ease;
+                &:hover {
+                  cursor: unset;
+                  color: #fad10a;
+                }
+
+              }
+              &:hover {
+                cursor: pointer;
+                color: rgba(250, 209, 10, 0.59);
+              }
+            }
+          }
+
+        }
+      }
+      .our_team__right {
+        width: 50%;
+        @media (max-width: 719px) {
+          width: 100%;
+
+        }
+        .our_team__content {
+          color: white;
+
+          .scrolling_item {
+            height: 20rem;
+
+          }
+
+        }
+      }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+  /*
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -50%;
+    transform: translateX(-50%);
+    border-right: 100vw solid transparent;
+    border-top: 195px solid white ;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 100vw solid transparent;
+    border-bottom: 195px solid white ;
+  }
+
+   */
+
+}
