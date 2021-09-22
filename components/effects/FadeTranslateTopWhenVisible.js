@@ -10,7 +10,8 @@ export default function FadeTranslateTopWhenVisible(props) {
         middle: style.middle_entering,
         fast: style.fast_entering,
         middle_mark_saumon: style.middle_entering_with_saumon_mark,
-        middle_mark_bleu: style.middle_entering_with_blue_mark
+        middle_mark_bleu: style.middle_entering_with_blue_mark,
+        custom_nous_picture: style.custom_nous_picture
 
     }
 
@@ -22,7 +23,7 @@ export default function FadeTranslateTopWhenVisible(props) {
 
     <InView threshold={props.tresholdOption || 0} triggerOnce={props.triggerOnceOption || true}>
         {({ inView, ref, entry }) => (
-            <div ref={ref} className={`  ${style.beforeEnteringStyle} ${inView ? option[props.animation] : ""}  `}>
+            <div ref={ref} className={` ${props.customStartDistance ? option[props.customStartDistance] : ""}  ${style.beforeEnteringStyle} ${inView ? option[props.animation] : ""}  `}>
                 {props.children}
             </div>
         )}

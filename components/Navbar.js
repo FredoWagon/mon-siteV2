@@ -134,7 +134,7 @@ export default function Navbar(props) {
                             <div className={style.nav__links_left}>
                                 <Link  href="/services">Nos services</Link>
                                 <Link href="/">Travaux</Link>
-                                <Link href="/">A propos de nous</Link>
+                                <Link href="/about">A propos de nous</Link>
                             </div>
                             <div className={style.nav__links_right}>
                                 <Link href="/">Blog</Link>

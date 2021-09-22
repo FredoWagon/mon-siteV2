@@ -4,6 +4,11 @@
   position: relative;
   margin-top: 15rem;
 
+  @media (max-width: 719px) {
+    margin-top: 8rem;
+
+  }
+
 
   transition: transform 1s ease;
 
@@ -55,16 +60,24 @@
           @media (min-width: 720px) and (max-width: 989px) {
             font-size: 3.5rem;
             line-height: 3.5rem;
+            top: -16.7rem;
           }
           @media (max-width: 719px) {
             font-size: 2.5rem;
             line-height: 2.5rem;
+            top: -15.6rem;
 
           }
 
           &.start_animation {
             transform: translateY(66px);
             transition: transform 1s ease;
+            @media (min-width: 720px) and (max-width: 989px) {
+              max-width: 720px;
+            }
+            @media (max-width: 719px) {
+
+            }
           }
           &.end_animation {
             transform: translateY(80px);
@@ -108,11 +121,11 @@
           line-height: 5rem;
           @media (min-width: 720px) and (max-width: 989px) {
             font-size: 3.5rem;
-            line-height: 3.5rem;
+            line-height: 4rem;
           }
           @media (max-width: 719px) {
             font-size: 2.5rem;
-            line-height: 2.5rem;
+            line-height: 3rem;
 
           }
           span {
@@ -126,7 +139,15 @@
 
         }
         p {
+          transform: translateY(46px);
           color: white;
+          opacity: 0;
+          &.text_animation {
+            transform: translateY(0px);
+            opacity: 1;
+            transition: opacity 1s ease, transform 1s ease;
+
+          }
         }
 
 
@@ -208,6 +229,18 @@
 
           .scrolling_item {
             height: 20rem;
+
+            h3 {
+              font-size: 2rem;
+              font-weight: unset;
+              color: #fad10a;
+
+              @media (min-width: 719px) {
+                display: none;
+
+              }
+
+            }
 
           }
 

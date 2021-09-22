@@ -17,9 +17,16 @@ export default function OurTeam() {
     const relativeTitle = useRef();
     const titleComponent = useRef();
     const collectifTitle = useRef();
+    const titleText = useRef();
+
+
 
     // Hauteur du browser
     const [viewPortHeight, setViewPortHeight] = useState();
+    // Position du menu
+    const [animationDistance, setAnimationDistance] = useState()
+    //position de l'animation du titre
+    const [titleAnimationPosition, setTitleAnimationPosition] = useState()
 
     const { ref, inView, entry } = useInView({
         /* Optional options */
@@ -45,7 +52,20 @@ export default function OurTeam() {
 
     useEffect(() => {
         const viewPortHeight = window.innerHeight
+        const viewPortWitth = window.innerWidth
         setViewPortHeight(viewPortHeight)
+        setAnimationDistance(0.35)
+
+
+        if (viewPortWitth > 719) {
+            setTitleAnimationPosition(100)
+        } else {
+            setTitleAnimationPosition(190)
+        }
+
+
+
+
         window.addEventListener("scroll", handleScrollEvents)
         window.addEventListener('resize', handleResize)
         return () => {
@@ -57,7 +77,7 @@ export default function OurTeam() {
 
     const titleAnimation = () => {
         const absoluteTitlePosition = absoluteTitle.current.getBoundingClientRect().bottom
-        const viewPortMiddleHeight = viewPortHeight / 2 -100
+        const viewPortMiddleHeight = viewPortHeight / 2 - titleAnimationPosition
 
         if ( absoluteTitlePosition < viewPortMiddleHeight) {
             absoluteTitle.current.classList.add(`${style.end_animation}`)
@@ -68,6 +88,7 @@ export default function OurTeam() {
             }, 100)
             setTimeout(() => {
                 collectifTitle.current.classList.add(`${style.collectif_title__animation}`)
+                titleText.current.classList.add(`${style.text_animation}`)
             }, 1000)
 
         }
@@ -79,6 +100,13 @@ export default function OurTeam() {
     const handleResize = () => {
         const viewPortHeight = window.innerHeight
         setViewPortHeight(viewPortHeight)
+        const viewPortWitth = window.innerWidth
+        if (viewPortWitth > 719) {
+            setTitleAnimationPosition(100)
+        } else {
+            setTitleAnimationPosition(190)
+        }
+
     }
 
     const handleScrollEvents = () => {
@@ -94,7 +122,7 @@ export default function OurTeam() {
 
 // Fixer le menu sur le scroll
     const toggleFixedLeftContent = () => {
-        const viewPortDistance = viewPortHeight * 0.35
+        const viewPortDistance = viewPortHeight * animationDistance
         const menuHeight = ourLeft.current.offsetHeight
         const menuLeftPosition = ourLeft.current.getBoundingClientRect().left;
         const ourRightDomRect = ourRight.current.getBoundingClientRect();
@@ -120,7 +148,7 @@ export default function OurTeam() {
     // Animation du texte du menu en fonction du scroll
     const changeMenuOnScroll = () => {
         const itemList = ourRight.current.children
-        const viewPortDistance = viewPortHeight * 0.35
+        const viewPortDistance = viewPortHeight * animationDistance
         Object.values(itemList).forEach((element) => {
             if (element.getBoundingClientRect().top < viewPortDistance + 50 && element.getBoundingClientRect().bottom > viewPortDistance) {
                 menuLinkAnimation(element.dataset.item);
@@ -130,7 +158,7 @@ export default function OurTeam() {
 
     // Logique des ancres sur click du menu
     const scrollToElement = (event) => {
-        const viewPortDistance = viewPortHeight * 0.35
+        const viewPortDistance = viewPortHeight * animationDistance
         const items = {
             1: projectItem.current,
             2: interlocuteurItem.current,
@@ -180,7 +208,7 @@ export default function OurTeam() {
                                     <span ref={relativeTitle} className={ style.agence_title}>Une agence,</span>
                                     <span ref={collectifTitle} className={style.collectif_title}>un collectif</span>
                                 </h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore excepturi fugiat maxime, molestiae nostrum odio officiis provident quidem quo reprehenderit sequi velit voluptatum. Alias assumenda autem eos itaque officia.</p>
+                                <p ref={titleText}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore excepturi fugiat maxime, molestiae nostrum odio officiis provident quidem quo reprehenderit sequi velit voluptatum. Alias assumenda autem eos itaque officia.</p>
 
 
                             </div>
@@ -215,19 +243,19 @@ export default function OurTeam() {
                             <div className={style.our_team__right}>
                                 <div ref={ourRight} className={style.our_team__content}>
                                     <div ref={projectItem} data-item="1" className={style.scrolling_item}>
-                                        <h4>Un projet !</h4>
+                                        <h3>Un projet !</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta distinctio dolor dolorum eos error ipsam maxime nesciunt nostrum officiis quidem tempora temporibus tenetur ut vero, voluptas voluptatum! Consequuntur, vero.</p>
                                     </div>
                                     <div ref={interlocuteurItem} data-item="2" className={style.scrolling_item}>
-                                        <h4>Un interlocuteur</h4>
+                                        <h3>Un interlocuteur</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque blanditiis cupiditate illum magni modi perspiciatis quibusdam ratione repudiandae veritatis. Aperiam ducimus eaque eveniet maiores vero. Corporis cum repudiandae unde.</p>
                                     </div>
                                     <div ref={devisItem} data-item="3" className={style.scrolling_item}>
-                                        <h4>Un devis !</h4>
+                                        <h3>Un devis !</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda, ducimus expedita harum illum officia qui sed voluptas. Accusamus accusantium aliquam architecto, eos hic magnam nulla perspiciatis sint veniam voluptatibus?</p>
                                     </div>
                                     <div ref={surMesureItem} data-item="4" className={style.scrolling_item}>
-                                        <h4>Une equipe !</h4>
+                                        <h3>Une equipe !</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor ea laudantium omnis quaerat. Commodi, est, numquam. Accusantium, facere id laboriosam minima molestias, numquam omnis, possimus quam quos soluta tempora!</p>
                                     </div>
 
