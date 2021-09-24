@@ -36,7 +36,7 @@ export default function CustomServicesPopUp() {
                             </div>
                         </Link>
 
-                        <Link href="/">
+                        <Link href="/services/ecommerce">
 
                             <div className={style.services_popup__item}>
                                 <div className={style.background_animation}></div>

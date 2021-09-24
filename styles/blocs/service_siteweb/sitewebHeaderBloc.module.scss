@@ -1,6 +1,28 @@
 .siteweb_header__container {
   background-color: #1c524f;
 
+  &.yellow_background {
+    background-color: #fad10a ;
+    .siteweb_header {
+      .siteweb_header__left {
+        h1 {
+          color: #5a594e;
+        }
+        p {
+          color: unset;
+        }
+        a {
+          p {
+            color: white;
+            background-color:  #5a594e;
+
+          }
+        }
+      }
+    }
+
+  }
+
 
 
   .siteweb_header {

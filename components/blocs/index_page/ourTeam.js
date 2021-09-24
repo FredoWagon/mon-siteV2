@@ -158,6 +158,7 @@ export default function OurTeam() {
 
     // Logique des ancres sur click du menu
     const scrollToElement = (event) => {
+        console.log(event)
         const viewPortDistance = viewPortHeight * animationDistance
         const items = {
             1: projectItem.current,
@@ -225,16 +226,16 @@ export default function OurTeam() {
                                 <div ref={ourLeft}  className={style.our_team__menu_container}>
                                     <ul ref={menuList}>
                                         <li onClick={scrollToElement} data-menu="1" className={style.active_step}>
-                                            <h3>Un projet</h3>
+                                            <h3 data-menu="1">Un projet</h3>
                                         </li>
                                         <li onClick={scrollToElement} data-menu="2">
-                                        <h3>Un interlocuteur unique</h3>
+                                        <h3 data-menu="2">Un interlocuteur unique</h3>
                                         </li>
                                         <li onClick={scrollToElement} data-menu="3">
-                                        <h3>Un seul devis</h3>
+                                        <h3 data-menu="3">Un seul devis</h3>
                                         </li>
                                         <li onClick={scrollToElement} data-menu="4">
-                                            <h3>Une équipe créée sur mesure</h3>
+                                            <h3 data-menu="4">Une équipe créée sur mesure</h3>
                                         </li>
                                     </ul>
                                 </div>
