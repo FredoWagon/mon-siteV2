@@ -11,7 +11,7 @@ export default function Services() {
 
     return (
         <Layout currentPage="services" navbarStyle="background--red">
-            {/* <ServiceHeaderBloc/> */}
+             <ServiceHeaderBloc/>
             <CustomServicesPopUp/>
             <UxBloc/>
             <OurProcessBloc/>

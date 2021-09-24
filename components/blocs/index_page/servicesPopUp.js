@@ -24,7 +24,7 @@ export default function ServicesPopUp() {
                 </FadeTranslateTopWhenVisible>
                 <FadeTranslateTopWhenVisible tresholdOption={0} animation="slow">
                 <div className={style.services_popup__content}>
-                    <Link href="/">
+                    <Link href="/services/sitesweb">
                     <div className={style.services_popup__item} >
                         <div className={style.background_animation}></div>
                         <div className={style.popup_images}>

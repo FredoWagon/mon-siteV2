@@ -1,16 +1,14 @@
-.header_bloc {
+.header_bloc__container {
 
 
 
 
-  .header_bloc__container {
+  .header_bloc {
     display: flex;
 
     justify-content: space-between;
     margin: auto;
     padding-top: 26rem;
-
-
 
     @media (min-width: 1440px)  {
       max-width: 1440px;
@@ -100,6 +98,21 @@
   .header_bloc__right {
     width: 50%;
     margin: 0 30px;
+
+    .image_animation {
+      position: relative;
+      .tablette_image {
+        position: absolute;
+        width: 36rem;
+        transform: translate(210px, -90px);
+      }
+      .phone_image {
+        position: absolute;
+        width: 16rem;
+        transform: translate(60px, 44px);
+      }
+
+    }
 
 
 

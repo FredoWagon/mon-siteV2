@@ -7,22 +7,25 @@ import Image from "next/image";
 export default function ServiceHeaderBloc() {
 
     return (
+        <div className={style.service_header_bloc__container}>
+            <div className={style.service_header_bloc}>
 
-          <div className={style.service_header_bloc}>
+                <div className={style.header_bloc__left}>
+                    <SpeedFadeIn customClass="custom_service_header">
+                        <h1>L'agence unique.</h1>
+                        <p>Nous travaillons avec des petites et grandes entreprises pour créer des expériences numériques unique. Nous aimons ce que nous faisons et nous croyons en la construction de partenariats fondés sur la confiance, l'honnêteté et la soif de créer des choses incroyables ensemble.</p>
 
-              <div className={style.header_bloc__left}>
-                  <SpeedFadeIn>
-                  <h1>L'agence unique.</h1>
-                  <p>Nous travaillons avec des petites et grandes entreprises pour créer des expériences numériques unique. Nous aimons ce que nous faisons et nous croyons en la construction de partenariats fondés sur la confiance, l'honnêteté et la soif de créer des choses incroyables ensemble.</p>
+                    </SpeedFadeIn>
+                </div>
 
-                  </SpeedFadeIn>
-              </div>
+                <div className={style.header_bloc__right}>
+                    <Image  src={serviceHeader}/>
 
-              <div className={style.header_bloc__right}>
-                  <Image  src={serviceHeader}/>
+                </div>
+            </div>
+        </div>
 
-              </div>
-          </div>
+
 
     )
 
