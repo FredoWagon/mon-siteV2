@@ -22,6 +22,27 @@
     }
 
   }
+  &.blue_background {
+    background-color: #b4cce8  ;
+    .siteweb_header {
+      .siteweb_header__left {
+        h1 {
+         color: #1c524f;
+        }
+        p {
+          color: unset;
+        }
+        a {
+          p {
+            color: white;
+            background-color:  #1c524f;
+
+          }
+        }
+      }
+    }
+
+  }
 
 
 
