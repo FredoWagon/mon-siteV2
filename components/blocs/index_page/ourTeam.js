@@ -158,7 +158,7 @@ export default function OurTeam() {
 
     // Logique des ancres sur click du menu
     const scrollToElement = (event) => {
-        console.log(event)
+
         const viewPortDistance = viewPortHeight * animationDistance
         const items = {
             1: projectItem.current,
@@ -170,14 +170,16 @@ export default function OurTeam() {
         const element = items[scrollIndex]
         const elementTopDomRect = element.getBoundingClientRect().top;
         const currentTopWindowPosition = window.scrollY;
-        const elementPosition = currentTopWindowPosition + elementTopDomRect - viewPortDistance;
+        const elementPosition = currentTopWindowPosition + elementTopDomRect - viewPortDistance + 10;
 
         window.scrollTo({top: elementPosition, behavior: 'smooth'})
+
         menuLinkAnimation(scrollIndex)
     }
 
     // Animation du texte du menu
     const menuLinkAnimation = (menuIndex) => {
+
         const index = menuIndex
         const menuElement = menuList.current.children
         Object.values(menuElement).forEach((element) => {
@@ -187,6 +189,7 @@ export default function OurTeam() {
                 element.classList.remove(`${style.active_step}`)
             }
         })
+
     }
 
 

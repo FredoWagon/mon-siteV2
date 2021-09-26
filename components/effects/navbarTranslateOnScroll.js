@@ -47,7 +47,7 @@ export default function TranslateOnScroll(props) {
 
 
     return (
-        <div className={`${style.navbar_top} ${!goingUp ? style.navbar_translate : ""} ${mobileMenuOpen ? style.burger_menu_size : "" }`}>
+        <div id="navBar_effect" className={`${style.navbar_top} ${!goingUp ? style.navbar_translate : ""} ${mobileMenuOpen ? style.burger_menu_size : "" }`}>
             {props.children}
         </div>
     )

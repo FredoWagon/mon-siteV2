@@ -117,8 +117,8 @@ export default function Navbar(props) {
 
 
     return (
-        <TranslateOnScroll isBurgerOpen={burgerOpen}>
-            <div className={`${style.navbar} ${isNotOnTop ? style.navbar__grey_line : ""} ${style[backgroundColor]} ${burgerOpen ? style.menu_opened : "" }`}>
+        <TranslateOnScroll  isBurgerOpen={burgerOpen}>
+            <div  className={`${style.navbar} ${isNotOnTop ? style.navbar__grey_line : ""} ${style[backgroundColor]} ${burgerOpen ? style.menu_opened : "" }`}>
                 <div className={style.navbar_container}>
 
                     <div className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ` }>
