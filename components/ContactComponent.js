@@ -2,7 +2,7 @@ import style from "../styles/components/contactComponent.module.scss"
 import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 
-export default function ContactComponent() {
+export default function ContactComponent(props) {
 
     const router = useRouter()
 
@@ -30,12 +30,14 @@ export default function ContactComponent() {
 
 
 
-
     // S'active sur la modification des inputs
     const handdleValidation = (e) => {
+        console.log("check")
+
         const element = e.target
         const inputName = e.target.name
         const inputValue = e.target.value
+
         const setInputValue = {
             name: setName,
             email: setEmail,
@@ -43,9 +45,12 @@ export default function ContactComponent() {
             message: setMessage
         }
 
+
         setInputValue[inputName](inputValue)
+
         inputValidation(element)
         const fieldValidationStatusList = [nameValid, messageValid, emailValid]
+        console.log(fieldValidationStatusList)
         setFormValid(!fieldValidationStatusList.includes(false))
     }
 
@@ -69,6 +74,7 @@ export default function ContactComponent() {
     const inputValidation = (element) => {
         const elementName = element.name
         const elementValue = element.value.toLowerCase()
+
         switch (elementName) {
             case 'name':
                 elementValue !== "" ? setNameValid(true) : setNameValid(false)
@@ -98,6 +104,7 @@ export default function ContactComponent() {
         }
         allFieldValidation()
         console.log(formValid)
+
 
         if (formValid) {
             fetch('/api/contact', {
@@ -129,6 +136,7 @@ export default function ContactComponent() {
 
 
 
+
     }
 
     const allFieldValidation = () => {
@@ -142,7 +150,7 @@ export default function ContactComponent() {
     return (
         <div className={style.contact_component}>
 
-            <h2>Contact</h2>
+            <h2>{props.customTitle || "Contact"}</h2>
             <form id="contact_form" >
                 <div className={ `${nameValid ? style.field_valid : ""} ${style.contact_field}`}>
                     <label htmlFor="name">Votre nom <mark className={style.label__required}>*</mark></label>

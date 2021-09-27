@@ -11,8 +11,8 @@ export default function BlueBLoc() {
         <div className={style.blue_bloc__container}>
             <div className={style.blue_bloc} >
                 <div className={style.blue_bloc__left}>
-                    <h2>« Construisez-le et ils viendront ».</h2>
-                    <p> <strong>Non, ils ne le feront pas.</strong> Le travail ne commence qu'une fois que votre site Web ou service est opérationnel. Nous nous soucions des résultats et vous aidons à attirer votre public cible, à engager vos utilisateurs sur site, à les convertir en clients et à les ravir après leur visite.</p>
+                    <h2>« Attirer, engager et convertir ».</h2>
+                    <p>Une grande partie du travail ne commence qu'après la publication du site. Nous sommes intéressés par les résultats à long terme, et c'est pourquoi nous vous aidons à rassembler le bon public, à engager les visiteurs sur votre site, à les convertir en clients et à les garder heureux après votre visite.</p>
                     <Link href="/services">
                         <button>Nos services</button>
                     </Link>

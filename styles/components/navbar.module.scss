@@ -47,6 +47,7 @@
     margin-right: auto;
     margin-left: auto;
     display: flex;
+    padding: 0 2rem;
     flex-direction: column;
 
 
@@ -116,6 +117,7 @@
 
 
         a {
+          font-size: 1.1rem;
           margin-right: 1.5rem;
           transition: opacity 0.3s ease;
           &:hover {
@@ -257,19 +259,35 @@
   &.background--red {
     background-color: #F04D37;
     color: white;
+    &.navbar__grey_line {
+      transition: border-bottom-width 0.3s ease;
+      border-bottom: 1px solid #F58C7D;
+    }
   }
   &.background--white {
     background-color: white !important;
   }
   &.background--blue {
     background-color: #b4cce8 !important;
+    &.navbar__grey_line {
+      transition: border-bottom-width 0.3s ease;
+      border-bottom: 1px solid #D6E3F2;
+    }
   }
   &.background--green {
     background-color: #1c524f !important;
     color: white;
+    &.navbar__grey_line {
+      transition: border-bottom-width 0.3s ease;
+      border-bottom: 1px solid #4A7373;
+    }
   }
   &.background--yellow {
     background-color: #fad10a !important;
+    &.navbar__grey_line {
+      transition: border-bottom-width 0.3s ease;
+      border-bottom: 1px solid #FAEB94;
+    }
   }
   a {
     width: fit-content;

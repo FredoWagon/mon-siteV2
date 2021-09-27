@@ -40,53 +40,38 @@ export default function ServicesPopUp() {
                     </div>
                     </Link>
 
-                    <Link href="/">
 
-                    <div className={style.services_popup__item}>
-                        <div className={style.background_animation}></div>
-                        <div className={style.popup_images}>
-                            <Image src={commerce}/>
-                        </div>
-                        <h3>Site E-Commerce</h3>
-                        <p>Transformez vos revenus en ligne avec une solution moderne.</p>
-                        <div className={`${style.popup_more_info} `}>
-                            <span></span>
-                            <p>Voir plus</p>
-
-                        </div>
-                    </div>
-                    </Link>
-
-                    <Link href="/">
-                    <div className={style.services_popup__item}>
-                        <div className={style.background_animation}></div>
-                        <div className={style.popup_images}>
-                            <Image src={refercenement}/>
-                        </div>
-                        <h3>Référencement</h3>
-                        <p>Pérennisez votre entreprise avec une application Web conviviale.</p>
-                        <div className={`${style.popup_more_info} `}>
-                            <span></span>
-                            <p>Voir plus</p>
-
-                        </div>
-                    </div>
-                    </Link>
-
-                    <Link href="/">
+                    <Link href="/services/applicationsweb">
                     <div className={style.services_popup__item}>
                         <div className={style.background_animation}></div>
                         <div className={style.popup_images}>
                             <Image src={maintenance}/>
                         </div>
-                        <h3>Maintenance</h3>
-                        <p>Pérennisez votre entreprise avec une application Web conviviale.</p>
+                        <h3>Applications Web</h3>
+                        <p>Créez de meilleures affaires avec une application Web conviviale.</p>
                         <div className={`${style.popup_more_info} `}>
                             <span></span>
                             <p>Voir plus</p>
 
                         </div>
                     </div>
+                    </Link>
+
+                    <Link href="/services/ecommerce">
+
+                        <div className={style.services_popup__item}>
+                            <div className={style.background_animation}></div>
+                            <div className={style.popup_images}>
+                                <Image src={commerce}/>
+                            </div>
+                            <h3>Site E-Commerce</h3>
+                            <p>Révolutionnez votre chiffre d'affaires avec une solution e-commerce moderne.</p>
+                            <div className={`${style.popup_more_info} `}>
+                                <span></span>
+                                <p>Voir plus</p>
+
+                            </div>
+                        </div>
                     </Link>
 
 

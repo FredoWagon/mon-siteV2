@@ -86,6 +86,8 @@ export default function Navbar(props) {
 
         } else if (body > 160) {
             setIsNotOnTop(true)
+            setLogoSize(value * 0.35)
+
         }
     }
 
@@ -124,7 +126,7 @@ export default function Navbar(props) {
                     <div className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ` }>
                         <Link href="/">
                             <a>
-                                <h1 style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>POUKOÙ WEB</h1>
+                                <h1 style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>POKOÙ WEB</h1>
                             </a>
                         </Link>
                     </div>

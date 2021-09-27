@@ -43,6 +43,28 @@
     }
 
   }
+  &.green_background {
+    background-color: #1c524f  ;
+    .siteweb_header {
+      .siteweb_header__left {
+        h1 {
+          color: #b4cce8;
+        }
+        p {
+          color: white;
+        }
+        a {
+          p {
+            color: unset;
+            background-color:  #b4cce8;
+
+          }
+        }
+      }
+    }
+
+  }
+
 
 
 
