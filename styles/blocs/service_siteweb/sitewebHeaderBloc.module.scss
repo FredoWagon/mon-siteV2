@@ -64,6 +64,27 @@
     }
 
   }
+  &.black_background__white_title {
+    background-color: #222222;
+    .siteweb_header {
+      .siteweb_header__left {
+        h1 {
+          color: white;
+        }
+        p {
+          color: white;
+        }
+        a {
+          p {
+            color: unset;
+            background-color:  #b4cce8;
+
+          }
+        }
+      }
+    }
+
+  }
 
 
 
@@ -165,6 +186,19 @@
       @media (max-width: 719px) {
         width: 100%;
         padding-top: 4rem;
+      }
+
+      &.custom_medtandem_project {
+        display: flex;
+
+        justify-content: center;
+        div {
+          width: 22rem;
+        }
+        img {
+          filter: unset;
+        }
+
       }
 
     }

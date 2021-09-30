@@ -5,6 +5,12 @@ import pop_font from '../../../public/popup_font.png'
 import crea1 from '../../../public/illu_creation1.png'
 import maintenance from '../../../public/illu_maint.png'
 import refercenement from '../../../public/illu_refer.png'
+import testIllu from "../../../public/test_illu_app.png"
+import testcommerce from "../../../public/test_ecommerce.png"
+import testwebsite from "../../../public/test_website.png"
+import shop from "../../../public/testshop.svg"
+import page from '../../../public/testpage.svg'
+import app from '../../../public/testapp.svg'
 import commerce from '../../../public/illu_commerce.png'
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +34,7 @@ export default function ServicesPopUp() {
                     <div className={style.services_popup__item} >
                         <div className={style.background_animation}></div>
                         <div className={style.popup_images}>
-                            <Image src={crea1}/>
+                            <Image src={page}/>
                         </div>
                         <h3>Création web</h3>
                         <p>Un bon site Web est bien plus qu'une carte de visite numérique.</p>
@@ -45,7 +51,7 @@ export default function ServicesPopUp() {
                     <div className={style.services_popup__item}>
                         <div className={style.background_animation}></div>
                         <div className={style.popup_images}>
-                            <Image src={maintenance}/>
+                            <Image src={app}/>
                         </div>
                         <h3>Applications Web</h3>
                         <p>Créez de meilleures affaires avec une application Web conviviale.</p>
@@ -62,7 +68,7 @@ export default function ServicesPopUp() {
                         <div className={style.services_popup__item}>
                             <div className={style.background_animation}></div>
                             <div className={style.popup_images}>
-                                <Image src={commerce}/>
+                                <Image src={shop}/>
                             </div>
                             <h3>Site E-Commerce</h3>
                             <p>Révolutionnez votre chiffre d'affaires avec une solution e-commerce moderne.</p>

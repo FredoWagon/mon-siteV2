@@ -11,6 +11,39 @@
     margin-top: 4rem;
 
   }
+
+  &.center_none {
+    .main__info {
+      align-items: unset;
+    }
+
+  }
+
+  &.custom_medtandem__background {
+    background-color: #E7EFFB;
+    margin-top: unset;
+    padding-top: 10rem;
+  }
+
+  &.custom_trendcorner__background {
+    background-color: #222222;
+    margin-top: unset;
+
+    .main__info {
+
+      .text_info__container {
+        padding-top: 9rem;
+        padding-bottom: 8rem;
+        h2 {
+          color: white;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+
+  }
   .main__info {
     padding: 0 2rem;
     margin: auto;
@@ -163,6 +196,23 @@
 
 
       }
+
+
+    }
+    .main__info__double_image {
+      display: flex;
+      width: 100%;
+
+      .medtandem_desktop {
+        width: 70%;
+
+      }
+      .medtandem__mobile {
+        width: 24%
+      ;
+
+      }
+
     }
 
   }

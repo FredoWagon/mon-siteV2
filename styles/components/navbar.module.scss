@@ -289,6 +289,14 @@
       border-bottom: 1px solid #FAEB94;
     }
   }
+  &.background--black {
+    background-color: #222222 !important;
+    color: white;
+    &.navbar__grey_line {
+      transition: border-bottom-width 0.3s ease;
+      border-bottom: 1px solid #595759;
+    }
+  }
   a {
     width: fit-content;
   }
