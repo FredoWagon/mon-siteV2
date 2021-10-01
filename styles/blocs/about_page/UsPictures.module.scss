@@ -4,25 +4,36 @@
 
   .us_picture {
     margin: auto;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
     @media (min-width: 1440px)  {
       max-width: 1440px;
     }
     @media (min-width: 960px) and (max-width: 1439px) {
       max-width: 960px;
+      padding-top: 5rem;
+
     }
     @media (min-width: 720px) and (max-width: 989px) {
       max-width: 720px;
+      padding-top: 4rem;
+      padding-bottom: 3rem;
     }
     @media (max-width: 719px) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
 
     }
 
     h2 {
-
       font-size: 4.5rem;
       margin: unset;
       padding-left: 2rem;
       font-weight: unset;
+      @media (min-width: 960px) and (max-width: 1439px) {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+      }
       @media (min-width: 720px) and (max-width: 989px) {
         font-size: 3.5rem;
         line-height: 3.5rem;
@@ -37,16 +48,47 @@
     }
 
     .us_picture__content {
+      margin-top: 2rem;
 
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      padding: 0 0.4rem;
+
       width: 100%;
+      @media (max-width: 719px) {
+        margin-top: 1rem;
+      }
       .us_picture__items {
         margin: 1.6rem;
-        width: calc(33.3333% - 5.2rem);
-        display: flex;
-        flex-direction: column;
+        width: calc(33.3333% - 3.2rem);
+        @media (max-width: 719px) {
+          width: 100%;
+        }
+
+        .item__content {
+          @media (max-width: 719px) {
+            display: flex;
+            align-items: start;
+            height: 100px;
+
+            .us_picture__image {
+              overflow: hidden;
+              position: relative;
+              width: 100px;
+              img {
+              }
+            }
+            .us_picture__info {
+              margin-left: 1rem;
+            }
+
+
+          }
+
+        }
+
+
+
         .us_picture__image {
           margin-bottom: 0.5rem;
           img {
@@ -60,10 +102,19 @@
             margin: unset;
             font-weight: unset;
             font-size: 1.5rem;
+            @media (min-width: 720px) and (max-width: 989px) {
+              font-size: 1.2rem;
+            }
+            @media (max-width: 719px) {
+              font-size: 1.3rem;
+            }
           }
           p {
             margin: unset;
             font-size: 0.9rem;
+            @media (min-width: 720px) and (max-width: 989px) {
+
+            }
           }
 
         }

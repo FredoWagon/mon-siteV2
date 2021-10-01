@@ -7,7 +7,7 @@ export default function ReferencementContactBloc() {
     return (
         <div className={style.referencement_contact_bloc__container}>
             <div className={style.referencement_contact_bloc}>
-                <ContactComponent/>
+                <ContactComponent customTitle="Contact"/>
                 <Link href="/services">
                     <a>Retour aux services</a>
                 </Link>

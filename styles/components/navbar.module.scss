@@ -1,11 +1,14 @@
 .navbar {
   width: 100%;
-  padding: 0 3rem;
+
 
   transition: border-bottom-width 0.3s ease;
+  @media (min-width: 720px) and (max-width: 989px) {
+
+  }
 
   @media (max-width: 719px) {
-    padding: 0 1rem;
+
 
   }
 
@@ -105,10 +108,12 @@
 
 
       .navbar__bottom__desktop {
+        position: relative;
         display: flex;
         align-content: center;
         justify-content: space-between;
         margin: 1rem 0;
+
 
         @media (max-width: 719px) {
           display: none;
@@ -118,7 +123,8 @@
 
         a {
           font-size: 1.1rem;
-          margin-right: 1.5rem;
+
+          padding: 1rem 1.5rem 1rem 0;
           transition: opacity 0.3s ease;
           &:hover {
             opacity: 0.5;
@@ -130,6 +136,21 @@
 
         }
         .nav__links_right {
+        }
+        .nav__links_bullet {
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          background-color: black;
+          border-radius: 50%;
+          top: 1.7rem;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          &.bullet_active {
+            opacity: 1;
+            transition: opacity 0.3s ease,left 0.3s ease, opacity 0.3s ease;
+          }
+
         }
       }
       .navbar__bottom__mobile {
@@ -259,6 +280,17 @@
   &.background--red {
     background-color: #F04D37;
     color: white;
+    .navbar_container {
+      .navbar__bottom {
+        .navbar__bottom__desktop {
+          .nav__links_bullet {
+            background-color: white;
+          }
+        }
+      }
+
+    }
+
     &.navbar__grey_line {
       transition: border-bottom-width 0.3s ease;
       border-bottom: 1px solid #F58C7D;

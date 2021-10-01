@@ -16,82 +16,105 @@ export default function UsPictures() {
                 <div className={style.us_picture__content}>
 
 
-
-
                     <div className={style.us_picture__items}>
                         <FadeTranslateTopWhenVisible tresholdOption={0} customStartDistance="custom_nous_picture" animation="fast">
-                        <div className={style.us_picture__image}>
-                            <Image src={fred}/>
 
-                        </div>
+                            <div className={style.item__content}>
+                                <div className={style.us_picture__image}>
+                                    <Image  src={olivier}/>
+
+                                </div>
+
+                                <div className={style.us_picture__info}>
+                                    <h3>Olivier Bouzon</h3>
+                                    <p>Developpeur</p>
+
+                                </div>
+                            </div>
+
+
                         </FadeTranslateTopWhenVisible>
-                        <div className={style.us_picture__info}>
-                            <h3>Frédéric Legrand</h3>
-                            <p>Developpeur</p>
-
-                        </div>
 
                     </div>
 
 
                     <div className={style.us_picture__items}>
                         <FadeTranslateTopWhenVisible tresholdOption={0} customStartDistance="custom_nous_picture" animation="middle">
-                        <div className={style.us_picture__image}>
-                            <Image src={nono}/>
+                            <div className={style.item__content}>
+                                <div className={style.us_picture__image}>
+                                    <Image src={nono}/>
 
-                        </div>
+                                </div>
+
+                                <div className={style.us_picture__info}>
+                                    <h3>Noémie Fournier</h3>
+                                    <p>Developpeur Wordpress</p>
+
+                                </div>
+                            </div>
+
                         </FadeTranslateTopWhenVisible>
-                        <div className={style.us_picture__info}>
-                            <h3>Noémie Fournier</h3>
-                            <p>Developpeur Wordpress</p>
-
-                        </div>
 
                     </div>
-
 
                     <div className={style.us_picture__items}>
                         <FadeTranslateTopWhenVisible tresholdOption={0} customStartDistance="custom_nous_picture" animation="slow">
-                        <div className={style.us_picture__image}>
-                            <Image src={olivier}/>
+                            <div className={style.item__content}>
+                                <div className={style.us_picture__image}>
+                                    <Image src={greg}/>
 
-                        </div>
+                                </div>
+
+                                <div className={style.us_picture__info}>
+                                    <h3>Grégoire Rénaldo</h3>
+                                    <p>Developpeur</p>
+
+                                </div>
+                            </div>
+
                         </FadeTranslateTopWhenVisible>
-                        <div className={style.us_picture__info}>
-                            <h3>Olivier Bouzon</h3>
-                            <p>Developpeur</p>
-
-                        </div>
 
                     </div>
+
                     <div className={style.us_picture__items}>
                         <FadeTranslateTopWhenVisible tresholdOption={0} customStartDistance="custom_nous_picture" animation="middle">
-                        <div className={style.us_picture__image}>
-                            <Image src={greg}/>
+                            <div className={style.item__content}>
+                                <div className={style.us_picture__image}>
+                                    <Image src={fred}/>
+                                </div>
 
-                        </div>
-                    </FadeTranslateTopWhenVisible>
-                        <div className={style.us_picture__info}>
-                            <h3>Grégoire Rénaldo</h3>
-                            <p>Developpeur</p>
+                                <div className={style.us_picture__info}>
+                                    <h3>Frédéric Legrand</h3>
+                                    <p>Developpeur</p>
 
-                        </div>
+                                </div>
+                            </div>
+
+                        </FadeTranslateTopWhenVisible>
 
                     </div>
 
 
+
+
+
+
                     <div className={style.us_picture__items}>
                         <FadeTranslateTopWhenVisible tresholdOption={0} customStartDistance="custom_nous_picture" animation="slow">
-                        <div className={style.us_picture__image}>
-                            <Image src={max}/>
+                            <div className={style.item__content}>
+                                <div className={style.us_picture__image}>
+                                    <Image src={max}/>
 
-                        </div>
+                                </div>
+
+                                <div className={style.us_picture__info}>
+                                    <h3>Maxence Pautre</h3>
+                                    <p>Developpeur</p>
+
+                                </div>
+                            </div>
+
                         </FadeTranslateTopWhenVisible>
-                        <div className={style.us_picture__info}>
-                            <h3>Maxence Pautre</h3>
-                            <p>Developpeur</p>
-
-                        </div>
 
                     </div>
 

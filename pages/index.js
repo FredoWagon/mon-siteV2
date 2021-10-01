@@ -11,7 +11,7 @@ import OurTeam from "../components/blocs/index_page/ourTeam";
 
 export default function Home() {
     return (
-        <Layout currentPage="index" navbarStyle="background--white">
+        <Layout navbarStyle="background--white">
 
 
 

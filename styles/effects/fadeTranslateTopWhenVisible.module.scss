@@ -40,5 +40,16 @@
       transition: color 2s ease;
     }
   }
+  &.middle_entering_with_green_mark {
+    opacity: 1;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(0px);
+    mark {
+      color: #1c524f87;
+      transition: color 2s ease;
+    }
+  }
+
+
 
 }

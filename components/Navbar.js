@@ -21,9 +21,45 @@ export default function Navbar(props) {
     const titleLogo = useRef(null)
     // La ou est stoké la valeur étalon en fonction de la taille du with, provenant des medias querry du css qu premier chargement et sinon a partir de l'event resize
     const logoSizeValue = useRef(null)
+    //Position du bullet
+    const [bulletPosition, setBulletPosition] = useState(-10)
+    // Desktop navbar
+    const desktopNav = useRef(null)
+    // La bille (bullet)
+    const bullet = useRef(null)
+    // Les elements lien
+    const serviceLink = useRef(null)
+    const travauxLink = useRef(null)
+    const nousLink = useRef(null)
+    const contactLink = useRef(null)
+    // Bullet position
+    const [bulletInitialPosition, setBulletInitialPosition] = useState()
 
-    // Changement du background de la navbar et modification de la couleur du navbar burger
+    // Changement du background de la navbar et modification de la couleur du navbar burger gestion du bullet
     useEffect( () => {
+        // Gérer la position du bullet
+        if (props.currentPage) {
+            const links = {
+                services: serviceLink.current,
+                travaux: travauxLink.current,
+                nous: nousLink.current,
+                contact: contactLink.current
+            }
+
+            const currentLink = links[props.currentPage]
+            console.log(currentLink)
+
+            const leftNavBarDistance = desktopNav.current.getBoundingClientRect().left
+            const currentLinkRect = currentLink.getBoundingClientRect()
+            const xCenterOfElement = currentLinkRect.left +  ((currentLinkRect.right - currentLinkRect.left -24) / 2)
+            const bulletPosition = xCenterOfElement - leftNavBarDistance
+            setBulletPosition(bulletPosition)
+            setBulletInitialPosition(bulletPosition)
+
+
+
+
+        }
         setBackgroundColor(props.backgroundColor)
         if (props.backgroundColor === "background--white") {
             setBurgerBlackVersion(true)
@@ -69,6 +105,32 @@ export default function Navbar(props) {
             window.removeEventListener('scroll', handleFontSize, {passive: true})
         }
     })
+
+    // Animation sur le hover des liens
+    const handleHover = (e) => {
+        const navBarElement = desktopNav.current
+        const bulletElement = bullet.current
+        bulletElement.classList.add(`${style.bullet_active}`)
+        const leftNavBarDistance = navBarElement.getBoundingClientRect().left
+        const element = e.target
+        const elementRect = element.getBoundingClientRect()
+        const xCenterOfElement = elementRect.left +  ((elementRect.right - elementRect.left -24) / 2)
+        console.log(leftNavBarDistance)
+        console.log(xCenterOfElement)
+        setBulletPosition(xCenterOfElement - leftNavBarDistance )
+    }
+
+    //Animation sur le out du hover
+    const handleOut = (e) => {
+        const bulletElement = bullet.current
+        if (!props.currentPage) {
+            bulletElement.classList.remove(`${style.bullet_active}`)
+        } else {
+            setBulletPosition(bulletInitialPosition)
+        }
+
+
+    }
 
     // Gère la taille de la police en fonction du scroll, aussi utilisé lors de l'event resize
     const handleFontSize = () => {
@@ -132,15 +194,24 @@ export default function Navbar(props) {
                     </div>
 
                     <div className={style.navbar__bottom}>
-                        <div className={style.navbar__bottom__desktop}>
+                        <div ref={desktopNav} className={style.navbar__bottom__desktop}>
+                            <span ref={bullet} style={{left: `${bulletPosition}px`}} className={ `${style.nav__links_bullet}  ${props.currentPage ? style.bullet_active : ""}`}></span>
                             <div className={style.nav__links_left}>
-                                <Link  href="/services">Nos services</Link>
-                                <Link href="/">Travaux</Link>
-                                <Link href="/about">A propos de nous</Link>
+                                <Link  href="/services">
+                                    <a ref={serviceLink} onMouseOut={handleOut} onMouseOver={handleHover} >Nos services</a>
+                                </Link>
+                                <Link href="/">
+                                    <a ref={travauxLink} onMouseOut={handleOut} onMouseOver={handleHover}>Travaux</a>
+                                </Link>
+                                <Link href="/about">
+                                    <a ref={nousLink} onMouseOut={handleOut} onMouseOver={handleHover}>A propos de nous</a>
+                                </Link>
                             </div>
                             <div className={style.nav__links_right}>
-                                <Link href="/">Blog</Link>
-                                <Link  href="/">Prendre contact</Link>
+
+                                <Link  href="/contact">
+                                    <a ref={contactLink} onMouseOut={handleOut} onMouseOver={handleHover}>Contactez-nous</a>
+                                </Link>
                             </div>
                         </div>
                         <div className={style.navbar__bottom__mobile}>

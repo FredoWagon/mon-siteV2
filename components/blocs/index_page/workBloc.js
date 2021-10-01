@@ -95,7 +95,7 @@ export default function WorkBloc() {
                                 <div className={style.view_project}>
                                     <p>Voir la projet</p>
                                 </div>
-                                <Image layout="fill" src={testmock}/>
+                                <Image  layout="fill" src={testmock}/>
                             </div>
                         </div>
                         <div className={style.work_item__text}>

@@ -150,7 +150,10 @@ export default function ContactComponent(props) {
     return (
         <div className={style.contact_component}>
 
-            <h2>{props.customTitle || "Contact"}</h2>
+            {props.customTitle &&
+            <h2>{props.customTitle}</h2>
+            }
+            
             <form id="contact_form" >
                 <div className={ `${nameValid ? style.field_valid : ""} ${style.contact_field}`}>
                     <label htmlFor="name">Votre nom <mark className={style.label__required}>*</mark></label>
