@@ -27,7 +27,7 @@ export default function IndexHeaderBloc() {
                     </div>
                     <div className={style.header_bloc__right}>
                         <div className={style.image_animation}>
-                            <Image src={illuTest}/>
+                            <Image src={landing}/>
 
                             {/*  <div className={style.tablette_image}>
                                 <Image  src={tablette_med}/>

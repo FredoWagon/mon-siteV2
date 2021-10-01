@@ -4,6 +4,7 @@ import logo from "../public/logo.svg";
 import instagram from "../public/instagram.svg";
 import facebook from "../public/facebook.svg";
 import flickr from "../public/flickr.svg";
+import copryright from "../public/droits-dauteur.svg"
 import Link from 'next/link';
 
 export default function Footer() {
@@ -16,13 +17,13 @@ export default function Footer() {
                 <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>
                 <div className={style.footer__sitemap}>
                     <div className={style.sitemap_item}>
-                        <Link href="#" >Nos services</Link>
+                        <Link href="/services" >Nos services</Link>
                         <Link href="#">Travaux</Link>
-                        <Link href="#">About</Link>
+                        <Link href="/about">About</Link>
                     </div>
                     <div className={style.sitemap_item}>
-                        <Link href="#" >Contact</Link>
-                        <Link href="#" >Politique de confidentialité</Link>
+                        <Link href="/contact" >Contact</Link>
+                        <Link href="/politique-de-confidentialite" >Politique de confidentialité</Link>
                     </div>
 
                 </div>
@@ -54,10 +55,17 @@ export default function Footer() {
                 </div>
             </div>
             <div className={style.footer__bottom}>
-                <Image src={logo}/>
-
                 <h1>pokoù Web</h1>
             </div>
+                <div className={style.footer_legal}>
+                    <p>© 2021 PokoùWeb, tous droits réservés -</p>
+                    <Link href="/">
+                        <a> Mentions légales</a>
+                    </Link>
+
+
+
+                </div>
             </div>
             <div className={style.footer_mobile}>
                 <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>

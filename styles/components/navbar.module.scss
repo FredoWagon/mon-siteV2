@@ -313,6 +313,16 @@
       transition: border-bottom-width 0.3s ease;
       border-bottom: 1px solid #4A7373;
     }
+    .navbar_container {
+      .navbar__bottom {
+        .navbar__bottom__desktop {
+          .nav__links_bullet {
+            background-color: white;
+          }
+        }
+      }
+
+    }
   }
   &.background--yellow {
     background-color: #fad10a !important;
