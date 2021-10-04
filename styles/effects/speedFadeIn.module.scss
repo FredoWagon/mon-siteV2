@@ -7,113 +7,15 @@
 
 
 
-  @media (min-width: 1440px)  {
-    height: 76rem;
-  }
-  @media (min-width: 960px) and (max-width: 1439px) {
-    height: 72rem;
-  }
-  @media (min-width: 720px) and (max-width: 989px) {
-    height: 71rem;
-  }
-  @media (max-width: 719px) {
-    height: 90rem;
 
-  }
 
-  &.custom_service_header {
-    height: 44rem;
 
-    @media (min-width: 960px) and (max-width: 1439px) {
-      height: 38rem;
-    }
-    @media (min-width: 720px) and (max-width: 989px) {
-      height: 47rem;
-    }
-    @media (max-width: 719px) {
-      height: 27rem;
-
-    }
-
-  }
-  &.custom_siteweb_header {
-    height: 68rem;
-
-    @media (min-width: 960px) and (max-width: 1439px) {
-      height: 62rem;
-    }
-    @media (min-width: 720px) and (max-width: 989px) {
-      height: 67rem;
-    }
-    @media (max-width: 719px) {
-      height: 85rem;
-
-    }
-
-  }
-
-  &.custom_webapp_header {
-    height: 78rem;
-    @media (min-width: 960px) and (max-width: 1439px) {
-      height: 62rem;
-    }
-    @media (min-width: 720px) and (max-width: 989px) {
-      height: 67rem;
-    }
-    @media (max-width: 719px) {
-      height: 85rem;
-
-    }
-
-  }
-  &.custom_about_header {
-    height: 68rem;
-    @media (min-width: 960px) and (max-width: 1439px) {
-      height: 61rem;
-    }
-    @media (min-width: 720px) and (max-width: 989px) {
-      height: 59rem;
-    }
-    @media (max-width: 719px) {
-      height: 63rem;
-
-    }
-
-  }
-  &.custom_contact_header {
-    height: 63rem;
-    @media (min-width: 960px) and (max-width: 1439px) {
-      height: 60rem;
-    }
-    @media (min-width: 720px) and (max-width: 989px) {
-      height: 63rem;
-    }
-    @media (max-width: 719px) {
-      height: 57rem;
-
-    }
-
-  }
-  &.custom_confidentialite_header {
-    height: 56rem;
-    @media (min-width: 960px) and (max-width: 1439px) {
-      height: 60rem;
-    }
-    @media (min-width: 720px) and (max-width: 989px) {
-      height: 63rem;
-    }
-    @media (max-width: 719px) {
-      height: 57rem;
-
-    }
-
-  }
 
 
 
 .speed_fade_in__content {
   width: 100%;
-  position: absolute;
+
   opacity: 0;
   transform: translateX(20px);
   &.isFadeIn {

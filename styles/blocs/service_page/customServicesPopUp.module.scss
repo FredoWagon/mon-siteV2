@@ -104,12 +104,20 @@
           color: #000000c9;
         }
         .popup_images{
+          overflow: hidden;
           transition: transform 0.8s ease;
 
-          width: 100%;
+
           // background-color: #F6F8FE;
           border-radius: 26px;
           margin-bottom: 1rem;
+
+          div {
+            transform: translateY(1rem);
+            opacity: 0.7;
+            width: 10rem;
+            height: 10rem;
+          }
 
 
         }

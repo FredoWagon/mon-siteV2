@@ -2,13 +2,14 @@ import style from '../../../styles/blocs/index_page/OurTeam.module.scss'
 import {InView, useInView} from "react-intersection-observer";
 import collectif from '../../../public/collectif.jpg'
 import Image from 'next/image'
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useRef, useState, useContext} from "react";
 import Link from 'next/link'
-
-
+import {useAppContext} from "../../../context/state";
 
 
 export default function OurTeam() {
+
+    const {ourTeamAnimationDone, setState} = useAppContext();
 
     const ourRight = useRef();
     const ourLeft = useRef();
@@ -21,12 +22,15 @@ export default function OurTeam() {
 
 
 
+
     // Hauteur du browser
     const [viewPortHeight, setViewPortHeight] = useState();
     // Position du menu
     const [animationDistance, setAnimationDistance] = useState()
     //position de l'animation du titre
     const [titleAnimationPosition, setTitleAnimationPosition] = useState()
+
+
 
     const { ref, inView, entry } = useInView({
         /* Optional options */
@@ -75,11 +79,34 @@ export default function OurTeam() {
         }
     },[viewPortHeight])
 
+    useEffect(() => {
+        const body = document.body
+
+
+
+        const scrollBarWidth = window.innerWidth - body.clientWidth
+        if (inView && !ourTeamAnimationDone ) {
+            body.classList.add('stop_scrolling')
+            body.style.paddingRight = `${scrollBarWidth}px`
+            const elementTopPosition = entry.target.offsetTop - 100
+            setTimeout(() => {
+                window.scrollTo({top: elementTopPosition, behavior: 'smooth'})
+                setTimeout(() => {
+                    body.classList.remove('stop_scrolling')
+                    body.style.paddingRight = ""
+                }, 1500)
+            }, 1000)
+            setState(true)
+        }
+    }, [inView])
+
+
+
     const titleAnimation = () => {
         const absoluteTitlePosition = absoluteTitle.current.getBoundingClientRect().bottom
         const viewPortMiddleHeight = viewPortHeight / 2 - titleAnimationPosition
 
-        if ( absoluteTitlePosition < viewPortMiddleHeight) {
+        if ( (absoluteTitlePosition < viewPortMiddleHeight) && !ourTeamAnimationDone) {
             absoluteTitle.current.classList.add(`${style.end_animation}`)
             relativeTitle.current.classList.add(`${style.agence_title_animation}`)
 
@@ -91,7 +118,23 @@ export default function OurTeam() {
                 titleText.current.classList.add(`${style.text_animation}`)
             }, 1000)
 
+        } else if (ourTeamAnimationDone) {
+            absoluteTitle.current.classList.add(`${style.end_animation}`)
+            relativeTitle.current.classList.add(`${style.agence_title_animation}`)
+            titleComponent.current.classList.add(`${style.end_animation}`)
+            titleText.current.classList.add(`${style.text_animation}`)
+            setTimeout(() => {
+                titleComponent.current.classList.add(`${style.end_animation}`)
+            }, 100)
+            setTimeout(() => {
+                collectifTitle.current.classList.add(`${style.collectif_title__animation}`)
+                titleText.current.classList.add(`${style.text_animation}`)
+            }, 1000)
         }
+
+
+
+
 
 
 
@@ -199,7 +242,7 @@ export default function OurTeam() {
 
     return (
 
-                <div ref={ref} className={`  ${style.our_team_container} ${!inView ? style.our_team_container__animation : ""}  `}>
+                <div ref={ref} className={`  ${style.our_team_container} ${!inView && !ourTeamAnimationDone ? style.our_team_container__animation : ""}  `}>
 
 
                     <div className={style.our_team}>
@@ -207,12 +250,15 @@ export default function OurTeam() {
 
                         <div className={style.our_team__agency}>
                             <div className={style.our_team__agency_title}>
-                                <span ref={absoluteTitle} className={`${style.title__animation_item} ${!inView ? style.start_animation : ""}  `}>Une agence</span>
+                                <span ref={absoluteTitle} className={`${style.title__animation_item} ${!inView && !ourTeamAnimationDone ? style.start_animation : ""}  `}>Une agence</span>
                                 <h2 ref={titleComponent}>
                                     <span ref={relativeTitle} className={ style.agence_title}>Une agence,</span>
                                     <span ref={collectifTitle} className={style.collectif_title}>un collectif</span>
                                 </h2>
-                                <p ref={titleText}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore excepturi fugiat maxime, molestiae nostrum odio officiis provident quidem quo reprehenderit sequi velit voluptatum. Alias assumenda autem eos itaque officia.</p>
+                                <p ref={titleText}><mark>Pokou web</mark> est une une agence de communication,
+                                    un collectif d’indépendants,
+                                    un studio de production digitale et
+                                    une coopérative de talents !</p>
 
 
                             </div>

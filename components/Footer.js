@@ -59,7 +59,7 @@ export default function Footer() {
             </div>
                 <div className={style.footer_legal}>
                     <p>© 2021 PokoùWeb, tous droits réservés -</p>
-                    <Link href="/">
+                    <Link href="/mentions-legales">
                         <a> Mentions légales</a>
                     </Link>
 

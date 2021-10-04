@@ -10,7 +10,7 @@ export default function Dashboard() {
 
     return (
         <Layout currentPage="services" navbarStyle="background--white">
-        <Image placeholder={"blur"} src={dashboard_header}/>
+        <Image priority={true} placeholder={"blur"} src={dashboard_header}/>
             <DashboardContentBloc1/>
 
 

@@ -17,3 +17,8 @@ module.exports = {
     domains: ['images.unsplash.com'],
   },
 }
+module.exports = {
+  experimental: {
+    scrollRestoration: true
+  }
+}

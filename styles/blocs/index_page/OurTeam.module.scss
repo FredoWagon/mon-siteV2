@@ -13,6 +13,7 @@
   transition: transform 1s ease;
 
   &.our_team_container__animation {
+
     transition: transform 1s ease;
     transform: translateY(20rem);
   }
@@ -82,6 +83,7 @@
           &.end_animation {
             transform: translateY(80px);
             transition: transform 0.5s ;
+            opacity: 0;
           }
 
         }
@@ -140,14 +142,25 @@
         }
         p {
           transform: translateY(46px);
+          max-width: 40rem;
           color: white;
           opacity: 0;
+          font-size: 1.2rem;
           &.text_animation {
             transform: translateY(0px);
             opacity: 1;
             transition: opacity 1s ease, transform 1s ease;
 
           }
+          mark {
+            padding: unset;
+            background-color: unset;
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: white;
+
+          }
+
         }
 
 

@@ -30,6 +30,7 @@ body.disapear {
 }
 body.stop_scrolling {
   overflow: hidden;
+
 }
 
 @supports (-webkit-touch-callout: none) {
