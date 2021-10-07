@@ -136,20 +136,22 @@ export default function Navbar(props) {
     const handleFontSize = () => {
         const body = window.scrollY
         let value = logoSizeValue.current
-        if (body < 20) {
-            setLogoSize(value)
-            setIsNotOnTop(false)
-        } else if (body > 20 && body < 100) {
-            setLogoSize(value * 0.8)
-        } else if (body > 101 && body < 145 ) {
-            setLogoSize(value * 0.6)
-        } else if (body > 145 && body < 160) {
-            setLogoSize(value * 0.5)
 
-        } else if (body > 160) {
-            setIsNotOnTop(true)
-            setLogoSize(value * 0.35)
+        if (window.innerWidth > 719 ) {
+            if (body < 20) {
+                setLogoSize(value)
+                setIsNotOnTop(false)
+            } else if (body > 20 && body < 100) {
+                setLogoSize(value * 0.8)
+            } else if (body > 101 && body < 145 ) {
+                setLogoSize(value * 0.6)
+            } else if (body > 145 && body < 160) {
+                setLogoSize(value * 0.5)
 
+            } else if (body > 160) {
+                setIsNotOnTop(true)
+                setLogoSize(value * 0.35)
+            }
         }
     }
 
@@ -200,7 +202,7 @@ export default function Navbar(props) {
                                 <Link  href="/services">
                                     <a ref={serviceLink} onMouseOut={handleOut} onMouseOver={handleHover} >Nos services</a>
                                 </Link>
-                                <Link href="/">
+                                <Link href="/#travaux_anchor">
                                     <a ref={travauxLink} onMouseOut={handleOut} onMouseOver={handleHover}>Travaux</a>
                                 </Link>
                                 <Link href="/about">
@@ -215,7 +217,7 @@ export default function Navbar(props) {
                             </div>
                         </div>
                         <div className={style.navbar__bottom__mobile}>
-                            <h1 className={`${ isNotOnTop ? style.is_visible : ""}`}>Poukoù web</h1>
+                            <h1 className={`${ style.is_visible}`}>POKOÙ WEB</h1>
                             <div  onClick={openBurgerMenu} className={ `${style.burger__icon} ${burgerBlackVersion ? style.black_version : ""} ${burgerOpen ? style.is_open : ""}` }>
                                 <div className={style.icon__span}></div>
                                 <svg x="0" y="0"  width="54px" height="54px" viewBox="0 0 54 54">

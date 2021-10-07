@@ -69,8 +69,35 @@ export default function Footer() {
             </div>
             <div className={style.footer_mobile}>
                 <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>
+                <a href="mailto:fedde.leg@gmail.com">fedde.leg@gmail.com</a>
 
-                <h1>pokoù Web</h1>
+                <div className={style.footer_mobile__social}>
+                    <Link href="/"><Image alt="facebook_logo" src={facebook}/></Link>
+                    <Link href="/"><Image alt="instagram_logo" src={instagram}/></Link>
+                    <Link href="/"><Image alt="flickr_logo" src={flickr}/></Link>
+
+                </div>
+                <div className={style.footer_mobile__links}>
+                    <Link href="/">Accueil</Link>
+                    <Link href="/services" >Nos services</Link>
+                    <Link href="#">Travaux</Link>
+                    <Link href="/about">About</Link>
+                    <Link href="/contact" >Contact</Link>
+
+
+                </div>
+
+                <p className={style.footer_logo}>pokoù Web</p>
+                <div className={style.mobile__footer_legal}>
+                    <p>© 2021 PokoùWeb, tous droits réservés</p>
+                    <Link href="/mentions-legales">
+                        <a>Mentions légales </a>
+                    </Link>
+                    <Link href="/politique-de-confidentialite">
+                        <a>- Politique de confidentialité</a>
+                    </Link>
+
+                </div>
 
             </div>
         </div>

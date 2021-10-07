@@ -1,11 +1,11 @@
 .our_team_container {
-  background-color: #292728;
+  background-color: #101010;
 
   position: relative;
   margin-top: 10rem;
 
   @media (max-width: 719px) {
-    margin-top: 8rem;
+    margin-top: 2rem;
 
   }
 
@@ -24,7 +24,8 @@
 
   .our_team {
     margin: auto;
-    padding: 13rem 2rem 35rem 2rem;
+    padding: 13rem 2rem 30rem 2rem;
+
 
     z-index: 2;
 
@@ -38,18 +39,71 @@
       max-width: 720px;
     }
     @media (max-width: 719px) {
+      padding: 6rem 2rem 6rem 2rem;
 
     }
 
+
+
+
+
     .our_team__agency {
       position: relative;
-      margin-bottom: 50rem;
+
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 719px) {
+        flex-wrap: wrap;
+      }
+
+    
+
+      .our_team__agency_image {
+        transform: translateY(-90px);
+        width: 35%;
+        filter: invert(1);
+        transition: opacity 2s ease, transform 1.5s ease;
+        @media (max-width: 719px) {
+          width: 100%;
+          margin-top: 7rem;
+        }
+
+
+
+        &.agency_image__before_animation {
+          transform: translateY(3rem);
+          opacity: 0;
+        }
+
+        .patchwork_image {
+          animation: bounce 5s ease infinite;
+          @keyframes bounce{
+            from {transform: translateY(0)}
+            50%  {transform: translateY(1rem)}
+            to   {transform: translateY(0)}
+          }
+
+          img {
+            //width: 20rem;
+            filter: grayscale(1);
+
+          }
+
+        }
+
+      }
 
       .our_team__agency_title {
+        width: 65%;
+        @media (max-width: 719px) {
+          width: 100%;
+        }
 
         .title__animation_item {
           position: absolute;
           top: -18rem;
+          color: #101010;
 
           z-index: -1;
           transform: translateY(0px);
@@ -66,17 +120,20 @@
           @media (max-width: 719px) {
             font-size: 2.5rem;
             line-height: 2.5rem;
-            top: -15.6rem;
+            top: -9.6rem;
+            transform: translateY(15px);
 
           }
 
           &.start_animation {
+
             transform: translateY(66px);
             transition: transform 1s ease;
             @media (min-width: 720px) and (max-width: 989px) {
               max-width: 720px;
             }
             @media (max-width: 719px) {
+
 
             }
           }
@@ -140,37 +197,143 @@
           }
 
         }
-        p {
-          transform: translateY(46px);
-          max-width: 40rem;
-          color: white;
-          opacity: 0;
-          font-size: 1.2rem;
+        .agency_title__text {
           &.text_animation {
-            transform: translateY(0px);
-            opacity: 1;
-            transition: opacity 1s ease, transform 1s ease;
+            p {
+              transform: translateY(0px);
+              opacity: 1;
+              transition: opacity 1s ease, transform 1s ease;
+            }
+
 
           }
-          mark {
-            padding: unset;
-            background-color: unset;
-            font-weight: bold;
-            font-size: 1.4rem;
+          p {
+            transform: translateY(46px);
+            max-width: 40rem;
             color: white;
+            opacity: 0;
+            font-size: 1.2rem;
+            mark {
+              padding: unset;
+              background-color: unset;
+              font-weight: bold;
+              font-size: 1.4rem;
+              color: white;
+
+            }
 
           }
-
         }
 
 
+
       }
+    }
+
+    .our_team__advantages {
+      opacity: 1;
+      transition: opacity 3s ease;
+
+      padding-bottom: 21rem;
+      padding-top: 2rem;
+      @media (min-width: 960px) and (max-width: 1439px) {
+        padding-top: 7rem;
+      }
+      @media (max-width: 719px) {
+        padding-bottom: 7rem;
+
+      }
+
+      &.our_team__advantages__before_animation {
+        transition: opacity 3s ease;
+        opacity: 0;
+        h3 {
+          transform: translateY(5rem);
+          opacity: 0;
+        }
+
+      }
+      h3 {
+        opacity: 1;
+        transition: transform 2s ease, opacity 1s ease;
+        text-align: center;
+        color: white;
+        font-weight: unset;
+        font-size: 2rem;
+        @media (max-width: 719px) {
+          font-size: 1.8rem;
+
+        }
+      }
+      .advantage_container {
+        display: flex;
+        @media (min-width: 720px) and (max-width: 989px) {
+          flex-wrap: wrap;
+        }
+        @media (max-width: 719px) {
+          flex-wrap: wrap;
+
+        }
+        .advantage_item {
+          padding: 0 1rem;
+          opacity: 1;
+          transition: opacity 2s ease, transform 1.5s ease;
+          width: 25%;
+          @media (min-width: 720px) and (max-width: 989px) {
+
+            width: 50%;
+
+          }
+          @media (max-width: 719px) {
+          width: 100%;
+
+          }
+          h4 {
+            font-weight: unset;
+            color: white;
+            font-size: 1.5rem;
+            @media (max-width: 719px) {
+              margin-bottom: 1.2rem;
+
+            }
+          }
+          p {
+            color: #f2f2f280;
+          }
+
+          &.advantage_item__before_animation {
+            transform: translateY(8rem);
+            opacity: 0;
+          }
+
+        }
+      }
+
     }
 
     .our_team__steps_container {
       display: flex;
       justify-content: space-between;
       position: relative;
+      @media (max-width: 719px) {
+        display: block;
+
+      }
+
+      .mobile__step_title {
+
+        display: none;
+        color: #fad10a;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: unset;
+        margin-bottom: 6rem;
+        @media (max-width: 719px) {
+          display: block;
+
+        }
+      }
+
 
       .our_team__left {
         width: 50%;
@@ -194,6 +357,7 @@
 
           }
           ul {
+            padding: unset;
             color: white;
             list-style: none;
             li {
@@ -203,15 +367,22 @@
               font-weight: unset;
               transition: color 0.3s ease, transform 0.3s ease;
 
-              h3 {
+              h4 {
                 margin: unset;
                 font-weight: unset;
                 font-size: 2rem;
+                @media (min-width: 960px) and (max-width: 1439px) {
+                  font-size: 1.8rem;
+                }
+                @media (min-width: 720px) and (max-width: 989px) {
+                  font-size: 1.6rem;
+
+                }
               }
               &.active_step {
 
                 color: #fad10a;
-                transform: translate(92px, 0px) scale(1.5);
+                transform: translate(83px, 0px) scale(1.5);
                 font-weight: 500;
                 text-shadow: unset;
 
@@ -219,6 +390,13 @@
                 &:hover {
                   cursor: unset;
                   color: #fad10a;
+                }
+                @media (min-width: 960px) and (max-width: 1439px) {
+                  transform: translate(20px, 0px) scale(1.2);
+                }
+                @media (min-width: 720px) and (max-width: 989px) {
+                  transform: translate(5px, 0px) scale(1.1);
+
                 }
 
               }
@@ -241,18 +419,29 @@
           color: white;
 
           .scrolling_item {
+            padding: 0 1rem;
             height: 20rem;
+            @media (max-width: 719px) {
+              height: unset;
 
-            h3 {
-              font-size: 2rem;
+
+            }
+
+            h4 {
+              margin-bottom: 1.2rem;
+              font-size: 1.5rem;
               font-weight: unset;
               color: #fad10a;
+              display: none;
 
-              @media (min-width: 719px) {
-                display: none;
+              @media (max-width: 719px) {
+                display: block;
 
               }
 
+            }
+            p {
+              color: #f2f2f280;
             }
 
           }

@@ -6,26 +6,36 @@ export default function TranslateOnScroll(props) {
     const previousPosition = useRef(0)
     const [goingUp, setGoingUp] = useState(true)
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [isMobileView, setIsMobileView] = useState(false);
 
     const handdleMenuSize = () => {
 
-            if (!mobileMenuOpen) {
-                setMobileMenuOpen(true)
-            } else {
-                setMobileMenuOpen(false)
-            }
+        if (!mobileMenuOpen) {
+            setMobileMenuOpen(true)
+        } else {
+            setMobileMenuOpen(false)
+        }
     }
 
 
     const handleScroll = () => {
         const currentPosition = window.scrollY
-        if (currentPosition > 150 ) {
-        if (previousPosition.current > currentPosition && !goingUp ) {
-            setGoingUp(true)
-        } else if (previousPosition.current < currentPosition && goingUp) {
-            setGoingUp(false)
-        }
-        previousPosition.current = currentPosition
+        const viewPortWith = window.innerWidth
+        if (currentPosition > 150 && viewPortWith > 719 ) {
+            if (previousPosition.current > currentPosition && !goingUp ) {
+                setGoingUp(true)
+            } else if (previousPosition.current < currentPosition && goingUp) {
+                setGoingUp(false)
+            }
+            previousPosition.current = currentPosition
+        } else if (viewPortWith <= 719) {
+            if (previousPosition.current > currentPosition && !goingUp ) {
+                setGoingUp(true)
+            } else if (previousPosition.current < currentPosition && goingUp) {
+                setGoingUp(false)
+            }
+            previousPosition.current = currentPosition
+
         }
     }
 
@@ -37,6 +47,9 @@ export default function TranslateOnScroll(props) {
 
 
     useEffect(() => {
+        if (window.innerWidth <= 719) {
+            setIsMobileView(true)
+        }
 
         window.addEventListener('scroll', handleScroll)
         return () => {
@@ -47,7 +60,7 @@ export default function TranslateOnScroll(props) {
 
 
     return (
-        <div id="navBar_effect" className={`${style.navbar_top} ${!goingUp ? style.navbar_translate : ""} ${mobileMenuOpen ? style.burger_menu_size : "" }`}>
+        <div id="navBar_effect" className={`${style.navbar_top} ${!goingUp ? style.navbar_translate : ""} ${isMobileView ? style.navbar_top__mobile : ""} ${mobileMenuOpen ? style.burger_menu_size : "" }`}>
             {props.children}
         </div>
     )

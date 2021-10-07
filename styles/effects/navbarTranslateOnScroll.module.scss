@@ -3,8 +3,17 @@
   top: 0;
 
   width: 100%;
-  transition: top 0.5s ease;
+  transition: top 0.8s ease;
   z-index: 10;
+
+  &.navbar_top__mobile {
+    transition: top 0.35s;
+
+    &.navbar_translate {
+      top: -16rem;
+      transition: top 0.35s;
+    }
+  }
 
 
   &.burger_menu_size {
@@ -14,7 +23,7 @@
 
   &.navbar_translate {
     top: -16rem;
-    transition: top 0.5s ease;
+    transition: top 1s ease;
   }
 
 }

@@ -1,5 +1,6 @@
 .siteweb_header__container {
   background-color: #1c524f;
+  position: relative;
 
   &.yellow_background {
     background-color: #fad10a ;
@@ -132,6 +133,102 @@
     }
 
   }
+
+  &.project__onepalm__header {
+    background-color: white;
+    .header__background_image {
+      overflow: hidden;
+      position: absolute;
+      top: 15rem;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      img {
+
+      }
+      @media (max-width: 719px) {
+        top: 7rem;
+        left: -31rem;
+      }
+      @media (min-width: 720px) and (max-width: 989px) {
+        left: -14rem;
+      }
+
+    }
+    .siteweb_header {
+      padding-bottom: 9rem;
+      padding-top: 22rem;
+      @media (max-width: 719px) {
+        padding-top: 10rem;
+      }
+      .siteweb_header__left {
+        width: 60%;
+        @media (max-width: 719px) {
+         width: 100%;
+        }
+        h1 {
+          color: white;
+          font-weight: 400;
+          font-size: 6.5rem;
+          line-height: 6rem;
+          margin: unset;
+
+          mark {
+            padding: unset;
+            background-color: unset;
+            color: #222222;
+          }
+
+          @media (min-width: 960px) and (max-width: 1439px) {
+            font-size: 4.5rem;
+            line-height: 4rem;
+          }
+          @media (min-width: 720px) and (max-width: 989px) {
+            font-size: 3.5rem;
+            line-height: 3rem;
+          }
+          @media (max-width: 719px) {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+          }
+        }
+        p {
+          color: white;
+          margin: 5rem 0 5rem 0;
+          font-size: 1.2rem;
+          line-height: 2rem;
+          @media (max-width: 719px) {
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+          }
+        }
+        a {
+          color: white;
+          width: fit-content;
+          background-color:  #222222;
+          border: unset;
+          padding: 1.3rem 3.5rem;
+          font-size: 1.1rem;
+          transition: opacity 0.3s ease;
+          @media (min-width: 720px) and (max-width: 989px) {
+            font-size: 1rem;
+            line-height: 2.1rem;
+            padding: 1.1rem 2.5rem;
+          }
+          &:hover {
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+          }
+
+        }
+      }
+    }
+
+
+  }
+
+
 
 
 

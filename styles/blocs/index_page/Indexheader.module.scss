@@ -38,7 +38,7 @@
     }
     @media (max-width: 719px) {
       flex-wrap: wrap;
-      padding-top: 11rem;
+      padding-top: 7rem;
       .header_bloc__left {
         width: 100%;
         h1 {
@@ -51,6 +51,7 @@
         }
         button {
           font-size: 1.1rem;
+          padding: 1.7rem 3.3rem;
         }
       }
       .header_bloc__right {
@@ -80,6 +81,7 @@
     }
 
     button {
+      font-family: Poppins;
       margin-top: 3rem;
       background-color: black;
       border: unset;

@@ -12,7 +12,7 @@ export default function ContactHeaderBloc() {
 
             <div className={style.contact_header}>
                 <div className={style.contact_header__background_image}>
-                    <Image src={contact_picture}/>
+                    <Image priority={true} src={contact_picture}/>
 
                 </div>
                 <h1>Commençons !</h1>

@@ -140,7 +140,7 @@
           padding: 1rem;
 
 
-          transition: transform 0.8s ease;;
+          transition: transform 0.5s ease;;
 
           .work_item__image {
             position: relative;
@@ -183,7 +183,7 @@
         }
         .work_item__text {
           padding: 0 1rem;
-          transition: transform 0.3s ease;
+          transition: transform 0.5s ease;
           .work_item_title {
             width: fit-content;
             position: relative;
@@ -222,7 +222,7 @@
           .work_item__image__container {
 
             transform: scale(1.05);
-            transition: transform 0.8s ease;
+            transition: transform 0.3s ease;
 
 
           }

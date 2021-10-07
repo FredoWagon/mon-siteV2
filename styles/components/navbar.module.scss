@@ -8,6 +8,8 @@
   }
 
   @media (max-width: 719px) {
+    transition: border-bottom-width 0.3s ease;
+    border-bottom: 1px solid #8080804f;
 
 
   }
@@ -73,6 +75,7 @@
 
 
       @media (max-width: 719px) {
+        display: none;
         &.is_not_display {
           display: none;
         }
@@ -164,6 +167,7 @@
         }
 
         h1 {
+          margin: 0.5rem 0;
           opacity: 0;
 
           &.is_visible {

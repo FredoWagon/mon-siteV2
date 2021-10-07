@@ -1,5 +1,5 @@
 .services_popup__container {
-  margin: 2rem 0;
+  margin: 9rem 0;
 
 
   @media (min-width: 1440px)  {
@@ -81,9 +81,24 @@
           width: 100%;
           padding-top: unset;
 
+          h3 {
+            font-size: 1.5rem !important;
+          }
+          .popup_images {
+
+            div {
+              transform: translateY(1rem);
+              opacity: 0.7;
+              width: 20rem;
+              height: 20rem;
+            }
+
+          }
+
 
         }
         @media (min-width: 720px) {
+
           &:hover {
             cursor: pointer;
             border-radius: 32px;

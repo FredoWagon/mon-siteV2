@@ -3,10 +3,14 @@ import {createContext, useContext, useState} from 'react';
 const AppContext = createContext();
 
 export function AppWrapper({ children }) {
+
+
     const [ourTeamAnimationDone, setOurTeamAnimationDone] = useState(false)
     const setState = () => {
         setOurTeamAnimationDone(true)
     }
+
+
 
     const value = {
         ourTeamAnimationDone,

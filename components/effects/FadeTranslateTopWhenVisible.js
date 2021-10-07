@@ -1,5 +1,5 @@
 import {InView, useInView} from "react-intersection-observer";
-import {useCallback, useRef} from "react";
+import {useCallback, useEffect, useRef} from "react";
 import style from "../../styles/effects/fadeTranslateTopWhenVisible.module.scss"
 
 export default function FadeTranslateTopWhenVisible(props) {
@@ -15,6 +15,7 @@ export default function FadeTranslateTopWhenVisible(props) {
         middle_mark_green: style.middle_entering_with_green_mark
 
     }
+
 
 
 
