@@ -232,6 +232,8 @@ export default function Navbar(props) {
                 <div className={style.burger__menu__container}>
                     <Link href="/"><a className={`${props.currentPage === "index" ? style.active_link : ""}`}>Home</a></Link>
                     <Link href="/services"><a className={`${props.currentPage === "services" ? style.active_link : ""}`}>Services</a></Link>
+                    <Link href="/about"><a className={`${props.currentPage === "services" ? style.active_link : ""}`}>A propos</a></Link>
+                    <Link href="/contact"><a className={`${props.currentPage === "services" ? style.active_link : ""}`}>Contact</a></Link>
                 </div>
             </div>
         </TranslateOnScroll>
