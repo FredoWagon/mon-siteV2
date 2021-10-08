@@ -10,7 +10,7 @@ import DeveloppementContactBloc from "../../components/blocs/service_developpeme
 export default function Developpement() {
 
     return (
-        <Layout currentPage="services" navbarStyle="background--green">
+        <Layout currentPage="developpement" navbarStyle="background--green">
 
             <DeveloppementHeaderBloc/>
             <DeveloppementMainInfo/>

@@ -10,7 +10,7 @@ import StaticToAppBloc from "../../components/blocs/service_siteweb/staticToAppB
 export default function Sitesweb() {
 
     return (
-        <Layout currentPage="services" navbarStyle="background--green">
+        <Layout currentPage="creationweb" navbarStyle="background--green">
             <SitewebHeaderBloc/>
             <StaticToAppBloc/>
 

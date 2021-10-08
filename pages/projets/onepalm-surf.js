@@ -9,7 +9,7 @@ import OnePalmContentBloc from "../../components/blocs/projects_pages/content_bl
 export default function OnepalmSurf() {
 
     return (
-        <Layout currentPage="travaux" navbarStyle="background--white">
+        <Layout currentPage="onepalm" navbarStyle="background--white">
             <OnePalmSurfHeaderBloc/>
             <OnePalmContentBloc/>
 

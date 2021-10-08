@@ -10,7 +10,7 @@ import ConceptionHeaderBloc from "../../components/blocs/service_conception/conc
 export default function Conception() {
 
     return (
-        <Layout currentPage="services" navbarStyle="background--blue">
+        <Layout currentPage="conception" navbarStyle="background--blue">
             <ConceptionHeaderBloc/>
 
 

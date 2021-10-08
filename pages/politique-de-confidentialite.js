@@ -6,7 +6,7 @@ import ConfidentialiteContentBloc from "../components/blocs/confidentialiteConte
 export default function PolitiqueDeConfidentialite() {
 
     return (
-        <Layout navbarStyle="background--green">
+        <Layout currentPage="confidentialite" navbarStyle="background--green">
             <ConfidentialiteContentBloc/>
 
 

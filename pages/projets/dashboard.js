@@ -9,7 +9,7 @@ import DashboardContentBloc1 from "../../components/blocs/projects_pages/content
 export default function Dashboard() {
 
     return (
-        <Layout currentPage="services" navbarStyle="background--white">
+        <Layout currentPage="dashboard" navbarStyle="background--white">
         <Image priority={true} placeholder={"blur"} src={dashboard_header}/>
             <DashboardContentBloc1/>
 

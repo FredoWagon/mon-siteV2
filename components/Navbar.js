@@ -21,6 +21,8 @@ export default function Navbar(props) {
     const titleLogo = useRef(null)
     // La ou est stoké la valeur étalon en fonction de la taille du with, provenant des medias querry du css qu premier chargement et sinon a partir de l'event resize
     const logoSizeValue = useRef(null)
+    //Active bullet ?
+    const [activeBullet, setActiveBullet] = useState(false)
     //Position du bullet
     const [bulletPosition, setBulletPosition] = useState(-10)
     // Desktop navbar
@@ -38,12 +40,22 @@ export default function Navbar(props) {
     // Changement du background de la navbar et modification de la couleur du navbar burger gestion du bullet
     useEffect( () => {
         // Gérer la position du bullet
-        if (props.currentPage) {
+        if (props.currentPage && props.currentPage !== "confidentialite" && props.currentPage !== "legale") {
             const links = {
                 services: serviceLink.current,
                 travaux: travauxLink.current,
                 nous: nousLink.current,
-                contact: contactLink.current
+                contact: contactLink.current,
+                creationweb: serviceLink.current,
+                ecommerce: serviceLink.current,
+                applicationweb: serviceLink.current,
+                dashboard: travauxLink.current,
+                medtandem: travauxLink.current,
+                onepalm: travauxLink.current,
+                trendcorner: travauxLink.current,
+                conception: serviceLink.current,
+                developpement: serviceLink.current,
+                referencement: serviceLink.current
             }
 
             const currentLink = links[props.currentPage]
@@ -55,6 +67,7 @@ export default function Navbar(props) {
             const bulletPosition = xCenterOfElement - leftNavBarDistance
             setBulletPosition(bulletPosition)
             setBulletInitialPosition(bulletPosition)
+            setActiveBullet(true)
 
 
 
@@ -189,15 +202,15 @@ export default function Navbar(props) {
 
                     <div className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ` }>
                         <Link href="/">
-                            <a>
-                                <h1 style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>POKOÙ WEB</h1>
+                            <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
+                               POKOÙ WEB
                             </a>
                         </Link>
                     </div>
 
                     <div className={style.navbar__bottom}>
                         <div ref={desktopNav} className={style.navbar__bottom__desktop}>
-                            <span ref={bullet} style={{left: `${bulletPosition}px`}} className={ `${style.nav__links_bullet}  ${props.currentPage ? style.bullet_active : ""}`}></span>
+                            <span ref={bullet} style={{left: `${bulletPosition}px`}} className={ `${style.nav__links_bullet}  ${activeBullet ? style.bullet_active : ""}`}></span>
                             <div className={style.nav__links_left}>
                                 <Link  href="/services">
                                     <a ref={serviceLink} onMouseOut={handleOut} onMouseOver={handleHover} >Nos services</a>
@@ -217,7 +230,7 @@ export default function Navbar(props) {
                             </div>
                         </div>
                         <div className={style.navbar__bottom__mobile}>
-                            <h1 className={`${ style.is_visible}`}>POKOÙ WEB</h1>
+                            <Link  href="/"><a className={`${ style.is_visible}`}>POKOÙ WEB</a></Link>
                             <div  onClick={openBurgerMenu} className={ `${style.burger__icon} ${burgerBlackVersion ? style.black_version : ""} ${burgerOpen ? style.is_open : ""}` }>
                                 <div className={style.icon__span}></div>
                                 <svg x="0" y="0"  width="54px" height="54px" viewBox="0 0 54 54">
@@ -230,10 +243,10 @@ export default function Navbar(props) {
             </div>
             <div className={`${style.burger__menu} ${burgerOpen ? style.burger__menu__open : ""}`}>
                 <div className={style.burger__menu__container}>
-                    <Link href="/"><a className={`${props.currentPage === "index" ? style.active_link : ""}`}>Home</a></Link>
+                    <Link href="/"><a className={`${!props.currentPage? style.active_link : ""}`}>Home</a></Link>
                     <Link href="/services"><a className={`${props.currentPage === "services" ? style.active_link : ""}`}>Services</a></Link>
-                    <Link href="/about"><a className={`${props.currentPage === "services" ? style.active_link : ""}`}>A propos</a></Link>
-                    <Link href="/contact"><a className={`${props.currentPage === "services" ? style.active_link : ""}`}>Contact</a></Link>
+                    <Link href="/about"><a className={`${props.currentPage === "nous" ? style.active_link : ""}`}>A propos</a></Link>
+                    <Link href="/contact"><a className={`${props.currentPage === "contact" ? style.active_link : ""}`}>Contact</a></Link>
                 </div>
             </div>
         </TranslateOnScroll>

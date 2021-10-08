@@ -7,7 +7,7 @@ import MentionsContentBloc from "../components/blocs/mentionsContentBloc";
 export default function MentionsLegales() {
 
     return (
-        <Layout navbarStyle="background--blue">
+        <Layout currentPage="legale" navbarStyle="background--blue">
             <MentionsContentBloc/>
 
 

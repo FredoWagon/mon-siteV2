@@ -33,6 +33,29 @@
         margin: unset;
         max-width: 17rem;
       }
+      ul {
+        margin: unset;
+        padding: unset;
+        li {
+          list-style: none;
+          opacity: 0.7;
+
+          &.active_current_page {
+            list-style: disc;
+            opacity: 1;
+            a {
+              &:hover {
+                opacity: 1 !important;
+              }
+            }
+          }
+          &.active_parent_page {
+            opacity: 1;
+
+
+          }
+        }
+      }
 
       .footer__sitemap {
         display: flex;
@@ -41,6 +64,7 @@
           display: flex;
           flex-direction: column;
           max-width: 8rem;
+
 
           @media (max-width: 989px) {
             font-size: 0.9rem;
@@ -54,13 +78,51 @@
             }
           }
         }
+        .sitemap_dynamic_item {
+          display: flex;
+
+          .sitemap_dynamic_services {
+            margin: 0 0 0 2rem;
+            a {
+              color: #fad10a;
+              transition: opacity 0.3s ease;
+              &:hover {
+                opacity: 0.5;
+                transition: opacity 0.3s ease;
+              }
+            }
+          }
+          .sitemap_dynamic_works {
+            margin: 0 0 0 2rem;
+            a {
+              color: #b4cce8;
+              transition: opacity 0.3s ease;
+              &:hover {
+                opacity: 0.5;
+                transition: opacity 0.3s ease;
+              }
+            }
+          }
+          .sitemap_dynamic_sub_services {
+            margin: 0 0 0 2rem;
+            a {
+              color: #41c2bb;
+              &:hover {
+                opacity: 0.5;
+                transition: opacity 0.3s ease;
+              }
+            }
+          }
+
+
+        }
       }
     }
     .footer__middle {
       border-top: 1px solid white;
       padding: 3rem 0 0 0;
       display: flex;
-      align-items: center;
+
       justify-content: space-between;
       @media (max-width: 989px) {
         font-size: 0.9rem;
@@ -161,28 +223,89 @@
     .footer_mobile__social {
       margin: 2rem 0;
       display: flex;
-      justify-content: center;
 
-      div {
-        margin-right: 1.5rem;
-        img {
+      .footer_social__item {
+        margin-right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.6rem;
 
-          width: 1.5rem;
-        }
+        border: 1px solid #ffffff52;
+        border-radius: 50%;
+
       }
+
+
+
+
 
 
     }
     .footer_mobile__links {
       display: flex;
-      flex-direction: column;
-      a {
-        color: white;
+      justify-content: space-between;
+      padding: 0 1rem;
+      ul {
+        margin: unset;
+        padding: unset;
+        li {
+          list-style: none;
+          opacity: 0.7;
+
+          &.active_current_page {
+            list-style: disc;
+            opacity: 1;
+          }
+          &.active_parent_page {
+            opacity: 1;
+          }
+        }
       }
+
+
+      .footer_mobile__links__global {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          margin: 0.1rem 0;
+          color: white;
+        }
+      }
+      .footer_mobile__dynamic_links {
+        display: flex;
+        flex-direction: column;
+        .footer_mobile__links__services {
+          margin-bottom: 1rem;
+          display: flex;
+          flex-direction: column;
+          a {
+            color: #fad10a;
+          }
+        }
+        .footer_mobile__links__sub_services {
+          margin-bottom: 1rem;
+          display: flex;
+          flex-direction: column;
+          a {
+            color: #41c2bb;
+          }
+        }
+        .footer_mobile__links__works {
+          margin-bottom: 1rem;
+          display: flex;
+          flex-direction: column;
+          a {
+            color: #b4cce8;
+          }
+        }
+      }
+
+
     }
 
     .mobile__footer_legal {
-      border-top: 1px solid rgba(255, 255, 255, 0.80);
+      border-top: 1px solid #ffffff2e;
       p {
         margin-bottom: 0;
         margin-top: 1.2rem;

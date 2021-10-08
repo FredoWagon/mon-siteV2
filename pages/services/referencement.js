@@ -9,7 +9,7 @@ import ReferencementContactBloc from "../../components/blocs/service_referenceme
 export default function Sitesweb() {
 
     return (
-        <Layout currentPage="services" navbarStyle="background--blue">
+        <Layout currentPage="referencement" navbarStyle="background--blue">
             <ReferencementHeaderBloc/>
             <WhatWeOfferBloc/>
             <WhyUsBloc/>

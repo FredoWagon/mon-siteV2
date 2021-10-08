@@ -11,7 +11,7 @@ import MainInfoBloc from "../../components/blocs/service_ecommerce/mainInfoBloc"
 export default function Ecommerce() {
 
     return (
-        <Layout currentPage="services" navbarStyle="background--yellow">
+        <Layout currentPage="ecommerce" navbarStyle="background--yellow">
             <EcommerceHeaderBloc/>
             <MainInfoBloc/>
 

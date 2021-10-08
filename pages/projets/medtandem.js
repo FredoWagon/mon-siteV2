@@ -7,7 +7,7 @@ import MedtandemContentBloc2 from "../../components/blocs/projects_pages/content
 export default function Medtandem() {
 
     return (
-        <Layout currentPage="services" navbarStyle="background--black">
+        <Layout currentPage="medtandem" navbarStyle="background--black">
             <ProjectHeaderBloc1/>
             <MedtandemContentBloc1/>
             <MedtandemContentBloc2/>

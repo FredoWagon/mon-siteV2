@@ -7,7 +7,7 @@ import WebappMainInfo from "../../components/blocs/service_webap/webappMainInfo"
 export default function Applicationsweb() {
 
     return (
-        <Layout currentPage="services" navbarStyle="background--blue">
+        <Layout currentPage="applicationweb" navbarStyle="background--blue">
 
             <WebappHeaderBloc/>
             <WebappMainInfo/>

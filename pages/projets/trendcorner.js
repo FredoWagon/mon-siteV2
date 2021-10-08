@@ -8,7 +8,7 @@ import TrendcornerContentBloc1 from "../../components/blocs/projects_pages/conte
 export default function Trendcorner() {
 
     return (
-        <Layout currentPage="services" navbarStyle="background--black">
+        <Layout currentPage="trendcorner" navbarStyle="background--black">
             <TrendCornerHeaderBloc/>
             <TrendcornerContentBloc1/>
 
