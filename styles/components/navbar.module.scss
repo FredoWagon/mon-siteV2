@@ -314,7 +314,7 @@
     }
   }
   &.background--blue {
-    background-color: #b4cce8 !important;
+    background-color: #b4cce8 ;
     @media (max-width: 719px) {
       border-bottom: 1px solid #D6E3F2;
     }
@@ -324,7 +324,7 @@
     }
   }
   &.background--green {
-    background-color: #1c524f !important;
+    background-color: #1c524f;
     color: white;
     @media (max-width: 719px) {
       border-bottom: 1px solid #4A7373;
@@ -345,7 +345,7 @@
     }
   }
   &.background--yellow {
-    background-color: #fad10a !important;
+    background-color: #fad10a;
     @media (max-width: 719px) {
       border-bottom: 1px solid #FAEB94;
     }
@@ -355,7 +355,7 @@
     }
   }
   &.background--black {
-    background-color: #222222 !important;
+    background-color: #222222 ;
     color: white;
     @media (max-width: 719px) {
       border-bottom: 1px solid #595759;

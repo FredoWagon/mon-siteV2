@@ -6,6 +6,7 @@ import {useEffect, useRef, useState, useContext} from "react";
 import Link from 'next/link'
 import {useAppContext} from "../../../context/state";
 import teamPic from "../../../public/team.jpg"
+import collectif_illustration from "../../../public/collectif_illustration.png"
 import patch1 from "../../../public/patchwork1.jpg"
 import patch2 from "../../../public/patchwork2.jpg"
 import patch3 from "../../../public/patchwork3.jpg"
@@ -333,7 +334,7 @@ export default function OurTeam() {
                     </div>
                     <div ref={agencyImageContainer} className={ `${style.our_team__agency_image} ${style.agency_image__before_animation}`}>
                         <div ref={patchContainer} className={style.patchwork_image}>
-                            <Image src={test_illu}/>
+                            <Image src={collectif_illustration}/>
                         </div>
                     </div>
                 </div>

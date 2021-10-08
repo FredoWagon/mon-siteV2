@@ -1,6 +1,7 @@
 import style from '../../../styles/blocs/service_siteweb/sitewebHeaderBloc.module.scss'
 import Image from "next/image";
 import test_illu from '../../../public/landing_illu.svg'
+import conception_illustration from "../../../public/conception_illustration.png"
 import Link from "next/link";
 import SpeedFadeIn from "../../effects/SpeedFadeIn";
 
@@ -8,7 +9,7 @@ export default function ConceptionHeaderBloc() {
 
     return (
 
-        <div className={`${style.siteweb_header__container} ${style.blue_background}`}>
+        <div className={`${style.siteweb_header__container} ${style.blue_background} ${style.conception_header}`}>
             <SpeedFadeIn customClass="custom_siteweb_header">
                 <div className={style.siteweb_header}>
                     <div className={style.siteweb_header__left}>
@@ -23,7 +24,7 @@ export default function ConceptionHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image src={test_illu}/>
+                        <Image src={conception_illustration}/>
 
                     </div>
 

@@ -74,7 +74,7 @@ export default function Navbar(props) {
 
         }
         setBackgroundColor(props.backgroundColor)
-        if (props.backgroundColor === "background--white") {
+        if (["background--white", "background--blue", "background--yellow"].includes(props.backgroundColor)) {
             setBurgerBlackVersion(true)
         }
         return () => {

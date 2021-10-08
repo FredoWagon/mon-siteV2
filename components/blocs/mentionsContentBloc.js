@@ -85,10 +85,12 @@ export default function MentionsContentBloc() {
 
                         </div>
                         <div className={style.confidentialite__maint__text_bloc}>
-                            <h2>9. Crédits Photos</h2>
+                            <h2>9. Crédits Photos - Illustrations</h2>
                            <ul>
                                <li>pix</li>
                                <li>clouck</li>
+                               <li>Illustrations from <Link href="https://absurd.design/"><a target="_blank" >absurd.design</a></Link></li>
+                               <li>Illustrations from <Link href="https://craftwork.design/"><a target="_blank">craftwork.design</a></Link></li>
                            </ul>
 
                         </div>

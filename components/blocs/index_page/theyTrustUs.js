@@ -12,15 +12,27 @@ export default function TheyTrustUs() {
         <div className={style.trust_bloc__container}>
             <div className={style.trust_bloc}>
                 <h5>Ils nous font confiance</h5>
-                <div className={style.trust_items}>
-                    <Image
-                           objectFit="contain" src={medTandem}/>
-                    <Image
-                           objectFit="contain" src={logoTest}/>
-                    <Image
-                           objectFit="contain" src={logoTest2}/>
-                    <Image
-                           objectFit="contain" src={logoTest3}/>
+                <div className={style.trust_items__container}>
+                    <div className={style.trust_items}>
+                        <Image
+                            objectFit="contain" src={medTandem}/>
+                    </div>
+                    <div className={style.trust_items}>
+                        <Image
+                            objectFit="contain" src={logoTest}/>
+                    </div>
+                    <div className={style.trust_items}>
+                        <Image
+                            objectFit="contain" src={logoTest2}/>
+                    </div>
+                    <div className={style.trust_items}>
+                        <Image
+                            objectFit="contain" src={logoTest3}/>
+                    </div>
+
+
+
+
 
                 </div>
             </div>

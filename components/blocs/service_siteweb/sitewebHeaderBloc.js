@@ -1,6 +1,7 @@
 import style from '../../../styles/blocs/service_siteweb/sitewebHeaderBloc.module.scss'
 import Image from "next/image";
 import test_illu from '../../../public/landing_illu.svg'
+import siteweb_illustration from "../../../public/website_illustration.png"
 import Link from "next/link";
 import SpeedFadeIn from "../../effects/SpeedFadeIn";
 

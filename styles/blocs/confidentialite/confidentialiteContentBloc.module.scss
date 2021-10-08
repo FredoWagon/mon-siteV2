@@ -145,6 +145,19 @@
 
           }
 
+          a {
+            background-color: unset;
+            color: unset;
+            text-decoration: underline;
+            padding: unset;
+            transition: opacity 0.3s ease;
+            &:hover {
+              opacity: 0.7;
+              transition: opacity 0.3s ease;
+            }
+
+          }
+
 
           h2 {
             font-size: 3.1rem;

@@ -4,7 +4,7 @@ import style from '../../../styles/blocs/service_page/ourProcessBloc.module.scss
 import concept from '../../../public/concept.png'
 import develop from '../../../public/devellopement.png'
 import search from '../../../public/search.png'
-import launch from '../../../public/lancement.png'
+
 
 export default function OurProcessBloc() {
 
@@ -45,7 +45,7 @@ export default function OurProcessBloc() {
                     </div>
                     <div className={style.our_process__items}>
                         <div className={style.our_process__image}>
-                            <Image src={launch}/>
+                            <Image src={search}/>
                         </div>
                         <h3>Lancement et assistance</h3>
                         <p>Après le déploiement du produit, nous suivons également les étapes du produit et vous fournissons une assistance continue.</p>

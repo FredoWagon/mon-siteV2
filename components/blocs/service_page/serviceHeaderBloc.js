@@ -2,6 +2,7 @@ import SpeedFadeIn from "../../effects/SpeedFadeIn";
 import style from "../../../styles/blocs/service_page/serviceheader.module.scss"
 import illuService from "../../../public/illu_service.png";
 import serviceHeader from '../../../public/service_header.png'
+import service_illustration from "../../../public/service_illustration.png"
 import Image from "next/image";
 
 export default function ServiceHeaderBloc() {
@@ -19,7 +20,7 @@ export default function ServiceHeaderBloc() {
                 </div>
 
                 <div className={style.header_bloc__right}>
-                    <Image  src={serviceHeader}/>
+                    <Image  src={service_illustration}/>
 
                 </div>
             </div>

@@ -20,17 +20,18 @@
   }
   @media (min-width: 720px) and (max-width: 989px) {
     max-width: 720px;
-    padding-top: 15rem;
+    padding-top: 17rem;
     flex-wrap: nowrap;
 
 
   }
   @media (max-width: 719px) {
     flex-wrap: wrap-reverse;
-    padding-top: 7rem;
+    padding-top: 2rem;
     .header_bloc__right {
       width: 100%;
       padding-top: 4rem;
+
     }
   }
 
@@ -43,7 +44,8 @@
     margin: 0 30px;
     @media (max-width: 719px) {
       width: 100%;
-      margin-top: 3rem;
+      margin-top: 1rem;
+      padding-bottom: 3rem;
     }
 
 
@@ -91,6 +93,7 @@
 
     img {
       filter: sepia(1);
+
     }
 
 

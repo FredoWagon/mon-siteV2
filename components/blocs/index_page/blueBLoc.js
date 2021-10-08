@@ -2,6 +2,7 @@ import style from '../../../styles/blocs/index_page/BlueBloc.module.scss'
 import Link from "next/link";
 import Image from 'next/image';
 import illuBlue from '../../../public/illu_blue_bloc.png'
+import avancer_illustration from "../../../public/avancer_illustration.png"
 import illuBlue_arabica from '../../../public/illu_blue_bloc_arabica.png'
 
 
@@ -19,7 +20,7 @@ export default function BlueBLoc() {
                 </div>
                 <div className={style.blue_bloc__right}>
                     <div className={style.blue_bloc__image}>
-                        <Image src={illuBlue_arabica}/>
+                        <Image src={avancer_illustration}/>
 
                     </div>
 

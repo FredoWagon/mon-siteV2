@@ -1,6 +1,7 @@
 import style from '../../../styles/blocs/service_siteweb/sitewebHeaderBloc.module.scss'
 import Image from "next/image";
 import test_illu from '../../../public/landing_illu.svg'
+import ecommerce_illustration from "../../../public/ecommerce_illustration.png"
 import Link from "next/link";
 import SpeedFadeIn from "../../effects/SpeedFadeIn";
 
@@ -8,7 +9,7 @@ export default function EcommerceHeaderBloc() {
 
     return (
 
-        <div className={`${style.siteweb_header__container} ${style.yellow_background}`}>
+        <div className={`${style.siteweb_header__container} ${style.yellow_background} ${style.ecommerce_header}`}>
             <SpeedFadeIn customClass="custom_siteweb_header">
                 <div className={style.siteweb_header}>
                     <div className={style.siteweb_header__left}>
@@ -22,7 +23,7 @@ export default function EcommerceHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image src={test_illu}/>
+                        <Image src={ecommerce_illustration}/>
 
                     </div>
 

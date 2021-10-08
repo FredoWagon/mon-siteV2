@@ -1,6 +1,9 @@
 .blue_bloc__container {
   background-color: #b4cce8;
   padding: 7.5rem 0;
+  @media (max-width: 719px) {
+    padding: 3.5rem 0 2.5rem 0;
+  }
 
   .blue_bloc {
     margin: auto;
@@ -16,7 +19,8 @@
       max-width: 720px;
     }
     @media (max-width: 719px) {
-      display: none;
+      flex-wrap: wrap;
+      margin: 0 2rem;
     }
 
     .blue_bloc__left {
@@ -25,6 +29,13 @@
 
       width: 36%;
       margin: 0 30px;
+      @media (min-width: 720px) and (max-width: 989px) {
+        width: 50%;
+      }
+      @media (max-width: 719px) {
+        width: 100%;
+        margin: unset;
+      }
 
       h2 {
         color: #1c524f;
@@ -32,12 +43,41 @@
         font-weight: unset;
         line-height: 4.5rem;
         margin: unset;
+        @media (min-width: 960px) and (max-width: 1439px) {
+          font-size: 3.5rem;
+          line-height: 3.5rem;
+        }
+
+        @media (min-width: 720px) and (max-width: 989px) {
+          font-size: 3.5rem;
+          line-height: 3.5rem;
+        }
+        @media (max-width: 719px) {
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+
+        }
       }
       p {
         margin-top: 2rem;
         font-size: 1.2rem;
         line-height: 1.9rem;
         max-width: 28rem;
+        @media (min-width: 960px) and (max-width: 1439px) {
+          font-size: 1.1rem;
+          line-height: 1.9rem;
+        }
+
+        @media (min-width: 720px) and (max-width: 989px) {
+          font-size: 1.1rem;
+          line-height: 1.7rem;
+        }
+        @media (max-width: 719px) {
+          font-size: 1.1rem;
+          line-height: unset;
+
+
+        }
 
       }
       button {
@@ -47,8 +87,26 @@
         border: unset;
         color: white;
         padding: 1.5rem 3.4rem;
+        border-radius: 2px;
         font-size: 1.3rem;
         transition: opacity 0.3s ease;
+        @media (min-width: 960px) and (max-width: 1439px) {
+          font-size: 1.1rem;
+          padding: 1.2rem 2.5rem;
+        }
+
+        @media (min-width: 720px) and (max-width: 989px) {
+          font-size: 1.1rem;
+          padding: 1.2rem 2.5rem;
+        }
+        @media (max-width: 719px) {
+          font-size: 1.1rem;
+          padding: 1.2rem 2.5rem;
+          margin-top: 1.5rem;
+
+
+
+        }
         &:hover {
           cursor: pointer;
           opacity: 0.6;
@@ -59,6 +117,13 @@
     }
     .blue_bloc__right {
       width: 66%;
+      @media (max-width: 719px) {
+        margin-top: 4rem;
+        width: 100%;
+      }
+      img {
+        filter: sepia(1);
+      }
 
     }
   }

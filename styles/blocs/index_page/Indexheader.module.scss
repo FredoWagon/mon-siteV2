@@ -101,8 +101,19 @@
     width: 50%;
     margin: 0 30px;
 
+    img {
+      filter: sepia(0.7);
+
+    }
+
     .image_animation {
       position: relative;
+      animation: bounce 7s ease infinite;
+      @keyframes bounce{
+        from {transform: translateY(0)}
+        50%  {transform: translateY(-1rem)}
+        to   {transform: translateY(0)}
+      }
       .tablette_image {
         position: absolute;
         width: 36rem;

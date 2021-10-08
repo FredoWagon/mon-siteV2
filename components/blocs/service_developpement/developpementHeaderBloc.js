@@ -1,6 +1,7 @@
 import style from '../../../styles/blocs/service_siteweb/sitewebHeaderBloc.module.scss'
 import Image from "next/image";
 import test_illu from '../../../public/landing_illu.svg'
+import developpement_illustration from '../../../public/developpement_illustration.png'
 import Link from "next/link";
 import SpeedFadeIn from "../../effects/SpeedFadeIn";
 
@@ -8,7 +9,7 @@ export default function DeveloppementHeaderBloc() {
 
     return (
 
-        <div className={`${style.siteweb_header__container} ${style.green_background}`}>
+        <div className={`${style.siteweb_header__container} ${style.green_background} ${style.developpement_header}`}>
             <SpeedFadeIn customClass="custom_webapp_header">
                 <div className={style.siteweb_header}>
                     <div className={style.siteweb_header__left}>
@@ -22,7 +23,7 @@ export default function DeveloppementHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image src={test_illu}/>
+                        <Image src={developpement_illustration}/>
 
                     </div>
 
