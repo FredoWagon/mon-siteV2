@@ -25,6 +25,9 @@
 
     .navbar__bottom {
       .navbar__bottom__mobile {
+        .pokou_logo_mobile {
+          filter: invert(0) !important;
+        }
         .burger__icon {
           svg {
             stroke: black !important;
@@ -102,10 +105,9 @@
       .pokou_logo {
         opacity: 1;
         position: absolute;
-        top: 2.35rem;
         left: 4rem;
         width: 69px;
-        transition: transform 2s ease, opacity 3s ease, width 0.3s ease;
+        transition: transform 2s ease, opacity 3s ease, width 0.3s ease, left 0.3s ease;
 
       }
 
@@ -203,14 +205,26 @@
           display: none;
         }
         a {
+          position: relative;
           font-weight: bold;
           margin: 0.5rem 0;
           font-size: 2rem;
           opacity: 0;
+          padding-left: 2.85rem;
 
           &.is_visible {
             opacity: 1;
             transition: opacity 1.5s ;
+          }
+          span {
+            position: absolute;
+            left: 0;
+          }
+          .pokou_logo_mobile {
+            position: absolute;
+            width: 1.46rem;
+            left: 1.35rem;
+
           }
         }
 
@@ -340,6 +354,11 @@
             background-color: white;
           }
         }
+        .navbar__bottom__mobile {
+          .pokou_logo_mobile {
+            filter: invert(1);
+          }
+        }
       }
 
     }
@@ -387,6 +406,11 @@
             background-color: white;
           }
         }
+        .navbar__bottom__mobile {
+          .pokou_logo_mobile {
+            filter: invert(1);
+          }
+        }
       }
 
     }
@@ -415,6 +439,18 @@
       .navbar__top {
         .pokou_logo {
           filter: invert(1);
+        }
+      }
+      .navbar__bottom {
+        .navbar__bottom__desktop {
+          .nav__links_bullet {
+            background-color: white;
+          }
+        }
+        .navbar__bottom__mobile {
+          .pokou_logo_mobile {
+            filter: invert(1);
+          }
         }
       }
     }

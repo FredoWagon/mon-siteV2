@@ -181,36 +181,36 @@ export default function Navbar(props) {
                 setLogoSize(value)
                 setIsNotOnTop(false)
                 pokouLogo.current.style.width = `${logoWidthValue}px`
-                pokouLogo.current.style.top = ""
+
                 pokouLogo.current.style.left = ""
                 titleLogo.current.style.marginLeft = ""
             } else if (body > 20 && body < 100) {
                 setLogoSize(value * 0.8)
                 titleLogo.current.style.marginLeft = "6.9rem"
-                pokouLogo.current.style.transition = "0.3s ease"
+
                 pokouLogo.current.style.width = `${logoWidthValue * 0.8}px`
-                pokouLogo.current.style.top = "1.9rem"
+
                 pokouLogo.current.style.left = "3.3rem"
             } else if (body > 101 && body < 145 ) {
                 setLogoSize(value * 0.6)
                 titleLogo.current.style.marginLeft = "5.16rem"
                 pokouLogo.current.style.width = `${logoWidthValue * 0.6}px`
-                pokouLogo.current.style.top = "1.32rem"
+
                 pokouLogo.current.style.left = "2.45rem"
             } else if (body > 145 && body < 160) {
                 setLogoSize(value * 0.5)
                 titleLogo.current.style.marginLeft = "4.3rem"
                 pokouLogo.current.style.width = `${logoWidthValue * 0.5}px`
-                pokouLogo.current.style.top = "1.32rem"
+
                 pokouLogo.current.style.left = "2rem"
 
             } else if (body > 160) {
                 setIsNotOnTop(true)
-                setLogoSize(value * 0.35)
-                titleLogo.current.style.marginLeft = "3.05rem"
-                pokouLogo.current.style.width = `${logoWidthValue * 0.35}px`
-                pokouLogo.current.style.top = "0.75rem"
-                pokouLogo.current.style.left = "1.43rem"
+                setLogoSize(value * 0.40)
+                titleLogo.current.style.marginLeft = "3.4rem"
+                pokouLogo.current.style.width = `${logoWidthValue * 0.4}px`
+
+                pokouLogo.current.style.left = "1.65rem"
             }
         }
     }
@@ -248,13 +248,14 @@ export default function Navbar(props) {
                 <div className={style.navbar_container}>
 
                     <div ref={navBarTop} className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ${!logoAnimation ? style.logo_animation : ""} ` }>
-                        <span ref={pokouLogo} className={style.pokou_logo}>
-                            <Image src={pokou_logo}/>
-                        </span>
+
 
                         <Link href="/">
                             <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
                                 <span>P</span>KOÙ WEB
+                                <span ref={pokouLogo} className={style.pokou_logo}>
+                            <Image src={pokou_logo}/>
+                        </span>
                             </a>
                         </Link>
                     </div>
@@ -281,7 +282,9 @@ export default function Navbar(props) {
                             </div>
                         </div>
                         <div className={style.navbar__bottom__mobile}>
-                            <Link  href="/"><a className={`${ style.is_visible}`}>POKOÙ WEB</a></Link>
+                            <Link  href="/"><a className={`${ style.is_visible}`}><span>P</span><span className={style.pokou_logo_mobile}>
+                            <Image src={pokou_logo}/>
+                        </span>KOÙ WEB</a></Link>
                             <div  onClick={openBurgerMenu} className={ `${style.burger__icon} ${burgerBlackVersion ? style.black_version : ""} ${burgerOpen ? style.is_open : ""}` }>
                                 <div className={style.icon__span}></div>
                                 <svg x="0" y="0"  width="54px" height="54px" viewBox="0 0 54 54">
