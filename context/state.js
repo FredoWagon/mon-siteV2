@@ -6,15 +6,21 @@ export function AppWrapper({ children }) {
 
 
     const [ourTeamAnimationDone, setOurTeamAnimationDone] = useState(false)
+    const [logoAnimation, setLogoAnimation] = useState(false)
     const setState = () => {
         setOurTeamAnimationDone(true)
+    }
+    const setLogoAnimationState = ( ) => {
+        setLogoAnimation(true)
     }
 
 
 
     const value = {
         ourTeamAnimationDone,
-        setState
+        logoAnimation,
+        setState,
+        setLogoAnimationState
     }
 
     return (

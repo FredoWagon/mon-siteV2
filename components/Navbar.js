@@ -2,8 +2,10 @@ import style from '../styles/components/navbar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/logo.svg'
-import {useEffect, useRef, useState} from "react";
+import {useCallback, useEffect, useRef, useState} from "react";
 import TranslateOnScroll from "./effects/navbarTranslateOnScroll";
+import pokou_logo from "../public/pokou_logo.svg"
+import {useAppContext} from "../context/state";
 
 export default function Navbar(props) {
 
@@ -36,6 +38,13 @@ export default function Navbar(props) {
     const contactLink = useRef(null)
     // Bullet position
     const [bulletInitialPosition, setBulletInitialPosition] = useState()
+
+    // pour lanimation du logo
+    const navBarTop = useRef(null);
+    const {logoAnimation, setLogoAnimationState} = useAppContext();
+    const pokouLogo = useRef(null);
+    const pokouLogoSize = useRef(null)
+
 
     // Changement du background de la navbar et modification de la couleur du navbar burger gestion du bullet
     useEffect( () => {
@@ -84,10 +93,25 @@ export default function Navbar(props) {
     // Initialisation du composant
     useEffect(() => {
         const title = titleLogo.current
+        const logo = pokouLogo.current
         const titleFontSize = parseInt(window.getComputedStyle(title, null).getPropertyValue('font-size'));
+        const logoWidth = parseInt(window.getComputedStyle(logo, null).getPropertyValue('width'));
         setLogoSize(titleFontSize)
         logoSizeValue.current = titleFontSize
+        pokouLogoSize.current = logoWidth
+
+
+        if (!logoAnimation) {
+            navBarTop.current.classList.remove(style.logo_animation)
+            setLogoAnimationState(true);
+        }
+
+
+
+
     }, [])
+
+
 
     // Modification font-size sur resize
     useEffect(() => {
@@ -149,21 +173,44 @@ export default function Navbar(props) {
     const handleFontSize = () => {
         const body = window.scrollY
         let value = logoSizeValue.current
+        let logoWidthValue = pokouLogoSize.current
+        console.log(logoWidthValue)
 
         if (window.innerWidth > 719 ) {
             if (body < 20) {
                 setLogoSize(value)
                 setIsNotOnTop(false)
+                pokouLogo.current.style.width = `${logoWidthValue}px`
+                pokouLogo.current.style.top = ""
+                pokouLogo.current.style.left = ""
+                titleLogo.current.style.marginLeft = ""
             } else if (body > 20 && body < 100) {
                 setLogoSize(value * 0.8)
+                titleLogo.current.style.marginLeft = "6.9rem"
+                pokouLogo.current.style.transition = "0.3s ease"
+                pokouLogo.current.style.width = `${logoWidthValue * 0.8}px`
+                pokouLogo.current.style.top = "1.9rem"
+                pokouLogo.current.style.left = "3.3rem"
             } else if (body > 101 && body < 145 ) {
                 setLogoSize(value * 0.6)
+                titleLogo.current.style.marginLeft = "5.16rem"
+                pokouLogo.current.style.width = `${logoWidthValue * 0.6}px`
+                pokouLogo.current.style.top = "1.32rem"
+                pokouLogo.current.style.left = "2.45rem"
             } else if (body > 145 && body < 160) {
                 setLogoSize(value * 0.5)
+                titleLogo.current.style.marginLeft = "4.3rem"
+                pokouLogo.current.style.width = `${logoWidthValue * 0.5}px`
+                pokouLogo.current.style.top = "1.32rem"
+                pokouLogo.current.style.left = "2rem"
 
             } else if (body > 160) {
                 setIsNotOnTop(true)
                 setLogoSize(value * 0.35)
+                titleLogo.current.style.marginLeft = "3.05rem"
+                pokouLogo.current.style.width = `${logoWidthValue * 0.35}px`
+                pokouLogo.current.style.top = "0.75rem"
+                pokouLogo.current.style.left = "1.43rem"
             }
         }
     }
@@ -200,17 +247,21 @@ export default function Navbar(props) {
             <div  className={`${style.navbar} ${isNotOnTop ? style.navbar__grey_line : ""} ${style[backgroundColor]} ${burgerOpen ? style.menu_opened : "" }`}>
                 <div className={style.navbar_container}>
 
-                    <div className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ` }>
+                    <div ref={navBarTop} className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ${!logoAnimation ? style.logo_animation : ""} ` }>
+                        <span ref={pokouLogo} className={style.pokou_logo}>
+                            <Image src={pokou_logo}/>
+                        </span>
+
                         <Link href="/">
                             <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
-                               POKOÙ WEB
+                                <span>P</span>KOÙ WEB
                             </a>
                         </Link>
                     </div>
 
                     <div className={style.navbar__bottom}>
                         <div ref={desktopNav} className={style.navbar__bottom__desktop}>
-                            <span ref={bullet} style={{left: `${bulletPosition}px`}} className={ `${style.nav__links_bullet}  ${activeBullet ? style.bullet_active : ""}`}></span>
+                            <span ref={bullet} style={{left: `${bulletPosition}px`}} className={ `${style.nav__links_bullet}  ${activeBullet ? style.bullet_active : ""}`}/>
                             <div className={style.nav__links_left}>
                                 <Link  href="/services">
                                     <a ref={serviceLink} onMouseOut={handleOut} onMouseOver={handleHover} >Nos services</a>

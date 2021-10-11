@@ -14,7 +14,7 @@ export default function Layout(props) {
         <>
             <Head>
                 <title>Bonjour</title>
-                <link rel="shortcut icon" href="/logo.svg"/>
+                <link rel="shortcut icon" href="/pokou_favicon.svg"/>
                 {/*google font*/}
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
