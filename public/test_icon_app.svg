@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 20V44L32 56L56 44V20L32 8L8 20Z" stroke="black" stroke-miterlimit="5"/>
+    <path d="M32 32L56 20" stroke="black" stroke-miterlimit="5"/>
+    <path d="M32 56V32" stroke="black" stroke-miterlimit="5"/>
+    <path d="M56 44L32 32" stroke="black" stroke-miterlimit="5"/>
+    <path d="M8 44L32 32" stroke="black" stroke-miterlimit="5"/>
+    <path d="M8 20L32 32" stroke="black" stroke-miterlimit="5"/>
+    <path d="M32 8V32" stroke="black" stroke-miterlimit="5"/>
+</svg>
