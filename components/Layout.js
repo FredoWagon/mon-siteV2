@@ -3,8 +3,11 @@ import Footer from "./Footer";
 import Head from 'next/head'
 import {useEffect} from "react";
 
+import CookieModal from "./CookieModal";
+
 
 export default function Layout(props) {
+
 
     useEffect( () => {
 
@@ -30,6 +33,7 @@ export default function Layout(props) {
             <main>{props.children}</main>
 
             <Footer currentPage={props.currentPage}/>
+            <CookieModal/>
         </>
     )
 }

@@ -236,7 +236,7 @@ export default function OurTeam() {
     // Animation du texte du menu en fonction du scroll
     const changeMenuOnScroll = () => {
         const itemList = ourRight.current.children
-        console.log(itemList)
+
         const viewPortDistance = viewPortHeight * animationDistance
         Object.values(itemList).forEach((element) => {
             if (element.getBoundingClientRect().top < viewPortDistance + 50 && element.getBoundingClientRect().bottom > viewPortDistance) {
@@ -283,10 +283,10 @@ export default function OurTeam() {
     }
 
     const hoverPatchImage = (e) => {
-        console.log(e)
+
 
         const element = e.target
-        console.log(element)
+
         element.style.zIndex = "6"
         element.style.zIndex = "10"
         element.style.transition="transform 0.5s ease, filter 0.5s ease"
@@ -395,7 +395,7 @@ export default function OurTeam() {
                         <div ref={ourRight} className={style.our_team__content}>
 
                             <div ref={projectItem} data-item="1" className={style.scrolling_item}>
-                                <FadeTranslateTopWhenVisible tresholdOption={0} animation="slow">
+                                <FadeTranslateTopWhenVisible tresholdOption={1} animation="slow">
                                     <h4>Un projet !</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta distinctio dolor dolorum eos error ipsam maxime nesciunt nostrum officiis quidem tempora temporibus tenetur ut vero, voluptas voluptatum! Consequuntur, vero.</p>
                                 </FadeTranslateTopWhenVisible>
@@ -403,7 +403,7 @@ export default function OurTeam() {
 
 
                             <div ref={interlocuteurItem} data-item="2" className={style.scrolling_item}>
-                                <FadeTranslateTopWhenVisible tresholdOption={0} animation="slow">
+                                <FadeTranslateTopWhenVisible tresholdOption={1} animation="slow">
                                     <h4>Un interlocuteur</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque blanditiis cupiditate illum magni modi perspiciatis quibusdam ratione repudiandae veritatis. Aperiam ducimus eaque eveniet maiores vero. Corporis cum repudiandae unde.</p>
                                 </FadeTranslateTopWhenVisible>
@@ -411,7 +411,7 @@ export default function OurTeam() {
 
 
                             <div ref={devisItem} data-item="3" className={style.scrolling_item}>
-                                <FadeTranslateTopWhenVisible tresholdOption={0} animation="slow">
+                                <FadeTranslateTopWhenVisible tresholdOption={1} animation="slow">
                                     <h4>Un devis !</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda, ducimus expedita harum illum officia qui sed voluptas. Accusamus accusantium aliquam architecto, eos hic magnam nulla perspiciatis sint veniam voluptatibus?</p>
                                 </FadeTranslateTopWhenVisible>
@@ -419,7 +419,7 @@ export default function OurTeam() {
 
 
                             <div ref={surMesureItem} data-item="4" className={style.scrolling_item}>
-                                <FadeTranslateTopWhenVisible tresholdOption={0} animation="slow">
+                                <FadeTranslateTopWhenVisible tresholdOption={1} animation="slow">
                                     <h4>Une equipe !</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor ea laudantium omnis quaerat. Commodi, est, numquam. Accusantium, facere id laboriosam minima molestias, numquam omnis, possimus quam quos soluta tempora!</p>
                                 </FadeTranslateTopWhenVisible>

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import logo from "../public/logo.svg";
 import instagram from "../public/instagram.svg";
 import facebook from "../public/facebook.svg";
+import pokou_logo from "../public/pokou_logo.svg"
 import flickr from "../public/flickr.svg";
 import copryright from "../public/droits-dauteur.svg"
 import Link from 'next/link';
@@ -21,7 +22,7 @@ export default function Footer(props) {
                                 <li className={ !props.currentPage ? style.active_current_page : ""}>  <Link href="/">Accueil</Link></li>
                                 <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/services" >Nos services</Link></li>
                                 <li className={`${["dashboard", "medtandem", "trendcorner", "onepalm"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="#">Travaux</Link></li>
-                                <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/about">About</Link></li>
+                                <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/about">A propos</Link></li>
                             </ul>
                         </div>
                         <div className={style.sitemap_item}>
@@ -115,7 +116,8 @@ export default function Footer(props) {
                     </div>
                 </div>
                 <div className={style.footer__bottom}>
-                    <h1>pokoù Web</h1>
+                    <div className={style.footer_title}>pokoù Web
+                    </div>
                 </div>
                 <div className={style.footer_legal}>
                     <p>© 2021 PokoùWeb, tous droits réservés -</p>
@@ -150,7 +152,7 @@ export default function Footer(props) {
                             <li className={ !props.currentPage ? style.active_current_page : ""}>  <Link href="/">Accueil</Link></li>
                             <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/services" >Nos services</Link></li>
                             <li className={`${["dashboard", "medtandem", "trendcorner", "onepalm"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="#">Travaux</Link></li>
-                            <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/about">About</Link></li>
+                            <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/about">A propos</Link></li>
                             <li  className={ props.currentPage === "contact" ? style.active_current_page : ""}> <Link href="/contact" >Contact</Link></li>
                         </ul>
                     </div>
@@ -223,7 +225,8 @@ export default function Footer(props) {
 
                 </div>
 
-                <p className={style.footer_logo}>pokoù Web</p>
+                <p className={style.footer_logo}>pokoù Web
+                </p>
                 <div className={style.mobile__footer_legal}>
                     <p>© 2021 PokoùWeb, tous droits réservés</p>
                     <Link href="/mentions-legales">
@@ -235,6 +238,9 @@ export default function Footer(props) {
 
                 </div>
 
+            </div>
+            <div className={style.footer_logo__image}>
+                <Image src={pokou_logo}/>
             </div>
         </div>
     )

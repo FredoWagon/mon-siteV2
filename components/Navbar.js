@@ -68,7 +68,7 @@ export default function Navbar(props) {
             }
 
             const currentLink = links[props.currentPage]
-            console.log(currentLink)
+
 
             const leftNavBarDistance = desktopNav.current.getBoundingClientRect().left
             const currentLinkRect = currentLink.getBoundingClientRect()
@@ -152,8 +152,7 @@ export default function Navbar(props) {
         const element = e.target
         const elementRect = element.getBoundingClientRect()
         const xCenterOfElement = elementRect.left +  ((elementRect.right - elementRect.left -24) / 2)
-        console.log(leftNavBarDistance)
-        console.log(xCenterOfElement)
+
         setBulletPosition(xCenterOfElement - leftNavBarDistance )
     }
 
@@ -174,7 +173,7 @@ export default function Navbar(props) {
         const body = window.scrollY
         let value = logoSizeValue.current
         let logoWidthValue = pokouLogoSize.current
-        console.log(logoWidthValue)
+
 
         if (window.innerWidth > 719 ) {
             if (body < 20) {
@@ -250,7 +249,7 @@ export default function Navbar(props) {
                     <div ref={navBarTop} className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ${!logoAnimation ? style.logo_animation : ""} ` }>
 
 
-                        <Link href="/">
+                        <Link  href="/">
                             <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
                                 <span>P</span>KOÙ WEB
                                 <span ref={pokouLogo} className={style.pokou_logo}>
@@ -297,10 +296,39 @@ export default function Navbar(props) {
             </div>
             <div className={`${style.burger__menu} ${burgerOpen ? style.burger__menu__open : ""}`}>
                 <div className={style.burger__menu__container}>
-                    <Link href="/"><a className={`${!props.currentPage? style.active_link : ""}`}>Home</a></Link>
-                    <Link href="/services"><a className={`${props.currentPage === "services" ? style.active_link : ""}`}>Services</a></Link>
-                    <Link href="/about"><a className={`${props.currentPage === "nous" ? style.active_link : ""}`}>A propos</a></Link>
-                    <Link href="/contact"><a className={`${props.currentPage === "contact" ? style.active_link : ""}`}>Contact</a></Link>
+                    <div className={style.main_burger_menu__content}>
+                        <ul>
+                            <li onClick={() => setBurgerOpen(false)} className={`${!props.currentPage? style.active_link : ""}`}><Link scroll={true} href="/"><a >Acceuil</a></Link></li>
+                            <li className={`${props.currentPage === "services" ? style.active_link : ""}`}><Link href="/services"><a >Services</a></Link></li>
+                            <li onClick={() => setBurgerOpen(false)}><Link href="/#travaux_anchor"><a >Travaux</a></Link></li>
+                            <li className={`${props.currentPage === "nous" ? style.active_link : ""}`}> <Link href="/about"><a >A propos</a></Link></li>
+                            <li className={`${props.currentPage === "contact" ? style.active_link : ""}`}>   <Link href="/contact"><a >Contact</a></Link></li>
+                        </ul>
+                    </div>
+                    <div className={style.primary_service_burger_menu__content}>
+                        <ul>
+                            <li className={props.currentPage === "creationweb" ? style.active_link : ""}>
+                                <Link href="/services/sitesweb">Création web</Link>
+                            </li>
+                            <li className={props.currentPage === "applicationweb" ? style.active_link : ""}>  <Link href="/services/applicationsweb">Applications web</Link></li>
+                            <li className={props.currentPage === "ecommerce" ? style.active_link : ""}> <Link href="/services/ecommerce">E-commerce</Link></li>
+                        </ul>
+
+                    </div>
+                    <div className={style.secondary_service_burger_menu__content}>
+                        <ul>
+                            <li className={props.currentPage === "conception" ? style.active_link : ""}>
+                                <Link href="/services/conception">Conception</Link>
+                            </li>
+                            <li className={props.currentPage === "developpement" ? style.active_link : ""}>  <Link href="/services/developpement">Développement</Link></li>
+                            <li className={props.currentPage === "referencement" ? style.active_link : ""}> <Link href="/services/referencement">Référencement</Link></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div className={style.burger_menu__logo}>
+                    <Image src={pokou_logo}/>
+
                 </div>
             </div>
         </TranslateOnScroll>

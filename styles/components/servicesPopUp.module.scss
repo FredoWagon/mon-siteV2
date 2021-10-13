@@ -1,7 +1,5 @@
 .services_popup__container {
-  margin: 9rem 0;
-
-
+  margin: 2rem 0;
   @media (min-width: 1440px)  {
 
   }
@@ -18,9 +16,6 @@
   .services_popup {
     margin: auto;
     padding-top: 2rem;
-
-
-
     @media (min-width: 1440px)  {
       max-width: 1440px;
     }
@@ -31,14 +26,14 @@
       max-width: 720px;
     }
     @media (max-width: 719px) {
-
+      padding-top: unset;
     }
-
     h2 {
       text-align: center;
       font-size: 4.5rem;
       margin-bottom: 6.5rem;
       font-weight: unset;
+
       @media (min-width: 720px) and (max-width: 989px) {
         font-size: 3.5rem;
         line-height: 3.5rem;
@@ -46,95 +41,79 @@
       @media (max-width: 719px) {
         font-size: 2.5rem;
         line-height: 3.5rem;
-
-
-
+        margin-bottom: 2.5rem;
       }
-
-
     }
     mark {
       background-color: unset;
       padding: unset;
       font-weight: 500;
     }
+
     .services_popup__content {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-around;
 
       .services_popup__item {
-
-
         position: relative;
         justify-content: center;
-
+        align-items: center;
         transition: box-shadow 0.3s ease;
         aspect-ratio: 1/1;
         padding: 1rem;
         display: flex;
         flex-direction: column;
-
-        width: 24%;
-
+        width: 33%;
 
         &.popup_item__yellow {
           .services_popup__title {
             .popup_underline {
               background-color: #fad10a;
-
             }
-
           }
           .popup_more_info {
             span {
               background-color: #fad10a;
             }
           }
-
         }
         &.popup_item__green {
           .services_popup__title {
             .popup_underline {
               background-color: #1c524f5c;
-
             }
-
           }
           .popup_more_info {
             span {
               background-color: #1c524f5c;
             }
           }
-
         }
         &.popup_item__blue {
           .services_popup__title {
             .popup_underline {
               background-color: #b4cce8;
-
             }
-
           }
           .popup_more_info {
             span {
               background-color: #b4cce8;
             }
           }
-
         }
-
-
-
-
         @media (min-width: 960px) and (max-width: 1439px) {
-          width: 50%;
+          width: 33%;
+        }
+        @media (min-width: 720px) and (max-width: 989px) {
+          width: 33%;
         }
         @media (max-width: 719px) {
           width: 100%;
           padding-top: unset;
-
+          aspect-ratio: unset;
+          margin-top: 2rem;
           .services_popup__title {
             h3 {
               font-size: 1.5rem !important;
@@ -142,7 +121,6 @@
           }
         }
         @media (min-width: 720px) {
-
           &:hover {
             cursor: pointer;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -163,7 +141,7 @@
               }
             }
             &.popup_item__green {
-             // box-shadow: rgb(28 82 79 / 20%) 0px 2px 8px 0px;
+              // box-shadow: rgb(28 82 79 / 20%) 0px 2px 8px 0px;
               .services_popup__image {
                 img {
 
@@ -179,17 +157,12 @@
                 transition: filter 0.3s ease, transform 0.5s ease;
               }
             }
-
-
             .services_popup__title {
               h3 {
                 transform: translateY(-15px);
               }
-
-
               .popup_underline {
                 height: 5px;
-
               }
             }
             .popup_more_info {
@@ -199,7 +172,6 @@
               }
             }
           }
-
         }
         .services_popup__image {
           transition: filter 0.3s ease, transform 0.5s ease;
@@ -209,23 +181,23 @@
           img {
             transition: filter 0.3s ease, transform 0.5s ease;
             width: 3rem;
-
-
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width:2.5rem;
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width:2.5rem;
+            }
           }
-
         }
-
         .services_popup__title {
           display: flex;
-
           h3 {
             transition: filter 0.3s ease, transform 0.5s ease;
             position: relative;
             font-weight: 500;
             margin: unset;
+            font-size: 2.5rem;
 
-
-            font-size: 2rem;
             .popup_underline {
               position: absolute;
               bottom: 5px;
@@ -234,36 +206,33 @@
               left: 0;
               transition: height 0.5s ease;
               z-index: -1;
-
-
+            }
+            @media (min-width: 960px) and (max-width: 1439px) {
+              font-size: 2rem;
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              font-size: 1.4rem;
             }
           }
-
           img {
             opacity: 0.7;
           }
         }
-
-
-
-
-
-
         p {
+          text-align: center;
+          font-size: 1.2rem;
+          @media (min-width: 720px) and (max-width: 989px) {
+            font-size: 1.1rem;
+          }
 
           color: #7b7b7b;
         }
 
         .popup_more_info {
-
           position: relative;
           padding: 0 0.8rem;
           display: flex;
           width: fit-content;
-
-
-
-
           p {
             transform: translateX(0);
             background-color: white;

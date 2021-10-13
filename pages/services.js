@@ -1,10 +1,11 @@
 import Layout from "../components/Layout";
 import ServiceHeaderBloc from "../components/blocs/service_page/serviceHeaderBloc";
-import ServicesPopUp from "../components/blocs/index_page/servicesPopUp";
+import ServicesPopUp from "../components/ServicesPopUp";
 import UxBloc from "../components/blocs/service_page/uxBloc";
-import CustomServicesPopUp from "../components/blocs/service_page/customServicesPopUp";
+import CustomServicesPopUp from "../components/blocs/service_page/ServicesPopUpServicesPage";
 import OurProcessBloc from "../components/blocs/service_page/ourProcessBloc";
 import CubeBloc from "../components/blocs/service_page/cubeBloc";
+import ServicesPopUpServicesPage from "../components/blocs/service_page/ServicesPopUpServicesPage";
 
 
 export default function Services() {
@@ -12,7 +13,7 @@ export default function Services() {
     return (
         <Layout currentPage="services" navbarStyle="background--red">
              <ServiceHeaderBloc/>
-            <CustomServicesPopUp/>
+            <ServicesPopUpServicesPage/>
             <UxBloc/>
             <OurProcessBloc/>
             <CubeBloc/>

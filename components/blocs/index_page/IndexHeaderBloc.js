@@ -7,6 +7,8 @@ import tablette_med from '../../../public/tablette_med.png'
 import phone_med from '../../../public/phone_medtandem.png'
 import landing from '../../../public/landing_illu.svg'
 import serviceHeader from '../../../public/service_header.png'
+import serviceTest from "../../../public/service_header_test.png"
+import goutte from "../../../public/goutte.svg"
 import test_illu_mozzilla from './../../../public/test_header_illu.jpg'
 
 
@@ -22,7 +24,7 @@ export default function IndexHeaderBloc() {
                 <div className={style.header_bloc}>
                     <div className={style.header_bloc__left}>
                         <h1>Réalisez votre potentiel en ligne</h1>
-                        <p>Nous sommes l'agence à guichet unique qui vous aide à attirer les bons utilisateurs sur votre site, à vous assurer qu'ils vivent l'expérience pour laquelle ils sont venus et à les engager après leur visite. Votre entreprise ne peut qu'en récolter les fruits.</p>
+                        <p>Nous sommes l'agence digitale qui vous aide à attirer les bons utilisateurs sur votre site, à vous assurer qu'ils vivent l'expérience pour laquelle ils sont venus et à les engager après leur visite. Votre entreprise ne peut qu'en récolter les fruits.</p>
                         <Link href="/services">
                             <button>Nos services</button>
                         </Link>
@@ -30,7 +32,6 @@ export default function IndexHeaderBloc() {
                     <div className={style.header_bloc__right}>
                         <div className={style.image_animation}>
                             <Image src={serviceHeader}/>
-
                             {/*  <div className={style.tablette_image}>
                                 <Image  src={tablette_med}/>
                             </div>

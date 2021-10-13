@@ -37,8 +37,8 @@
 
     }
     @media (max-width: 719px) {
-      flex-wrap: wrap;
-      padding-top: 7rem;
+      flex-wrap: wrap-reverse;
+      padding-top: 1rem;
       .header_bloc__left {
         width: 100%;
         h1 {
@@ -108,12 +108,15 @@
 
     .image_animation {
       position: relative;
-      animation: bounce 7s ease infinite;
-      @keyframes bounce{
-        from {transform: translateY(0)}
-        50%  {transform: translateY(-1rem)}
-        to   {transform: translateY(0)}
+      @media (min-width: 720px) {
+        animation: bounce 7s ease infinite;
+        @keyframes bounce{
+          from {transform: translateY(0)}
+          50%  {transform: translateY(-1rem)}
+          to   {transform: translateY(0)}
+        }
       }
+
       .tablette_image {
         position: absolute;
         width: 36rem;

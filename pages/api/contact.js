@@ -2,7 +2,7 @@ export default function contact(req, res) {
 
     /*
     require('dotenv').config()
-    console.log(req.body)
+
 
 
 
@@ -34,7 +34,7 @@ export default function contact(req, res) {
     */
 
 
-    console.log(req.body)
+   
     res.send('success')
 
 }

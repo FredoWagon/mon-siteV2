@@ -32,7 +32,7 @@ export default function ContactComponent(props) {
 
     // S'active sur la modification des inputs
     const handdleValidation = (e) => {
-        console.log("check")
+
 
         const element = e.target
         const inputName = e.target.name
@@ -50,7 +50,7 @@ export default function ContactComponent(props) {
 
         inputValidation(element)
         const fieldValidationStatusList = [nameValid, messageValid, emailValid]
-        console.log(fieldValidationStatusList)
+
         setFormValid(!fieldValidationStatusList.includes(false))
     }
 
@@ -103,7 +103,7 @@ export default function ContactComponent(props) {
             message
         }
         allFieldValidation()
-        console.log(formValid)
+
 
 
         if (formValid) {
