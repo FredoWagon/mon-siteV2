@@ -135,10 +135,14 @@ export default function Footer(props) {
 
                 <div className={style.footer_mobile__social}>
                     <div className={style.footer_social__item}>
-                        <Link href="/"><Image alt="facebook_logo" src={facebook}/></Link>
+                        <Link href="/">
+                            <a>
+                                <Image alt="facebook_logo" src={facebook}/>
+                            </a></Link>
                     </div>
                     <div className={style.footer_social__item}>
-                        <Link href="/"><Image alt="instagram_logo" src={instagram}/></Link>
+                        <Link href="/">
+                            <a><Image alt="instagram_logo" src={instagram}/></a></Link>
                     </div>
 
 
