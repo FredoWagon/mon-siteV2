@@ -109,7 +109,7 @@ export default function Navbar(props) {
 
 
 
-    }, [logoAnimation,setLogoAnimationState ])
+    }, [])
 
 
 
