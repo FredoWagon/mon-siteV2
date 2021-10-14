@@ -23,7 +23,7 @@ export default function ReferencementHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image src={referencement_illustration}/>
+                        <Image priority={true} src={referencement_illustration}/>
 
                     </div>
 

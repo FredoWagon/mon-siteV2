@@ -31,7 +31,7 @@ export default function IndexHeaderBloc() {
                     </div>
                     <div className={style.header_bloc__right}>
                         <div className={style.image_animation}>
-                            <Image src={serviceHeader}/>
+                            <Image priority={true} src={serviceHeader}/>
                             {/*  <div className={style.tablette_image}>
                                 <Image  src={tablette_med}/>
                             </div>

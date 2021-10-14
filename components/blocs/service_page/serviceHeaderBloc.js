@@ -20,7 +20,7 @@ export default function ServiceHeaderBloc() {
                 </div>
 
                 <div className={style.header_bloc__right}>
-                    <Image  src={service_illustration}/>
+                    <Image priority={true}  src={service_illustration}/>
 
                 </div>
             </div>

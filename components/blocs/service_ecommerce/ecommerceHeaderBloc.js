@@ -23,7 +23,7 @@ export default function EcommerceHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image src={ecommerce_illustration}/>
+                        <Image priority={true} src={ecommerce_illustration}/>
 
                     </div>
 

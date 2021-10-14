@@ -39,7 +39,7 @@ export default function WorkBloc() {
                                         <p>Nouveau</p>
                                         <p>projet</p>
                                     </div>
-                                    <Image layout="fill" src={trend_corner}/>
+                                    <Image lazyBoundary="500px" layout="fill" src={trend_corner}/>
                                 </div>
                             </div>
                             <div className={style.work_item__text}>
@@ -69,7 +69,7 @@ export default function WorkBloc() {
                                 <div className={style.view_project}>
                                     <p>Voir la projet</p>
                                 </div>
-                                <Image layout="fill" src={medtandem}/>
+                                <Image lazyBoundary="500px" layout="fill" src={medtandem}/>
                             </div>
                         </div>
                         <div className={style.work_item__text}>
@@ -96,7 +96,7 @@ export default function WorkBloc() {
                                         <div className={style.view_project}>
                                             <p>Voir la projet</p>
                                         </div>
-                                        <Image  layout="fill" src={onepalm}/>
+                                        <Image lazyBoundary="500px"  layout="fill" src={onepalm}/>
                                     </div>
                                 </div>
                                 <div className={style.work_item__text}>
@@ -122,7 +122,7 @@ export default function WorkBloc() {
                                 <div className={style.view_project}>
                                     <p>Voir la projet</p>
                                 </div>
-                                <Image  layout="fill" src={testmock}/>
+                                <Image lazyBoundary="500px" layout="fill" src={testmock}/>
                             </div>
                         </div>
                         <div className={style.work_item__text}>

@@ -24,7 +24,7 @@ export default function ConceptionHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image src={conception_illustration}/>
+                        <Image priority={true} src={conception_illustration}/>
 
                     </div>
 
