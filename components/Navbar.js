@@ -255,7 +255,7 @@ export default function Navbar(props) {
                             <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
                                 <span>P</span>KOÙ WEB
                                 <span ref={pokouLogo} className={style.pokou_logo}>
-                            <Image priority={true} src={pokou_logo}/>
+                            <Image src={pokou_logo}/>
                         </span>
                             </a>
                         </Link>
