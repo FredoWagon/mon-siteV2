@@ -17,7 +17,7 @@ export default function Layout(props) {
         <>
             <Head>
                 <title>Bonjour</title>
-                <link rel="shortcut icon" href="/pokou_favicon.svg"/>
+                <link rel="shortcut icon" href="/pokou_faviconv2.svg"/>
 
             </Head>
 
