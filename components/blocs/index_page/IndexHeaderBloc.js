@@ -31,7 +31,7 @@ export default function IndexHeaderBloc() {
                     </div>
                     <div className={style.header_bloc__right}>
                         <div className={style.image_animation}>
-                            <Image width="660" height="660" src="f_auto,fl_animated,c_limit,w_750,q_auto/v1634222081/pokouweb/service_header_pdsjob.webp"/>
+                            <Image width="660" height="660" src="pokouweb/pokouweb_service_header_pdsjob-f_webp_fl_awebp_fl_animated_c_limit_w_750_q_1_z9sglg.webp"/>
                             {/*  <div className={style.tablette_image}>
                                 <Image  src={tablette_med}/>
                             </div>
