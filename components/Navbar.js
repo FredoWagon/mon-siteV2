@@ -109,7 +109,7 @@ export default function Navbar(props) {
 
 
 
-    }, [])
+    }, [logoAnimation])
 
 
 
@@ -246,18 +246,25 @@ export default function Navbar(props) {
             <div  className={`${style.navbar} ${isNotOnTop ? style.navbar__grey_line : ""} ${style[backgroundColor]} ${burgerOpen ? style.menu_opened : "" }`}>
                 <div className={style.navbar_container}>
 
+
+
+
+
                     <div ref={navBarTop} className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ${!logoAnimation ? style.logo_animation : ""} ` }>
-
-
                         <Link  href="/">
                             <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
                                 <span>P</span>KOÙ WEB
                                 <span ref={pokouLogo} className={style.pokou_logo}>
-                            <Image src={pokou_logo}/>
+                            <Image priority={true} src={pokou_logo}/>
                         </span>
                             </a>
                         </Link>
                     </div>
+
+
+
+
+
 
                     <div className={style.navbar__bottom}>
                         <div ref={desktopNav} className={style.navbar__bottom__desktop}>
