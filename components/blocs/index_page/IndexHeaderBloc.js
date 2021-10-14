@@ -31,7 +31,7 @@ export default function IndexHeaderBloc() {
                     </div>
                     <div className={style.header_bloc__right}>
                         <div className={style.image_animation}>
-                            <Image priority={true} src={serviceHeader}/>
+                            <Image width="660" height="660" src="/pokouweb/service_header_pdsjob.webp"/>
                             {/*  <div className={style.tablette_image}>
                                 <Image  src={tablette_med}/>
                             </div>
