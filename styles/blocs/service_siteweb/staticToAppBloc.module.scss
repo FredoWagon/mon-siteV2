@@ -21,6 +21,10 @@
 
   }
   .statictoapp__bottom_image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
     margin-top: 15rem;
     margin-bottom: 10rem;
     @media (max-width: 719px) {

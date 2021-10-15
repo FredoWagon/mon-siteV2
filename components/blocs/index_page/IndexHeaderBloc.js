@@ -31,11 +31,7 @@ export default function IndexHeaderBloc() {
                     </div>
                     <div className={style.header_bloc__right}>
                         <div className={style.image_animation}>
-                          {/*     <Image width="660" height="660" src="/pokouweb/pokouweb_service_header_pdsjob-f_webp_fl_awebp_fl_animated_c_limit_w_750_q_1_z9sglg.webp"/>
-                           */}
-
-
-
+                            <Image width="660" priority={true} height="660" alt="Agence web - Pokou web" src="/pokouweb/pokouweb_service_header_pdsjob-f_webp_fl_awebp_fl_animated_c_limit_w_750_q_1_z9sglg.webp"/>
                         </div>
 
                     </div>

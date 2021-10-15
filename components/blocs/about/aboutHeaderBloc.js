@@ -17,7 +17,7 @@ export default function WebappHeaderBloc() {
                         <p>Nous sommes développeurs, concepteurs et analystes. Nous sommes ouverts, curieux et affamés. Nous sommes queer, hétéro et explorateurs. Nous sommes des cyclistes, des joueurs et des boulangers. Et nous sommes tellement plus.</p>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image  priority={true} src={collectif_illustration}/>
+                        <Image priority={true} width="660" alt="A propos - Pokou web" height="660" src="/pokouweb/collectif_illustration_cmzgib_kmopnd.webp"/>
                     </div>
                 </div>
             </SpeedFadeIn>

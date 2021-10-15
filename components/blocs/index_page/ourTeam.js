@@ -334,7 +334,7 @@ export default function OurTeam() {
                     </div>
                     <div ref={agencyImageContainer} className={ `${style.our_team__agency_image} ${style.agency_image__before_animation}`}>
                         <div ref={patchContainer} className={style.patchwork_image}>
-                            <Image src={collectif_illustration}/>
+                            <Image height="482" lazyBoundary="500px" width="482" alt="Notre équipe - Pokou web" src="/pokouweb/collectif_illustration_cmzgib_vhrqrw.webp"/>
                         </div>
                     </div>
                 </div>

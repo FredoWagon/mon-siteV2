@@ -17,7 +17,7 @@ export default function TrendcornerContentBloc1() {
             <div className={ `${style.main_info__container} ${style.custom_trendcorner__background}` }>
                 <div className={style.main__info}>
                     <div className={style.main__info__image}>
-                        <Image src={trendcorder1}/>
+                        <Image width="1295" priority={true} height="745" alt="Trend Corner - Page web" src="/pokouweb/trend_corner_page_pic_one_rgfjkt_nqncyg.webp"/>
                     </div>
                     <div className={style.text_info__container}>
                         <div className={style.text__bloc}>
@@ -26,8 +26,8 @@ export default function TrendcornerContentBloc1() {
                         </div>
                     </div>
                 </div>
-                <div className={style.main__info__image}>
-                    <Image src={trendcorner2}/>
+                <div className={style.main__info__image__long}>
+                    <Image layout={"fill"} lazyBoundary="500px"   alt="Trend Corner - design" src="/pokouweb/trend_corner_page_pic_two_khf95h_qe6yeq.webp"/>
                 </div>
                 <div className={style.main__info}>
 
@@ -49,6 +49,7 @@ export default function TrendcornerContentBloc1() {
                         </div>
                     </div>
                     <div className={style.main__info__image}>
+                        <Image width="1376" priority={true} height="769"  lazyBoundary="500px"   alt="Trend Corner - mockup" src="/pokouweb/trendcorner_desktop_ssb8is_l5shdh.png"/>
                         <Image src={trenddesktop}/>
                     </div>
                 </div>

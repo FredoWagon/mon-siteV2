@@ -10,6 +10,10 @@
   }
 
   .main__info__intro_image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    aspect-ratio: 3/2;
     margin-bottom: 10rem;
 
   }
@@ -103,6 +107,10 @@
     }
 
     .main__info__image {
+      position: relative;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3/2;
 
       @media (max-width: 719px) {
         margin-top: 1rem;

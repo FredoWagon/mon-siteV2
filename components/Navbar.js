@@ -255,7 +255,7 @@ export default function Navbar(props) {
                             <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
                                 <span>P</span>KOÙ WEB
                                 <span ref={pokouLogo} className={style.pokou_logo}>
-                                    {/* <Image width="69" height="69" src="/pokouweb/pokou_logo_cjfdqe.svg"/> */}
+                                    <Image width="69" priority={true} alt="Pokou web logo" height="69" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
 
                         </span>
                             </a>
@@ -290,7 +290,7 @@ export default function Navbar(props) {
                         </div>
                         <div className={style.navbar__bottom__mobile}>
                             <Link  href="/"><a className={`${ style.is_visible}`}><span>P</span><span className={style.pokou_logo_mobile}>
-                            <Image src={pokou_logo}/>
+                              <Image width="23.36" priority={true} alt="Pokou web logo" height="23.36" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
                         </span>KOÙ WEB</a></Link>
                             <div  onClick={openBurgerMenu} className={ `${style.burger__icon} ${burgerBlackVersion ? style.black_version : ""} ${burgerOpen ? style.is_open : ""}` }>
                                 <div className={style.icon__span}></div>

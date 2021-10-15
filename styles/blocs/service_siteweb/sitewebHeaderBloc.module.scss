@@ -201,11 +201,16 @@
       bottom: 0;
       right: 0;
       left: 0;
+      div {
+        width: 1913px;
+        height: 1067px;
+      }
       img {
+        object-fit: cover;
 
       }
       @media (max-width: 719px) {
-        top: 7rem;
+        top: 4rem;
         left: -31rem;
       }
       @media (min-width: 720px) and (max-width: 989px) {

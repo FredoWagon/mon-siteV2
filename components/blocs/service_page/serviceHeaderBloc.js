@@ -20,8 +20,7 @@ export default function ServiceHeaderBloc() {
                 </div>
 
                 <div className={style.header_bloc__right}>
-                    <Image priority={true}  src={service_illustration}/>
-
+                    <Image width="660" priority={true} height="660" alt="Prestation web - Pokou web" src="/pokouweb/service_illustration_u6j1gi_ex1hig.webp"/>
                 </div>
             </div>
         </div>

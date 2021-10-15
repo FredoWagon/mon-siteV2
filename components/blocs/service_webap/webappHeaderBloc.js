@@ -23,8 +23,7 @@ export default function WebappHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image src={wepapp_illustration}/>
-
+                        <Image priority={true} width="600" height="737" alt="Création d'applications web" src="/pokouweb/webapp_illustration_qurhom_ep40pu.webp"/>
                     </div>
 
 

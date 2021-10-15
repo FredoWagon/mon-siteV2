@@ -15,19 +15,19 @@ export default function TheyTrustUs() {
                 <div className={style.trust_items__container}>
                     <div className={style.trust_items}>
                         <Image
-                            objectFit="contain" src={medTandem}/>
+                            objectFit="contain" lazyBoundary="500px" width="240" height="240" alt="Medtandem.com" src="/pokouweb/logo-medtandem_t19v5j_o5na2t.webp"/>
                     </div>
                     <div className={style.trust_items}>
                         <Image
-                            objectFit="contain" src={logoTest}/>
+                            objectFit="contain" lazyBoundary="500px" width="240" height="240" alt="Medtandem.com" src="/pokouweb/logo-medtandem_t19v5j_o5na2t.webp"/>
                     </div>
                     <div className={style.trust_items}>
                         <Image
-                            objectFit="contain" src={logoTest2}/>
+                            objectFit="contain" lazyBoundary="500px" width="240" height="240" alt="Medtandem.com" src="/pokouweb/logo-medtandem_t19v5j_o5na2t.webp"/>
                     </div>
                     <div className={style.trust_items}>
                         <Image
-                            objectFit="contain" src={logoTest3}/>
+                            objectFit="contain" lazyBoundary="500px" width="240" height="240" alt="Medtandem.com" src="/pokouweb/logo-medtandem_t19v5j_o5na2t.webp"/>
                     </div>
 
 

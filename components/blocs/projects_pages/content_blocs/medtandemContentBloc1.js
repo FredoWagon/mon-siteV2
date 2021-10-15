@@ -30,8 +30,8 @@ export default function MedtandemContentBloc1() {
 
 
                 </div>
-                <div className={style.main__info__image}>
-                    <Image src={medtandemDesktop}/>
+                <div className={style.main__info__image__long__medtandem}>
+                    <Image layout={"fill"} lazyBoundary="500px" alt="Medtandem mockup" src="/pokouweb/medtandem_desktop_pggvcw_q82gw9.webp"/>
                 </div>
 
 

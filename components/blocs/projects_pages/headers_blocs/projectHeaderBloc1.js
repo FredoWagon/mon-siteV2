@@ -18,7 +18,7 @@ export default function ProjectHeaderBloc1() {
                         <p>La nouvelle version de MedTandem est un site Web moderne et élégant qui stimule les ventes de l'entreprise, élève son profil et sert efficacement ses groupes cibles.</p>
                     </div>
                     <div className={ `${style.siteweb_header__right} ${style.custom_medtandem_project}`}>
-                        <Image src={medtandemMobile}/>
+                        <Image width="352" priority={true} height="692" alt="Medtandem Mobile" src="/pokouweb/medtandem_mobile_mockup_syoksq_qhvzbk.webp"/>
                     </div>
                 </div>
             </SpeedFadeIn>

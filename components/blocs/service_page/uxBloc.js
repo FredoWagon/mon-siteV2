@@ -1,7 +1,5 @@
 import style from '../../../styles/blocs/service_page/uxBloc.module.scss'
 import Image from "next/image";
-import conception from '../../../public/conception1.jpg'
-import coeur from '../../../public/main_coeur.png'
 import Link from "next/link";
 export default function UxBloc() {
 
@@ -15,10 +13,8 @@ export default function UxBloc() {
                     </div>
                     <div className={style.ux_bloc__right}>
                         <div className={style.ux_image}>
-                            <Image src={coeur}/>
-
+                            <Image  lazyBoundary="500px" alt="Expérience utilisateur" width="660" height="660" src="/pokouweb/main_coeur_nmsqup_hvihmt.webp"/>
                         </div>
-
                     </div>
                 </div>
                 <div className={style.ux_bloc__second_content}>

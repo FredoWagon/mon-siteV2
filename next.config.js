@@ -3,11 +3,11 @@ const path = require('path')
 
 
 module.exports = {
-
+  images: {
+    loader: 'cloudinary',
+    path: 'https://res.cloudinary.com/dbzdlk98a/image/upload/',
+  },
   experimental: {
-    images: {
-      domains: ['images.unsplash.com'],
-    },
     scrollRestoration: true
   },
   sassOptions: {
@@ -16,8 +16,3 @@ module.exports = {
   reactStrictMode: true,
   target: "serverless"
 }
-
-//images: {
-//     loader: 'cloudinary',
-//     path: 'https://res.cloudinary.com/dbzdlk98a/image/upload/',
-//   },

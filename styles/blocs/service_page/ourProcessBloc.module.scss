@@ -1,6 +1,13 @@
 .our_process__container {
   background-color: #fbc4c4;
 
+  .our_process__picture {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+  }
+
   .our_process {
     margin: auto;
     padding: 7rem 1rem 8rem 1rem;

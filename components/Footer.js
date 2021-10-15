@@ -100,11 +100,11 @@ export default function Footer(props) {
                     </div>
                     <div className={style.footer__social_links}>
                         <span>
-                            <Image alt="facebook_logo" src={facebook}/>
+                            <Image width="16" lazyBoundary="500px" height="16" alt="Facebook logo" src="/pokouweb/facebook_jfpi5f.svg"/>
                             <Link href="/">FaceBook</Link>
                         </span>
                         <span>
-                            <Image alt="instagram_logo" src={instagram}/>
+                             <Image width="16" lazyBoundary="500px" height="16"  alt="Instagram logo" src="/pokouweb/instagram_ibds5h.svg"/>
                             <Link href="/">Instagram</Link>
                         </span>
 
@@ -137,12 +137,12 @@ export default function Footer(props) {
                     <div className={style.footer_social__item}>
                         <Link href="/">
                             <a>
-                                <Image alt="facebook_logo" src={facebook}/>
+                                <Image width="19" lazyBoundary="500px" height="19" alt="Facebook logo" src="/pokouweb/facebook_jfpi5f.svg"/>
                             </a></Link>
                     </div>
                     <div className={style.footer_social__item}>
                         <Link href="/">
-                            <a><Image alt="instagram_logo" src={instagram}/></a></Link>
+                            <a><Image width="19" lazyBoundary="500px" height="19"  alt="Instagram logo" src="/pokouweb/instagram_ibds5h.svg"/></a></Link>
                     </div>
 
 
@@ -244,7 +244,7 @@ export default function Footer(props) {
 
             </div>
             <div className={style.footer_logo__image}>
-                <Image src={pokou_logo}/>
+                <Image width="96" alt="Pokou web logo" height="96" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
             </div>
         </div>
     )

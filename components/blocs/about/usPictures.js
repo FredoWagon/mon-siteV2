@@ -21,8 +21,7 @@ export default function UsPictures() {
 
                             <div className={style.item__content}>
                                 <div className={style.us_picture__image}>
-                                    <Image  src={olivier}/>
-
+                                    <Image  lazyBoundary="500px" alt="Olivier Bouzon" height="508" width="425" src="/pokouweb/olivier_dtwddf_vgmi9h.webp"/>
                                 </div>
 
                                 <div className={style.us_picture__info}>
@@ -42,8 +41,7 @@ export default function UsPictures() {
                         <FadeTranslateTopWhenVisible tresholdOption={0} customStartDistance="custom_nous_picture" animation="middle">
                             <div className={style.item__content}>
                                 <div className={style.us_picture__image}>
-                                    <Image src={nono}/>
-
+                                    <Image  lazyBoundary="500px" alt="Noémie Fournier" height="508" width="425" src="/pokouweb/noemiev2_thwu9p_bgyiab.webp"/>
                                 </div>
 
                                 <div className={style.us_picture__info}>
@@ -61,8 +59,7 @@ export default function UsPictures() {
                         <FadeTranslateTopWhenVisible tresholdOption={0} customStartDistance="custom_nous_picture" animation="slow">
                             <div className={style.item__content}>
                                 <div className={style.us_picture__image}>
-                                    <Image src={greg}/>
-
+                                    <Image  lazyBoundary="500px" alt="Grégoire Renaldo" height="508" width="425" src="/pokouweb/greg_df7abe_gfwz9z.webp"/>
                                 </div>
 
                                 <div className={style.us_picture__info}>
@@ -80,7 +77,7 @@ export default function UsPictures() {
                         <FadeTranslateTopWhenVisible tresholdOption={0} customStartDistance="custom_nous_picture" animation="middle">
                             <div className={style.item__content}>
                                 <div className={style.us_picture__image}>
-                                    <Image src={fred}/>
+                                    <Image  lazyBoundary="500px" alt="Frédéric Legrand" height="508" width="425" src="/pokouweb/fred_ler6hf_krfdrj.webp"/>
                                 </div>
 
                                 <div className={style.us_picture__info}>
@@ -103,8 +100,7 @@ export default function UsPictures() {
                         <FadeTranslateTopWhenVisible tresholdOption={0} customStartDistance="custom_nous_picture" animation="slow">
                             <div className={style.item__content}>
                                 <div className={style.us_picture__image}>
-                                    <Image src={max}/>
-
+                                    <Image  lazyBoundary="500px" alt="Maxence Pautre" height="508" width="425" src="/pokouweb/maxence_wcuuuf_shdd5g.webp"/>
                                 </div>
 
                                 <div className={style.us_picture__info}>

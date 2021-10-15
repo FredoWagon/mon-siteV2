@@ -26,8 +26,7 @@ export default function MainInfoBloc() {
                     </div>
                 </div>
                 <div className={style.main__info__image}>
-                    <Image src={placeholder}/>
-
+                    <Image  lazyBoundary="500px" alt="Developpement application" layout={"fill"} src="/pokouweb/webapp_pic_vsklma_ds6zef.webp"/>
                 </div>
 
             </div>

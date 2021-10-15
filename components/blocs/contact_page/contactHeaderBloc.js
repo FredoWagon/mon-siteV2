@@ -12,7 +12,8 @@ export default function ContactHeaderBloc() {
 
             <div className={style.contact_header}>
                 <div className={style.contact_header__background_image}>
-                    <Image priority={true} src={contact_picture}/>
+                    <Image priority={true} width="480" alt="Parlez nous !" height="480" src="/pokouweb/contact_background_itz0o8_aavxnb.webp"/>
+
 
                 </div>
                 <h1>Commençons !</h1>

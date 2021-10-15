@@ -11,7 +11,7 @@ export default function WebappMainInfo() {
         <>
             <div className={style.main_info__container}>
                 <div className={style.main__info__intro_image}>
-                    <Image src={webAppIllu}/>
+                    <Image  lazyBoundary="500px" alt="Developpement application" layout={"fill"} src="/pokouweb/webapp_pic_vsklma_ds6zef.webp"/>
                 </div>
 
                 <div className={style.main__info}>
@@ -38,7 +38,8 @@ export default function WebappMainInfo() {
                         </div>
                     </div>
                     <div className={style.main__info__image}>
-                        <Image src={placeholder}/>
+                        <Image  lazyBoundary="500px" alt="Developpement application" layout={"fill"} src="/pokouweb/webapp_pic_vsklma_ds6zef.webp"/>
+
 
                     </div>
 

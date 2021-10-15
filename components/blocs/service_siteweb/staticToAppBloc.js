@@ -15,16 +15,14 @@ export default function  StaticToAppBloc() {
 
                     </div>
                     <div className={style.static__right}>
-                        <Image src={illu_statis}/>
-
+                        <Image  lazyBoundary="500px" width="705" height="705" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
                     </div>
 
                 </div>
                 <div className={`${style.static__row} ${style.right__type}` }>
 
                     <div className={style.static__right}>
-                        <Image src={illu_statis}/>
-
+                        <Image  lazyBoundary="500px" width="705" height="705" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
                     </div>
                     <div className={style.static__left}>
                         <h2>à l'application Web</h2>
@@ -40,16 +38,14 @@ export default function  StaticToAppBloc() {
 
                     </div>
                     <div className={style.static__right}>
-                        <Image src={illu_statis}/>
-
+                        <Image  lazyBoundary="500px" width="705" height="705" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
                     </div>
 
                 </div>
 
             </div>
             <div className={style.statictoapp__bottom_image}>
-                <Image src={bottom_img}/>
-
+                <Image  lazyBoundary="500px" alt="Conception site internet"layout={"fill"} src="/pokouweb/online-web-design_zswu79_ow4y6a_wslpdk.webp"/>
             </div>
             <div className={style.statictoapp}>
                 <div className={style.static__row}>
@@ -59,16 +55,14 @@ export default function  StaticToAppBloc() {
 
                     </div>
                     <div className={style.static__right}>
-                        <Image src={illu_statis}/>
-
+                        <Image  lazyBoundary="500px" width="705" height="705" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
                     </div>
 
                 </div>
                 <div className={`${style.static__row} ${style.right__type}` }>
 
                     <div className={style.static__right}>
-                        <Image src={illu_statis}/>
-
+                        <Image  lazyBoundary="500px" width="705" height="705" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
                     </div>
                     <div className={style.static__left}>
                         <h2>à l'application Web</h2>
@@ -84,8 +78,7 @@ export default function  StaticToAppBloc() {
 
                     </div>
                     <div className={style.static__right}>
-                        <Image src={illu_statis}/>
-
+                        <Image  lazyBoundary="500px" width="705" height="705" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
                     </div>
 
                 </div>
@@ -101,16 +94,14 @@ export default function  StaticToAppBloc() {
 
                         </div>
                         <div className={style.static__right}>
-                            <Image src={illu_statis}/>
-
+                            <Image  lazyBoundary="500px" width="705" height="705" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
                         </div>
 
                     </div>
                     <div className={`${style.static__row} ${style.right__type}` }>
 
                         <div className={style.static__right}>
-                            <Image src={illu_statis}/>
-
+                            <Image  lazyBoundary="500px" width="705" height="705" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
                         </div>
                         <div className={style.static__left}>
                             <h2>à l'application Web</h2>

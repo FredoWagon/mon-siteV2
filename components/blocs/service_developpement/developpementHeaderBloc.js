@@ -23,8 +23,7 @@ export default function DeveloppementHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image priority={true} src={developpement_illustration}/>
-
+                        <Image priority={true} width="660" alt="Developpement web" height="660" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
                     </div>
 
 

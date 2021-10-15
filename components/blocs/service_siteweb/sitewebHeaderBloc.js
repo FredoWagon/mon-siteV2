@@ -23,7 +23,7 @@ export default function SitewebHeaderBloc() {
                     </Link>
                 </div>
                 <div className={style.siteweb_header__right}>
-                    <Image priority={true} src={test_illu}/>
+                    <Image priority={true} width="600" alt="Création de site web" height="692" src="/pokouweb/landing_illu_lcsbb3_tfglhp.webp"/>
 
                 </div>
 

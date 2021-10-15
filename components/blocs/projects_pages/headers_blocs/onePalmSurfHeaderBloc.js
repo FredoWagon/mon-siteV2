@@ -12,8 +12,7 @@ export default function OnePalmSurfHeaderBloc() {
 
         <div className={ `${style.siteweb_header__container} ${style.project__onepalm__header}`}>
             <div className={style.header__background_image}>
-                <Image layout={"fixed"} priority={true} quality={100} src={onePalmBackground}/>
-
+                <Image height="1067" width="1913" priority={true} alt="One palm background" src="/pokouweb/onepalm_background_amhqkp_qur7aq.webp"/>
             </div>
 
             <SpeedFadeIn>

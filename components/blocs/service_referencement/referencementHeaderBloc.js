@@ -23,7 +23,7 @@ export default function ReferencementHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image priority={true} src={referencement_illustration}/>
+                        <Image priority={true} width="660" alt="Référencement site internet" height="466" src="/pokouweb/referencement_illustration_dq1zzb_orqgm0.webp"/>
 
                     </div>
 

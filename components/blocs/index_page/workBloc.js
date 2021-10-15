@@ -39,7 +39,7 @@ export default function WorkBloc() {
                                         <p>Nouveau</p>
                                         <p>projet</p>
                                     </div>
-                                    <Image lazyBoundary="500px" layout="fill" src={trend_corner}/>
+                                    <Image lazyBoundary="500px" alt="Trend corner - projet" layout="fill" src="/pokouweb/trend_corner_vignet_cfnxeb_wh7kyx.webp"/>
                                 </div>
                             </div>
                             <div className={style.work_item__text}>
@@ -69,7 +69,8 @@ export default function WorkBloc() {
                                 <div className={style.view_project}>
                                     <p>Voir la projet</p>
                                 </div>
-                                <Image lazyBoundary="500px" layout="fill" src={medtandem}/>
+                                <Image lazyBoundary="500px" alt="Medtandem - projet" layout="fill" src="/pokouweb/med_tandem_mockup_veoqcc_suqdej.webp"/>
+
                             </div>
                         </div>
                         <div className={style.work_item__text}>
@@ -96,7 +97,7 @@ export default function WorkBloc() {
                                         <div className={style.view_project}>
                                             <p>Voir la projet</p>
                                         </div>
-                                        <Image lazyBoundary="500px"  layout="fill" src={onepalm}/>
+                                        <Image lazyBoundary="500px" alt="One palm - projet" layout="fill" src="/pokouweb/onepalm_card_bjcyv6_hydfyr.webp"/>
                                     </div>
                                 </div>
                                 <div className={style.work_item__text}>
@@ -122,7 +123,7 @@ export default function WorkBloc() {
                                 <div className={style.view_project}>
                                     <p>Voir la projet</p>
                                 </div>
-                                <Image lazyBoundary="500px" layout="fill" src={testmock}/>
+                                <Image lazyBoundary="500px" alt="Dashboard - projet" layout="fill" src="/pokouweb/dashboard_card_eax3rx_hsrosb.webp"/>
                             </div>
                         </div>
                         <div className={style.work_item__text}>

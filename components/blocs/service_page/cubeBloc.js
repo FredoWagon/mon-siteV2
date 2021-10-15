@@ -11,7 +11,7 @@ export default function CubeBloc() {
             <div className={style.cubeBloc}>
                 <div className={style.cubeBloc__row}>
                     <div className={style.cubeBloc__image}>
-                        <Image src={develop}/>
+                        <Image objectFit={"cover"} height="953"  lazyBoundary="500px" width="953" src="/pokouweb/35941778864_a37973fb6e_o-1618x1080_dyiopz_atu7yx.webp"/>
                     </div>
                     <div className={style.cubeBloc__black}>
                         <div className={style.cubeBloc__text}>
@@ -37,13 +37,13 @@ export default function CubeBloc() {
 
                     </div>
                     <div className={style.cubeBloc__image}>
-                        <Image src={develop}/>
+                        <Image objectFit={"cover"}  lazyBoundary="500px" height="953" width="953" src="/pokouweb/35941778864_a37973fb6e_o-1618x1080_dyiopz_atu7yx.webp"/>
                     </div>
 
                 </div>
                 <div className={style.cubeBloc__row}>
                     <div className={style.cubeBloc__image}>
-                        <Image src={develop}/>
+                        <Image objectFit={"cover"} lazyBoundary="500px"  height="953" width="953" src="/pokouweb/35941778864_a37973fb6e_o-1618x1080_dyiopz_atu7yx.webp"/>
                     </div>
                     <div className={style.cubeBloc__black}>
                         <div className={style.cubeBloc__text}>

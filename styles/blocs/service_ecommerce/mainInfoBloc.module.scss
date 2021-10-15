@@ -44,6 +44,26 @@
     }
 
   }
+  .main__info__image__long {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 381/119;
+
+  }
+  .main__info__image__long__medtandem{
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 127/71;
+
+  }
+  .main__info__image__long__medtandem_2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
   .main__info {
     padding: 0 2rem;
     margin: auto;
@@ -187,6 +207,10 @@
     }
 
     .main__info__image {
+      position: relative;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3/2;
       margin-top: 6rem;
       @media (min-width: 720px) and (max-width: 989px) {
         margin-top: 1rem;

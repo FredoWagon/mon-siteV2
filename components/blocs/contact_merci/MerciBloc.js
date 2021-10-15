@@ -31,7 +31,7 @@ export default function MerciBloc() {
             </div>
 
             <div className={style.merci_image}>
-                <Image priority={true} layout="fill" objectFit="cover" objectPosition="75%" src={merciBackground}/>
+                <Image layout="fill" objectPosition="75%" objectFit="cover" priority={true}  alt="Equipe Pokou web"  src="/pokouweb/merci_background_dzqhi2_sw2d9m.webp"/>
             </div>
 
 

@@ -20,8 +20,7 @@ export default function BlueBLoc() {
                 </div>
                 <div className={style.blue_bloc__right}>
                     <div className={style.blue_bloc__image}>
-                        <Image src={avancer_illustration}/>
-
+                        <Image width="893" lazyBoundary="500px" height="893" alt="Construire un projet ensemble" src="/pokouweb/avancer_illustration_kb8xsk_zlyolv.webp"/>
                     </div>
 
                 </div>

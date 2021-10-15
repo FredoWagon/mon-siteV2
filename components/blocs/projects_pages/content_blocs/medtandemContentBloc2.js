@@ -19,10 +19,10 @@ export default function MedtandemContentBloc2() {
                 <div className={style.main__info}>
                     <div className={style.main__info__double_image}>
                         <div className={style.medtandem_desktop}>
-                            <Image src={medDesktop}/>
+                            <Image width="963" height="538" lazyBoundary="500px" alt="Medtandem - desktop mockup" src="/pokouweb/medtandem_desktop2_r1mt35_kxsqjs.webp"/>
                         </div>
                         <div className={style.medtandem__mobile}>
-                            <Image src={medMobile}/>
+                            <Image width="330" height="649" lazyBoundary="500px" alt="Medtandem - mobile mockup" src="/pokouweb/medtandem_mobile_mockup2_wvdb3s_phjyed.webp"/>
                         </div>
 
 
@@ -44,7 +44,8 @@ export default function MedtandemContentBloc2() {
                         </div>
 
                     </div>
-                    <div className={style.main__info__image}>
+                    <div className={style.main__info__image__long__medtandem_2}>
+                        <Image layout={"fill"} lazyBoundary="500px" alt="Medtandem design" src="/pokouweb/med_tandem_mockup_veoqcc_gb0wzk.webp"/>
                         <Image src={medtandem}/>
 
                     </div>
