@@ -6,7 +6,7 @@ import medtandemDesktop from '../../../../public/medtandem_desktop.png'
 import trendcorder1 from '../../../../public/trend_corner_page_pic_one.png'
 import  trendcorner2 from '../../../../public/trend_corner_page_pic_two.png'
 import trenddesktop from '../../../../public/trendcorner_desktop.png'
-import masonry_dashboard from "../../../../public/test_dashboard_masonry.png"
+
 import Link from "next/link";
 
 

@@ -5,6 +5,9 @@ const path = require('path')
 module.exports = {
 
   experimental: {
+    images: {
+      domains: ['images.unsplash.com'],
+    },
     scrollRestoration: true
   },
   sassOptions: {

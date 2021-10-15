@@ -3,7 +3,7 @@ import Image from "next/image";
 import test_illu from '../../../../public/landing_illu.svg'
 import placeholder from '../../../../public/testmock.png'
 import medtandemDesktop from '../../../../public/medtandem_desktop.png'
-import masonry_dashboard from "../../../../public/test_dashboard_masonry.png"
+
 import Link from "next/link";
 
 
