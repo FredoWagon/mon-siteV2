@@ -18,7 +18,7 @@ export default function ServicesPopUp() {
                         <Link href="/services/sitesweb">
                             <div className={`${style.popup_item__green} ${style.services_popup__item}`} >
                                 <div className={style.services_popup__image}>
-                                    <Image src={test_icon_site}/>
+                                    {/*  <Image src="/pokouweb/test_icon_site_dve2xp.svg"/> */}
 
                                 </div>
 

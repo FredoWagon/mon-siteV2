@@ -34,7 +34,7 @@ export default function CookieModal() {
         <div className={style.cookie_modal__container}>
             <span>En visitant ce site web, vous acceptez notre <Link href="/politique-de-confidentialite"><a >politique sur l'utilisation des cookies.</a></Link> </span>
             <div className={style.cookie_modal__close}>
-                <Image onClick={handleCookie} src={croix}/>
+                {/*    <Image onClick={handleCookie} src="/pokouweb/croix_spmouh.svg"/>*/}
             </div>
 
         </div>
