@@ -13,6 +13,8 @@ class MyDocument extends Document {
                     <meta charSet="UTF-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
                     <link rel="shortcut icon" href="/pokou_faviconv2.svg"/>
+                    <meta property="og:image" content="https://res.cloudinary.com/dbzdlk98a/image/upload/v1634653847/pokouweb/test_pokouweb_esk1q3.png"/>
+
                     {/*google font*/}
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
