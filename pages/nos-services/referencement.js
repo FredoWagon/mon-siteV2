@@ -13,8 +13,8 @@ export default function Sitesweb() {
         <Layout currentPage="referencement" navbarStyle="background--blue">
 
             <Head>
-                <title>Référencement | Pokouwebb, agence web</title>
-                <meta property="og:title" content="Référencement | Pokouwebb, agence web" key="title" />
+                <title>Référencement | PokouWeb, agence web</title>
+                <meta property="og:title" content="Référencement | PokouWeb, agence web" key="title" />
 
                 <meta name="description" content="Notre équipe de référencement expérimentée assure votre visibilité numérique en restant toujours au courant des tendances du secteur et des changements d'algorithmes." key="description"/>
 

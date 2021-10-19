@@ -15,8 +15,8 @@ export default function ECommerce() {
         <Layout currentPage="ecommerce" navbarStyle="background--yellow">
 
             <Head>
-                <title>Création de site e-commerce | Pokouwebb, agence web</title>
-                <meta property="og:title" content="Création de site e-commerce | Pokouwebb, agence web" key="title" />
+                <title>Création de site e-commerce | PokouWeb, agence web</title>
+                <meta property="og:title" content="Création de site e-commerce | PokouWeb, agence web" key="title" />
 
                 <meta name="description" content="Nous concevons et mettons en œuvre des sites de e-commerce qui servent vos objectifs commerciaux uniques." key="description"/>
 

@@ -11,8 +11,8 @@ export default function MentionsLegales() {
         <Layout currentPage="legale" navbarStyle="background--blue">
 
             <Head>
-                <title>Mentions légales | Pokouweb, agence web</title>
-                <meta property="og:title" content="Mentions légales | Pokouweb, agence web" key="title" />
+                <title>Mentions légales | PokouWeb, agence web</title>
+                <meta property="og:title" content="Mentions légales | PokouWeb, agence web" key="title" />
 
                 <meta name="description" content="Retrouvez ici les mentions légales de notre agence web Pokouweb." key="description"/>
 

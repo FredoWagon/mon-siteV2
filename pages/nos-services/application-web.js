@@ -11,8 +11,8 @@ export default function ApplicationWeb() {
         <Layout currentPage="applicationweb" navbarStyle="background--blue">
 
             <Head>
-                <title>Création d'application métier' | Pokouwebb, agence web</title>
-                <meta property="og:title" content="Création d'application métier' | Pokouwebb, agence web" key="title" />
+                <title>Création d'application métier | Pokouwebb, agence web</title>
+                <meta property="og:title" content="Création d'application métier | Pokouwebb, agence web" key="title" />
 
                 <meta name="description" content="Nos applications intuitives font passer votre entreprise au niveau supérieur en offrant aux utilisateurs une meilleure expérience." key="description"/>
 

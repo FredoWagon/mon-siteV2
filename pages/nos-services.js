@@ -15,8 +15,8 @@ export default function NosServices() {
         <Layout currentPage="services" navbarStyle="background--red">
 
             <Head>
-                <title>Nos services - Site internet, Application web & E-commerce | Pokouwebb, agence web</title>
-                <meta property="og:title" content="Nos services - Site internet, Application web & E-commerce | Pokouwebb, agence web" key="title" />
+                <title>Nos services - Site internet, Application web & E-commerce | PokouWeb, agence web</title>
+                <meta property="og:title" content="Nos services - Site internet, Application web & E-commerce | PokouWeb, agence web" key="title" />
 
                 <meta name="description" content="Nous créons des sites Web de grande qualité et des services numériques qui apportent de vrais résultats. Nous visons toujours la convivialité." key="description"/>
 

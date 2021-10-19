@@ -14,8 +14,8 @@ export default function SiteWeb() {
         <Layout currentPage="creationweb" navbarStyle="background--green">
 
             <Head>
-                <title>Création de site internet | Pokouwebb, agence web</title>
-                <meta property="og:title" content="Création de site internet | Pokouwebb, agence web" key="title" />
+                <title>Création de site internet | PokouWeb, agence web</title>
+                <meta property="og:title" content="Création de site internet | PokouWeb, agence web" key="title" />
 
                 <meta name="description" content="Votre site Web est votre outil de marketing le plus puissant, et nous voulons vous aider à l'utiliser au maximum." key="description"/>
 

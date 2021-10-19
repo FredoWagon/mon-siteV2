@@ -14,8 +14,8 @@ export default function Conception() {
         <Layout currentPage="conception" navbarStyle="background--blue">
 
             <Head>
-                <title>Design & Conception | Pokouwebb, agence web</title>
-                <meta property="og:title" content="Design & Conception | Pokouwebb, agence web" key="title" />
+                <title>Design & Conception | PokouWeb, agence web</title>
+                <meta property="og:title" content="Design & Conception | PokouWeb, agence web" key="title" />
 
                 <meta name="description" content="Nous prenons un malin plaisir à concevoir et designer des sites qui raviront vos utilisateurs." key="description"/>
 

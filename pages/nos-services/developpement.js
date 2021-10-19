@@ -14,8 +14,8 @@ export default function Developpement() {
         <Layout currentPage="developpement" navbarStyle="background--green">
 
             <Head>
-                <title>Developpement | Pokouwebb, agence web</title>
-                <meta property="og:title" content="Developpement | Pokouwebb, agence web" key="title" />
+                <title>Developpement | PokouWeb, agence web</title>
+                <meta property="og:title" content="Developpement | PokouWeb, agence web" key="title" />
 
                 <meta name="description" content="Nos développeurs s'assurent que toutes nos implémentations techniques sont de haute qualité. Notre équipe suit de près les tendances numériques et les évolutions technologiques." key="description"/>
 
