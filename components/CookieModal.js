@@ -5,6 +5,7 @@ import Image from 'next/image'
 import croix from "../public/croix.svg"
 import cookieCutter from 'cookie-cutter'
 import Link from 'next/link';
+import moment from "moment";
 
 
 export default function CookieModal() {
@@ -14,7 +15,6 @@ export default function CookieModal() {
 
     useEffect( () => {
         const cookie = cookieCutter.get('cookie_consent')
-
         if (cookie) {
             setDisplayModal(false)
         } else {
@@ -24,7 +24,8 @@ export default function CookieModal() {
     },[displayModal])
 
     const handleCookie = () => {
-        cookieCutter.set('cookie_consent', true);
+        const cookieExpiration = moment().add(99, 'days').toDate();
+        cookieCutter.set('cookie_consent', true, {expires: cookieExpiration});
         setDisplayModal(false);
     }
 
