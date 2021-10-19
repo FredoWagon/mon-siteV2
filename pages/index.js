@@ -16,27 +16,13 @@ export default function Home() {
         <Layout navbarStyle="background--white">
             <Head>
                 {/* dynamic */}
-                <title>Agence web à Rennes et Bordeaux : création site internet, application web, e-commerce, référencement - Pokouweb</title>
-                <link rel="canonical" href="https://www.pokouweb.fr/"/>
+                <title>Agence web à Rennes et Bordeaux : création site internet, application web, e-commerce, référencement | Pokouweb</title>
+                <link rel="canonical" href="https://www.pokouweb.fr/" key="url_canonical"/>
                 <meta name="description" content="
-Nous aidons nos clients à réaliser leur potentiel en ligne en concevant et en développant des sites Web et des services numériques."/>
+Nous aidons nos clients à réaliser leur potentiel en ligne en concevant et en développant des sites Web et des services numériques." key="description"/>
                 <meta property="og:title" content="Agence web à Rennes et Bordeaux : création site internet, application web, e-commerce, référencement - Pokouweb" key="title" />
-                <meta property="og:url" content="https://www.pokouweb.fr/"/>
-                <meta property="og:type" content="website" />
-                {/* not dynamic */}
-                <meta property="og:site_name" content="PokouWeb, agence web à Rennes et Bordeaux"/>
-                <meta property="og:locale" content="fr_FR"/>
-
-
-
-
-
-
-
-
-
-
-
+                <meta property="og:url" content="https://www.pokouweb.fr/" key="url"/>
+                <meta property="og:type" content="website" key="type" />
 
 
 
