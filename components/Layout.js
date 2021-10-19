@@ -9,17 +9,13 @@ import CookieModal from "./CookieModal";
 export default function Layout(props) {
 
 
+
     useEffect( () => {
 
     })
 
     return (
         <>
-            <Head>
-                <title>Bonjour</title>
-                <link rel="shortcut icon" href="/pokou_faviconv2.svg"/>
-
-            </Head>
 
 
 

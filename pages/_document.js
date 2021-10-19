@@ -8,9 +8,11 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html lang="fr">
+            <Html lang="fr-FR">
                 <Head>
+                    <meta charSet="UTF-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+                    <link rel="shortcut icon" href="/pokou_faviconv2.svg"/>
                     {/*google font*/}
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
