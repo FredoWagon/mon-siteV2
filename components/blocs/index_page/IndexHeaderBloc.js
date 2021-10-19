@@ -25,7 +25,7 @@ export default function IndexHeaderBloc() {
                     <div className={style.header_bloc__left}>
                         <h1>Réalisez votre potentiel en ligne</h1>
                         <p>Nous sommes l'agence digitale qui vous aide à attirer les bons utilisateurs sur votre site, à vous assurer qu'ils vivent l'expérience pour laquelle ils sont venus et à les engager après leur visite. Votre entreprise ne peut qu'en récolter les fruits.</p>
-                        <Link href="/services">
+                        <Link href="/nos-services">
                             <button>Nos services</button>
                         </Link>
                     </div>

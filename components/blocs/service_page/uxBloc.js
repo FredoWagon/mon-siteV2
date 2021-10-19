@@ -26,7 +26,7 @@ export default function UxBloc() {
                                 <span>Expérience utilisateur</span>
                                 <span>Interface utilisateur</span>
                             </p>
-                            <Link href='/services/conception'>
+                            <Link href='/nos-services/conception'>
                                 <a>Lire sur la conception</a>
                             </Link>
 
@@ -42,7 +42,7 @@ export default function UxBloc() {
                                 <span>E-commerce</span>
                                 <span>Applications Web</span>
                             </p>
-                            <Link href='/services/developpement'>
+                            <Link href='/nos-services/developpement'>
                                 <a>Lire sur le développement</a>
                             </Link>
                         </div>
@@ -58,7 +58,7 @@ export default function UxBloc() {
                                 <span>Optimisation du contenu</span>
                                 <span>Profils des liens</span>
                             </p>
-                            <Link href='/services/referencement'>
+                            <Link href='/nos-services/referencement'>
                                 <a>Lire sur le référencement</a>
                             </Link>
 

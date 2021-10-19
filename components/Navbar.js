@@ -271,13 +271,13 @@ export default function Navbar(props) {
                         <div ref={desktopNav} className={style.navbar__bottom__desktop}>
                             <span ref={bullet} style={{left: `${bulletPosition}px`}} className={ `${style.nav__links_bullet}  ${activeBullet ? style.bullet_active : ""}`}/>
                             <div className={style.nav__links_left}>
-                                <Link  href="/services">
+                                <Link  href="/nos-services">
                                     <a ref={serviceLink} onMouseOut={handleOut} onMouseOver={handleHover} >Nos services</a>
                                 </Link>
                                 <Link href="/#travaux_anchor">
                                     <a ref={travauxLink} onMouseOut={handleOut} onMouseOver={handleHover}>Travaux</a>
                                 </Link>
-                                <Link href="/about">
+                                <Link href="/a-propos">
                                     <a ref={nousLink} onMouseOut={handleOut} onMouseOver={handleHover}>A propos de nous</a>
                                 </Link>
                             </div>
@@ -307,29 +307,29 @@ export default function Navbar(props) {
                     <div className={style.main_burger_menu__content}>
                         <ul>
                             <li onClick={() => setBurgerOpen(false)} className={`${!props.currentPage? style.active_link : ""}`}><Link scroll={true} href="/"><a >Acceuil</a></Link></li>
-                            <li className={`${props.currentPage === "services" ? style.active_link : ""}`}><Link href="/services"><a >Services</a></Link></li>
+                            <li className={`${props.currentPage === "services" ? style.active_link : ""}`}><Link href="/nos-services"><a >Services</a></Link></li>
                             <li onClick={() => setBurgerOpen(false)}><Link href="/#travaux_anchor"><a >Travaux</a></Link></li>
-                            <li className={`${props.currentPage === "nous" ? style.active_link : ""}`}> <Link href="/about"><a >A propos</a></Link></li>
+                            <li className={`${props.currentPage === "nous" ? style.active_link : ""}`}> <Link href="/a-propos"><a >A propos</a></Link></li>
                             <li className={`${props.currentPage === "contact" ? style.active_link : ""}`}>   <Link href="/contact"><a >Contact</a></Link></li>
                         </ul>
                     </div>
                     <div className={style.primary_service_burger_menu__content}>
                         <ul>
                             <li className={props.currentPage === "creationweb" ? style.active_link : ""}>
-                                <Link href="/services/sitesweb">Création web</Link>
+                                <Link href="/nos-services/site-web">Création web</Link>
                             </li>
-                            <li className={props.currentPage === "applicationweb" ? style.active_link : ""}>  <Link href="/services/applicationsweb">Applications web</Link></li>
-                            <li className={props.currentPage === "ecommerce" ? style.active_link : ""}> <Link href="/services/ecommerce">E-commerce</Link></li>
+                            <li className={props.currentPage === "applicationweb" ? style.active_link : ""}>  <Link href="/nos-services/application-web">Applications web</Link></li>
+                            <li className={props.currentPage === "ecommerce" ? style.active_link : ""}> <Link href="/nos-services/e-commerce">E-commerce</Link></li>
                         </ul>
 
                     </div>
                     <div className={style.secondary_service_burger_menu__content}>
                         <ul>
                             <li className={props.currentPage === "conception" ? style.active_link : ""}>
-                                <Link href="/services/conception">Conception</Link>
+                                <Link href="/nos-services/conception">Conception</Link>
                             </li>
-                            <li className={props.currentPage === "developpement" ? style.active_link : ""}>  <Link href="/services/developpement">Développement</Link></li>
-                            <li className={props.currentPage === "referencement" ? style.active_link : ""}> <Link href="/services/referencement">Référencement</Link></li>
+                            <li className={props.currentPage === "developpement" ? style.active_link : ""}>  <Link href="/nos-services/developpement">Développement</Link></li>
+                            <li className={props.currentPage === "referencement" ? style.active_link : ""}> <Link href="/nos-services/referencement">Référencement</Link></li>
                         </ul>
                     </div>
 

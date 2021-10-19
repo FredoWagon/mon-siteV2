@@ -15,7 +15,7 @@ export default function ServicesPopUp() {
         <div className={style.services_popup__container}>
             <div className={style.services_popup}>
                     <div className={style.services_popup__content}>
-                        <Link href="/services/sitesweb">
+                        <Link href="/nos-services/site-web">
                             <div className={`${style.popup_item__green} ${style.services_popup__item}`} >
                                 <div className={style.services_popup__image}>
                                   <Image width="48" height="48" alt="Créer un site internet" src="/pokouweb/test_icon_site_dve2xp.svg"/>
@@ -39,7 +39,7 @@ export default function ServicesPopUp() {
                         </Link>
 
 
-                        <Link href="/services/applicationsweb">
+                        <Link href="/nos-services/application-web">
                             <div className={`${style.popup_item__blue} ${style.services_popup__item}`}>
                                 <div className={style.services_popup__image}>
                                     <Image width="48" height="48" alt="Créer une application web" src="/pokouweb/test_icon_app_u2ably.svg"/>
@@ -59,7 +59,7 @@ export default function ServicesPopUp() {
                             </div>
                         </Link>
 
-                        <Link href="/services/ecommerce">
+                        <Link href="/nos-services/e-commerce">
 
                             <div className={`${style.popup_item__yellow} ${style.services_popup__item}`}>
                                 <div className={style.services_popup__image}>

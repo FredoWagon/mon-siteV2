@@ -8,7 +8,7 @@ export default function DeveloppementContactBloc() {
         <div className={style.developpement_contact__container}>
             <div className={style.developpement_contact}>
                 <ContactComponent customTitle="Prendre contact"/>
-                <Link href="/services">
+                <Link href="/nos-services">
                     <a>Retour aux services</a>
                 </Link>
 

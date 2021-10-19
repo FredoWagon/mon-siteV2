@@ -16,7 +16,7 @@ export default function EcommerceHeaderBloc() {
                         <h1>Nous vous aidons à vendre vos produits et services en ligne </h1>
                         <p>Nous concevons et mettons en œuvre des magasins de commerce électronique à petite échelle et complexes qui servent vos objectifs commerciaux uniques. Nos solutions sont conçues pour augmenter les ventes et la satisfaction des clients. Les vitrines sont toujours parfaitement intégrées à votre site et les parcours d'achat sont conçus pour créer des expériences d'achat agréables.</p>
 
-                        <Link href="/services">
+                        <Link href="/nos-services">
                             <a>
                                 <p>Demandez une offre</p>
                             </a>

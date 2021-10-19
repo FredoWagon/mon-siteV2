@@ -26,7 +26,7 @@ export default function WorkBloc() {
                     </div>
 
 
-                <Link href="/projets/trendcorner">
+                <Link href="/travaux/trendcorner">
                     <div className={  `${style.work_item__container} ${style.work_item_new}`  }>
                         <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
                         <div className={style.work_item}>
@@ -59,7 +59,7 @@ export default function WorkBloc() {
 
 
 
-               <Link href="/projets/medtandem">
+               <Link href="/travaux/medtandem">
                 <div className={`${style.work_item__container} ${style.work_item_translate}`}>
 
                     <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
@@ -88,7 +88,7 @@ export default function WorkBloc() {
                     </FadeTranslateTopWhenVisible>
                 </div>
                </Link>
-                <Link href="/projets/onepalm-surf">
+                <Link href="/travaux/onepalm-surf">
                     <div className={style.work_item__container}>
                         <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
                             <div className={style.work_item}>
@@ -114,7 +114,7 @@ export default function WorkBloc() {
                         </FadeTranslateTopWhenVisible>
                     </div>
                 </Link>
-                <Link href="/projets/dashboard">
+                <Link href="/travaux/dashboard">
                 <div className={ `${style.work_item__container} ${style.work_item_translate}`}>
                     <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
                     <div className={style.work_item}>

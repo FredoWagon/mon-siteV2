@@ -20,9 +20,9 @@ export default function Footer(props) {
                         <div className={style.sitemap_item}>
                             <ul>
                                 <li className={ !props.currentPage ? style.active_current_page : ""}>  <Link href="/">Accueil</Link></li>
-                                <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/services" >Nos services</Link></li>
+                                <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/nos-services" >Nos services</Link></li>
                                 <li className={`${["dashboard", "medtandem", "trendcorner", "onepalm"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="#">Travaux</Link></li>
-                                <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/about">A propos</Link></li>
+                                <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/a-propos">A propos</Link></li>
                             </ul>
                         </div>
                         <div className={style.sitemap_item}>
@@ -36,18 +36,18 @@ export default function Footer(props) {
                             <div className={style.sitemap_dynamic_services}>
                                 <ul>
                                     <li className={props.currentPage === "creationweb" ? style.active_current_page : ""}>
-                                        <Link href="/services/sitesweb">Création web</Link>
+                                        <Link href="/nos-services/site-web">Création web</Link>
                                     </li>
-                                    <li className={props.currentPage === "applicationweb" ? style.active_current_page : ""}>  <Link href="/services/applicationsweb">Applications web</Link></li>
-                                    <li className={props.currentPage === "ecommerce" ? style.active_current_page : ""}> <Link href="/services/ecommerce">E-commerce</Link></li>
+                                    <li className={props.currentPage === "applicationweb" ? style.active_current_page : ""}>  <Link href="/nos-services/application-web">Applications web</Link></li>
+                                    <li className={props.currentPage === "ecommerce" ? style.active_current_page : ""}> <Link href="/nos-services/e-commerce">E-commerce</Link></li>
                                 </ul>
                             </div>
                             <div className={style.sitemap_dynamic_works}>
                                 <ul>
-                                    <li className={props.currentPage === "trendcorner" ? style.active_current_page : ""}> <Link href="/projets/trendcorner">Trend Corner</Link></li>
-                                    <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/projets/medtandem">Med Tandem</Link></li>
-                                    <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/projets/onepalm-surf">OnePalm Surf</Link></li>
-                                    <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/projets/dashboard">DashBoard</Link></li>
+                                    <li className={props.currentPage === "trendcorner" ? style.active_current_page : ""}> <Link href="/travaux/trendcorner">Trend Corner</Link></li>
+                                    <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/travaux/medtandem">Med Tandem</Link></li>
+                                    <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/travaux/onepalm-surf">OnePalm Surf</Link></li>
+                                    <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/travaux/dashboard">DashBoard</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,19 +57,19 @@ export default function Footer(props) {
                             <div className={style.sitemap_dynamic_services}>
                                 <ul>
                                     <li className={props.currentPage === "creationweb" ? style.active_current_page : ""}>
-                                        <Link href="/services/sitesweb">Création web</Link>
+                                        <Link href="/nos-services/site-web">Création web</Link>
                                     </li>
-                                    <li className={props.currentPage === "applicationweb" ? style.active_current_page : ""}>  <Link href="/services/applicationsweb">Applications web</Link></li>
-                                    <li className={props.currentPage === "ecommerce" ? style.active_current_page : ""}> <Link href="/services/ecommerce">E-commerce</Link></li>
+                                    <li className={props.currentPage === "applicationweb" ? style.active_current_page : ""}>  <Link href="/nos-services/application-web">Applications web</Link></li>
+                                    <li className={props.currentPage === "ecommerce" ? style.active_current_page : ""}> <Link href="/nos-services/e-commerce">E-commerce</Link></li>
                                 </ul>
                             </div>
                             <div className={style.sitemap_dynamic_sub_services}>
                                 <ul>
                                     <li className={props.currentPage === "conception" ? style.active_current_page : ""}>
-                                        <Link href="/services/conception">Conception</Link>
+                                        <Link href="/nos-services/conception">Conception</Link>
                                     </li>
-                                    <li className={props.currentPage === "developpement" ? style.active_current_page : ""}>  <Link href="/services/developpement">Développement</Link></li>
-                                    <li className={props.currentPage === "referencement" ? style.active_current_page : ""}> <Link href="/services/referencement">Référencement</Link></li>
+                                    <li className={props.currentPage === "developpement" ? style.active_current_page : ""}>  <Link href="/nos-services/developpement">Développement</Link></li>
+                                    <li className={props.currentPage === "referencement" ? style.active_current_page : ""}> <Link href="/nos-services/referencement">Référencement</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -78,10 +78,10 @@ export default function Footer(props) {
                         <div className={style.sitemap_dynamic_item}>
                             <div className={style.sitemap_dynamic_works}>
                                 <ul>
-                                    <li className={props.currentPage === "trendcorner" ? style.active_current_page : ""}> <Link href="/projets/trendcorner">Trend Corner</Link></li>
-                                    <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/projets/medtandem">Med Tandem</Link></li>
-                                    <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/projets/onepalm-surf">OnePalm Surf</Link></li>
-                                    <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/projets/dashboard">DashBoard</Link></li>
+                                    <li className={props.currentPage === "trendcorner" ? style.active_current_page : ""}> <Link href="/travaux/trendcorner">Trend Corner</Link></li>
+                                    <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/travaux/medtandem">Med Tandem</Link></li>
+                                    <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/travaux/onepalm-surf">OnePalm Surf</Link></li>
+                                    <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/travaux/dashboard">DashBoard</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -154,9 +154,9 @@ export default function Footer(props) {
                     <div className={style.footer_mobile__links__global}>
                         <ul>
                             <li className={ !props.currentPage ? style.active_current_page : ""}>  <Link href="/">Accueil</Link></li>
-                            <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/services" >Nos services</Link></li>
+                            <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/nos-services" >Nos services</Link></li>
                             <li className={`${["dashboard", "medtandem", "trendcorner", "onepalm"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="#">Travaux</Link></li>
-                            <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/about">A propos</Link></li>
+                            <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/a-propos">A propos</Link></li>
                             <li  className={ props.currentPage === "contact" ? style.active_current_page : ""}> <Link href="/contact" >Contact</Link></li>
                         </ul>
                     </div>
@@ -166,18 +166,18 @@ export default function Footer(props) {
                         <div className={style.footer_mobile__links__services}>
                             <ul>
                                 <li>
-                                    <Link href="/services/sitesweb">Création web</Link>
+                                    <Link href="/nos-services/site-web">Création web</Link>
                                 </li>
-                                <li>  <Link href="/services/applicationsweb">Applications web</Link></li>
-                                <li> <Link href="/services/ecommerce">E-commerce</Link></li>
+                                <li>  <Link href="/nos-services/application-web">Applications web</Link></li>
+                                <li> <Link href="/nos-services/e-commerce">E-commerce</Link></li>
                             </ul>
                         </div>
                         <div className={style.footer_mobile__links__works}>
                             <ul>
-                                <li className={props.currentPage === "trendcorner" ? style.active_current_page : ""}> <Link href="/projets/trendcorner">Trend Corner</Link></li>
-                                <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/projets/medtandem">Med Tandem</Link></li>
-                                <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/projets/onepalm-surf">OnePalm Surf</Link></li>
-                                <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/projets/dashboard">DashBoard</Link></li>
+                                <li className={props.currentPage === "trendcorner" ? style.active_current_page : ""}> <Link href="/travaux/trendcorner">Trend Corner</Link></li>
+                                <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/travaux/medtandem">Med Tandem</Link></li>
+                                <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/travaux/onepalm-surf">OnePalm Surf</Link></li>
+                                <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/travaux/dashboard">DashBoard</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -187,19 +187,19 @@ export default function Footer(props) {
                         <div className={style.footer_mobile__links__services}>
                             <ul>
                                 <li className={props.currentPage === "creationweb" ? style.active_current_page : ""}>
-                                    <Link href="/services/sitesweb">Création web</Link>
+                                    <Link href="/nos-services/site-web">Création web</Link>
                                 </li>
-                                <li className={props.currentPage === "applicationweb" ? style.active_current_page : ""}>  <Link href="/services/applicationsweb">Applications web</Link></li>
-                                <li className={props.currentPage === "ecommerce" ? style.active_current_page : ""}> <Link href="/services/ecommerce">E-commerce</Link></li>
+                                <li className={props.currentPage === "applicationweb" ? style.active_current_page : ""}>  <Link href="/nos-services/application-web">Applications web</Link></li>
+                                <li className={props.currentPage === "ecommerce" ? style.active_current_page : ""}> <Link href="/nos-services/ec-ommerce">E-commerce</Link></li>
                             </ul>
                         </div>
                         <div className={style.footer_mobile__links__sub_services}>
                             <ul>
                                 <li className={props.currentPage === "conception" ? style.active_current_page : ""}>
-                                    <Link href="/services/conception">Conception</Link>
+                                    <Link href="/nos-services/conception">Conception</Link>
                                 </li>
-                                <li className={props.currentPage === "developpement" ? style.active_current_page : ""}>  <Link href="/services/developpement">Développement</Link></li>
-                                <li className={props.currentPage === "referencement" ? style.active_current_page : ""}> <Link href="/services/referencement">Référencement</Link></li>
+                                <li className={props.currentPage === "developpement" ? style.active_current_page : ""}>  <Link href="/nos-services/developpement">Développement</Link></li>
+                                <li className={props.currentPage === "referencement" ? style.active_current_page : ""}> <Link href="/nos-services/referencement">Référencement</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -208,10 +208,10 @@ export default function Footer(props) {
                     <div className={style.footer_mobile__dynamic_links}>
                         <div className={style.footer_mobile__links__works}>
                             <ul>
-                                <li className={props.currentPage === "trendcorner" ? style.active_current_page : ""}> <Link href="/projets/trendcorner">Trend Corner</Link></li>
-                                <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/projets/medtandem">Med Tandem</Link></li>
-                                <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/projets/onepalm-surf">OnePalm Surf</Link></li>
-                                <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/projets/dashboard">DashBoard</Link></li>
+                                <li className={props.currentPage === "trendcorner" ? style.active_current_page : ""}> <Link href="/travaux/trendcorner">Trend Corner</Link></li>
+                                <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/travaux/medtandem">Med Tandem</Link></li>
+                                <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/travaux/onepalm-surf">OnePalm Surf</Link></li>
+                                <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/travaux/dashboard">DashBoard</Link></li>
                             </ul>
                         </div>
                     </div>
