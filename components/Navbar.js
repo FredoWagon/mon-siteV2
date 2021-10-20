@@ -94,8 +94,6 @@ export default function Navbar(props) {
     useEffect(() => {
         const title = titleLogo.current
         const logo = pokouLogo.current
-        title.style=""
-        logo.style=""
         const titleFontSize = parseInt(window.getComputedStyle(title, null).getPropertyValue('font-size'));
         const logoWidth = parseInt(window.getComputedStyle(logo, null).getPropertyValue('width'));
         setLogoSize(titleFontSize)
@@ -109,15 +107,21 @@ export default function Navbar(props) {
         return () => {
             window.removeEventListener('resize', handleResize)
         }
-    })
+    }, [])
 
     // Modification font-size sur resize
     useEffect(() => {
+        console.log("me monte")
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
+            console.log('me demonte')
             window.removeEventListener('scroll', handleFontSize, {passive: true})
         }
-    })
+    }, [])
+
+
+
+
 
     // Movile menu
     useEffect(() => {
@@ -245,7 +249,7 @@ export default function Navbar(props) {
                             <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
                                 <span>P</span>KOÙ WEB
                                 <span ref={pokouLogo} className={style.pokou_logo}>
-                                    <Image onLoadingComplete={() => console.log("image loggé")} width="69" priority={true} alt="Pokou web logo" height="69" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
+                                    <Image width="69" priority={true} alt="Pokou web logo" height="69" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
 
                         </span>
                             </a>

@@ -94,7 +94,6 @@ export default function OurTeam() {
         window.addEventListener("scroll", handleScrollEvents)
         window.addEventListener('resize', handleResize)
         return () => {
-            console.log('je me demonte')
             window.removeEventListener("scroll", handleScrollEvents)
             window.removeEventListener('resize', handleResize)
         }
