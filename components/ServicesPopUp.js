@@ -16,31 +16,25 @@ export default function ServicesPopUp() {
             <div className={style.services_popup}>
                     <div className={style.services_popup__content}>
                         <Link href="/nos-services/site-web">
-                            <div className={`${style.popup_item__green} ${style.services_popup__item}`} >
+                            <a className={`${style.popup_item__green} ${style.services_popup__item}`}>
                                 <div className={style.services_popup__image}>
                                   <Image width="48" height="48" alt="Créer un site internet" src="/pokouweb/test_icon_site_dve2xp.svg"/>
-
                                 </div>
-
                                 <div className={style.services_popup__title}>
-
-
                                     <h3>Création web
                                         <span className={ `${style.popup_underline__green} ${style.popup_underline}`}/></h3>
-
                                 </div>
                                 <p>Un bon site Web est bien plus qu'une carte de visite numérique.</p>
                                 <div className={`${style.popup_more_info} `}>
                                     <span></span>
                                     <p>Voir plus</p>
-
                                 </div>
-                            </div>
+                            </a>
                         </Link>
 
 
                         <Link href="/nos-services/application-web">
-                            <div className={`${style.popup_item__blue} ${style.services_popup__item}`}>
+                            <a className={`${style.popup_item__blue} ${style.services_popup__item}`}>
                                 <div className={style.services_popup__image}>
                                     <Image width="48" height="48" alt="Créer une application web" src="/pokouweb/test_icon_app_u2ably.svg"/>
                                 </div>
@@ -56,12 +50,12 @@ export default function ServicesPopUp() {
                                     <p>Voir plus</p>
 
                                 </div>
-                            </div>
+                            </a>
                         </Link>
 
                         <Link href="/nos-services/e-commerce">
 
-                            <div className={`${style.popup_item__yellow} ${style.services_popup__item}`}>
+                            <a className={`${style.popup_item__yellow} ${style.services_popup__item}`}>
                                 <div className={style.services_popup__image}>
 
                                     <Image width="48" height="48" alt="Créer un site de e-commerce" src="/pokouweb/test_icon_shop_y5dtvw.svg"/>
@@ -82,7 +76,7 @@ export default function ServicesPopUp() {
 
                                 </div>
 
-                            </div>
+                            </a>
                         </Link>
 
 

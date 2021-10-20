@@ -14,82 +14,82 @@ export default function WorkBloc() {
         <div className={style.work_bloc__container}>
             <div className={style.work_bloc}>
 
-                    <div id="travaux_anchor" className={style.work_intro}>
-                        <FadeTranslateTopWhenVisible tresholdOption={0.3} triggerOnceOption={false} animation="middle_mark_bleu">
+                <div id="travaux_anchor" className={style.work_intro}>
+                    <FadeTranslateTopWhenVisible tresholdOption={0.3} triggerOnceOption={false} animation="middle_mark_bleu">
                         <h2>Nos derniers <mark>projets</mark> </h2>
                         <p>Regardez ce que nous pouvons créer ensemble, épaule contre épaule. Une excellente communication et des processus bien construits sont les clés du monde des projets parfaitement adaptés.</p>
 
-                            <Link href="/">
-                                <a>Nos travaux</a>
-                            </Link>
-                        </FadeTranslateTopWhenVisible>
-                    </div>
+                        <Link href="/">
+                            <a>Nos travaux</a>
+                        </Link>
+                    </FadeTranslateTopWhenVisible>
+                </div>
 
 
                 <Link href="/travaux/trendcorner">
-                    <div className={  `${style.work_item__container} ${style.work_item_new}`  }>
+                    <a className={  `${style.work_item__container} ${style.work_item_new}`  }>
                         <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
-                        <div className={style.work_item}>
-                            <div className={style.work_item__image__container}>
-                                <div className={style.work_item__image}>
-                                    <div className={style.view_project}>
-                                        <p>Voir la projet</p>
+                            <div className={style.work_item}>
+                                <div className={style.work_item__image__container}>
+                                    <div className={style.work_item__image}>
+                                        <div className={style.view_project}>
+                                            <p>Voir la projet</p>
+                                        </div>
+                                        <div className={style.new_project_round}>
+                                            <p>Nouveau</p>
+                                            <p>projet</p>
+                                        </div>
+                                        <Image lazyBoundary="500px" alt="Trend corner - projet" layout="fill" src="/pokouweb/trend_corner_vignet_cfnxeb_wh7kyx.webp"/>
                                     </div>
-                                    <div className={style.new_project_round}>
-                                        <p>Nouveau</p>
-                                        <p>projet</p>
+                                </div>
+                                <div className={style.work_item__text}>
+                                    <div className={style.work_item_title}>
+                                        <div className={style.title_animation_blue}></div>
+                                        <h3>Trend Corner</h3>
                                     </div>
-                                    <Image lazyBoundary="500px" alt="Trend corner - projet" layout="fill" src="/pokouweb/trend_corner_vignet_cfnxeb_wh7kyx.webp"/>
+                                    <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
+
                                 </div>
-                            </div>
-                            <div className={style.work_item__text}>
-                                <div className={style.work_item_title}>
-                                    <div className={style.title_animation_blue}></div>
-                                    <h3>Trend Corner</h3>
-                                </div>
-                                <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
+
 
                             </div>
-
-
-                        </div>
                         </FadeTranslateTopWhenVisible>
-                    </div>
+                    </a>
                 </Link>
 
 
 
-               <Link href="/travaux/medtandem">
-                <div className={`${style.work_item__container} ${style.work_item_translate}`}>
+                <Link href="/travaux/medtandem">
+                    <a className={`${style.work_item__container} ${style.work_item_translate}`}>
 
-                    <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
-                    <div className={style.work_item}>
-                        <div className={style.work_item__image__container}>
-                            <div className={style.work_item__image}>
-                                <div className={style.view_project}>
-                                    <p>Voir la projet</p>
+                        <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
+                            <div className={style.work_item}>
+                                <div className={style.work_item__image__container}>
+                                    <div className={style.work_item__image}>
+                                        <div className={style.view_project}>
+                                            <p>Voir la projet</p>
+                                        </div>
+                                        <Image lazyBoundary="500px" alt="Medtandem - projet" layout="fill" src="/pokouweb/med_tandem_mockup_veoqcc_suqdej.webp"/>
+
+                                    </div>
                                 </div>
-                                <Image lazyBoundary="500px" alt="Medtandem - projet" layout="fill" src="/pokouweb/med_tandem_mockup_veoqcc_suqdej.webp"/>
+                                <div className={style.work_item__text}>
+                                    <div className={style.work_item_title}>
+                                        <div className={style.title_animation_blue}></div>
+                                        <h3>MedTandem</h3>
+                                    </div>
+
+                                    <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
+
+                                </div>
+
 
                             </div>
-                        </div>
-                        <div className={style.work_item__text}>
-                            <div className={style.work_item_title}>
-                                <div className={style.title_animation_blue}></div>
-                                <h3>MedTandem</h3>
-                            </div>
-
-                            <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
-
-                        </div>
-
-
-                    </div>
-                    </FadeTranslateTopWhenVisible>
-                </div>
-               </Link>
+                        </FadeTranslateTopWhenVisible>
+                    </a>
+                </Link>
                 <Link href="/travaux/onepalm-surf">
-                    <div className={style.work_item__container}>
+                    <a className={style.work_item__container}>
                         <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
                             <div className={style.work_item}>
                                 <div className={style.work_item__image__container}>
@@ -112,33 +112,33 @@ export default function WorkBloc() {
 
                             </div>
                         </FadeTranslateTopWhenVisible>
-                    </div>
+                    </a>
                 </Link>
                 <Link href="/travaux/dashboard">
-                <div className={ `${style.work_item__container} ${style.work_item_translate}`}>
-                    <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
-                    <div className={style.work_item}>
-                        <div className={style.work_item__image__container}>
-                            <div className={style.work_item__image}>
-                                <div className={style.view_project}>
-                                    <p>Voir la projet</p>
+                    <a className={ `${style.work_item__container} ${style.work_item_translate}`}>
+                        <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
+                            <div className={style.work_item}>
+                                <div className={style.work_item__image__container}>
+                                    <div className={style.work_item__image}>
+                                        <div className={style.view_project}>
+                                            <p>Voir la projet</p>
+                                        </div>
+                                        <Image lazyBoundary="500px" alt="Dashboard - projet" layout="fill" src="/pokouweb/dashboard_card_eax3rx_hsrosb.webp"/>
+                                    </div>
                                 </div>
-                                <Image lazyBoundary="500px" alt="Dashboard - projet" layout="fill" src="/pokouweb/dashboard_card_eax3rx_hsrosb.webp"/>
+                                <div className={style.work_item__text}>
+                                    <div className={style.work_item_title}>
+                                        <div className={style.title_animation_blue}></div>
+                                        <h3>DashBoard</h3>
+                                    </div>
+                                    <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
+
+                                </div>
+
+
                             </div>
-                        </div>
-                        <div className={style.work_item__text}>
-                            <div className={style.work_item_title}>
-                                <div className={style.title_animation_blue}></div>
-                                <h3>DashBoard</h3>
-                            </div>
-                            <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
-
-                        </div>
-
-
-                    </div>
-                    </FadeTranslateTopWhenVisible>
-                </div>
+                        </FadeTranslateTopWhenVisible>
+                    </a>
                 </Link>
 
             </div>

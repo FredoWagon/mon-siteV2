@@ -161,18 +161,27 @@
           display: none;
 
         }
+        ul {
+          display: flex;
+          list-style: none;
+          margin: unset;
+          padding: unset;
+          li {
+            a {
+              font-size: 1.1rem;
 
-
-        a {
-          font-size: 1.1rem;
-
-          padding: 1rem 1.5rem 1rem 0;
-          transition: opacity 0.3s ease;
-          &:hover {
-            opacity: 0.5;
-            transition: opacity 0.3s ease;
+              padding: 1rem 1.5rem 1rem 0;
+              transition: opacity 0.3s ease;
+              &:hover {
+                opacity: 0.5;
+                transition: opacity 0.3s ease;
+              }
+            }
           }
         }
+
+
+
 
         .nav__links_left {
 

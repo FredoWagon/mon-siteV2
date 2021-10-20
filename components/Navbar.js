@@ -99,25 +99,24 @@ export default function Navbar(props) {
         setLogoSize(titleFontSize)
         logoSizeValue.current = titleFontSize
         pokouLogoSize.current = logoWidth
+    }, [logoAnimation])
 
-
+    const titleLogoAnimation = () => {
         if (!logoAnimation) {
             navBarTop.current.classList.remove(style.logo_animation)
             setLogoAnimationState(true);
         }
-
-
-
-
-    }, [logoAnimation])
+    }
 
 
 
     // Modification font-size sur resize
     useEffect(() => {
         window.addEventListener('resize', handleResize)
+        window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
             window.removeEventListener('resize', handleResize)
+            window.removeEventListener('scroll', handleFontSize, {passive: true})
         }
     })
 
@@ -134,14 +133,6 @@ export default function Navbar(props) {
         }
     },[burgerOpen])
 
-
-    // Modification font-size sur scroll
-    useEffect( () => {
-        window.addEventListener('scroll', handleFontSize, {passive: true})
-        return () => {
-            window.removeEventListener('scroll', handleFontSize, {passive: true})
-        }
-    })
 
     // Animation sur le hover des liens
     const handleHover = (e) => {
@@ -255,12 +246,15 @@ export default function Navbar(props) {
                             <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
                                 <span>P</span>KOÙ WEB
                                 <span ref={pokouLogo} className={style.pokou_logo}>
-                                    <Image width="69" priority={true} alt="Pokou web logo" height="69" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
+                                    <Image onLoadingComplete={titleLogoAnimation} width="69" priority={true} alt="Pokou web logo" height="69" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
 
                         </span>
                             </a>
                         </Link>
+
                     </div>
+
+
 
 
 
@@ -271,21 +265,26 @@ export default function Navbar(props) {
                         <div ref={desktopNav} className={style.navbar__bottom__desktop}>
                             <span ref={bullet} style={{left: `${bulletPosition}px`}} className={ `${style.nav__links_bullet}  ${activeBullet ? style.bullet_active : ""}`}/>
                             <div className={style.nav__links_left}>
-                                <Link  href="/nos-services">
-                                    <a ref={serviceLink} onMouseOut={handleOut} onMouseOver={handleHover} >Nos services</a>
-                                </Link>
-                                <Link href="/#travaux_anchor">
-                                    <a ref={travauxLink} onMouseOut={handleOut} onMouseOver={handleHover}>Travaux</a>
-                                </Link>
-                                <Link href="/a-propos">
-                                    <a ref={nousLink} onMouseOut={handleOut} onMouseOver={handleHover}>A propos de nous</a>
-                                </Link>
+                                <ul>
+                                    <li> <Link  href="/nos-services">
+                                        <a ref={serviceLink} onMouseOut={handleOut} onMouseOver={handleHover} >Nos services</a>
+                                    </Link></li>
+                                    <li> <Link href="/#travaux_anchor">
+                                        <a ref={travauxLink} onMouseOut={handleOut} onMouseOver={handleHover}>Travaux</a>
+                                    </Link></li>
+                                    <li> <Link href="/a-propos">
+                                        <a ref={nousLink} onMouseOut={handleOut} onMouseOver={handleHover}>A propos de nous</a>
+                                    </Link></li>
+                                </ul>
                             </div>
                             <div className={style.nav__links_right}>
+                                <ul>
+                                    <li>  <Link  href="/contact">
+                                        <a ref={contactLink} onMouseOut={handleOut} onMouseOver={handleHover}>Contactez-nous</a>
+                                    </Link></li>
+                                </ul>
 
-                                <Link  href="/contact">
-                                    <a ref={contactLink} onMouseOut={handleOut} onMouseOver={handleHover}>Contactez-nous</a>
-                                </Link>
+
                             </div>
                         </div>
                         <div className={style.navbar__bottom__mobile}>
