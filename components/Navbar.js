@@ -91,6 +91,7 @@ export default function Navbar(props) {
 
     // Initialisation du composant
     useEffect(() => {
+
         const title = titleLogo.current
         const logo = pokouLogo.current
         const titleFontSize = parseInt(window.getComputedStyle(title, null).getPropertyValue('font-size'));
@@ -98,10 +99,20 @@ export default function Navbar(props) {
         setLogoSize(titleFontSize)
         logoSizeValue.current = titleFontSize
         pokouLogoSize.current = logoWidth
+        console.log(">>>>>MONTAGE : INITIALISATION DU COMPOSANT")
+        console.log("TITLEFONTSIZE")
+        console.log(titleFontSize)
+        console.log("LOGOWIDTH")
+        console.log(logoWidth)
 
         return () => {
             title.style = ""
             logo.style=""
+            console.log("DEMONTAGE<<<<< : INITIALISATION DU COMPOSANT")
+            console.log("TITLEFONTSIZE")
+            console.log(titleFontSize)
+            console.log("LOGOWIDTH")
+            console.log(logoWidth)
 
         }
 
@@ -116,10 +127,10 @@ export default function Navbar(props) {
 
     // Modification font-size sur resize
     useEffect(() => {
-        console.log("me monte")
+
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
-            console.log('me demonte')
+
             window.removeEventListener('scroll', handleFontSize, {passive: true})
         }
     }, [])
@@ -170,7 +181,6 @@ export default function Navbar(props) {
     // Gère la taille de la police en fonction du scroll, aussi utilisé lors de l'event resize
     const handleFontSize = () => {
         const body = window.scrollY
-        console.log(body)
         let value = logoSizeValue.current
         let logoWidthValue = pokouLogoSize.current
 
