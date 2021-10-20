@@ -102,7 +102,7 @@ export default function Navbar(props) {
         setLogoSize(titleFontSize)
         logoSizeValue.current = titleFontSize
         pokouLogoSize.current = logoWidth
-    }, [logoAnimation])
+    }, [])
 
     const titleLogoAnimation = () => {
         if (!logoAnimation) {
