@@ -92,6 +92,7 @@ export default function Navbar(props) {
 
     // Initialisation du composant
     useEffect(() => {
+
         const title = titleLogo.current
         const logo = pokouLogo.current
         title.style=""
@@ -113,12 +114,14 @@ export default function Navbar(props) {
         window.addEventListener('resize', handleResize)
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
+            const title = titleLogo.current
+            const logo = pokouLogo.current
             title.style=""
             logo.style=""
             window.removeEventListener('resize', handleResize)
             window.removeEventListener('scroll', handleFontSize, {passive: true})
         }
-    })
+    }, [])
 
     // Movile menu
     useEffect(() => {
