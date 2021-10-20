@@ -110,8 +110,6 @@ export default function Navbar(props) {
     useEffect(() => {
         const title = titleLogo.current
         const logo = pokouLogo.current
-        title.style=""
-        logo.style=""
         window.addEventListener('resize', handleResize)
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
