@@ -94,6 +94,7 @@ export default function Navbar(props) {
     useEffect(() => {
         console.log("TEST ICI")
         const title = titleLogo.current
+        title.style = ""
         const logo = pokouLogo.current
         const titleFontSize = parseInt(window.getComputedStyle(title, null).getPropertyValue('font-size'));
         console.log(titleFontSize)
