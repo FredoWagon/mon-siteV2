@@ -101,11 +101,6 @@ export default function Navbar(props) {
         pokouLogoSize.current = logoWidth
 
 
-        if (!logoAnimation) {
-            navBarTop.current.classList.remove(style.logo_animation)
-            setLogoAnimationState(true);
-        }
-
 
 
 
