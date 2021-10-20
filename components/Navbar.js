@@ -92,36 +92,27 @@ export default function Navbar(props) {
 
     // Initialisation du composant
     useEffect(() => {
-
         const title = titleLogo.current
         const logo = pokouLogo.current
-        title.style=""
-        logo.style=""
         const titleFontSize = parseInt(window.getComputedStyle(title, null).getPropertyValue('font-size'));
         const logoWidth = parseInt(window.getComputedStyle(logo, null).getPropertyValue('width'));
         setLogoSize(titleFontSize)
         logoSizeValue.current = titleFontSize
         pokouLogoSize.current = logoWidth
 
-    }, [logoAnimation])
+    }, [])
 
 
 
     // Modification font-size sur resize
     useEffect(() => {
-        const title = titleLogo.current
-        const logo = pokouLogo.current
         window.addEventListener('resize', handleResize)
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
-            const title = titleLogo.current
-            const logo = pokouLogo.current
-            title.style=""
-            logo.style=""
             window.removeEventListener('resize', handleResize)
             window.removeEventListener('scroll', handleFontSize, {passive: true})
         }
-    }, [])
+    })
 
     // Movile menu
     useEffect(() => {
