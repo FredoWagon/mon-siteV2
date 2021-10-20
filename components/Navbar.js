@@ -102,14 +102,17 @@ export default function Navbar(props) {
 
     }, [])
 
-
+    useEffect(() => {
+        window.addEventListener('resize', handleResize)
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    })
 
     // Modification font-size sur resize
     useEffect(() => {
-        window.addEventListener('resize', handleResize)
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
-            window.removeEventListener('resize', handleResize)
             window.removeEventListener('scroll', handleFontSize, {passive: true})
         }
     })
