@@ -170,6 +170,7 @@ export default function Navbar(props) {
     // Gère la taille de la police en fonction du scroll, aussi utilisé lors de l'event resize
     const handleFontSize = () => {
         const body = window.scrollY
+        console.log(body)
         let value = logoSizeValue.current
         let logoWidthValue = pokouLogoSize.current
 
