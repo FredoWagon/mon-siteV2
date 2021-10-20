@@ -92,24 +92,24 @@ export default function Navbar(props) {
 
     // Initialisation du composant
     useEffect(() => {
-        console.log("TEST ICI")
         const title = titleLogo.current
-        title.style = ""
         const logo = pokouLogo.current
         const titleFontSize = parseInt(window.getComputedStyle(title, null).getPropertyValue('font-size'));
-        console.log(titleFontSize)
         const logoWidth = parseInt(window.getComputedStyle(logo, null).getPropertyValue('width'));
         setLogoSize(titleFontSize)
         logoSizeValue.current = titleFontSize
         pokouLogoSize.current = logoWidth
-    }, [])
 
-    const titleLogoAnimation = () => {
+
         if (!logoAnimation) {
             navBarTop.current.classList.remove(style.logo_animation)
             setLogoAnimationState(true);
         }
-    }
+
+
+
+
+    }, [logoAnimation])
 
 
 
@@ -244,12 +244,12 @@ export default function Navbar(props) {
 
 
 
-                    <div ref={navBarTop} className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ${!logoAnimation ? style.logo_animation : ""} ` }>
+                    <div ref={navBarTop} className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ` }>
                         <Link  href="/">
                             <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
                                 <span>P</span>KOÙ WEB
                                 <span ref={pokouLogo} className={style.pokou_logo}>
-                                    <Image onLoadingComplete={titleLogoAnimation} width="69" priority={true} alt="Pokou web logo" height="69" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
+                                    <Image onLoadingComplete={() => console.log("image loggé")} width="69" priority={true} alt="Pokou web logo" height="69" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
 
                         </span>
                             </a>
