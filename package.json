@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,12 +18,10 @@
     "react-dom": "17.0.2",
     "react-intersection-observer": "^8.32.0",
     "sass": "^1.37.5",
-    "sharp": "^0.29.1",
-    "sitemap": "^7.0.0"
+    "sharp": "^0.29.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.0",
-    "next-sitemap": "^1.6.192"
+    "eslint-config-next": "11.1.0"
   }
 }
