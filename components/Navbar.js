@@ -108,9 +108,15 @@ export default function Navbar(props) {
 
     // Modification font-size sur resize
     useEffect(() => {
+        const title = titleLogo.current
+        const logo = pokouLogo.current
+        title.style=""
+        logo.style=""
         window.addEventListener('resize', handleResize)
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
+            title.style=""
+            logo.style=""
             window.removeEventListener('resize', handleResize)
             window.removeEventListener('scroll', handleFontSize, {passive: true})
         }
