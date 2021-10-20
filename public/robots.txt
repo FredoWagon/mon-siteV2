@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
+
+Sitemap: https://www.pokouweb.fr/api/main-sitemap
