@@ -86,8 +86,7 @@ export default function Navbar(props) {
         if (["background--white", "background--blue", "background--yellow"].includes(props.backgroundColor)) {
             setBurgerBlackVersion(true)
         }
-        return () => {
-        }
+
     }, [props])
 
     // Initialisation du composant
@@ -99,6 +98,12 @@ export default function Navbar(props) {
         setLogoSize(titleFontSize)
         logoSizeValue.current = titleFontSize
         pokouLogoSize.current = logoWidth
+
+        return () => {
+            title.style = ""
+            logo.style=""
+
+        }
 
     }, [])
 
