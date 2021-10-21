@@ -90,7 +90,7 @@ export default function Navbar(props) {
 
     // Initialisation du composant
     useEffect(() => {
-
+        setLogoSize(null)
         const title = titleLogo.current
         const logo = pokouLogo.current
         const titleFontSize = parseInt(window.getComputedStyle(title, null).getPropertyValue('font-size'));
