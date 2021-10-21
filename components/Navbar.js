@@ -77,10 +77,6 @@ export default function Navbar(props) {
             setBulletPosition(bulletPosition)
             setBulletInitialPosition(bulletPosition)
             setActiveBullet(true)
-
-
-
-
         }
         setBackgroundColor(props.backgroundColor)
         if (["background--white", "background--blue", "background--yellow"].includes(props.backgroundColor)) {
@@ -89,25 +85,31 @@ export default function Navbar(props) {
 
     }, [props])
 
+
+
+
     // Initialisation du composant
-    useLayoutEffect(() => {
+    useEffect(() => {
 
         const title = titleLogo.current
         const logo = pokouLogo.current
         const titleFontSize = parseInt(window.getComputedStyle(title, null).getPropertyValue('font-size'));
+
+
+
+
         const logoWidth = parseInt(window.getComputedStyle(logo, null).getPropertyValue('width'));
-        setLogoSize(titleFontSize)
+
+       //setLogoSize(titleFontSize)
+
         logoSizeValue.current = titleFontSize
         pokouLogoSize.current = logoWidth
         console.log(">>>>>MONTAGE : INITIALISATION DU COMPOSANT")
-        console.log("TITLEFONTSIZE")
-        console.log(titleFontSize)
-        console.log("LOGOWIDTH")
-        console.log(logoWidth)
+        console.log("TITLEFONTSIZE", titleFontSize )
+        console.log("LOGOWIDTH", logoWidth)
 
         return () => {
-            title.style = ""
-            logo.style=""
+            setLogoSize(null)
             console.log("DEMONTAGE<<<<< : INITIALISATION DU COMPOSANT")
             console.log("TITLEFONTSIZE")
             console.log(titleFontSize)
@@ -118,12 +120,23 @@ export default function Navbar(props) {
 
     }, [])
 
-    useLayoutEffect(() => {
+
+
+
+
+    useEffect(() => {
         window.addEventListener('resize', handleResize)
         return () => {
             window.removeEventListener('resize', handleResize)
         }
     }, [])
+
+
+
+
+
+
+
 
     // Modification font-size sur resize
     useLayoutEffect(() => {
