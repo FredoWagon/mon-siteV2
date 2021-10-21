@@ -2,7 +2,7 @@ import style from '../styles/components/navbar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/logo.svg'
-import {useCallback, useEffect, useRef, useState} from "react";
+import {useCallback, useEffect, useLayoutEffect, useRef, useState} from "react";
 import TranslateOnScroll from "./effects/navbarTranslateOnScroll";
 import pokou_logo from "../public/pokou_logo.svg"
 import {useAppContext} from "../context/state";
@@ -118,7 +118,7 @@ export default function Navbar(props) {
 
     }, [])
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         window.addEventListener('resize', handleResize)
         return () => {
             window.removeEventListener('resize', handleResize)
@@ -126,7 +126,7 @@ export default function Navbar(props) {
     }, [])
 
     // Modification font-size sur resize
-    useEffect(() => {
+    useLayoutEffect(() => {
 
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
@@ -183,6 +183,11 @@ export default function Navbar(props) {
         const body = window.scrollY
         let value = logoSizeValue.current
         let logoWidthValue = pokouLogoSize.current
+        console.log("ici")
+        console.log(logoSizeValue.current)
+        console.log(pokouLogo.current)
+        console.log(titleLogo.current)
+        console.log("ici")
 
 
         if (window.innerWidth > 719 ) {
