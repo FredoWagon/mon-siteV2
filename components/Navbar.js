@@ -139,7 +139,7 @@ export default function Navbar(props) {
 
 
     // Modification font-size sur resize
-    useLayoutEffect(() => {
+    useEffect(() => {
 
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
