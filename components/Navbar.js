@@ -241,7 +241,7 @@ export default function Navbar(props) {
                         <Link  href="/">
                             <a className={`${isNotOnTop ? style.is_not_visible : ""}`} >
                                 <span>
-                                    <img ref={titleLogo} src="/pokouweb_title_white_invert.svg" alt="Pokouweb Title" />
+                                    <img ref={titleLogo} src="/pokou_title_black.svg" alt="Pokouweb Title" />
                                 </span>
 
                             </a>
