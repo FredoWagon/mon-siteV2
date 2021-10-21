@@ -89,27 +89,17 @@ export default function Navbar(props) {
 
 
 
-    // Initialisation du composant
-
-    useLayoutEffect(() => {
 
 
 
 
 
-
-
+     useLayoutEffect(() => {
+      window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+     }
     }, [])
-
-
-
-
-    // useLayoutEffect(() => {
-    //   window.addEventListener('resize', handleResize)
-    // return () => {
-    //   window.removeEventListener('resize', handleResize)
-    // }
-    //}, [])
 
 
 
@@ -179,13 +169,11 @@ export default function Navbar(props) {
         if (logoSizeValue.current === null) {
             const pokouTitleHeight = parseInt(window.getComputedStyle(pokouTitle, null).getPropertyValue('height'));
             logoSizeValue.current = pokouTitleHeight
-
             console.log(pokouTitle)
             console.log(pokouTitleHeight)
             console.log(logoSizeValue)
         }
         let initialPokouTitleValue = logoSizeValue.current
-
 
         if (window.innerWidth > 719 && logoSizeValue !== null ) {
             if (body < 20) {
@@ -253,7 +241,11 @@ export default function Navbar(props) {
                         <Link  href="/">
                             <a className={`${isNotOnTop ? style.is_not_visible : ""}`} >
                                 <span>
-                                       <img ref={titleLogo} src="/pokouweb_title.svg" alt="An SVG of an eye" />
+                                    {props.currentPage === "services" || props.currentPage === "creationweb" || props.currentPage === "medtandem" || props.currentPage === "trendcorner" ?
+                                    <img ref={titleLogo} src="/pokouweb_title_white_invert.svg" alt="Pokouweb Title" />
+                                    :  <img ref={titleLogo} src="/pokouweb_title_black.svg" alt="Pokouweb Title" />
+                                    }
+
                                 </span>
 
                             </a>
