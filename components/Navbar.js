@@ -89,37 +89,20 @@ export default function Navbar(props) {
 
 
     // Initialisation du composant
+
     useEffect(() => {
-        setLogoSize(null)
-        const title = titleLogo.current
-        const logo = pokouLogo.current
-        const titleFontSize = parseInt(window.getComputedStyle(title, null).getPropertyValue('font-size'));
+        const pokouTitle = titleLogo.current
+        console.log(pokouTitle)
+        const pokouTitleHeight = parseInt(window.getComputedStyle(pokouTitle, null).getPropertyValue('height'));
+        console.log(pokouTitleHeight)
+        logoSizeValue.current = pokouTitleHeight
+        console.log(logoSizeValue)
 
 
 
 
-        const logoWidth = parseInt(window.getComputedStyle(logo, null).getPropertyValue('width'));
-
-       //setLogoSize(titleFontSize)
-
-        logoSizeValue.current = titleFontSize
-        pokouLogoSize.current = logoWidth
-        console.log(">>>>>MONTAGE : INITIALISATION DU COMPOSANT")
-        console.log("TITLEFONTSIZE", titleFontSize )
-        console.log("LOGOWIDTH", logoWidth)
-
-        return () => {
-            setLogoSize(null)
-            console.log("DEMONTAGE<<<<< : INITIALISATION DU COMPOSANT")
-            console.log("TITLEFONTSIZE")
-            console.log(titleFontSize)
-            console.log("LOGOWIDTH")
-            console.log(logoWidth)
-
-        }
 
     }, [])
-
 
 
 
@@ -194,50 +177,28 @@ export default function Navbar(props) {
     // Gère la taille de la police en fonction du scroll, aussi utilisé lors de l'event resize
     const handleFontSize = () => {
         const body = window.scrollY
-        let value = logoSizeValue.current
-        let logoWidthValue = pokouLogoSize.current
-        console.log("ici")
-        console.log(logoSizeValue.current)
-        console.log(pokouLogo.current)
-        console.log(titleLogo.current)
-        console.log("ici")
+        let initialPokouTitleValue = logoSizeValue.current
+        const pokouTitle = titleLogo.current
+
 
 
         if (window.innerWidth > 719 ) {
             if (body < 20) {
-                setLogoSize(value)
                 setIsNotOnTop(false)
-                pokouLogo.current.style.width = `${logoWidthValue}px`
-
-                pokouLogo.current.style.left = ""
-                titleLogo.current.style.marginLeft = ""
+                pokouTitle.style.height= `${initialPokouTitleValue}px`
+                
             } else if (body > 20 && body < 100) {
-                setLogoSize(value * 0.8)
-                titleLogo.current.style.marginLeft = "6.9rem"
+                pokouTitle.style.height= `${initialPokouTitleValue * 0.8}px`
 
-                pokouLogo.current.style.width = `${logoWidthValue * 0.8}px`
-
-                pokouLogo.current.style.left = "3.3rem"
             } else if (body > 101 && body < 145 ) {
-                setLogoSize(value * 0.6)
-                titleLogo.current.style.marginLeft = "5.16rem"
-                pokouLogo.current.style.width = `${logoWidthValue * 0.6}px`
+                pokouTitle.style.height= `${initialPokouTitleValue * 0.6}px`
 
-                pokouLogo.current.style.left = "2.45rem"
             } else if (body > 145 && body < 160) {
-                setLogoSize(value * 0.5)
-                titleLogo.current.style.marginLeft = "4.3rem"
-                pokouLogo.current.style.width = `${logoWidthValue * 0.5}px`
-
-                pokouLogo.current.style.left = "2rem"
+                pokouTitle.style.height= `${initialPokouTitleValue * 0.5}px`
 
             } else if (body > 160) {
                 setIsNotOnTop(true)
-                setLogoSize(value * 0.40)
-                titleLogo.current.style.marginLeft = "3.4rem"
-                pokouLogo.current.style.width = `${logoWidthValue * 0.4}px`
-
-                pokouLogo.current.style.left = "1.65rem"
+                pokouTitle.style.height= `${initialPokouTitleValue * 0.4}px`
             }
         }
     }
@@ -280,12 +241,11 @@ export default function Navbar(props) {
 
                     <div ref={navBarTop} className={`${style.navbar__top} ${isNotOnTop ? style.is_not_display : ""} ` }>
                         <Link  href="/">
-                            <a style={ logoSize ? {fontSize: logoSize} : null} className={`${isNotOnTop ? style.is_not_visible : ""}`} ref={titleLogo}>
-                                <span>P</span>KOÙ WEB
-                                <span ref={pokouLogo} className={style.pokou_logo}>
-                                    <Image width="69" priority={true} alt="Pokou web logo" height="69" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
+                            <a className={`${isNotOnTop ? style.is_not_visible : ""}`} >
+                                <span>
+                                       <img ref={titleLogo} src="/pokouweb_title.svg" alt="An SVG of an eye" />
+                                </span>
 
-                        </span>
                             </a>
                         </Link>
 

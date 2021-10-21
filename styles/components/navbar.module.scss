@@ -85,22 +85,6 @@
         }
 
       }
-      &.logo_animation {
-        .pokou_logo {
-          transform: translateY(-7rem) rotate(90deg);
-          opacity: 0;
-
-
-        }
-        a {
-
-          span {
-            opacity: 0;
-            transform: translateX(89px);
-
-          }
-        }
-      }
 
       .pokou_logo {
         opacity: 1;
@@ -117,18 +101,17 @@
 
       a {
         opacity: 1;
-        font-size: 96px;
+
         font-weight: bold;
 
         transition: font-size 0.3s ease,opacity 0.3s ease, opacity 2s ease, margin 0.3s ease;
 
-        margin-left: 8.5rem;
-        span {
-          opacity: 1;
-          transition: transform 1.4s ease, opacity 2s ease;
-          left: 0;
 
-          position: absolute;
+        span {
+          img {
+            transition: height 0.3s ease;
+          }
+
         }
         @media (max-width: 800px) {
           font-size: 80px;
