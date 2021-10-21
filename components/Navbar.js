@@ -90,7 +90,7 @@ export default function Navbar(props) {
 
     // Initialisation du composant
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const pokouTitle = titleLogo.current
         console.log(pokouTitle)
         const pokouTitleHeight = parseInt(window.getComputedStyle(pokouTitle, null).getPropertyValue('height'));
@@ -102,12 +102,14 @@ export default function Navbar(props) {
 
 
 
+
+
     }, [])
 
 
 
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         window.addEventListener('resize', handleResize)
         return () => {
             window.removeEventListener('resize', handleResize)
@@ -122,7 +124,7 @@ export default function Navbar(props) {
 
 
     // Modification font-size sur resize
-    useEffect(() => {
+    useLayoutEffect(() => {
 
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
@@ -186,7 +188,7 @@ export default function Navbar(props) {
             if (body < 20) {
                 setIsNotOnTop(false)
                 pokouTitle.style.height= `${initialPokouTitleValue}px`
-                
+
             } else if (body > 20 && body < 100) {
                 pokouTitle.style.height= `${initialPokouTitleValue * 0.8}px`
 
