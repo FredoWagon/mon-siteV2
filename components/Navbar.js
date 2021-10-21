@@ -90,7 +90,7 @@ export default function Navbar(props) {
     }, [props])
 
     // Initialisation du composant
-    useEffect(() => {
+    useLayoutEffect(() => {
 
         const title = titleLogo.current
         const logo = pokouLogo.current
