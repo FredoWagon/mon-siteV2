@@ -86,30 +86,16 @@
 
       }
 
-      .pokou_logo {
-        opacity: 1;
-        position: absolute;
-        left: 4rem;
-        width: 69px;
-        transition: transform 2s ease, opacity 3s ease, width 0.3s ease, left 0.3s ease;
-
-      }
-
-
-
-
 
       a {
-        opacity: 1;
-
-        font-weight: bold;
+        opacity: 0.91;
 
         transition: font-size 0.3s ease,opacity 0.3s ease, opacity 2s ease, margin 0.3s ease;
-
-
         span {
           img {
             transition: height 0.3s ease;
+
+
           }
 
         }
@@ -335,7 +321,11 @@
     }
     .navbar_container {
       .navbar__top {
-        filter: invert(1);
+        a {
+          opacity: 1;
+          filter: invert(1);
+        }
+
 
       }
       .navbar__bottom {
@@ -386,7 +376,11 @@
     }
     .navbar_container {
       .navbar__top {
-        filter: invert(1);
+        a {
+          opacity: 1;
+          filter: invert(1);
+        }
+
 
       }
       .navbar__bottom {
@@ -426,7 +420,11 @@
     }
     .navbar_container {
       .navbar__top {
-        filter: invert(1);
+        a {
+          opacity: 1;
+          filter: invert(1);
+        }
+
 
       }
       .navbar__bottom {
