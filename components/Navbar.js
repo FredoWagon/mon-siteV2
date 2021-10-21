@@ -88,15 +88,10 @@ export default function Navbar(props) {
 
 
 
+
     // Initialisation du composant
 
     useLayoutEffect(() => {
-        const pokouTitle = titleLogo.current
-        console.log(pokouTitle)
-        const pokouTitleHeight = parseInt(window.getComputedStyle(pokouTitle, null).getPropertyValue('height'));
-        console.log(pokouTitleHeight)
-        logoSizeValue.current = pokouTitleHeight
-        console.log(logoSizeValue)
 
 
 
@@ -179,12 +174,20 @@ export default function Navbar(props) {
     // Gère la taille de la police en fonction du scroll, aussi utilisé lors de l'event resize
     const handleFontSize = () => {
         const body = window.scrollY
-        let initialPokouTitleValue = logoSizeValue.current
         const pokouTitle = titleLogo.current
+        console.log(logoSizeValue)
+        if (logoSizeValue.current === null) {
+            const pokouTitleHeight = parseInt(window.getComputedStyle(pokouTitle, null).getPropertyValue('height'));
+            logoSizeValue.current = pokouTitleHeight
+
+            console.log(pokouTitle)
+            console.log(pokouTitleHeight)
+            console.log(logoSizeValue)
+        }
+        let initialPokouTitleValue = logoSizeValue.current
 
 
-
-        if (window.innerWidth > 719 ) {
+        if (window.innerWidth > 719 && logoSizeValue !== null ) {
             if (body < 20) {
                 setIsNotOnTop(false)
                 pokouTitle.style.height= `${initialPokouTitleValue}px`
@@ -203,6 +206,11 @@ export default function Navbar(props) {
                 pokouTitle.style.height= `${initialPokouTitleValue * 0.4}px`
             }
         }
+
+
+
+
+
     }
 
     // Change la taille de la police en fonction du resize, aligner sur les media css
