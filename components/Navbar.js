@@ -109,12 +109,12 @@ export default function Navbar(props) {
 
 
 
-    useLayoutEffect(() => {
-        window.addEventListener('resize', handleResize)
-        return () => {
-            window.removeEventListener('resize', handleResize)
-        }
-    }, [])
+    // useLayoutEffect(() => {
+    //   window.addEventListener('resize', handleResize)
+    // return () => {
+    //   window.removeEventListener('resize', handleResize)
+    // }
+    //}, [])
 
 
 
