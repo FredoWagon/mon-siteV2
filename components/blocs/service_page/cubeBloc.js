@@ -47,8 +47,8 @@ export default function CubeBloc() {
                     </div>
                     <div className={style.cubeBloc__black}>
                         <div className={style.cubeBloc__text}>
-                            <h2>Chaque projet, sa technologie</h2>
-                            <p>Nous utilisons la meilleur technologie adapté à votre projet et votre budget</p>
+                            <h2>Chaque projet, ses technologies</h2>
+                            <p>Nous maitrisons un ensemble de technologies moderne afin de répondre au plus proche de vos besoins et de votre budget.</p>
                             <Link href="">
                                 <a >A propos des technologies</a>
                             </Link>
