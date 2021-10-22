@@ -117,7 +117,19 @@ export default function ContactComponent(props) {
                 },
                 body: JSON.stringify(data)
             }).then((res) => {
-               console.log(res.status)
+                if (res.status === 200) {
+                    console.log('Response succeeded!')
+                    setSubmitted(true)
+                    document.body.style.backgroundColor="black"
+                    document.body.classList.add(`disapear`)
+
+
+
+                    setTimeout(() => {
+                        router.push("/contact/merci#merci_anchor")
+                    }, 1000)
+
+                }
             })
         } else {
             setActiveErrorMessage(true)
