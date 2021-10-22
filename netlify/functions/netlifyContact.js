@@ -45,7 +45,8 @@ exports.handler = async function(event, context, callback) {
     };
 
     callback(null, {
-        status: 200,
+        statusCode: 200,
+        body: JSON.stringify(email.messageId),
         headers,
     });
 }

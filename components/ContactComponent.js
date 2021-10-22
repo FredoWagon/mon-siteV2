@@ -1,6 +1,7 @@
 import style from "../styles/components/contactComponent.module.scss"
 import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
+import {log} from "sharp/lib/libvips";
 
 
 export default function ContactComponent(props) {
@@ -116,9 +117,10 @@ export default function ContactComponent(props) {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
-            }).then((res) => {
-               console.log(res.status)
-            })
+            }).then((res) => res.json().then(
+                response => log(response)
+
+            ) )
         } else {
             setActiveErrorMessage(true)
         }
