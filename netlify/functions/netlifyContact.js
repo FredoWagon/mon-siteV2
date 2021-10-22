@@ -46,7 +46,7 @@ exports.handler = async function(event, context, callback) {
 
     callback(null, {
         statusCode: 200,
-        body: `${email.messageId}`,
+        body: JSON.stringify(email.messageId),
         headers,
     });
 }
