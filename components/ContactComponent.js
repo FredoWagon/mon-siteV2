@@ -116,12 +116,9 @@ export default function ContactComponent(props) {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
-            }).then((res) => res.json()).then(
-                response => {
-                    console.log(response.statusCode)
-                }
-
-            )
+            }).then((res) => {
+               console.log(res.status)
+            })
         } else {
             setActiveErrorMessage(true)
         }
@@ -130,12 +127,6 @@ export default function ContactComponent(props) {
 
 
     }
-
-
-
-
-
-
 
     const allFieldValidation = () => {
         const fieldValidationStatusList = [nameValid, messageValid, emailValid]

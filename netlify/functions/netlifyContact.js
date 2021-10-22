@@ -45,7 +45,7 @@ exports.handler = async function(event, context, callback) {
     };
 
     callback(null, {
-        statusCode: 200,
+        status: 200,
         headers,
     });
 }
