@@ -108,7 +108,6 @@ export default function ContactComponent(props) {
         allFieldValidation()
 
 
-
         if (formValid) {
             fetch("/.netlify/functions/netlifyContact", {
                 method: 'POST',
