@@ -116,13 +116,12 @@ export default function ContactComponent(props) {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
-            }).then((res) => {
-                console.log('Response received')
-                console.log(res)
-                console.log(res.body)
-                const response = JSON.parse(res.body)
-                console.log(response)
-            })
+            }).then((res) => res.json()).then(
+                response => {
+                    console.log(response)
+                }
+
+            )
         } else {
             setActiveErrorMessage(true)
         }
@@ -146,7 +145,7 @@ export default function ContactComponent(props) {
             {props.customTitle &&
             <h2>{props.customTitle}</h2>
             }
-            
+
             <form id="contact_form" >
                 <div className={ `${nameValid ? style.field_valid : ""} ${style.contact_field}`}>
                     <label htmlFor="name">Votre nom <mark className={style.label__required}>*</mark></label>
