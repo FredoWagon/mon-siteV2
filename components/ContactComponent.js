@@ -119,7 +119,8 @@ export default function ContactComponent(props) {
             }).then((res) => {
                 console.log('Response received')
                 console.log(res)
-                const response = JSON.parse(res)
+                console.log(res.body)
+                const response = JSON.parse(res.body)
                 console.log(response)
             })
         } else {
