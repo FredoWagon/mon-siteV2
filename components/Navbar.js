@@ -166,13 +166,9 @@ export default function Navbar(props) {
     const handleFontSize = () => {
         const body = window.scrollY
         const pokouTitle = titleLogo.current
-        console.log(logoSizeValue)
         if (logoSizeValue.current === null) {
             const pokouTitleHeight = parseInt(window.getComputedStyle(pokouTitle, null).getPropertyValue('height'));
             logoSizeValue.current = pokouTitleHeight
-            console.log(pokouTitle)
-            console.log(pokouTitleHeight)
-            console.log(logoSizeValue)
         }
         let initialPokouTitleValue = logoSizeValue.current
 
