@@ -116,19 +116,9 @@ export default function ContactComponent(props) {
                 body: JSON.stringify(data)
             }).then((res) => {
                 console.log('Response received')
-                if (res.status === 200) {
-                    console.log('Response succeeded!')
-                    setSubmitted(true)
-                    document.body.style.backgroundColor="black"
-                    document.body.classList.add(`disapear`)
-
-
-
-                    setTimeout(() => {
-                        router.push("/contact/merci#merci_anchor")
-                    }, 1000)
-
-                }
+                console.log(res)
+                const response = JSON.stringify(res)
+                console.log(response)
             })
         } else {
             setActiveErrorMessage(true)
