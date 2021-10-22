@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+
 
 exports.handler = function (req, callback) {
 
