@@ -96,7 +96,7 @@ export default function Footer(props) {
                 <div className={style.footer__middle}>
                     <div className={style.footer__mail}>
                         <p>Pour les nouvelles demandes commerciales :</p>
-                        <Link href="/">fedde.leg@gmail.com</Link>
+                        <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
                     </div>
                     <div className={style.footer__social_links}>
                         <span>
@@ -131,7 +131,7 @@ export default function Footer(props) {
             </div>
             <div className={style.footer_mobile}>
                 <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>
-                <a href="mailto:fedde.leg@gmail.com">fedde.leg@gmail.com</a>
+                <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
 
                 <div className={style.footer_mobile__social}>
                     <div className={style.footer_social__item}>
@@ -251,7 +251,3 @@ export default function Footer(props) {
 }
 
 
-/* NOTES
-* Pensez qu'il ne faut qu'un seul H1 par page !
-* adresse n'est pas bonne !
-* */

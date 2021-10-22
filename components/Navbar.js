@@ -64,7 +64,8 @@ export default function Navbar(props) {
                 trendcorner: travauxLink.current,
                 conception: serviceLink.current,
                 developpement: serviceLink.current,
-                referencement: serviceLink.current
+                referencement: serviceLink.current,
+
             }
 
             const currentLink = links[props.currentPage]
