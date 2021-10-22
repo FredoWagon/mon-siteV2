@@ -107,7 +107,7 @@ export default function ContactComponent(props) {
 
 
         if (formValid) {
-            fetch('/api/contact', {
+            fetch(`${process.env.CONTACT_FUNCTION}`, {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
