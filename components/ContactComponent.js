@@ -1,7 +1,6 @@
 import style from "../styles/components/contactComponent.module.scss"
 import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
-import {log} from "sharp/lib/libvips";
 
 
 export default function ContactComponent(props) {
@@ -108,6 +107,7 @@ export default function ContactComponent(props) {
         allFieldValidation()
 
 
+
         if (formValid) {
             fetch("/.netlify/functions/netlifyContact", {
                 method: 'POST',
@@ -117,20 +117,7 @@ export default function ContactComponent(props) {
                 },
                 body: JSON.stringify(data)
             }).then((res) => {
-                console.log('Response received')
-                if (res.status === 200) {
-                    console.log('Response succeeded!')
-                    setSubmitted(true)
-                    document.body.style.backgroundColor="black"
-                    document.body.classList.add(`disapear`)
-
-
-
-                    setTimeout(() => {
-                        router.push("/contact/merci#merci_anchor")
-                    }, 1000)
-
-                }
+               console.log(res.status)
             })
         } else {
             setActiveErrorMessage(true)
