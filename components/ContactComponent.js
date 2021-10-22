@@ -118,7 +118,10 @@ export default function ContactComponent(props) {
                 },
                 body: JSON.stringify(data)
             }).then((res) => res.json().then(
-                response => log(response)
+                response => {
+                    console.log(response)
+                    console.log(response.status)
+                }
 
             ) )
         } else {
