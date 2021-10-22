@@ -116,12 +116,13 @@ export default function ContactComponent(props) {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
-            }).then((res) => res.json()).then(
-                response => {
-                    console.log(response)
-                }
-
-            )
+            }).then((res) => {
+                console.log('Response received')
+                console.log(res)
+                console.log(res.body)
+                const response = JSON.parse(res.body)
+                console.log(response)
+            })
         } else {
             setActiveErrorMessage(true)
         }
