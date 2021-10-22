@@ -118,7 +118,7 @@ export default function ContactComponent(props) {
                 body: JSON.stringify(data)
             }).then((res) => {
                 console.log('Response received')
-                if (res.status === 200) {
+                if (res.statusCode === 200) {
                     console.log('Response succeeded!')
                     setSubmitted(true)
                     document.body.style.backgroundColor="black"
