@@ -4,7 +4,7 @@ import {useRouter} from "next/router";
 
 
 export default function ContactComponent(props) {
-    require('dotenv').config()
+
 
     const router = useRouter()
 
