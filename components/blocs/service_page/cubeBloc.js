@@ -11,14 +11,14 @@ export default function CubeBloc() {
             <div className={style.cubeBloc}>
                 <div className={style.cubeBloc__row}>
                     <div className={style.cubeBloc__image}>
-                        <Image objectFit={"cover"} height="953"  lazyBoundary="500px" width="953" src="/pokouweb/35941778864_a37973fb6e_o-1618x1080_dyiopz_atu7yx.webp"/>
+                        <Image objectFit={"cover"} height="953"  lazyBoundary="500px" width="953" src="/pokouweb/ux-indonesia-2NDWFiD0UMM-unsplash_rxqrky_z9wuv8.webp"/>
                     </div>
                     <div className={style.cubeBloc__black}>
                         <div className={style.cubeBloc__text}>
                             <h2>Meilleure gestion du site Web</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis culpa dolore ea ipsam libero odit rerum unde? Commodi ea laudantium modi necessitatibus, odit omnis quis quo ratione sit voluptates?</p>
                             <Link href="">
-                                <a >A propos d'Everblox</a>
+                                <a >A propos de quelque chose</a>
                             </Link>
                         </div>
                     </div>
@@ -28,29 +28,29 @@ export default function CubeBloc() {
 
                     <div className={`${style.cubeBloc__black} ${style.cubeBloc__black__left}`}>
                         <div className={style.cubeBloc__text}>
-                            <h2>Meilleure gestion du site Web</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis culpa dolore ea ipsam libero odit rerum unde? Commodi ea laudantium modi necessitatibus, odit omnis quis quo ratione sit voluptates?</p>
+                            <h2>Service après vente</h2>
+                            <p>Simple, stable et sécurisé. Nous prenons la responsabilité de vous fournir un service de maintenance fiable et sans tracas pour votre site.</p>
                             <Link href="">
-                                <a >A propos d'Everblox</a>
+                                <a >A propos de la maintenance</a>
                             </Link>
                         </div>
 
                     </div>
                     <div className={style.cubeBloc__image}>
-                        <Image objectFit={"cover"}  lazyBoundary="500px" height="953" width="953" src="/pokouweb/35941778864_a37973fb6e_o-1618x1080_dyiopz_atu7yx.webp"/>
+                        <Image objectFit={"cover"}  lazyBoundary="500px" height="953" width="953" src="/pokouweb/ux-indonesia-2NDWFiD0UMM-unsplash_rxqrky_z9wuv8.webp"/>
                     </div>
 
                 </div>
                 <div className={style.cubeBloc__row}>
                     <div className={style.cubeBloc__image}>
-                        <Image objectFit={"cover"} lazyBoundary="500px"  height="953" width="953" src="/pokouweb/35941778864_a37973fb6e_o-1618x1080_dyiopz_atu7yx.webp"/>
+                        <Image objectFit={"cover"} lazyBoundary="500px"  height="953" width="953" src="/pokouweb/markus-spiske-KeFyYzxqmH0-unsplash_q0dihe_yjgvjj.webp"/>
                     </div>
                     <div className={style.cubeBloc__black}>
                         <div className={style.cubeBloc__text}>
-                            <h2>Meilleure gestion du site Web</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis culpa dolore ea ipsam libero odit rerum unde? Commodi ea laudantium modi necessitatibus, odit omnis quis quo ratione sit voluptates?</p>
+                            <h2>Chaque projet, sa technologie</h2>
+                            <p>Nous utilisons la meilleur technologie adapté à votre projet et votre budget</p>
                             <Link href="">
-                                <a >A propos d'Everblox</a>
+                                <a >A propos des technologies</a>
                             </Link>
                         </div>
                     </div>

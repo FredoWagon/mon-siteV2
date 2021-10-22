@@ -26,7 +26,7 @@ export default function UsPictures() {
 
                                 <div className={style.us_picture__info}>
                                     <h3>Olivier Bouzon</h3>
-                                    <p>Developpeur</p>
+                                    <p>Developpeur fullstack</p>
 
                                 </div>
                             </div>
@@ -46,7 +46,7 @@ export default function UsPictures() {
 
                                 <div className={style.us_picture__info}>
                                     <h3>Noémie Fournier</h3>
-                                    <p>Developpeur Wordpress</p>
+                                    <p>Designer - Developpeuse Wordpress</p>
 
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ export default function UsPictures() {
 
                                 <div className={style.us_picture__info}>
                                     <h3>Grégoire Rénaldo</h3>
-                                    <p>Developpeur</p>
+                                    <p>Expert SEO - Développeur backend</p>
 
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ export default function UsPictures() {
 
                                 <div className={style.us_picture__info}>
                                     <h3>Frédéric Legrand</h3>
-                                    <p>Developpeur</p>
+                                    <p>Developpeur frontend </p>
 
                                 </div>
                             </div>
@@ -105,7 +105,7 @@ export default function UsPictures() {
 
                                 <div className={style.us_picture__info}>
                                     <h3>Maxence Pautre</h3>
-                                    <p>Developpeur</p>
+                                    <p>Developpeur - Expert Bubble</p>
 
                                 </div>
                             </div>

@@ -94,8 +94,10 @@
         }
 
         .our_process__image {
-          padding: 2rem;
+          filter: sepia(0.6);
+
           img {
+            filter: grayscale(1);
 
           }
 

@@ -26,6 +26,9 @@
         overflow: hidden;
         height: 849px;
         width: 50%;
+        div {
+          width: 100%;
+        }
         @media (min-width: 960px) and (max-width: 1439px) {
           height: 563px;
         }
