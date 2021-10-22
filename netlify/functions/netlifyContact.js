@@ -1,6 +1,10 @@
 
 
-exports.handler = function (event, context, callback) {
+exports.handler = function (event, context) {
 
- callback(event)
+
+ return {
+     statusCode: 200,
+     body: `${event.body ? event.body : ""}`
+ }
 }

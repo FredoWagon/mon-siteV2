@@ -109,7 +109,7 @@ export default function ContactComponent(props) {
 
 
         if (formValid) {
-            fetch("https://www.pokouweb.fr/.netlify/functions/netlifyContact", {
+            fetch("/.netlify/functions/netlifyContact", {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
