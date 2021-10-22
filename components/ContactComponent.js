@@ -117,13 +117,22 @@ export default function ContactComponent(props) {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
-            }).then((res) => res.json().then(
-                response => {
-                    console.log(response)
-                    console.log(response.status)
-                }
+            }).then((res) => {
+                console.log('Response received')
+                if (res.status === 200) {
+                    console.log('Response succeeded!')
+                    setSubmitted(true)
+                    document.body.style.backgroundColor="black"
+                    document.body.classList.add(`disapear`)
 
-            ) )
+
+
+                    setTimeout(() => {
+                        router.push("/contact/merci#merci_anchor")
+                    }, 1000)
+
+                }
+            })
         } else {
             setActiveErrorMessage(true)
         }
