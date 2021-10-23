@@ -98,6 +98,8 @@ export default function ContactComponent(props) {
     // Soumet le formulaire
     const handleSubmit = (e) => {
         e.preventDefault()
+        const submitBtn = e.currentTarget
+        console.log(submitBtn)
         const data = {
             name,
             email,
@@ -109,6 +111,7 @@ export default function ContactComponent(props) {
 
 
         if (formValid) {
+            submitBtn.classList.add(`${style.contact_btn__loading}`)
             fetch("/.netlify/functions/netlifyContact", {
                 method: 'POST',
                 headers: {
@@ -179,7 +182,13 @@ export default function ContactComponent(props) {
                     <textarea  onFocus={displayErrorMessage} value={message} onChange={handdleValidation} name="message" id="message" placeholder="Parlez nous de votre projet.." cols="30" rows="10"/>
                     <span className={`${activeErrorMessage && message === "" ? style.active__empty_message : ""} `}>Veuillez écrire un message</span>
                 </div>
-                <input value="Soumettre" className={style.contact_submit_btn} type="submit"  onClick={(e)=>{handleSubmit(e)}}/>
+                <button className={style.contact_submit_btn} type="submit"  onClick={(e)=>{handleSubmit(e)}} >
+                    <p>Soumettre</p>
+                    <span>
+                        <img
+                            src="/loading.svg" alt="loading circle"/>
+                    </span>
+                </button>
             </form>
         </div>
     )
