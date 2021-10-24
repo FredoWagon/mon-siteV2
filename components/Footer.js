@@ -21,7 +21,7 @@ export default function Footer(props) {
                             <ul>
                                 <li className={ !props.currentPage ? style.active_current_page : ""}>  <Link href="/">Accueil</Link></li>
                                 <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/nos-services" >Nos services</Link></li>
-                                <li className={`${["dashboard", "medtandem", "trendcorner", "onepalm"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="#">Travaux</Link></li>
+                                <li className={`${["dashboard", "medtandem", "trendcorner", "onepalm", "itineraire"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="#">Travaux</Link></li>
                                 <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/a-propos">A propos</Link></li>
                             </ul>
                         </div>
@@ -48,6 +48,7 @@ export default function Footer(props) {
                                     <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/travaux/medtandem">Med Tandem</Link></li>
                                     <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/travaux/onepalm-surf">OnePalm Surf</Link></li>
                                     <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/travaux/dashboard">DashBoard</Link></li>
+                                    <li className={props.currentPage === "itineraire" ? style.active_current_page : ""}> <Link href="/travaux/itineraires-vignobles">Itineraire-vigrobles</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -74,7 +75,7 @@ export default function Footer(props) {
                             </div>
                         </div>
                         }
-                        {["dashboard", "medtandem", "trendcorner", "onepalm"].includes(props.currentPage) &&
+                        {["dashboard", "medtandem", "trendcorner", "onepalm", "itineraire"].includes(props.currentPage) &&
                         <div className={style.sitemap_dynamic_item}>
                             <div className={style.sitemap_dynamic_works}>
                                 <ul>
@@ -82,6 +83,7 @@ export default function Footer(props) {
                                     <li className={props.currentPage === "medtandem" ? style.active_current_page : ""}>   <Link href="/travaux/medtandem">Med Tandem</Link></li>
                                     <li className={props.currentPage === "onepalm" ? style.active_current_page : ""}>   <Link href="/travaux/onepalm-surf">OnePalm Surf</Link></li>
                                     <li className={props.currentPage === "dashboard" ? style.active_current_page : ""}> <Link href="/travaux/dashboard">DashBoard</Link></li>
+                                    <li className={props.currentPage === "itineraire" ? style.active_current_page : ""}> <Link href="/travaux/itineraires-vignobles">Itineraire-vigrobles</Link></li>
                                 </ul>
                             </div>
                         </div>
