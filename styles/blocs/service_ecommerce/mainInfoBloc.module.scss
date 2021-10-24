@@ -19,6 +19,23 @@
 
   }
 
+  &.custom_itineraire__background {
+    background-color: #f0f0f0;
+    margin-top: unset;
+
+    @media (min-width: 960px) and (max-width: 1439px) {
+      padding-top: 4rem;
+
+    }
+    @media (min-width: 720px) and (max-width: 989px) {
+      padding-top: 4rem;
+    }
+    @media (max-width: 719px) {
+      padding-top: 4rem;
+
+    }
+  }
+
   &.custom_medtandem__background {
     background-color: #E7EFFB;
     margin-top: unset;
@@ -49,6 +66,41 @@
     width: 100%;
     height: auto;
     aspect-ratio: 381/119;
+
+  }
+  .main__info__image__long__itineraire1 {
+    position: relative;
+    margin: auto;
+
+
+    width: 80%;
+
+
+    aspect-ratio: 75/67;
+    @media (max-width: 719px) {
+      width: 90%;
+
+    }
+
+
+  }
+  .main__info__image__long__itineraire2 {
+    position: relative;
+    margin: 6rem 0 0rem 0;
+    width: 100%;
+    aspect-ratio: 10/7;
+    @media (min-width: 960px) and (max-width: 1439px) {
+      margin: 5rem 0 0rem 0;
+
+    }
+    @media (min-width: 720px) and (max-width: 989px) {
+      margin: 3rem 0 0rem 0;
+    }
+    @media (max-width: 719px) {
+      margin: 2rem 0 0rem 0;
+
+    }
+
 
   }
   .main__info__image__long__medtandem{
@@ -143,6 +195,43 @@
         }
 
       }
+
+      &.itineraire__text_info {
+        .text__bloc {
+          padding: 10rem 0 7rem 0;
+          @media (min-width: 960px) and (max-width: 1439px) {
+
+            padding: 2rem 0 3rem 0;
+          }
+          @media (min-width: 720px) and (max-width: 989px) {
+            padding: 0rem 0 1rem 0;
+          }
+          @media (max-width: 719px) {
+            padding: 0rem 0 0rem 0;
+
+          }
+
+        }
+
+      }
+      &.itineraire__text_info2 {
+        .text__bloc {
+          padding: 10rem 0 0rem 0;
+          @media (min-width: 960px) and (max-width: 1439px) {
+            padding: 7rem 0 0rem 0;
+
+          }
+          @media (min-width: 720px) and (max-width: 989px) {
+            padding: 5rem 0 0rem 0;
+          }
+          @media (max-width: 719px) {
+            padding: 4rem 0 0rem 0;
+
+          }
+
+        }
+
+      }
       .text__bloc {
         margin-bottom: 3rem;
         display: flex;
@@ -199,8 +288,17 @@
 
 
           }
-
-
+        }
+        a {
+          text-decoration: underline;
+          transition: opacity 0.3s ease;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+        .joomla_logo {
+          width: 15rem;
+          margin-bottom: 1rem;
         }
 
       }

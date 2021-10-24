@@ -19,9 +19,7 @@ export default function WorkBloc() {
                         <h2>Nos derniers <mark>projets</mark> </h2>
                         <p>Regardez ce que nous pouvons créer ensemble, épaule contre épaule. Une excellente communication et des processus bien construits sont les clés du monde des projets parfaitement adaptés.</p>
 
-                        <Link href="/">
-                            <a>Nos travaux</a>
-                        </Link>
+
                     </FadeTranslateTopWhenVisible>
                 </div>
 
@@ -47,7 +45,7 @@ export default function WorkBloc() {
                                         <div className={style.title_animation_blue}></div>
                                         <h3>Trend Corner</h3>
                                     </div>
-                                    <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
+                                    <p>Une application web innovante qui permet de faire du 'trade' sur le marché des crypto-monnaies pour une jeune startup qui a des visées internationale.</p>
 
                                 </div>
 
@@ -79,7 +77,7 @@ export default function WorkBloc() {
                                         <h3>MedTandem</h3>
                                     </div>
 
-                                    <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
+                                    <p>Une application web qui propose de l'apprentissage en ligne pour les professionnels de santé.</p>
 
                                 </div>
 
@@ -105,7 +103,7 @@ export default function WorkBloc() {
                                         <div className={style.title_animation_blue}></div>
                                         <h3>Onepalm surf</h3>
                                     </div>
-                                    <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
+                                    <p>Un site Web qui conjugue une boutique e-commerce et une plateforme pour une école sur le thème du surf.  </p>
 
                                 </div>
 
@@ -131,10 +129,56 @@ export default function WorkBloc() {
                                         <div className={style.title_animation_blue}></div>
                                         <h3>DashBoard</h3>
                                     </div>
-                                    <p>Un site Web pour l'application qui rend la lecture de musique légale pour les entreprises.</p>
+                                    <p>Une application métier de gestion d'annonces immobilière créée sur mesure pour le compte d'une agence immobilière.</p>
 
                                 </div>
 
+
+                            </div>
+                        </FadeTranslateTopWhenVisible>
+                    </a>
+                </Link>
+                <Link href="/travaux/itineraires-vignobles">
+                    <a className={style.work_item__container}>
+                        <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
+                            <div className={style.work_item}>
+                                <div className={style.work_item__image__container}>
+                                    <div className={style.work_item__image}>
+                                        <div className={style.view_project}>
+                                            <p>Voir la projet</p>
+                                        </div>
+                                        <Image lazyBoundary="500px" alt="One palm - projet" layout="fill" src="/pokouweb/init_C3_A9naires_vignoble_actjqx_vtfg5u.webp"/>
+                                    </div>
+                                </div>
+                                <div className={style.work_item__text}>
+                                    <div className={style.work_item_title}>
+                                        <div className={style.title_animation_blue}></div>
+                                        <h3>Itinéraires vignobles</h3>
+                                    </div>
+                                    <p>Un site Web qui propose de créer des parcours de visite à travers les vignobles du Bordelais. </p>
+
+                                </div>
+
+
+                            </div>
+                        </FadeTranslateTopWhenVisible>
+                    </a>
+                </Link>
+                <Link href="/contact">
+                    <a className={ `${style.work_item__container} ${style.work_item_translate}`}>
+                        <FadeTranslateTopWhenVisible tresholdOption={0.2} animation="middle">
+                            <div className={style.work_item}>
+                                <div className={style.work_item__image__container}>
+                                    <div className={style.work_item__your_project}>
+                                        <div className={style.your_project__content}>
+                                            <h5>Et si vous nous parliez de votre projet ?</h5>
+                                            <div className={style.your_project__image}>
+                                                <Image layout={"fill"} objectFit={'contain'} src="/pokouweb/Communications_jpu069_drpn5h.webp"/>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
 
                             </div>
                         </FadeTranslateTopWhenVisible>
