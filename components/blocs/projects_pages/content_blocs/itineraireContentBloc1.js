@@ -32,8 +32,8 @@ export default function ItineraireContentBloc1() {
                     <div className={style.text__bloc}>
                         <h2>Un project existant qui veut aller plus loin</h2>
                         <p>Le site Itinéraires-vignobles est un site existant, joliement produit par l'agence <a href="https://agenceadvb.com/" rel="noreferrer noopener" target="_blank">ADVB</a>, qui désirait améliorer l'expérience utilisateur en rapprochant le visiteur du site des châteaux et des vignobles.</p>
-                        <p>Nous avons créé un système de formulaire modulable pour que les utilisateurs puissent directement contacter les vignobles ainsi que de planifier une visite, une dégustation et d'autres prestations. Egalement, nous avons renforcé l'administration du site d'un système de suivi statistique de ces formulaires afin d'affiner le suivi des utilisteurs et ainsi de préparer le futur des fonctionnalités.</p>
-                        <p>De nouveaux vignobles et châteaux prenant part à l'aventure Itinéraires-vignobles a nécessité que nous créions de nouvelles pages. Ce qui a piquer notre créativité, en produisant de jolies visuels et fonctionnalités, ainsi que notre soif du vin ! </p>
+                        <p>Nous avons créé un système de formulaire modulable pour que les utilisateurs puissent directement contacter les vignobles ainsi que de planifier une visite, une dégustation et d'autres prestations. Egalement, nous avons renforcé l'administration du site d'un système de suivi statistique de ces formulaires afin d'affiner le suivi des utilisateurs et ainsi de préparer le futur des fonctionnalités.</p>
+                        <p>De nouveaux vignobles et châteaux prenant part à l'aventure Itinéraires-vignobles a nécessité que nous créions de nouvelles pages. Ce qui a piqué notre créativité, en produisant de jolies visuels et fonctionnalités, ainsi que notre soif du vin ! </p>
                     </div>
                 </div>
                 </div>

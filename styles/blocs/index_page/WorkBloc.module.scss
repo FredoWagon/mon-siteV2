@@ -29,6 +29,14 @@
         width: 100%;
         margin-bottom: 4rem;
       }
+      @media (min-width: 720px) and (max-width: 989px) {
+        margin-bottom: unset;
+
+      }
+      @media (max-width: 719px) {
+        margin-bottom: unset;
+
+      }
       h2 {
         font-size: 4.5rem;
         font-weight: unset;
@@ -37,6 +45,7 @@
         @media (min-width: 720px) and (max-width: 989px) {
           font-size: 3.5rem;
           line-height: 3.5rem;
+
         }
         @media (max-width: 719px) {
           font-size: 2.5rem;
@@ -123,6 +132,7 @@
       }
 
       .work_item {
+        padding: 0 1rem;
 
         display: flex;
         flex-direction: column;
@@ -144,11 +154,10 @@
 
           .work_item__image {
             position: relative;
-            padding-top: 100%;
+            aspect-ratio: 1/1;
             width: 100%;
             @media (max-width: 719px) {
-              padding-top: unset;
-              height: 328px;
+
               img {
                 object-fit: cover;
 
@@ -237,6 +246,14 @@
               margin-bottom: 1rem;
               font-size: 2rem;
               margin-top: 0;
+              @media (min-width: 720px) and (max-width: 989px) {
+                font-size: 1.7rem;
+                line-height: 1.9rem;
+              }
+              @media (max-width: 719px) {
+                font-size: 1.7rem;
+                margin: 0 0 0.3rem 0;
+              }
 
             }
             .title_animation_blue {
