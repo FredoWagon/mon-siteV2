@@ -40,9 +40,9 @@ export default function MedtandemContentBloc2() {
                             <h2>La technologie</h2>
                             <p>Le site medtandem.com a été codé en Ruby et son franmework Ruby on Rails. Pour le frontEnd nous avons modernisé le site en utilisant stimulus.js. </p>
                             <div className={style.techno_logo__container}>
-                                <img className={style.ruby_logo} title="Language Ruby" alt="Language ruby" src="/ruby2.svg" alt=""/>
-                                <img className={style.rails_logo} title="Framework Ruby On Rails" alt="Framework Ruby On Rails" src="/rails.svg" alt=""/>
-                                <img className={style.stimulus_logo} title="Stimulus.js" alt="Stimulus.js" src="/stimulusjs.svg" alt=""/>
+                                <img className={style.ruby_logo} title="Language Ruby" alt="Language ruby" src="/ruby2.svg"/>
+                                <img className={style.rails_logo} title="Framework Ruby On Rails" alt="Framework Ruby On Rails" src="/rails.svg"/>
+                                <img className={style.stimulus_logo} title="Stimulus.js" alt="Stimulus.js" src="/stimulusjs.svg"/>
                             </div>
 
                             <Link href=""><a>

@@ -43,7 +43,7 @@ export default function OnePalmContentBloc() {
                             <h2>La technologie</h2>
                             <p>Onepalm-Surf est conçu avec le gestionnaire de contenu Wordpress.</p>
                             <div className={style.techno_logo__container}>
-                                <img className={style.wordpress_logo__white} alt="CMS WordPress logo" title="CMS WordPress" src="/wordpress.svg" alt=""/>
+                                <img className={style.wordpress_logo__white} alt="CMS WordPress logo" title="CMS WordPress" src="/wordpress.svg"/>
                             </div>
                             <Link href=""><a className={style.text__bloc__white_link}>
                                 En savoir plus sur les technologies

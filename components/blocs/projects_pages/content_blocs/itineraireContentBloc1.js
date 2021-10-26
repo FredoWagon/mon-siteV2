@@ -44,7 +44,7 @@ export default function ItineraireContentBloc1() {
                             <h2>La technologie</h2>
                             <p>Le site Itinéraires-vignobles a été construit grâce au "système de gestion de contenu" (CMS) : Joomla.</p>
                             <div className={style.techno_logo__container}>
-                                <img className={style.joomla_logo} title="CMS Joomla" src="/Joomla!-Logo.svg" alt=""/>
+                                <img className={style.joomla_logo} title="CMS Joomla" src="/Joomla!-Logo.svg"/>
                             </div>
                             <Link href=""><a>
                                 En savoir plus sur les technologies
