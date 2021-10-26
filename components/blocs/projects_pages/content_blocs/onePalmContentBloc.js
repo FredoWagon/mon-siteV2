@@ -18,7 +18,7 @@ export default function OnePalmContentBloc() {
                 <div className={style.main__info}>
                     <div className={style.text_info__container}>
                         <div className={style.text__bloc}>
-                            <h2>Présentation du projet</h2>
+                            <h2>Une école de surf et <br/> une e-boutique</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ducimus ea, eligendi excepturi expedita id illum inventore ipsam nemo nulla quae quis, soluta, temporibus veniam vitae? Fugiat perferendis rem tempora!</p>
                         </div>
                     </div>
@@ -30,19 +30,25 @@ export default function OnePalmContentBloc() {
 
                     <div className={style.text_info__container}>
                         <div className={style.text__bloc}>
-                            <h2 >Concept</h2>
-                            <p>Le Slush PWA est une application basée sur un navigateur qui permet un développement agile et offre une expérience utilisateur transparente. Les 20 000 techniciens pourraient créer leur propre emploi du temps, mettre en signet leurs conférenciers et restaurants préférés et profiter au maximum de leur expérience à Slush.</p>
-                            <p>Notre solution a rendu l'expérience plus interactive et fluide, nous a permis de réagir rapidement aux changements et a permis d'atteindre les visiteurs avec des notifications ou des messages en temps opportun.</p>
+                            <h2>Une refonte complète</h2>
+                            <p>Le site de ce client nécessitait un coup de fraîcheur depuis sa création. Il fallait distinguer et mettre en valeur les deux activités, ajuster un grand nombre de bugs, le rendre responsive et le traduire dans trois langues. D’autre part le client dispose d’une offre exclusive de planche de surf qu’il a été conseillé de mettre en avant.</p>
+<p>Une première étude des forces et points d’améliorations validée par le client, le nouveau site a été mis en staging puis travaillé sans interférer avec le site en cours.  </p>
                         </div>
                         <div className={style.text__bloc}>
-                            <h2 >La technologie</h2>
-                            <p>Alors, à quoi servent ces applications Web progressives ? Au lieu d'avoir à télécharger l'application à partir d'un magasin d'applications, l'utilisateur peut simplement visiter l'URL et enregistrer l'application sur son écran d'accueil. En utilisant l'API Service Worker, la PWA a l'apparence d'une application native tout en travaillant dans le navigateur. Cela le rend indépendant de l'appareil, facile à utiliser et rapide à entretenir.</p>
-                            <p>Notre solution a rendu L'application Slush utilise WordPress comme backend, rendant la saisie de contenu aussi facile que pour n'importe quel site WordPress. Le contenu est ensuite récupéré via l'API WordPress Rest vers l'application basée sur React + Redux. La mise en cache intelligente dans la PWA la rend rapide et conviviale hors ligne, comme toute application native. L'application Slush a également été intégrée à la plate-forme Slush via la connexion Firebase de Google, et les réunions qui y étaient organisées pouvaient être récupérées sur My Slush. plus interactive et fluide, nous a permis de réagir rapidement aux changements et a permis d'atteindre les visiteurs avec des notifications ou des messages en temps opportun.</p>
+                            <h2 >Conception</h2>
+                            <p>Le site est réalisé via le CMS WordPress que le client utilisait déjà sur lequel se greffe Elementor Pro pour construire les différentes pages. Viennent se greffer plusieurs extensions pour: traiter les envois de mails, les formulaires, la gestion des pages traduites etc…</p>
+                            <p>Plusieurs blocs de CSS additionnels ont été ajouté pour palier aux limites de l’outil et proposer une expérience entièrement personnalisée au client et à l’utilisateur peu importe le support.</p>
                         </div>
                         <div className={style.text__bloc}>
-                            <h2 >Concevoir</h2>
-                            <p>Pour que l'application fonctionne comme le meilleur ami d'un visiteur de Slush, nous voulions en faire une extension du cerveau . L'aspect et la convivialité familiers de Slush ont été convertis en un design optimisé pour une utilisation en déplacement. L'ajout de conférenciers, de conférences et de déjeuners à l'agenda de l'utilisateur a été simplifié à tous les niveaux.</p>
-                            <p>Le thème sombre rend l'application agréable pour les yeux et réduit l'utilisation de la batterie. Des détails précis dans l'interface utilisateur, rappelant les lasers perçant l'air brumeux de Messukeskus, guident l'utilisateur à travers chaque interaction. Des transitions fluides ajoutent ce petit plus pour donner l'impression que n'importe quelle application native pourrait le faire.</p>
+                            <h2>La technologie</h2>
+                            <p>Onepalm-Surf est conçu avec le gestionnaire de contenu Wordpress.</p>
+                            <div className={style.techno_logo__container}>
+                                <img className={style.wordpress_logo__white} alt="CMS WordPress logo" title="CMS WordPress" src="/wordpress.svg" alt=""/>
+                            </div>
+                            <Link href=""><a className={style.text__bloc__white_link}>
+                                En savoir plus sur les technologies
+                            </a></Link>
+
                         </div>
                     </div>
                     <div className={style.main__info__image}>

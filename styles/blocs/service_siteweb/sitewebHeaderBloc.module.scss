@@ -74,13 +74,31 @@
         }
         p {
           color: white;
-        }
-        a {
-          p {
-            color: unset;
-            background-color:  #b4cce8;
+          margin-bottom: 2rem;
 
+        }
+
+
+        a {
+
+          color: white;
+          width: fit-content;
+          background-color:  black;
+          border: unset;
+          padding: 1.3rem 3.5rem;
+          font-size: 1.1rem;
+          transition: opacity 0.3s ease;
+          @media (min-width: 720px) and (max-width: 989px) {
+            font-size: 1rem;
+            line-height: 2.1rem;
+            padding: 1.1rem 2.5rem;
           }
+          &:hover {
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+          }
+
         }
       }
     }

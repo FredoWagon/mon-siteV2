@@ -1,5 +1,10 @@
 .work_bloc__container {
   padding-top: 4rem;
+  padding-bottom: 15rem;
+  @media (max-width: 719px) {
+    padding-bottom: 10rem;
+
+  }
 
 
   .work_bloc {

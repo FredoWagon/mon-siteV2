@@ -176,7 +176,22 @@
 
       }
       .static__right {
+        position: relative;
         width: 50%;
+        aspect-ratio: 1/1;
+        img {
+
+        }
+        @media (max-width: 719px) {
+          width: 100%;
+        }
+
+
+      }
+      .static__picture_one {
+        position: relative;
+        width: 50%;
+        aspect-ratio: 705/392;
         img {
 
         }

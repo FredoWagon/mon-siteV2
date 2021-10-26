@@ -31,7 +31,7 @@ export default function WorkBloc() {
                                 <div className={style.work_item__image__container}>
                                     <div className={style.work_item__image}>
                                         <div className={style.view_project}>
-                                            <p>Voir la projet</p>
+                                            <p>Voir le projet</p>
                                         </div>
                                         <div className={style.new_project_round}>
                                             <p>Nouveau</p>
@@ -45,7 +45,7 @@ export default function WorkBloc() {
                                         <div className={style.title_animation_blue}></div>
                                         <h3>Trend Corner</h3>
                                     </div>
-                                    <p>Une application web innovante qui permet de faire du 'trade' sur le marché des crypto-monnaies pour une jeune startup qui a des visées internationale.</p>
+                                    <p>Une application web innovante de trading sur les crypto-monnaies pour une jeune startup qui a des visées internationale.</p>
 
                                 </div>
 
@@ -65,7 +65,7 @@ export default function WorkBloc() {
                                 <div className={style.work_item__image__container}>
                                     <div className={style.work_item__image}>
                                         <div className={style.view_project}>
-                                            <p>Voir la projet</p>
+                                            <p>Voir le projet</p>
                                         </div>
                                         <Image lazyBoundary="500px" alt="Medtandem - projet" layout="fill" src="/pokouweb/med_tandem_mockup_veoqcc_suqdej.webp"/>
 
@@ -93,7 +93,7 @@ export default function WorkBloc() {
                                 <div className={style.work_item__image__container}>
                                     <div className={style.work_item__image}>
                                         <div className={style.view_project}>
-                                            <p>Voir la projet</p>
+                                            <p>Voir le projet</p>
                                         </div>
                                         <Image lazyBoundary="500px" alt="One palm - projet" layout="fill" src="/pokouweb/onepalm_card_bjcyv6_hydfyr.webp"/>
                                     </div>
@@ -119,7 +119,7 @@ export default function WorkBloc() {
                                 <div className={style.work_item__image__container}>
                                     <div className={style.work_item__image}>
                                         <div className={style.view_project}>
-                                            <p>Voir la projet</p>
+                                            <p>Voir le projet</p>
                                         </div>
                                         <Image lazyBoundary="500px" alt="Dashboard - projet" layout="fill" src="/pokouweb/dashboard_card_eax3rx_hsrosb.webp"/>
                                     </div>
@@ -145,7 +145,7 @@ export default function WorkBloc() {
                                 <div className={style.work_item__image__container}>
                                     <div className={style.work_item__image}>
                                         <div className={style.view_project}>
-                                            <p>Voir la projet</p>
+                                            <p>Voir le projet</p>
                                         </div>
                                         <Image lazyBoundary="500px" alt="One palm - projet" layout="fill" src="/pokouweb/init_C3_A9naires_vignoble_actjqx_vtfg5u.webp"/>
                                     </div>

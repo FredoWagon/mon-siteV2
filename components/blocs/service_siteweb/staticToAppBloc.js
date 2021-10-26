@@ -14,8 +14,8 @@ export default function  StaticToAppBloc() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias quibusdam recusandae. Autem eveniet illum labore modi possimus quaerat, quia quisquam totam! Architecto ea nemo tempore velit veniam! Adipisci, in!</p>
 
                     </div>
-                    <div className={style.static__right}>
-                        <Image  lazyBoundary="500px" width="705" height="705" src="/pokouweb/developpement_illustration_vn1fce_pckezf.webp"/>
+                    <div className={style.static__picture_one}>
+                        <Image  lazyBoundary="500px" layout={"fill"} src="/pokouweb/website_illustration_irftee_eu0uci.webp"/>
                     </div>
 
                 </div>

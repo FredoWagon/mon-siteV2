@@ -21,8 +21,8 @@ export default function TrendcornerContentBloc1() {
                     </div>
                     <div className={style.text_info__container}>
                         <div className={style.text__bloc}>
-                            <h2 >Trend Corner, .. trouver le titre </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ducimus ea, eligendi excepturi expedita id illum inventore ipsam nemo nulla quae quis, soluta, temporibus veniam vitae? Fugiat perferendis rem tempora!</p>
+                            <h2 >Une interface de trading en ligne innovante</h2>
+                            <p>Trend Corner est une jeune startup spécialisée dans le trading de crypto-monnaies. Elle propose, moyennant un abonnement mensuel, un espace personnel de trading complet muni d'outils avancés afin de pouvoir passer des ordres sur les différents marché crypto. Son innovation majeure tient au fait qu'elle propose également un outil puissant de flux d'informations spécialisé en direct.</p>
                         </div>
                     </div>
                 </div>
@@ -33,19 +33,26 @@ export default function TrendcornerContentBloc1() {
 
                     <div className={style.text_info__container}>
                         <div className={style.text__bloc}>
-                            <h2 >Concept</h2>
-                            <p>Le Slush PWA est une application basée sur un navigateur qui permet un développement agile et offre une expérience utilisateur transparente. Les 20 000 techniciens pourraient créer leur propre emploi du temps, mettre en signet leurs conférenciers et restaurants préférés et profiter au maximum de leur expérience à Slush.</p>
-                            <p>Notre solution a rendu l'expérience plus interactive et fluide, nous a permis de réagir rapidement aux changements et a permis d'atteindre les visiteurs avec des notifications ou des messages en temps opportun.</p>
+                            <h2>Concept</h2>
+                            <p>Trend Corner a pour vocation de proposer un outil de trading complet qui associe une plateforme de trading et des outils d'informations utile à la connaissance du marché.</p>
+                            <p>Pour le passage des ordres nous passerons par l'api Binance, leader dans le domaine du trade de cryptio-monnaie. Afin d'avoir les outils visuels nécessaire à la compréhension du marché nous allons utiliser des API de graph, user de notre créativité et nous appuyer sur les visuels designé par nos soins.</p>
+                            <p>L'outil d'aggrégation d'information nous demande de mettre en place des websockets afin de lier en temps réel notre application au marché. </p>
+                            <p>La gestion des paiments et des abonnement seront géré à travers Stripe.</p>
                         </div>
                         <div className={style.text__bloc}>
                             <h2 >La technologie</h2>
-                            <p>Alors, à quoi servent ces applications Web progressives ? Au lieu d'avoir à télécharger l'application à partir d'un magasin d'applications, l'utilisateur peut simplement visiter l'URL et enregistrer l'application sur son écran d'accueil. En utilisant l'API Service Worker, la PWA a l'apparence d'une application native tout en travaillant dans le navigateur. Cela le rend indépendant de l'appareil, facile à utiliser et rapide à entretenir.</p>
-                            <p>Notre solution a rendu L'application Slush utilise WordPress comme backend, rendant la saisie de contenu aussi facile que pour n'importe quel site WordPress. Le contenu est ensuite récupéré via l'API WordPress Rest vers l'application basée sur React + Redux. La mise en cache intelligente dans la PWA la rend rapide et conviviale hors ligne, comme toute application native. L'application Slush a également été intégrée à la plate-forme Slush via la connexion Firebase de Google, et les réunions qui y étaient organisées pouvaient être récupérées sur My Slush. plus interactive et fluide, nous a permis de réagir rapidement aux changements et a permis d'atteindre les visiteurs avec des notifications ou des messages en temps opportun.</p>
-                        </div>
-                        <div className={style.text__bloc}>
-                            <h2 >Concevoir</h2>
-                            <p>Pour que l'application fonctionne comme le meilleur ami d'un visiteur de Slush, nous voulions en faire une extension du cerveau . L'aspect et la convivialité familiers de Slush ont été convertis en un design optimisé pour une utilisation en déplacement. L'ajout de conférenciers, de conférences et de déjeuners à l'agenda de l'utilisateur a été simplifié à tous les niveaux.</p>
-                            <p>Le thème sombre rend l'application agréable pour les yeux et réduit l'utilisation de la batterie. Des détails précis dans l'interface utilisateur, rappelant les lasers perçant l'air brumeux de Messukeskus, guident l'utilisateur à travers chaque interaction. Des transitions fluides ajoutent ce petit plus pour donner l'impression que n'importe quelle application native pourrait le faire.</p>
+                            <p>Une plateforme de trading nécéssite des technologies spécifiques répondant à des exigences claires : une grande rapidité d'éxecution et une expérience utilisateur optimisée. Nous avons opté pour un backEnd node.js avec le framework express.js et react.js pour le frontEnd. Profitant des executions non bloquante de node.js et de la réactivité sans pareil de react.js.</p>
+                            <p>Pour la base de donnée, nous utilisons MongoDB</p>
+                           <div className={style.techno_logo__container}>
+                               <img className={style.react_logo} alt="React.js logo" title="Framework React.js" src="/react.svg" alt=""/>
+                               <img className={style.nodejs_logo} alt="Node.js logo" title="Moteur Node.js" src="/nodejs.svg" alt=""/>
+                               <img className={style.expressjs_logo__white} alt="Express.js logo" title="Framework Express.js" src="/expressjs.svg" alt=""/>
+                               <img className={style.mongo_logo} alt="MongoDB logo" title="Base de donnée MongoDB" src="/mongo.svg" alt=""/>
+                           </div>
+
+                            <Link href=""><a className={style.text__bloc__white_link}>
+                                En savoir plus sur les technologies
+                            </a></Link>
                         </div>
                     </div>
                     <div className={style.main__info__image}>

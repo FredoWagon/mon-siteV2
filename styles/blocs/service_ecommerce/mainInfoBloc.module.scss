@@ -295,8 +295,175 @@
           &:hover {
             opacity: 0.6;
           }
+          &.text__bloc__white_link {
+            color: white;
+          }
         }
-        .joomla_logo {
+        .techno_logo__container {
+
+          display: flex;
+          align-items: center;
+
+          .joomla_logo {
+            width: 12rem;
+            margin: 1rem 0;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 10rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 10rem;
+            }
+            @media (max-width: 719px) {
+              width: 10rem;
+
+
+            }
+          }
+          .mongo_logo {
+            width: 4rem;
+            margin: 1rem 0rem 1rem 1rem;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 3.5rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 3.5rem;
+            }
+            @media (max-width: 719px) {
+              width: 3.5rem;
+
+
+            }
+          }
+          .react_logo {
+            width: 3.5rem;
+            margin: 1rem 1rem 1rem 0rem;
+
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 3rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 3rem;
+            }
+            @media (max-width: 719px) {
+              width: 3rem;
+
+
+            }
+          }
+          .nodejs_logo {
+
+            width: 5.5rem;
+            margin: 1rem 0;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 3rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 3rem;
+            }
+            @media (max-width: 719px) {
+              width: 3rem;
+
+
+            }
+          }
+          .expressjs_logo__white {
+            width: 5.5rem;
+            filter: invert(1);
+            margin: 1rem 0 1rem 1rem;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 3rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 3rem;
+            }
+            @media (max-width: 719px) {
+              width: 3rem;
+
+
+            }
+          }
+          .ruby_logo {
+            width: 4rem;
+            margin: 1rem 0;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 3rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 3rem;
+            }
+            @media (max-width: 719px) {
+              width: 3rem;
+
+
+            }
+          }
+          .rails_logo {
+            width: 5.5rem;
+            margin: 1rem 0 1rem 1rem;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 3rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 3rem;
+            }
+            @media (max-width: 719px) {
+              width: 3rem;
+
+
+            }
+          }
+          .wordpress_logo__white {
+            width: 4.5rem;
+            filter: invert(1);
+            margin: 1rem 0 1rem 1rem;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 3.5rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 3.5rem;
+            }
+            @media (max-width: 719px) {
+              width: 3.5rem;
+
+
+            }
+          }
+          .stimulus_logo {
+            width: 2.7rem;
+            margin: 1rem 0 1rem 1rem;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 2.5rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 2.5rem;
+            }
+            @media (max-width: 719px) {
+              width: 2.5rem;
+
+
+            }
+          }
+        }
+
+        .trend_corner__techno {
           width: 12rem;
           margin: 1rem 0;
           @media (min-width: 960px) and (max-width: 1439px) {

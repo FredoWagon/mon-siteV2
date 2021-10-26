@@ -26,7 +26,7 @@ export default function UsPictures() {
 
                                 <div className={style.us_picture__info}>
                                     <h3>Olivier Bouzon</h3>
-                                    <p>Developpeur fullstack</p>
+                                    <p>Developpeur BackEnd / FrontEnd</p>
 
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ export default function UsPictures() {
 
                                 <div className={style.us_picture__info}>
                                     <h3>Grégoire Rénaldo</h3>
-                                    <p>Expert SEO - Développeur backend</p>
+                                    <p>Developpeur BackEnd / FrontEnd</p>
 
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ export default function UsPictures() {
 
                                 <div className={style.us_picture__info}>
                                     <h3>Frédéric Legrand</h3>
-                                    <p>Developpeur frontend </p>
+                                    <p>Developpeur - Responsable SEO </p>
 
                                 </div>
                             </div>

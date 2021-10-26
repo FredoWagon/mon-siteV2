@@ -16,9 +16,8 @@ export default function ProjectHeaderBloc1() {
                         <h1>Medtandem, pionnier du <br/> e-learning médical  </h1>
                         <p>Medtandem propose du matériel d'apprentissage en ligne et des cours en présentiel sur le thème de l'échographie pour les professionnels de santé. Il propose également du mentorat et un large éventail de séminaire en ligne.</p>
                         <p>La nouvelle version de MedTandem est un site Web moderne et élégant qui stimule les ventes de l'entreprise, élève son profil et sert efficacement ses groupes cibles.</p>
-                        <Link  href="https://www.itineraires-vignobles.fr/">
-                            <a target="_blank">
-                                Voir le site</a>
+                        <Link  href="#">
+                            <a >En cours de livraison</a>
                         </Link>
                     </div>
                     <div className={ `${style.siteweb_header__right} ${style.custom_medtandem_project}`}>

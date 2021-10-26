@@ -267,6 +267,7 @@
       }
       .advantage_container {
         display: flex;
+
         @media (min-width: 720px) and (max-width: 989px) {
           flex-wrap: wrap;
         }
@@ -419,8 +420,11 @@
           color: white;
 
           .scrolling_item {
-            padding: 0 1rem;
-            height: 20rem;
+            padding: 20rem 1rem 0 1rem;
+            transition: opacity 1s ease;
+
+
+
             @media (max-width: 719px) {
               height: unset;
 
@@ -441,7 +445,8 @@
 
             }
             p {
-              color: #f2f2f280;
+              font-size: 1.2rem;
+              color: white;
             }
 
           }

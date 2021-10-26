@@ -100,7 +100,7 @@ export default function Footer(props) {
                         <p>Pour les nouvelles demandes commerciales :</p>
                         <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
                     </div>
-                    <div className={style.footer__social_links}>
+                    {/*    <div className={style.footer__social_links}>
                         <span>
                             <Image width="16" lazyBoundary="500px" height="16" alt="Facebook logo" src="/pokouweb/facebook_jfpi5f.svg"/>
                             <Link href="/">FaceBook</Link>
@@ -110,7 +110,8 @@ export default function Footer(props) {
                             <Link href="/">Instagram</Link>
                         </span>
 
-                    </div>
+                    </div>*/}
+
                     <div className={style.footer__adress}>
                         <p>L'Hertimate</p>
                         <p>9 Rue Jeanne Jugan</p>
@@ -135,7 +136,7 @@ export default function Footer(props) {
                 <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>
                 <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
 
-                <div className={style.footer_mobile__social}>
+                {/* <div className={style.footer_mobile__social}>
                     <div className={style.footer_social__item}>
                         <Link href="/">
                             <a>
@@ -151,7 +152,8 @@ export default function Footer(props) {
 
 
 
-                </div>
+                </div> */}
+
                 <div className={style.footer_mobile__links}>
                     <div className={style.footer_mobile__links__global}>
                         <ul>

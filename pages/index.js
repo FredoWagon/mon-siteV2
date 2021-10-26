@@ -37,7 +37,6 @@ Nous aidons nos clients à réaliser leur potentiel en ligne en concevant et en 
             <ServicesPopUpIndex/>
             <OurTeam/>
             <WorkBloc/>
-            <TheyTrustUs/>
             <BlueBLoc/>
 
 
