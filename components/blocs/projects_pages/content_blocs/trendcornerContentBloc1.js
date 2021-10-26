@@ -44,10 +44,10 @@ export default function TrendcornerContentBloc1() {
                             <p>Une plateforme de trading nécéssite des technologies spécifiques répondant à des exigences claires : une grande rapidité d'éxecution et une expérience utilisateur optimisée. Nous avons opté pour un backEnd node.js avec le framework express.js et react.js pour le frontEnd. Profitant des executions non bloquante de node.js et de la réactivité sans pareil de react.js.</p>
                             <p>Pour la base de donnée, nous utilisons MongoDB</p>
                            <div className={style.techno_logo__container}>
-                               <img className={style.react_logo} alt="React.js logo" title="Framework React.js" src="/react.svg" alt=""/>
-                               <img className={style.nodejs_logo} alt="Node.js logo" title="Moteur Node.js" src="/nodejs.svg" alt=""/>
-                               <img className={style.expressjs_logo__white} alt="Express.js logo" title="Framework Express.js" src="/expressjs.svg" alt=""/>
-                               <img className={style.mongo_logo} alt="MongoDB logo" title="Base de donnée MongoDB" src="/mongo.svg" alt=""/>
+                               <img className={style.react_logo} alt="React.js logo" title="Framework React.js" src="/react.svg"/>
+                               <img className={style.nodejs_logo} alt="Node.js logo" title="Moteur Node.js" src="/nodejs.svg"/>
+                               <img className={style.expressjs_logo__white} alt="Express.js logo" title="Framework Express.js" src="/expressjs.svg"/>
+                               <img className={style.mongo_logo} alt="MongoDB logo" title="Base de donnée MongoDB" src="/mongo.svg"/>
                            </div>
 
                             <Link href=""><a className={style.text__bloc__white_link}>

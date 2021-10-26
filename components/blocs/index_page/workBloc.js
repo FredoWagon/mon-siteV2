@@ -173,7 +173,7 @@ export default function WorkBloc() {
                                         <div className={style.your_project__content}>
                                             <h5>Et si vous nous parliez de votre projet ?</h5>
                                             <div className={style.your_project__image}>
-                                                <Image layout={"fill"} objectFit={'contain'} src="/pokouweb/Communications_jpu069_drpn5h.webp"/>
+                                                <Image layout={"fill"} objectFit={'contain'} alt="Blue contact link" src="/pokouweb/Communications_jpu069_drpn5h.webp"/>
                                             </div>
                                         </div>
 
