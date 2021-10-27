@@ -45,7 +45,7 @@ export default function OnePalmContentBloc() {
                             <div className={style.techno_logo__container}>
                                 <img className={style.wordpress_logo__white} alt="CMS WordPress logo" title="CMS WordPress" src="/wordpress.svg"/>
                             </div>
-                            <Link href=""><a className={style.text__bloc__white_link}>
+                            <Link href="/nos-services/technologies"><a className={style.text__bloc__white_link}>
                                 En savoir plus sur les technologies
                             </a></Link>
 

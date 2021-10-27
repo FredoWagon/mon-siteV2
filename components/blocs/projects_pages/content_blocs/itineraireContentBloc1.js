@@ -46,7 +46,7 @@ export default function ItineraireContentBloc1() {
                             <div className={style.techno_logo__container}>
                                 <img className={style.joomla_logo} title="CMS Joomla" src="/Joomla!-Logo.svg"/>
                             </div>
-                            <Link href=""><a>
+                            <Link href="/nos-services/technologies"><a>
                                 En savoir plus sur les technologies
                             </a></Link>
                          </div>

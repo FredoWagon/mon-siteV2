@@ -50,7 +50,7 @@ export default function TrendcornerContentBloc1() {
                                <img className={style.mongo_logo} alt="MongoDB logo" title="Base de donnée MongoDB" src="/mongo.svg"/>
                            </div>
 
-                            <Link href=""><a className={style.text__bloc__white_link}>
+                            <Link href="/nos-services/technologies"><a className={style.text__bloc__white_link}>
                                 En savoir plus sur les technologies
                             </a></Link>
                         </div>

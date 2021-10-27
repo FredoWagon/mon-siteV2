@@ -45,7 +45,7 @@ export default function MedtandemContentBloc2() {
                                 <img className={style.stimulus_logo} title="Stimulus.js" alt="Stimulus.js" src="/stimulusjs.svg"/>
                             </div>
 
-                            <Link href=""><a>
+                            <Link href="/nos-services/technologies"><a>
                                 En savoir plus sur les technologies
                             </a></Link>
 

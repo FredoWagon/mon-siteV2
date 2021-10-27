@@ -65,7 +65,9 @@ export default function Navbar(props) {
                 conception: serviceLink.current,
                 developpement: serviceLink.current,
                 referencement: serviceLink.current,
-                itineraire: travauxLink.current
+                itineraire: travauxLink.current,
+                technologie: serviceLink.current,
+                maintenance: serviceLink.current
 
             }
 
@@ -96,7 +98,7 @@ export default function Navbar(props) {
 
 
 
-     useLayoutEffect(() => {
+     useEffect(() => {
       window.addEventListener('resize', handleResize)
     return () => {
       window.removeEventListener('resize', handleResize)
@@ -111,7 +113,7 @@ export default function Navbar(props) {
 
 
     // Modification font-size sur resize
-    useLayoutEffect(() => {
+    useEffect(() => {
 
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {

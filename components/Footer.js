@@ -20,7 +20,7 @@ export default function Footer(props) {
                         <div className={style.sitemap_item}>
                             <ul>
                                 <li className={ !props.currentPage ? style.active_current_page : ""}>  <Link href="/">Accueil</Link></li>
-                                <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/nos-services" >Nos services</Link></li>
+                                <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception","maintenance", "technologie"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/nos-services" >Nos services</Link></li>
                                 <li className={`${["dashboard", "medtandem", "trendcorner", "onepalm", "itineraire"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="#">Travaux</Link></li>
                                 <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/a-propos">A propos</Link></li>
                             </ul>
@@ -53,7 +53,7 @@ export default function Footer(props) {
                             </div>
                         </div>
                         }
-                        {["creationweb", "applicationweb", "ecommerce", "services", "developpement", "conception", "referencement"].includes(props.currentPage) &&
+                        {["creationweb", "applicationweb", "ecommerce", "services", "developpement", "conception", "referencement", "technologie", "maintenance"].includes(props.currentPage) &&
                         <div className={style.sitemap_dynamic_item}>
                             <div className={style.sitemap_dynamic_services}>
                                 <ul>
@@ -71,8 +71,11 @@ export default function Footer(props) {
                                     </li>
                                     <li className={props.currentPage === "developpement" ? style.active_current_page : ""}>  <Link href="/nos-services/developpement">Développement</Link></li>
                                     <li className={props.currentPage === "referencement" ? style.active_current_page : ""}> <Link href="/nos-services/referencement">Référencement</Link></li>
+                                    <li className={props.currentPage === "maintenance" ? style.active_current_page : ""}> <Link href="/nos-services/maintenance-et-suivi">Maintenance</Link></li>
+                                    <li className={props.currentPage === "technologie" ? style.active_current_page : ""}> <Link href="/nos-services/technologies">Technologies</Link></li>
                                 </ul>
                             </div>
+
                         </div>
                         }
                         {["dashboard", "medtandem", "trendcorner", "onepalm", "itineraire"].includes(props.currentPage) &&
@@ -158,7 +161,7 @@ export default function Footer(props) {
                     <div className={style.footer_mobile__links__global}>
                         <ul>
                             <li className={ !props.currentPage ? style.active_current_page : ""}>  <Link href="/">Accueil</Link></li>
-                            <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/nos-services" >Nos services</Link></li>
+                            <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception", "maintenance", "technologie"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/nos-services" >Nos services</Link></li>
                             <li className={`${["dashboard", "medtandem", "trendcorner", "onepalm", "itineraire"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="#">Travaux</Link></li>
                             <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/a-propos">A propos</Link></li>
                             <li  className={ props.currentPage === "contact" ? style.active_current_page : ""}> <Link href="/contact" >Contact</Link></li>
@@ -187,7 +190,7 @@ export default function Footer(props) {
                         </div>
                     </div>
                     }
-                    {["creationweb", "applicationweb", "ecommerce", "services", "developpement", "conception", "referencement"].includes(props.currentPage) &&
+                    {["creationweb", "applicationweb", "ecommerce", "services", "developpement", "conception", "referencement","technologie","maintenance"].includes(props.currentPage) &&
                     <div className={style.footer_mobile__dynamic_links}>
                         <div className={style.footer_mobile__links__services}>
                             <ul>
@@ -205,8 +208,11 @@ export default function Footer(props) {
                                 </li>
                                 <li className={props.currentPage === "developpement" ? style.active_current_page : ""}>  <Link href="/nos-services/developpement">Développement</Link></li>
                                 <li className={props.currentPage === "referencement" ? style.active_current_page : ""}> <Link href="/nos-services/referencement">Référencement</Link></li>
+                                <li className={props.currentPage === "maintenance" ? style.active_current_page : ""}> <Link href="/nos-services/maintenance-et-suivi">Maintenance</Link></li>
+                                <li className={props.currentPage === "technologie" ? style.active_current_page : ""}> <Link href="/nos-services/technologies">Technologies</Link></li>
                             </ul>
                         </div>
+
                     </div>
                     }
                     {["dashboard", "medtandem", "trendcorner", "onepalm", "itineraire"].includes(props.currentPage) &&

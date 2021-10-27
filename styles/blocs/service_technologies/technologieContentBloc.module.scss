@@ -1,0 +1,215 @@
+.technologie_content__container {
+
+
+  .technologie_content {
+    margin: auto;
+    padding:0 1rem;
+
+
+
+    @media (min-width: 1440px)  {
+      max-width: 1440px;
+    }
+    @media (min-width: 960px) and (max-width: 1439px) {
+      max-width: 960px;
+    }
+    @media (min-width: 720px) and (max-width: 989px) {
+      max-width: 720px;
+    }
+    @media (max-width: 719px) {
+
+
+    }
+    h2 {
+      padding: 10rem 1rem;
+      max-width: 750px;
+      margin: auto;
+      font-weight: unset;
+      font-size: 4rem;
+      line-height: 4.2rem;
+      text-align: center;
+      @media (min-width: 960px) and (max-width: 1439px) {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+      @media (min-width: 720px) and (max-width: 989px) {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+      }
+      @media (max-width: 719px) {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        padding: 5rem 1rem 5rem 1rem;
+
+
+      }
+    }
+    .techno__menu {
+      display: flex;
+
+      justify-content: space-between;
+
+      @media (max-width: 719px) {
+       flex-wrap: wrap;
+
+      }
+      .techno__menu_item {
+
+        padding:0 1rem;
+        width: 33%;
+        @media (max-width: 719px) {
+          width: 100%;
+          margin-bottom: 2rem;
+
+        }
+        .techno_subcontent__container {
+          margin-top: 5rem;
+          @media (max-width: 719px) {
+            margin-top: 3rem;
+
+          }
+          .techno_subcontent {
+            margin-bottom: 2.5rem;
+
+            &.bubble_icons {
+              margin-bottom: 1.5rem;
+
+              h5 {
+
+                margin-bottom: 2rem;
+                padding-bottom: unset;
+              }
+              .techno_subcontent__icons {
+                .subicons__container {
+                  img {
+                    width: 5rem;
+
+                  }
+                }
+              }
+            }
+
+
+            &.bigger_icons {
+              margin-bottom: 1.5rem;
+
+              h5 {
+
+                margin-bottom: 0;
+                padding-bottom: unset;
+              }
+              .techno_subcontent__icons {
+                .subicons__container {
+                  img {
+                    width: 5rem;
+                    margin-bottom: unset;
+
+                  }
+                }
+              }
+
+            }
+            &.base_logo {
+              margin-bottom: 1.5rem;
+
+              h5 {
+
+
+                margin-bottom: 1.8rem;
+                padding-bottom: unset;
+              }
+              .techno_subcontent__icons {
+                .subicons__container {
+                  img {
+                    width: 4.2rem;
+
+                  }
+                }
+              }
+            }
+
+
+            h5 {
+
+              text-decoration: underline;
+              margin: unset;
+              padding-bottom: 1.5rem;
+              font-size: 1.2rem;
+              font-weight: unset;
+              @media (min-width: 720px) and (max-width: 989px) {
+                font-size: 1.1rem;
+              }
+              @media (max-width: 719px) {
+                font-size: 1.1rem;
+
+              }
+            }
+            .techno_subcontent__icons {
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              .subicons__container {
+                margin: 0 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                  margin-bottom: 1rem;
+                  width: 3.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        .techno_menu__title {
+          display: flex;
+          align-items: center;
+          h3 {
+            margin-left: 1rem;
+            font-weight: unset;
+            font-size: 2.2rem;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              font-size: 1.9rem;
+              line-height: 1.9rem;
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              font-size: 1.5rem;
+              line-height: 1.5rem;
+            }
+            @media (max-width: 719px) {
+              font-size: 1.6rem;
+              margin: 0 0 0 1rem;
+
+            }
+          }
+          img {
+            width: 2.2rem;
+            opacity: 0.3;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 1.9rem;
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 1.5rem;
+            }
+            @media (max-width: 719px) {
+              width: 1.6rem;
+
+            }
+
+          }
+
+        }
+        p {
+          @media (min-width: 960px) and (max-width: 1439px) {
+            min-height: 11rem;
+          }
+          @media (min-width: 720px) and (max-width: 989px) {
+            min-height: 15.6rem;
+          }
+        }
+
+      }
+    }
+  }
+}
