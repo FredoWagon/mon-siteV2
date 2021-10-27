@@ -126,9 +126,6 @@ export default function  TechnologieContentBloc() {
 
                                     </div>
                                     <div className={style.subicons__container}>
-                                        <img src="/prestashop.svg" alt="Prestashop icon" title="CMS Prestashop"/>
-                                    </div>
-                                    <div className={style.subicons__container}>
                                         <img src="/woocommerce.svg" alt="WooCommerce icon" title="CMS WooCommerce"/>
                                     </div>
 

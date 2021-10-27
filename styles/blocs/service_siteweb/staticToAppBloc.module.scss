@@ -8,7 +8,7 @@
 
 }
 .statictoapp__container {
-  margin-top: 10rem;
+  margin-top: 16rem;
   @media (min-width: 960px) and (max-width: 1439px) {
 
     margin-top: 8rem;
@@ -70,6 +70,7 @@
           }
           p {
             color: white;
+
           }
         }
       }
@@ -78,8 +79,9 @@
 
 
     .static__row {
-      margin-bottom: 12rem;
+      margin-bottom: 18rem;
       display: flex;
+      align-items: center;
       @media (max-width: 719px) {
         flex-wrap: wrap-reverse;
         margin-bottom: 2rem;
@@ -170,7 +172,27 @@
 
 
           }
+          a {
 
+            text-decoration: underline;
+            transition: opacity 0.3s ease;
+            &:hover {
+              opacity: 0.5;
+              transition: opacity 0.3s ease;
+            }
+          }
+
+
+
+        }
+        a {
+          font-size: 1.1rem;
+          text-decoration: underline;
+          transition: opacity 0.3s ease;
+          &:hover {
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+          }
 
         }
 

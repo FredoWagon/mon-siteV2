@@ -13,7 +13,7 @@ export default function TechnologieHeaderBloc() {
             <SpeedFadeIn customClass="custom_siteweb_header">
                 <div className={style.siteweb_header}>
                     <div className={style.siteweb_header__left}>
-                        <h1>Des technologies moderne qui répondent à vos objectifs futur.</h1>
+                        <h1>Des technologies modernes qui répondent à vos objectifs futur.</h1>
                         <p>Le choix de la technologie est déterminant sur l'avenir d'une solution web et nous pensons que votre projet mérite les outils les mieux adaptés. Les fonctionnalités, la performance, le budget sont autant de facteurs qui vont déterminer le choix d'un panel d'outils optimaux. </p>
                         <Link href="/contact">
                             <a>
