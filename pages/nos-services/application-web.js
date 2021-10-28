@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import WebappHeaderBloc from "../../components/blocs/service_webap/webappHeaderBloc";
 import WebappMainInfo from "../../components/blocs/service_webap/webappMainInfo";
 import Head from "next/head";
+import SitewebContactBloc from "../../components/blocs/service_siteweb/sitewebContactBloc";
 
 
 export default function ApplicationWeb() {
@@ -24,6 +25,7 @@ export default function ApplicationWeb() {
 
             <WebappHeaderBloc/>
             <WebappMainInfo/>
+            <SitewebContactBloc/>
 
 
 

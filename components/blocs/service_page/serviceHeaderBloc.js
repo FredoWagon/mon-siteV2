@@ -14,7 +14,7 @@ export default function ServiceHeaderBloc() {
                 <div className={style.header_bloc__left}>
                     <SpeedFadeIn customClass="custom_service_header">
                         <h1>L'agence unique.</h1>
-                        <p>Nous travaillons avec des petites et grandes entreprises pour créer des expériences numériques unique. Nous aimons ce que nous faisons et nous croyons en la construction de partenariats fondés sur la confiance, l'honnêteté et la soif de créer des choses incroyables ensemble.</p>
+                        <p>Nous travaillons avec des petites et grandes entreprises pour créer des expériences numériques uniques. Nous aimons ce que nous faisons et nous croyons en la construction de partenariats fondés sur la confiance, l'honnêteté et la soif de créer des choses incroyables ensemble.</p>
 
                     </SpeedFadeIn>
                 </div>
