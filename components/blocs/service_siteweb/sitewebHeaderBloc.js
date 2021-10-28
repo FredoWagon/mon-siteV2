@@ -16,9 +16,9 @@ export default function SitewebHeaderBloc() {
                     <h1>Des sites Web époustouflants qui apportent de vrais résultats. </h1>
                     <p>Votre site Web est votre outil de marketing le plus puissant, et nous voulons vous aider à l'utiliser au maximum. Nous vous aiderons à créer une stratégie numérique et un plan de contenu efficaces, et nous offrons tout, de l'analyse Web et du référencement à la mise en œuvre technique et à la conception de contenu.</p>
 
-                    <Link href="/nos-services">
+                    <Link href="/contact">
                         <a>
-                            <p>Demandez une offre</p>
+                            <p>Parlons-en !</p>
                         </a>
                     </Link>
                 </div>

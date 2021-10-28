@@ -16,9 +16,9 @@ export default function DeveloppementHeaderBloc() {
                         <h1>développement web</h1>
                         <p>La conception est la première partie du projet, mais dans la phase de développement, le service en ligne commence à être intégré dans un tout concret.</p>
 
-                        <Link href="/nos-services">
+                        <Link href="/contact">
                             <a>
-                                <p>Demandez une offre</p>
+                                <p>Parlons-en !</p>
                             </a>
                         </Link>
                     </div>

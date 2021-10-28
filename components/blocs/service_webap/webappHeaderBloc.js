@@ -16,9 +16,9 @@ export default function WebappHeaderBloc() {
                         <h1>Des applications de classe mondiale qui répondent aux besoins de l'utilisateur moderne</h1>
                         <p>Nos applications intuitives font passer votre entreprise au niveau supérieur en offrant aux utilisateurs une meilleure expérience. Nous nous efforçons de résoudre vos défis numériques en trouvant la solution et la technologie qui vous conviennent, qu'il s'agisse d'une application web ou, par exemple, d'un site hybride (PWA).</p>
 
-                        <Link href="/nos-services">
+                        <Link href="/contact">
                             <a>
-                                <p>Demandez une offre</p>
+                                <p>Parlons-en !</p>
                             </a>
                         </Link>
                     </div>

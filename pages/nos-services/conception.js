@@ -6,6 +6,8 @@ import WhyUsBloc from "../../components/blocs/service_referencement/whyUsBloc";
 import ReferencementContactBloc from "../../components/blocs/service_referencement/referencementContactBloc";
 import ConceptionHeaderBloc from "../../components/blocs/service_conception/conceptionHeaderBloc";
 import Head from "next/head";
+import ConceptionContentBloc from "../../components/blocs/service_conception/conceptionContentBloc";
+import ConceptionContactBloc from "../../components/blocs/service_conception/conceptionContactBloc";
 
 
 export default function Conception() {
@@ -26,6 +28,8 @@ export default function Conception() {
             </Head>
 
             <ConceptionHeaderBloc/>
+           <ConceptionContentBloc/>
+            <ConceptionContactBloc/>
 
 
 

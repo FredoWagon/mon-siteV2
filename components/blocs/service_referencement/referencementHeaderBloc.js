@@ -16,9 +16,9 @@ export default function ReferencementHeaderBloc() {
                         <h1>Assurez votre visibilité dans les moteurs de recherche</h1>
                         <p>Avec le référencement, vous améliorez la trouvabilité de votre site et augmentez le nombre de visiteurs. Le référencement signifie que c'est gratuit et gagné - s'est avéré être la source de trafic la plus convertie pour la plupart des organisations et des entreprises.</p>
 
-                        <Link href="/nos-services">
+                        <Link href="/contact">
                             <a>
-                                <p>Demandez une offre</p>
+                                <p>Parlons-en !</p>
                             </a>
                         </Link>
                     </div>

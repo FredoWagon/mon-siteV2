@@ -17,9 +17,9 @@ export default function ConceptionHeaderBloc() {
                         <p>Le produit final de la conception numérique peut être un simple site Web - c'est ce que vous avez encore aujourd'hui. Le résultat final peut également être plus expérimental, comme un jeu, une application Web ou quelque chose entre les deux. Cela peut aussi être quelque chose de très concret, comme une exposition d'informations dans une université, une bibliothèque ou un musée.</p>
 
                         <p>Nous aimons toutes sortes de conception numérique et sommes passionnés par la combinaison de technologies intéressantes et de créativité avec les besoins des utilisateurs.</p>
-                        <Link href="/nos-services">
+                        <Link href="/contact">
                             <a>
-                                <p>Demandez une offre</p>
+                                <p>Parlons-en !</p>
                             </a>
                         </Link>
                     </div>
