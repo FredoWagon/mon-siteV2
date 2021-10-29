@@ -8,6 +8,7 @@ import SitewebHeaderBloc from "../../components/blocs/service_siteweb/sitewebHea
 import StaticToAppBloc from "../../components/blocs/service_siteweb/staticToAppBloc";
 import Head from "next/head";
 import SitewebContactBloc from "../../components/blocs/service_siteweb/sitewebContactBloc";
+import BackToService from "../../components/backToService";
 
 export default function SiteWeb() {
 
@@ -30,6 +31,7 @@ export default function SiteWeb() {
             <SitewebHeaderBloc/>
             <StaticToAppBloc/>
             <SitewebContactBloc/>
+            <BackToService/>
 
 
 

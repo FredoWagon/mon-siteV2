@@ -23,7 +23,7 @@ export default function EcommerceHeaderBloc() {
                         </Link>
                     </div>
                     <div className={style.siteweb_header__right}>
-                        <Image priority={true} width="660" alt="Création de site e-commerce" height="780" src="/pokouweb/ecommerce_illustration_uzs5ir_gfzum2.webp"/>
+                        <Image priority={true} width="660" alt="Création de site e-commerce" height="500" src="/pokouweb/abstrakt-design-396_a7zpzb_i6gzev.webp"/>
                     </div>
 
 

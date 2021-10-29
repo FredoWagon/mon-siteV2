@@ -89,7 +89,7 @@ export default function ContactComponent(props) {
                 elementValue !== "" ? setMessageValid(true) : setMessageValid(false)
                 break;
             case'phone':
-                const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/gmi;
+                const phoneRegex = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/gmi;
                 phoneRegex.test(elementValue) ? setPhoneValid(true) : setPhoneValid(false)
 
         }

@@ -19,7 +19,7 @@ export default function WebappMainInfo() {
                         <div className={style.text__bloc}>
                             <h2>Services numériques polyvalents pour le Web, le
                                 mobile et le bureau</h2>
-                           <p>Nous vous aidons à atteindre votre plein potentiel en ligne en créant des solutions qui se concentrent sur vos besoins. Nous proposons également un support stratégique et une gamme complète de services autour du produit final numérique, garantissant que le développement se poursuit même après la sortie. Nous ne nous contentons pas de créer des applications, nous créons des plates-formes évolutives pour répondre aux besoins de votre entreprise. Il n'y a pas de solution unique - <Link href="/"><a
+                           <p>Nous vous aidons à atteindre votre plein potentiel en ligne en créant des solutions qui se concentrent sur vos besoins. Nous proposons également un support stratégique et une gamme complète de services autour du produit final numérique, garantissant que le développement se poursuit même après la sortie. Nous ne nous contentons pas de créer des applications, nous créons des plates-formes évolutives pour répondre aux besoins de votre entreprise. Il n'y a pas de solution unique - <Link href="/contact"><a
                                >contactez-nous</a></Link>  pour trouver la technologie qui vous convient .</p>
 
                         </div>
@@ -36,6 +36,10 @@ export default function WebappMainInfo() {
                             <p>Les applications PWA s'exécutent sur la même base de code sur tous les appareils différents, quel que soit le système d'exploitation (Android, iOS, OSX, Windows). De ce fait, elles permettent d'économiser des coûts de développement et de maintenance importants par rapport aux applications natives.
                                 En effet, les applications PWA sont particulièrement bien adaptées aux services activement utilisés sur les ordinateurs et les appareils mobiles.</p>
                         </div>
+                        <Link  href="/nos-services/technologies">
+                            <a className={style.black_background_link}>Voir nos technologies</a>
+                        </Link>
+
                     </div>
                     <div className={style.main__info__image}>
                         <Image  lazyBoundary="500px" alt="Developpement application" layout={"fill"} src="/pokouweb/app_web_mockup_w6gag1_wc4vwl.webp"/>

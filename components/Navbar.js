@@ -329,7 +329,7 @@ export default function Navbar(props) {
 
                 </div>
                 <div className={style.burger_menu__logo}>
-                    <Image src={pokou_logo}/>
+                    <Image alt="Pokouweb logo" src={pokou_logo}/>
 
                 </div>
             </div>

@@ -100,8 +100,9 @@ export default function Footer(props) {
                 </div>
                 <div className={style.footer__middle}>
                     <div className={style.footer__mail}>
-                        <p>Pour les nouvelles demandes commerciales :</p>
                         <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
+                        <span>TEL : <a href="tel:+33768178697">07 68 17 86 97</a> </span>
+
                     </div>
                     {/*    <div className={style.footer__social_links}>
                         <span>
@@ -137,7 +138,11 @@ export default function Footer(props) {
             </div>
             <div className={style.footer_mobile}>
                 <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>
-                <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
+                <div className={style.footer_mobile__mail}>
+                    <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
+                    <span>TEL : <a href="tel:+33768178697">07 68 17 86 97</a> </span>
+                </div>
+
 
                 {/* <div className={style.footer_mobile__social}>
                     <div className={style.footer_social__item}>

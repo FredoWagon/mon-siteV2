@@ -32,8 +32,7 @@ export default function  StaticToAppBloc() {
                         <p>Nous restons disponibles à tout moment si vous avez la moindre question pendant tout le process de développement, et après la mise en ligne.</p>
                         <div className={style.static_link_box}>
                             <Link  href="/nos-services/technologies">
-                                <a>
-                                    En savoir plus sur nos technologies</a>
+                                <a>Voir nos technologies</a>
                             </Link>
                         </div>
 
@@ -46,8 +45,7 @@ export default function  StaticToAppBloc() {
                         <p>L'aspect graphique d'un produit numérique est au moins aussi important que sa qualité technique. Un design efficace sert vos clients à utiliser votre produit, et plus son utilisation lui sera agréable plus il sera enthousiaste à travailler avec vous. </p>
                         <div className={style.static_link_box}>
                             <Link  href="/nos-services/conception">
-                                <a>
-                                    En savoir plus sur la conception</a>
+                                <a>Voir la conception</a>
                             </Link>
                         </div>
 
@@ -96,8 +94,7 @@ export default function  StaticToAppBloc() {
                         <p>Notre code cohérent et sécurisé et nos méthodes éprouvées garantissent que le développement ultérieur est possible même pour les projets à grande échelle. Nous développons des sites de manière flexible sur le long terme et apprenons quelque chose de nouveau de chaque projet. Cela signifie que la base du prochain est toujours un peu meilleure.</p>
                         <div className={style.static_link_box}>
                             <Link  href="/nos-services/maintenance-et-suivi">
-                                <a>
-                                    En savoir plus sur le suivi</a>
+                                <a>Voir le suivi</a>
                             </Link>
                         </div>
                     </div>

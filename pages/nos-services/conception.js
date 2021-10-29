@@ -8,6 +8,7 @@ import ConceptionHeaderBloc from "../../components/blocs/service_conception/conc
 import Head from "next/head";
 import ConceptionContentBloc from "../../components/blocs/service_conception/conceptionContentBloc";
 import ConceptionContactBloc from "../../components/blocs/service_conception/conceptionContactBloc";
+import BackToService from "../../components/backToService";
 
 
 export default function Conception() {
@@ -30,6 +31,7 @@ export default function Conception() {
             <ConceptionHeaderBloc/>
            <ConceptionContentBloc/>
             <ConceptionContactBloc/>
+            <BackToService/>
 
 
 

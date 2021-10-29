@@ -1,0 +1,99 @@
+.ecommerce_green_content__container {
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+  background-color: #1c524f;
+  @media (min-width: 960px) and (max-width: 1439px) {
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+
+  }
+  @media (min-width: 720px) and (max-width: 989px) {
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+  }
+  @media (max-width: 719px) {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+  }
+  .ecommerce_green_content {
+    padding: 0 2rem;
+    margin: auto;
+    @media (min-width: 1440px)  {
+      max-width: 1440px;
+    }
+    @media (min-width: 960px) and (max-width: 1439px) {
+      max-width: 960px;
+
+    }
+    @media (min-width: 720px) and (max-width: 989px) {
+      max-width: 720px;
+    }
+    @media (max-width: 719px) {
+
+
+    }
+    .ecommerce_green_content_text__container {
+     margin: auto;
+
+      max-width: 750px;
+      h2 {
+        font-size: 4.5rem;
+        line-height: 4.8rem;
+        color: #b4cce8;
+        font-weight: unset;
+        @media (min-width: 960px) and (max-width: 1439px) {
+          font-size: 3.2rem;
+          line-height: 3.4rem;
+
+        }
+        @media (min-width: 720px) and (max-width: 989px) {
+          font-size: 3.2rem;
+          line-height: 3.4rem;
+        }
+        @media (max-width: 719px) {
+          font-size: 2.2rem;
+          line-height: 2.4rem;
+          margin-bottom: unset;
+
+
+        }
+      }
+      .ecommerce_green_content__text_bloc {
+        margin-top: 3.5rem;
+        color: white;
+        @media (max-width: 719px) {
+          margin-top: 2rem;
+
+        }
+
+        h3 {
+          font-weight: unset;
+          font-size: 1.9rem;
+          line-height: 2.4rem;
+          @media (min-width: 960px) and (max-width: 1439px) {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+
+          }
+          @media (min-width: 720px) and (max-width: 989px) {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+          }
+          @media (max-width: 719px) {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            margin-top: unset;
+
+          }
+
+        }
+        p {
+          font-size: 1.1rem;
+        }
+
+      }
+    }
+
+  }
+}

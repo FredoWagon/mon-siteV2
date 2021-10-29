@@ -89,8 +89,9 @@ export default function MentionsContentBloc() {
                            <ul>
                                <li>pix</li>
                                <li>clouck</li>
-                               <li>Illustrations from <Link href="https://absurd.design/"><a target="_blank" >absurd.design</a></Link></li>
-                               <li>Illustrations from <Link href="https://craftwork.design/"><a target="_blank">craftwork.design</a></Link></li>
+                               <li>Photographies: <Link href="https://unsplash.com//"><a target="_blank" >unsplash.com</a></Link></li>
+                               <li>Illustrations: <Link href="https://absurd.design/"><a target="_blank" >absurd.design</a></Link></li>
+                               <li>Illustrations: <Link href="https://craftwork.design/"><a target="_blank">craftwork.design</a></Link></li>
                            </ul>
 
                         </div>

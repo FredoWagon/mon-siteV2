@@ -7,6 +7,9 @@ import Layout from "../../components/Layout";
 import EcommerceHeaderBloc from "../../components/blocs/service_ecommerce/ecommerceHeaderBloc";
 import MainInfoBloc from "../../components/blocs/service_ecommerce/mainInfoBloc";
 import Head from "next/head";
+import SitewebContactBloc from "../../components/blocs/service_siteweb/sitewebContactBloc";
+import BackToService from "../../components/backToService";
+import EcommerceGreenContent from "../../components/blocs/service_ecommerce/ecommerceGreenContent";
 
 
 export default function ECommerce() {
@@ -28,6 +31,9 @@ export default function ECommerce() {
 
             <EcommerceHeaderBloc/>
             <MainInfoBloc/>
+            <EcommerceGreenContent/>
+            <SitewebContactBloc/>
+            <BackToService/>
 
 
 

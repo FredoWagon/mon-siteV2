@@ -10,6 +10,7 @@ import Head from "next/head";
 import TechnologieHeaderBloc from "../../components/blocs/service_technologies/technologieHeaderBloc";
 import TechnologieContentBloc from "../../components/blocs/service_technologies/technologieContentBloc";
 import TechnoContactComponent from "../../components/blocs/service_technologies/technoContactComponent";
+import BackToService from "../../components/backToService";
 
 export default function Technologies() {
 
@@ -31,6 +32,7 @@ export default function Technologies() {
             <TechnologieHeaderBloc/>
             <TechnologieContentBloc/>
             <TechnoContactComponent/>
+            <BackToService/>
 
 
 

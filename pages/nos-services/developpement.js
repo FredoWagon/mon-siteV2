@@ -6,6 +6,9 @@ import DeveloppementHeaderBloc from "../../components/blocs/service_developpemen
 import DeveloppementMainInfo from "../../components/blocs/service_developpement/developpementMainInfo";
 import DeveloppementContactBloc from "../../components/blocs/service_developpement/developpementContactBloc";
 import Head from "next/head";
+import BackToService from "../../components/backToService";
+import SitewebContactBloc from "../../components/blocs/service_siteweb/sitewebContactBloc";
+import ConceptionContactBloc from "../../components/blocs/service_conception/conceptionContactBloc";
 
 
 export default function Developpement() {
@@ -28,7 +31,8 @@ export default function Developpement() {
 
             <DeveloppementHeaderBloc/>
             <DeveloppementMainInfo/>
-            <DeveloppementContactBloc/>
+            <ConceptionContactBloc/>
+            <BackToService/>
 
 
 

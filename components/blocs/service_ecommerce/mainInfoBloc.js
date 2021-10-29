@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function MainInfoBloc() {
 
     return (
-        <>
+
         <div className={style.main_info__container}>
             <div className={style.main__info}>
                 <div className={style.text_info__container}>
@@ -24,9 +24,20 @@ export default function MainInfoBloc() {
                         <p>Ce sont toutes des questions essentielles qui aident les utilisateurs à comprendre votre produit ou service. Avec vous, notre objectif est de trouver les avantages concurrentiels et les caractéristiques les plus attrayantes de votre produit à présenter au public.</p>
 
                     </div>
+                    <Link  href="/nos-services/technologies">
+                        <a className={style.black_background_link}>Voir nos technologies</a>
+                    </Link>
                 </div>
-                <div className={style.main__info__image}>
-                    <Image  lazyBoundary="500px" alt="Developpement application" layout={"fill"} src="/pokouweb/webapp_pic_vsklma_ds6zef.webp"/>
+
+            </div>
+            <div className={style.main_info__long_image}>
+                <div className={style.long_image__container}>
+                    <div className={style.long_image__content}>
+                        <Image  lazyBoundary="500px" alt="Developpement application" layout={"fill"} src="/pokouweb/igor-miske-JVSgcV8_vb4-unsplash_lmnxud_qt9mgz.webp"/>
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
 
             </div>
@@ -34,11 +45,9 @@ export default function MainInfoBloc() {
 
 
         </div>
-            <div className={style.main_info__container__green}>
 
-            </div>
 
-        </>
+
 
 
 
