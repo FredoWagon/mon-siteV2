@@ -11,7 +11,7 @@ class MyDocument extends Document {
             <Html lang="fr-FR">
                 <Head>
                     <meta charSet="UTF-8"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                     <link rel="shortcut icon" href="/pokou_faviconv2.svg"/>
                     <link rel="mask-icon" href="/pokou_faviconv.svg" color="#000000"/>
                     <link rel="apple-touch-icon" href="/iphone_fav.png"/>

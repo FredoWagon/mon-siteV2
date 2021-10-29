@@ -57,6 +57,9 @@
         p {
           color: white;
         }
+        &.no_bottom_margin {
+          padding-bottom: unset;
+        }
       }
     }
 
@@ -552,6 +555,11 @@
           margin-top: 3rem;
 
 
+        }
+        &.trend_corner__first_image {
+          margin-bottom: 3rem;
+          margin-top: unset;
+          aspect-ratio: 259/149;
         }
       }
     }
