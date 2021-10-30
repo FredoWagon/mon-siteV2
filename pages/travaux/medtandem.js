@@ -3,6 +3,7 @@ import ProjectHeaderBloc1 from "../../components/blocs/projects_pages/headers_bl
 import MedtandemContentBloc1 from "../../components/blocs/projects_pages/content_blocs/medtandemContentBloc1";
 import MedtandemContentBloc2 from "../../components/blocs/projects_pages/content_blocs/medtandemContentBloc2";
 import Head from "next/head";
+import BackToProject from "../../components/backToProject";
 
 
 export default function Medtandem() {
@@ -25,6 +26,7 @@ export default function Medtandem() {
             <ProjectHeaderBloc1/>
             <MedtandemContentBloc1/>
             <MedtandemContentBloc2/>
+            <BackToProject backgroundColor="medTandem"/>
 
 
 

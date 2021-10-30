@@ -4,6 +4,7 @@ import DashboardContentBloc1 from "../../components/blocs/projects_pages/content
 import TrendcornerContentBloc1 from "../../components/blocs/projects_pages/content_blocs/trendcornerContentBloc1";
 import OnePalmContentBloc from "../../components/blocs/projects_pages/content_blocs/onePalmContentBloc";
 import Head from "next/head";
+import BackToProject from "../../components/backToProject";
 
 
 
@@ -26,6 +27,7 @@ export default function OnepalmSurf() {
 
             <OnePalmSurfHeaderBloc/>
             <OnePalmContentBloc/>
+            <BackToProject backgroundColor="trendCorner"/>
 
 
 

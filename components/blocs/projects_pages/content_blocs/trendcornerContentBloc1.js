@@ -56,6 +56,7 @@ export default function TrendcornerContentBloc1() {
                                <img className={style.nodejs_logo} alt="Node.js logo" title="Moteur Node.js" src="/nodejs.svg"/>
                                <img className={style.expressjs_logo__white} alt="Express.js logo" title="Framework Express.js" src="/expressjs.svg"/>
                                <img className={style.mongo_logo} alt="MongoDB logo" title="Base de donnée MongoDB" src="/mongo.svg"/>
+                               <img className={style.stripe_logo} title="Paiment Stripe" alt="Stripe logo" src="/stripe.svg"/>
                            </div>
 
                             <Link href="/nos-services/technologies"><a className={style.text__bloc__white_link}>
@@ -63,10 +64,12 @@ export default function TrendcornerContentBloc1() {
                             </a></Link>
                         </div>
                     </div>
+
                     <div className={style.main__info__image}>
                         <Image width="1376" priority={true} height="769"  lazyBoundary="500px"   alt="Trend Corner - mockup" src="/pokouweb/trendcorner_desktop_ssb8is_l5shdh.png"/>
                     </div>
                 </div>
+
 
 
 

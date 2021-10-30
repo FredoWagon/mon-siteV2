@@ -39,18 +39,56 @@
   &.custom_medtandem__background {
     background-color: #E7EFFB;
     margin-top: unset;
-    padding-top: 10rem;
+    padding-top: unset;
+    .text_info__container {
+      padding-top: 10rem;
+      padding-bottom: 7rem;
+      @media (min-width: 960px) and (max-width: 1439px) {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+
+      }
+      @media (min-width: 720px) and (max-width: 989px) {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+      }
+      @media (max-width: 719px) {
+        padding-top: 5rem;
+        padding-bottom: 1.3rem;
+
+      }
+    }
+
+
   }
 
   &.custom_trendcorner__background {
-    background-color: #222222;
+    background-color: #292728;
     margin-top: unset;
+    @media (max-width: 719px) {
+      padding-top: 1rem;
+
+    }
 
     .main__info {
 
       .text_info__container {
         padding-top: 9rem;
-        padding-bottom: 8rem;
+        padding-bottom: 6rem;
+        @media (min-width: 960px) and (max-width: 1439px) {
+          padding-top: 7rem;
+          padding-bottom: 4rem;
+
+        }
+        @media (min-width: 720px) and (max-width: 989px) {
+          padding-top: 4rem;
+          padding-bottom: 1rem;
+        }
+        @media (max-width: 719px) {
+          padding-top: 3rem;
+          padding-bottom: 0rem;
+
+        }
         h2 {
           color: white;
         }
@@ -89,15 +127,15 @@
   }
   .main__info__image__long__itineraire2 {
     position: relative;
-    margin: 6rem 0 0rem 0;
+    margin: 6rem 0 4rem 0;
     width: 100%;
     aspect-ratio: 10/7;
     @media (min-width: 960px) and (max-width: 1439px) {
-      margin: 5rem 0 0rem 0;
+      margin: 5rem 0 4rem 0;
 
     }
     @media (min-width: 720px) and (max-width: 989px) {
-      margin: 3rem 0 0rem 0;
+      margin: 3rem 0 4rem 0;
     }
     @media (max-width: 719px) {
       margin: 2rem 0 0rem 0;
@@ -114,10 +152,15 @@
 
   }
   .main__info__image__long__medtandem_2 {
+    margin-bottom: 4rem;
     position: relative;
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
+    @media (max-width: 719px) {
+      margin-bottom: 0rem;
+
+    }
   }
   .main__info {
     padding: 0 2rem;
@@ -464,6 +507,23 @@
 
             }
           }
+          .stripe_logo {
+            width: 5rem;
+            margin: 1rem 0 1rem 1rem;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 4rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 3.8rem;
+            }
+            @media (max-width: 719px) {
+              width: 3.5rem;
+
+
+            }
+          }
         }
 
         .trend_corner__techno {
@@ -512,9 +572,25 @@
 
 
       }
+      &.onepalm_mockup_one {
+        aspect-ratio: 320/179;
+        margin: unset;
+      }
+      &.onepalm_mockup_two {
+        aspect-ratio: 960/1081;
+        width: 65%;
+        margin-top: unset;
+        margin-bottom: 4rem;
+        @media (max-width: 719px) {
+          margin-bottom: 1rem;
+
+
+        }
+      }
 
 
     }
+
     .main__info__double_image {
       display: flex;
       width: 100%;
@@ -560,6 +636,12 @@
           margin-bottom: 3rem;
           margin-top: unset;
           aspect-ratio: 259/149;
+          @media (max-width: 719px) {
+            margin-bottom: unset;
+
+
+          }
+
         }
       }
     }

@@ -18,22 +18,20 @@ export default function OnePalmContentBloc() {
                 <div className={style.main__info}>
                     <div className={style.text_info__container}>
                         <div className={style.text__bloc}>
-                            <h2>Une école de surf et <br/> une e-boutique</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ducimus ea, eligendi excepturi expedita id illum inventore ipsam nemo nulla quae quis, soluta, temporibus veniam vitae? Fugiat perferendis rem tempora!</p>
+                            <h2>Une refonte complète</h2>
+                            <p>Le site de ce client nécessitait un coup de fraîcheur depuis sa création. Il fallait distinguer et mettre en valeur les deux activités, ajuster un grand nombre de bugs, le rendre responsive et le traduire dans trois langues. D’autre part le client dispose d’une offre exclusive de planche de surf qu’il a été conseillé de mettre en avant.</p>
+                       <p>Une première étude des forces et points d’améliorations validée par le client, le nouveau site a été mis en staging puis travaillé sans interférer avec le site en cours.  </p>
                         </div>
                     </div>
+                    <div className={`${style.onepalm_mockup_one} ${style.main__info__image}`}>
+                        <Image  lazyBoundary="500px"  alt="OnePalm-surk mockup" layout={"fill"} src="/pokouweb/onepalm_mockup1_ebls7s_vwdhve.webp"/>
+                    </div>
                 </div>
-                <div className={style.main__info__image}>
-                    <Image src={trendcorner2}/>
-                </div>
+
                 <div className={style.main__info}>
 
                     <div className={style.text_info__container}>
-                        <div className={style.text__bloc}>
-                            <h2>Une refonte complète</h2>
-                            <p>Le site de ce client nécessitait un coup de fraîcheur depuis sa création. Il fallait distinguer et mettre en valeur les deux activités, ajuster un grand nombre de bugs, le rendre responsive et le traduire dans trois langues. D’autre part le client dispose d’une offre exclusive de planche de surf qu’il a été conseillé de mettre en avant.</p>
-<p>Une première étude des forces et points d’améliorations validée par le client, le nouveau site a été mis en staging puis travaillé sans interférer avec le site en cours.  </p>
-                        </div>
+
                         <div className={style.text__bloc}>
                             <h2 >Conception</h2>
                             <p>Le site est réalisé via le CMS WordPress que le client utilisait déjà sur lequel se greffe Elementor Pro pour construire les différentes pages. Viennent se greffer plusieurs extensions pour: traiter les envois de mails, les formulaires, la gestion des pages traduites etc…</p>
@@ -51,8 +49,8 @@ export default function OnePalmContentBloc() {
 
                         </div>
                     </div>
-                    <div className={style.main__info__image}>
-                        <Image src={trenddesktop}/>
+                    <div className={`${style.onepalm_mockup_two} ${style.main__info__image}`}>
+                        <Image  lazyBoundary="500px"  alt="OnePalm-surk mockup" layout={"fill"} src="/pokouweb/onepalm_mockup2png_sl0zxc_sef2gx.webp"/>
                     </div>
                 </div>
 

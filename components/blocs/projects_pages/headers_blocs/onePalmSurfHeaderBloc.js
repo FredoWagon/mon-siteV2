@@ -19,7 +19,7 @@ export default function OnePalmSurfHeaderBloc() {
                 <div className={style.siteweb_header}>
                     <div className={style.siteweb_header__left}>
                         <h1><mark>OnePalm Surf,</mark><br/> la vague <br/> pour <br/> passion</h1>
-                        <p>OnePalm-surf est un surfshop et une école de surf.</p>
+                        <p>OnePalm est une école de surf installée dans les Landes depuis une quinzaine d'années et un surf et un surf-shop. </p>
                         <Link  href="https://www.onepalm-surf.com/home-surf-shop/">
                             <a target="_blank">
                                 Voir le site</a>

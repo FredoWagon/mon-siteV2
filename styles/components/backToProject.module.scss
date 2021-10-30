@@ -1,6 +1,27 @@
-.back_to_service__container {
+.back_to_project__container {
   padding: 5rem 0 8rem 0;
-  .back_to_service {
+
+
+  &.trendCorner {
+    background-color: #292728;
+
+    .back_to_project {
+      a {
+        color: white;
+        border: 1px solid white;
+        &:hover {
+          color: unset;
+          background-color: white;
+
+        }
+      }
+    }
+  }
+  &.medTandem {
+    background-color: #E7EFFB;
+  }
+
+  .back_to_project {
     margin: auto;
     @media (min-width: 1440px)  {
       max-width: 1440px;
@@ -23,6 +44,7 @@
       color: #292728;
       border-radius: 2px;
       transition: opacity 0.3s ease, background-color 0.3s ease;
+
       @media (min-width: 960px) and (max-width: 1439px) {
         font-size: 1rem;
         padding: 1.4rem 2.6rem;
@@ -37,8 +59,8 @@
         margin: 12rem 0 0 2rem;
       }
       &:hover {
-        color: white;
         transition: opacity 0.3s ease, background-color 0.3s ease;
+        color: white;
         background-color: #292728;
         opacity: 0.8;
 
@@ -48,4 +70,5 @@
 
   }
 }
+
 

@@ -2,6 +2,7 @@ import Layout from "../../components/Layout"
 import TrendCornerHeaderBloc from "../../components/blocs/projects_pages/headers_blocs/trendCornerHeaderBloc";
 import TrendcornerContentBloc1 from "../../components/blocs/projects_pages/content_blocs/trendcornerContentBloc1";
 import Head from "next/head";
+import BackToProject from "../../components/backToProject";
 
 
 
@@ -26,6 +27,7 @@ export default function Trendcorner() {
 
             <TrendCornerHeaderBloc/>
             <TrendcornerContentBloc1/>
+            <BackToProject backgroundColor="trendCorner"/>
 
 
 

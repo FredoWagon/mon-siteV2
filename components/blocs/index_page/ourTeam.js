@@ -68,6 +68,14 @@ export default function OurTeam() {
     const devisItem = useRef();
     const surMesureItem = useRef();
 
+    useEffect(() => {
+        const urlUri = window.location.href
+        console.log(urlUri)
+        if (urlUri.includes('travaux_anchor')) {
+            setState(true)
+        }
+    })
+
 
 
 

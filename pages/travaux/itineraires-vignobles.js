@@ -5,6 +5,7 @@ import MedtandemContentBloc2 from "../../components/blocs/projects_pages/content
 import Head from "next/head";
 import ItineraireContentBloc1 from "../../components/blocs/projects_pages/content_blocs/itineraireContentBloc1";
 import ItineraireHeaderBloc from "../../components/blocs/projects_pages/headers_blocs/itineraireHeaderBloc";
+import BackToProject from "../../components/backToProject";
 
 
 export default function ItinerairesVignobles() {
@@ -26,6 +27,7 @@ export default function ItinerairesVignobles() {
 
             <ItineraireHeaderBloc/>
             <ItineraireContentBloc1/>
+            <BackToProject/>
 
 
 

@@ -41,7 +41,7 @@ export default function Navbar(props) {
 
     // pour lanimation du logo
     const navBarTop = useRef(null);
-    const {logoAnimation, setLogoAnimationState} = useAppContext();
+    const {ourTeamAnimationDone, setState} = useAppContext();
     const pokouLogo = useRef(null);
     const pokouLogoSize = useRef(null)
 
@@ -184,14 +184,16 @@ export default function Navbar(props) {
                 pokouTitle.style.height= `${initialPokouTitleValue * 0.8}px`
 
             } else if (body > 101 && body < 145 ) {
-                pokouTitle.style.height= `${initialPokouTitleValue * 0.6}px`
+                let newValue = initialPokouTitleValue * 0.6
+                pokouTitle.style.height= `${newValue >= 40 ? newValue : 40}px`
 
             } else if (body > 145 && body < 160) {
-                pokouTitle.style.height= `${initialPokouTitleValue * 0.5}px`
+                let newValue = initialPokouTitleValue * 0.5
+                pokouTitle.style.height= `${newValue >= 40 ? newValue : 40}px`
 
             } else if (body > 160) {
                 setIsNotOnTop(true)
-                pokouTitle.style.height= `${initialPokouTitleValue * 0.4}px`
+                pokouTitle.style.height= `${40}px`
             }
         }
 
@@ -201,6 +203,7 @@ export default function Navbar(props) {
 
     }
 
+
     // Change la taille de la police en fonction du resize, aligner sur les media css
     const handleResize = () => {
         const bodyWith = window.innerWidth
@@ -209,14 +212,17 @@ export default function Navbar(props) {
             setBurgerOpen(false)
         }
 
-        if (bodyWith < 719) {
+        if (bodyWith <= 719) {
             logoSizeValue.current = 38
             handleFontSize()
-        } else if (bodyWith < 800) {
-            logoSizeValue.current = 80
+        } else if (bodyWith > 960 && bodyWith <= 1439) {
+            logoSizeValue.current = 72
+            handleFontSize()
+        } else if (bodyWith > 719 && bodyWith <= 960) {
+            logoSizeValue.current = 51
             handleFontSize()
         } else {
-            logoSizeValue.current = 96
+            logoSizeValue.current = 112
             handleFontSize()
         }
     }

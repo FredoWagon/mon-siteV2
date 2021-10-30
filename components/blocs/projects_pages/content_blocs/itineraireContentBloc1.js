@@ -51,10 +51,11 @@ export default function ItineraireContentBloc1() {
                             </a></Link>
                          </div>
                     </div>
+                    <div className={style.main__info__image__long__itineraire2}>
+                        <Image layout={"fill"} objectFit={"contain"} lazyBoundary="500px" alt="Medtandem mockup" src="/pokouweb/itineraire_mockup2_mis4i1_ojjrau.webp"/>
+                    </div>
                 </div>
-                <div className={style.main__info__image__long__itineraire2}>
-                    <Image layout={"fill"} objectFit={"contain"} lazyBoundary="500px" alt="Medtandem mockup" src="/pokouweb/itineraire_mockup2_mis4i1_ojjrau.webp"/>
-                </div>
+
 
 
 
