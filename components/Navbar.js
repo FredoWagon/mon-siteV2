@@ -39,6 +39,8 @@ export default function Navbar(props) {
     // Bullet position
     const [bulletInitialPosition, setBulletInitialPosition] = useState()
 
+    const completeNavbar = useRef(null)
+
     // pour lanimation du logo
     const navBarTop = useRef(null);
     const {ourTeamAnimationDone, setState} = useAppContext();
@@ -235,7 +237,7 @@ export default function Navbar(props) {
 
 
     return (
-        <TranslateOnScroll  isBurgerOpen={burgerOpen}>
+        <TranslateOnScroll ref={completeNavbar}   isBurgerOpen={burgerOpen}>
             <div  className={`${style.navbar} ${isNotOnTop ? style.navbar__grey_line : ""} ${style[backgroundColor]} ${burgerOpen ? style.menu_opened : "" }`}>
                 <div className={style.navbar_container}>
 

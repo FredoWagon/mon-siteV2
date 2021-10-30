@@ -51,12 +51,15 @@ export default function TranslateOnScroll(props) {
             setIsMobileView(true)
         }
 
+
         window.addEventListener('scroll', handleScroll)
         return () => {
             window.removeEventListener('scroll', handleScroll)
 
         }
     })
+
+
 
 
     return (

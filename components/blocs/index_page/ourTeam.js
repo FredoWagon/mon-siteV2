@@ -249,9 +249,9 @@ export default function OurTeam() {
         Object.values(itemList).forEach((element) => {
             if (element.getBoundingClientRect().top < viewPortDistance + 50 && element.getBoundingClientRect().bottom > viewPortDistance) {
                 menuLinkAnimation(element.dataset.item);
-                element.style.opacity="1"
+                element.classList.add(`${style.active_scrolling_item}`)
             } else {
-                element.style.opacity="0.1"
+                element.classList.remove(`${style.active_scrolling_item}`)
             }
         })
     }
@@ -270,7 +270,7 @@ export default function OurTeam() {
         const element = items[scrollIndex]
         const elementTopDomRect = element.getBoundingClientRect().top;
         const currentTopWindowPosition = window.scrollY;
-        const elementPosition = currentTopWindowPosition + elementTopDomRect - 10 ;
+        const elementPosition = currentTopWindowPosition + elementTopDomRect - 120 ;
 
 
         window.scrollTo({top: elementPosition, behavior: 'smooth'})
@@ -381,7 +381,7 @@ export default function OurTeam() {
 
                 <div className={style.our_team__steps_container}>
                     <FadeTranslateTopWhenVisible tresholdOption={0} animation="middle">
-                        <h3 className={style.mobile__step_title}>Un processus <br/> simple</h3>
+                        <h3 className={style.mobile__step_title}>Une démcarche <br/> simple</h3>
                     </FadeTranslateTopWhenVisible>
 
                     <div className={style.our_team__left}>
