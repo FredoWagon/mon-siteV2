@@ -325,7 +325,7 @@ export default function Navbar(props) {
                         </ul>
 
                     </div>
-                    <div className={style.secondary_service_burger_menu__content}>
+                    {/* <div className={style.secondary_service_burger_menu__content}>
                         <ul>
                             <li className={props.currentPage === "conception" ? style.active_link : ""}>
                                 <Link href="/nos-services/conception">Conception</Link>
@@ -333,13 +333,15 @@ export default function Navbar(props) {
                             <li className={props.currentPage === "developpement" ? style.active_link : ""}>  <Link href="/nos-services/developpement">Développement</Link></li>
                             <li className={props.currentPage === "referencement" ? style.active_link : ""}> <Link href="/nos-services/referencement">Référencement</Link></li>
                         </ul>
+                    </div> */}
+                    <div className={style.burger_menu__logo}>
+
+                        <img src="/pokou_logo.svg" alt="Pokouweb logo"/>
+
                     </div>
 
                 </div>
-                <div className={style.burger_menu__logo}>
-                    <Image alt="Pokouweb logo" src={pokou_logo}/>
 
-                </div>
             </div>
         </TranslateOnScroll>
     )

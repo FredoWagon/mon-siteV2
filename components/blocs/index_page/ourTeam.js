@@ -337,7 +337,7 @@ export default function OurTeam() {
                             <span ref={collectifTitle} className={style.collectif_title}>un collectif</span>
                         </h2>
                         <div className={style.agency_title__text} ref={titleText}>
-                            <p ><mark>Pokou web</mark> est une une agence de communication,
+                            <p ><mark>Pokou web</mark> est une agence de communication,
                                 un collectif d’indépendants,
                                 un studio de production digitale et
                                 une coopérative de talents !</p>

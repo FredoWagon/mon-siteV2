@@ -261,7 +261,8 @@ export default function Footer(props) {
 
             </div>
             <div className={style.footer_logo__image}>
-                <Image width="96" alt="Pokou web logo" height="96" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
+                <img width="96"  height="96" src="/pokou_logo.svg" alt="Pokouweb logo"/>
+
             </div>
         </div>
     )
