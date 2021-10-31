@@ -5,6 +5,7 @@ import Image from "next/image";
 import dashboard_header from "../../public/dashboard_header.png"
 import DashboardContentBloc1 from "../../components/blocs/projects_pages/content_blocs/dashboardContentBloc1";
 import Head from "next/head";
+import BackToProject from "../../components/backToProject";
 
 
 
@@ -31,6 +32,7 @@ export default function Dashboard() {
 
 
             <DashboardContentBloc1/>
+            <BackToProject/>
 
 
 

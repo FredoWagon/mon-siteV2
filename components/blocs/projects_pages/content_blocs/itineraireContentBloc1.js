@@ -56,17 +56,8 @@ export default function ItineraireContentBloc1() {
                     </div>
                 </div>
 
-
-
-
-
-
-
             </div>
 
-            <div className={style.main_info__container__green}>
-
-            </div>
 
         </>
 

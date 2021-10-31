@@ -60,10 +60,6 @@ export default function OnePalmContentBloc() {
 
             </div>
 
-            <div className={style.main_info__container__green}>
-
-            </div>
-
         </>
 
 

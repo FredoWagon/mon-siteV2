@@ -13,10 +13,34 @@
   }
 
   &.center_none {
-    .main__info {
-      align-items: unset;
-    }
 
+
+  }
+  &.dashboard__info__container {
+    margin-top: unset;
+    .main__info {
+      align-items: center;
+      .text_info__container {
+        padding-top: 10rem;
+        padding-bottom: 7rem;
+        @media (min-width: 960px) and (max-width: 1439px) {
+          padding-top: 7rem;
+          padding-bottom: 4rem;
+
+        }
+        @media (min-width: 720px) and (max-width: 989px) {
+          padding-top: 4rem;
+          padding-bottom: 1rem;
+        }
+        @media (max-width: 719px) {
+          padding-top: 5rem;
+          padding-bottom: 1.3rem;
+
+        }
+
+
+      }
+    }
   }
 
   &.custom_itineraire__background {
@@ -151,6 +175,19 @@
     aspect-ratio: 127/71;
 
   }
+
+  .main__info__image__long__dashboard_2 {
+    margin-bottom: 4rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    @media (max-width: 719px) {
+      margin-bottom: 0rem;
+
+    }
+  }
+
   .main__info__image__long__medtandem_2 {
     margin-bottom: 4rem;
     position: relative;
@@ -345,6 +382,13 @@
             color: white;
           }
         }
+
+        &.dashboard_techno__text_bloc {
+          a {
+            color: unset;
+          }
+
+        }
         .techno_logo__container {
 
           display: flex;
@@ -423,6 +467,23 @@
           .expressjs_logo__white {
             width: 5.5rem;
             filter: invert(1);
+            margin: 1rem 0 1rem 1rem;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              width: 3rem;
+
+
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              width: 3rem;
+            }
+            @media (max-width: 719px) {
+              width: 3rem;
+
+
+            }
+          }
+          .expressjs_logo__black {
+            width: 5.5rem;
             margin: 1rem 0 1rem 1rem;
             @media (min-width: 960px) and (max-width: 1439px) {
               width: 3rem;
