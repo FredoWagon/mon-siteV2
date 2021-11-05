@@ -1,6 +1,7 @@
 .our_team_container {
   background-color: #101010;
 
+
   position: relative;
   margin-top: 10rem;
 
@@ -24,21 +25,25 @@
 
   .our_team {
     margin: auto;
-    padding: 13rem 2rem 30rem 2rem;
+    padding: 13rem 2rem 13rem 2rem;
 
 
     z-index: 2;
+    @media (min-width: 2100px)  {
+      max-width: 1440px;
+      padding: 13rem 2rem 30rem 2rem;
+    }
 
     @media (min-width: 1440px)  {
       max-width: 1440px;
     }
     @media (min-width: 960px) and (max-width: 1439px) {
       max-width: 960px;
-      padding: 13rem 2rem 20rem 2rem;
+      padding: 13rem 2rem 13rem 2rem;
     }
     @media (min-width: 720px) and (max-width: 989px) {
       max-width: 720px;
-      padding: 13rem 2rem 16rem 2rem;
+      padding: 13rem 2rem 13rem 2rem;
     }
     @media (max-width: 719px) {
       padding: 6rem 2rem 6rem 2rem;
@@ -236,14 +241,13 @@
       opacity: 1;
       transition: opacity 3s ease;
 
-      padding-bottom: 21rem;
-      padding-top: 2rem;
+      padding-top: 4rem;
       @media (min-width: 960px) and (max-width: 1439px) {
-        padding-top: 7rem;
+
       }
       @media (max-width: 719px) {
-        padding-bottom: 7rem;
 
+        padding-top: 2rem;
       }
 
       &.our_team__advantages__before_animation {
@@ -259,7 +263,7 @@
         opacity: 1;
         transition: transform 2s ease, opacity 1s ease;
         text-align: center;
-        color: white;
+        color: #fad10a;
         font-weight: unset;
         font-size: 2rem;
         @media (max-width: 719px) {
@@ -289,6 +293,7 @@
           }
           @media (max-width: 719px) {
           width: 100%;
+            padding: unset;
 
           }
           h4 {
@@ -314,187 +319,6 @@
       }
 
     }
-
-    .our_team__steps_container {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      @media (max-width: 719px) {
-        display: block;
-
-      }
-
-      .mobile__step_title {
-
-        display: none;
-        color: #fad10a;
-        font-size: 1.8rem;
-        text-align: center;
-        font-weight: unset;
-        margin-bottom: 6rem;
-        @media (max-width: 719px) {
-          display: block;
-          margin-bottom: 3rem;
-
-        }
-      }
-
-
-      .our_team__left {
-        width: 50%;
-        display: flex;
-        @media (max-width: 719px) {
-          display: none;
-
-        }
-
-        .our_team__menu_container {
-          position: static;
-          height: fit-content;
-          &.our_team__fixed {
-            position: fixed;
-
-
-          }
-          &.our_team__bottom {
-            position: static;
-            align-self: flex-end;
-
-          }
-          ul {
-            padding: unset;
-            color: white;
-            list-style: none;
-            li {
-
-              font-size: 2rem;
-              color: #c5c5c55c;
-              font-weight: unset;
-              transition: color 0.3s ease, transform 0.3s ease;
-
-              h4 {
-                margin: unset;
-                font-weight: unset;
-                font-size: 2rem;
-                @media (min-width: 960px) and (max-width: 1439px) {
-                  font-size: 1.8rem;
-                }
-                @media (min-width: 720px) and (max-width: 989px) {
-                  font-size: 1.6rem;
-
-                }
-              }
-              &.active_step {
-
-                color: #fad10a;
-                transform: translate(83px, 0px) scale(1.5);
-                font-weight: 500;
-                text-shadow: unset;
-
-                transition: color 0.3s ease, transform 0.3s ease;
-                &:hover {
-                  cursor: unset;
-                  color: #fad10a;
-                }
-                @media (min-width: 960px) and (max-width: 1439px) {
-                  transform: translate(20px, 0px) scale(1.2);
-                }
-                @media (min-width: 720px) and (max-width: 989px) {
-                  transform: translate(5px, 0px) scale(1.1);
-
-                }
-
-              }
-              &:hover {
-                cursor: pointer;
-                color: rgba(250, 209, 10, 0.59);
-              }
-            }
-          }
-
-        }
-      }
-      .our_team__right {
-        width: 50%;
-        @media (max-width: 719px) {
-          width: 100%;
-
-        }
-        .our_team__content {
-          color: white;
-
-          .scrolling_item {
-            padding: 15rem 1rem 0 1rem;
-            margin-top: 5rem;
-            transition: opacity 1s ease;
-
-
-
-            @media (max-width: 719px) {
-              height: unset;
-              padding: 0rem 1rem 0 1rem;
-              margin-top: unset;
-
-
-            }
-
-            h4 {
-              margin-bottom: 1.2rem;
-              font-size: 1.5rem;
-              font-weight: unset;
-              color: #fad10a;
-              display: none;
-
-              @media (max-width: 719px) {
-                display: block;
-
-
-              }
-
-            }
-            p {
-              font-size: 1.5rem;
-              color: #c5c5c55c;
-              transition: color 0.5s ease;
-              @media (min-width: 960px) and (max-width: 1439px) {
-                font-size: 1.35rem;
-              }
-              @media (min-width: 720px) and (max-width: 989px) {
-                font-size: 1.2rem;
-
-              }
-
-
-              @media (max-width: 719px) {
-                font-size: 1rem;
-                color: unset;
-                opacity: 0.7;
-
-
-              }
-
-            }
-            &.active_scrolling_item {
-              p{
-                transition: color 0.5s ease;
-                color: #fad10a;
-              }
-
-            }
-            &.scrolling_item__first {
-
-
-
-
-            }
-
-          }
-
-        }
-      }
-
-    }
-
 
 
 

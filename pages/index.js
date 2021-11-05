@@ -9,6 +9,7 @@ import WorkBloc from "../components/blocs/index_page/workBloc";
 import OurTeam from "../components/blocs/index_page/ourTeam";
 import ServicesPopUpIndex from "../components/blocs/index_page/servicesPopUpIndex";
 import Head from "next/head";
+import RollingMenu from "../components/blocs/index_page/rollingMenu";
 
 
 export default function Home() {
@@ -37,6 +38,8 @@ Nous aidons nos clients à réaliser leur potentiel en ligne en concevant et en 
             <ServicesPopUpIndex/>
             <OurTeam/>
             <WorkBloc/>
+            <RollingMenu/>
+
             <BlueBLoc/>
 
 

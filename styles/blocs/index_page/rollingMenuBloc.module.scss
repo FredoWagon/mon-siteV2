@@ -1,0 +1,329 @@
+
+.our_team__steps {
+  position: relative;
+  overflow: hidden;
+
+  margin: auto;
+  padding: 13rem 2rem 35rem 2rem;
+
+
+  z-index: 2;
+
+  @media (min-width: 1440px)  {
+    max-width: 1440px;
+  }
+  @media (min-width: 960px) and (max-width: 1439px) {
+    max-width: 960px;
+    padding: 13rem 2rem 35rem 2rem;
+  }
+  @media (min-width: 720px) and (max-width: 989px) {
+    max-width: 720px;
+    padding: 13rem 2rem 35rem 2rem;
+  }
+  @media (max-width: 719px) {
+    padding: 13rem 2rem 9rem 2rem;
+
+
+  }
+  .steps_mobile__image_top {
+    padding: 0 2rem;
+    position: absolute;
+    top: -9rem;
+    right: -5rem;
+    width: 14rem;
+    aspect-ratio: 1000/1333;
+
+    @media (min-width: 720px) {
+     display: none;
+    }
+  }
+  .steps_mobile__image_bottom {
+    padding: 0 2rem;
+    position: absolute;
+    bottom: -18.3rem;
+    right: -7rem;
+    transform: rotate(
+                    181deg);
+    width: 14rem;
+    aspect-ratio: 1000/1333;
+
+    @media (min-width: 720px) {
+      display: none;
+    }
+  }
+
+  .our_team__steps_container {
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width: 719px) {
+      display: block;
+
+    }
+
+
+    .mobile__step_title {
+
+      display: none;
+
+      font-size: 2.2rem;
+      line-height: 2.5rem;
+
+      font-weight: unset;
+      margin-bottom: 6rem;
+      @media (max-width: 719px) {
+        display: block;
+        margin-bottom: 3rem;
+
+      }
+      mark {
+        padding: unset;
+        font-weight: 500;
+        color: #1c524fbf;
+        background-color: unset;
+      }
+    }
+
+
+    .our_team__left {
+      position: relative;
+
+      width: 50%;
+      display: flex;
+      @media (max-width: 719px) {
+        display: none;
+
+      }
+
+
+      .our_team__menu_container {
+
+        transition: top 1s ease;
+        position: static;
+        height: fit-content;
+        &.our_team__fixed {
+          transition: top 1s ease;
+          position: fixed;
+          .our_team__steps__image_container {
+            .our_team__steps__image {
+              bottom: -44.8rem;
+              opacity: 1;
+              transition: opacity 1.5s ease, bottom 1.8s ease;
+              z-index: -10;
+
+            }
+
+          }
+
+
+
+        }
+        &.our_team__bottom {
+          position: static;
+          align-self: flex-end;
+          .our_team__steps__image_container {
+            .our_team__steps__image {
+
+              bottom: -38.8rem;
+              z-index: -10;
+              opacity: 1;
+              transition: opacity 1.5s ease, bottom 1.8s ease;
+
+
+
+            }
+
+          }
+
+
+        }
+        .our_team__steps__image_container {
+         position: relative;
+
+          .our_team__steps__image {
+
+
+            transition: opacity 1.5s ease, bottom 3s ease;
+            z-index: -10;
+            position: absolute;
+            opacity: 0;
+            bottom: -69.8rem;
+            left: 0 ;
+            width: 400px;
+            aspect-ratio: 1000/1333;
+            @media (min-width: 720px) and (max-width: 989px) {
+              left: -1rem;
+            }
+
+          }
+        }
+        ul {
+          padding: unset;
+          color: white;
+          list-style: none;
+          li {
+
+            font-size: 2rem;
+            color: #c5c5c55c;
+            font-weight: unset;
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            h4 {
+              margin: unset;
+              font-weight: unset;
+              font-size: 2rem;
+              @media (min-width: 960px) and (max-width: 1439px) {
+                font-size: 1.8rem;
+              }
+              @media (min-width: 720px) and (max-width: 989px) {
+                font-size: 1.6rem;
+
+              }
+            }
+            &.active_step {
+
+             color: #1c524f;
+              transform: translate(83px, 0px) scale(1.5);
+              font-weight: 500;
+              text-shadow: unset;
+
+              transition: color 0.3s ease, transform 0.3s ease;
+              &:hover {
+                cursor: unset;
+                color: #1c524f;
+              }
+              @media (min-width: 960px) and (max-width: 1439px) {
+                transform: translate(20px, 0px) scale(1.2);
+              }
+              @media (min-width: 720px) and (max-width: 989px) {
+                transform: translate(5px, 0px) scale(1.1);
+
+              }
+
+            }
+
+            &:hover {
+              cursor: pointer;
+              color: #1c524f;
+            }
+          }
+        }
+
+      }
+    }
+    .our_team__right {
+      width: 50%;
+      @media (max-width: 719px) {
+        width: 100%;
+
+      }
+      .our_team__content {
+        color: white;
+
+        .scrolling_item {
+          padding: 5rem 1rem 0 1rem;
+          margin-top: 5rem;
+          transition: opacity 1s ease;
+
+
+
+
+          &.last_step_item {
+
+            @media (min-width: 720px) {
+              margin-top: 2rem;
+              padding: 8rem 1rem 0 1rem;
+
+            }
+          }
+
+
+          @media (max-width: 719px) {
+            height: unset;
+            padding: 0;
+            margin-top: unset;
+
+
+          }
+
+          h4 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #1c524fbf;
+            display: none;
+
+            @media (max-width: 719px) {
+              display: block;
+
+
+
+            }
+
+          }
+          p {
+            font-size: 1.5rem;
+            color: #c5c5c55c;
+            transition: color 0.5s ease;
+            @media (min-width: 960px) and (max-width: 1439px) {
+              font-size: 1.35rem;
+            }
+            @media (min-width: 720px) and (max-width: 989px) {
+              font-size: 1.2rem;
+
+            }
+
+
+            @media (max-width: 719px) {
+              font-size: 1rem;
+              color: #222;
+
+
+
+
+            }
+            &::before {
+              opacity: 0;
+              transition: opacity 0.5s ease;
+              content: '';
+              position: absolute;
+              background-color: rgba(28, 82, 79, 0.6);
+              width: 3px;
+              height: 100%;
+              bottom: 0;
+              left: -19px;
+            }
+
+          }
+          &.active_scrolling_item {
+            p{
+              transition: color 0.5s ease;
+              color: #1c524f;
+
+              &::before {
+                opacity: 1;
+                transition: opacity 0.5s ease;
+              }
+            }
+
+          }
+          &.scrolling_item__first {
+
+
+
+
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+
+
+}
+
+
