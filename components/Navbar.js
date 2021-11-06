@@ -146,7 +146,7 @@ export default function Navbar(props) {
 
     const handleShare = async () => {
         try {
-            const shareDate = {
+            const shareData = {
                 title: "PokouWeb | Agence Digitale",
                 text: "Réalisez votre potentiel en ligne !",
                 url: "https://www.pokouweb.fr"
@@ -154,7 +154,7 @@ export default function Navbar(props) {
             await navigator.share(shareData)
             console.log("Partage lancé")
         } catch (err) {
-            console.log("Une erreur lors du partage")
+            console.log(err)
         }
     }
 
