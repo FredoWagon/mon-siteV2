@@ -520,26 +520,26 @@
     }
     .primary_service_burger_menu__content {
       margin-top: 1rem;
-        li {
-          font-size: 1.5rem;
-          a {
-            opacity: 0.4;
+      li {
+        font-size: 1.5rem;
+        a {
+          opacity: 0.4;
 
-          }
         }
+      }
 
     }
     .secondary_service_burger_menu__content {
       margin-top: 1rem;
-        li {
-          font-size: 1.5rem;
-          a {
+      li {
+        font-size: 1.5rem;
+        a {
 
-            opacity: 0.4;
+          opacity: 0.4;
 
 
-          }
         }
+      }
 
     }
 
@@ -553,29 +553,45 @@
       transition: opacity 0.5s ease, transform 0.5s ease;
       left: calc(50% - 49px);
 
-       &:hover {
+      &.active_pokou {
         opacity: 1;
         transform: translateY(-4rem);
         transition: opacity 0.5s ease, transform 0.5s ease;
-         .interactive_logo_container {
-display: block;
-
-           .share_logo {
-
-             bottom: 0;
-             left: -2rem;
-             opacity: 1;
-             transition: opacity 1s ease, bottom 0.5s , left 0.5s ;
-           }
-         }
+        .interactive_logo_container {
+          display: block;
+        }
       }
+
       .interactive_logo_container {
-display: none;
+        display: none;
 
         position: relative;
 
-        .share_logo {
 
+        .share_logo {
+          transition: opacity 1s ease, bottom 0.5s , left 0.5s;
+          position: absolute;
+          bottom: -3rem;
+          opacity: 0;
+          left: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .share_button {
+          }
+          p {
+            margin: unset;
+            font-size: 0.7rem;
+            opacity: 0.6;
+          }
+          &.active_share_logo {
+              bottom: 0;
+              left: -2rem;
+              opacity: 1;
+              transition: opacity 0.5s ease, bottom 0.8s ease , left 0.8s ease;
+          }
+        }
+        .bisous_logo {
           transition: opacity 1s ease, bottom 0.5s , left 0.5s ;
           position: absolute;
           bottom: -3rem;
@@ -585,8 +601,6 @@ display: none;
           flex-direction: column;
           align-items: center;
           .share_button {
-
-
           }
           p {
             margin: unset;

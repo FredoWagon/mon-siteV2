@@ -48,6 +48,13 @@ export default function Navbar(props) {
     const workBlocRef = useRef();
     const [inViewRef, inView] = useInView();
 
+    //Mini menu
+    const [miniMenuOpen, setMiniMenuOpen] = useState(false)
+    const minimenu = useRef(null);
+    const shareLogo = useRef(null);
+    const bisouLogo = useRef(null);
+
+
 
 
     // Changement du background de la navbar et modification de la couleur du navbar burger gestion du bullet
@@ -107,11 +114,11 @@ export default function Navbar(props) {
 
 
 
-     useEffect(() => {
-      window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-     }
+    useEffect(() => {
+        window.addEventListener('resize', handleResize)
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
     }, [])
 
 
@@ -161,6 +168,35 @@ export default function Navbar(props) {
             setActiveBullet(true)
         } else {
             setActiveBullet(false)
+        }
+    }
+
+
+    // MiniMenuMobile
+
+    const handleMiniMenu = (event) => {
+        console.log(event)
+        const pokouLogo = event.currentTarget
+        const shareLogoElement = shareLogo.current
+        if (!pokouLogo.classList.contains(`${style.active_pokou}`)) {
+            pokouLogo.classList.add(`${style.active_pokou}`)
+            console.log(minimenu.current)
+
+            setTimeout(() => {
+                shareLogoElement.classList.add(`${style.active_share_logo}`)
+
+            }, 200)
+
+        } else {
+            console.log("oups")
+            shareLogoElement.classList.remove(`${style.active_share_logo}`)
+            setTimeout(() => {
+                pokouLogo.classList.remove(`${style.active_pokou}`)
+
+            }, 300)
+
+
+
         }
     }
 
@@ -380,10 +416,14 @@ export default function Navbar(props) {
                             <li className={props.currentPage === "referencement" ? style.active_link : ""}> <Link href="/nos-services/referencement">Référencement</Link></li>
                         </ul>
                     </div> */}
-                    <div className={style.burger_menu__logo}>
-                        <div className={style.interactive_logo_container}>
-                            <div onClick={handleShare} className={style.share_logo}>
+                    <div onClick={handleMiniMenu} className={style.burger_menu__logo}>
+                        <div ref={minimenu} className={style.interactive_logo_container}>
+                            <div ref={shareLogo} onClick={handleShare} className={style.share_logo}>
                                 <img className={style.share_button} src="/share.svg" alt="Share icon"/>
+                                <p>Partager</p>
+                            </div>
+                            <div ref={bisouLogo} className={style.bisous_logo}>
+                                <img className={style.share_button} src="/coeurcoeur.svg" alt="Bisou icon"/>
                                 <p>Partager</p>
                             </div>
 
