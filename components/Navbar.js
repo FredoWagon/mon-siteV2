@@ -145,6 +145,7 @@ export default function Navbar(props) {
     // Partager la page
 
     const handleShare = async () => {
+        console.log('OLA')
         try {
             const shareData = {
                 title: "PokouWeb | Agence Digitale",

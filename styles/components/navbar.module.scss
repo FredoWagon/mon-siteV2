@@ -539,18 +539,23 @@
 
     .burger_menu__logo {
 
+
       display: none;
       position: fixed;
       bottom: -3.2rem;
       opacity: 0.3;
       transition: opacity 0.5s ease, transform 0.5s ease;
       left: calc(50% - 49px);
+
        &:hover {
         opacity: 1;
-        transform: translateY(-5rem);
+        transform: translateY(-4rem);
         transition: opacity 0.5s ease, transform 0.5s ease;
          .interactive_logo_container {
+display: block;
+
            .share_logo {
+
              bottom: 0;
              left: -2rem;
              opacity: 1;
@@ -559,8 +564,12 @@
          }
       }
       .interactive_logo_container {
+display: none;
+
         position: relative;
+
         .share_logo {
+
           transition: opacity 1s ease, bottom 0.5s , left 0.5s ;
           position: absolute;
           bottom: -3rem;
