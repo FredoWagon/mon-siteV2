@@ -99,7 +99,7 @@ export default function ContactComponent(props) {
     const handleSubmit = (e) => {
         e.preventDefault()
         const submitBtn = e.currentTarget
-        console.log(submitBtn)
+
         const data = {
             name,
             email,

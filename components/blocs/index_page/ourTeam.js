@@ -68,11 +68,31 @@ export default function OurTeam() {
 
     useEffect(() => {
         const urlUri = window.location.href
-        console.log(urlUri)
+
+
         if (urlUri.includes('travaux_anchor')) {
             setState(true)
         }
-    })
+        console.log(ourTeamAnimationDone)
+        if (ourTeamAnimationDone) {
+            absoluteTitle.current.classList.add(`${style.end_animation}`)
+            relativeTitle.current.classList.add(`${style.agence_title_animation}`)
+            titleComponent.current.classList.add(`${style.end_animation}`)
+            collectifTitle.current.classList.add(`${style.collectif_title__animation}`)
+            titleText.current.classList.add(`${style.text_animation}`)
+            agencyImageContainer.current.classList.remove(`${style.agency_image__before_animation}`)
+            advantageContainer.current.classList.remove(`${style.our_team__advantages__before_animation}`)
+            advantageItem1.current.classList.remove(`${style.advantage_item__before_animation}`)
+            advantageItem2.current.classList.remove(`${style.advantage_item__before_animation}`)
+            advantageItem3.current.classList.remove(`${style.advantage_item__before_animation}`)
+            advantageItem4.current.classList.remove(`${style.advantage_item__before_animation}`)
+
+        }
+
+
+
+
+    },[])
 
 
 
@@ -100,6 +120,7 @@ export default function OurTeam() {
         window.addEventListener("scroll", handleScrollEvents)
         window.addEventListener('resize', handleResize)
         return () => {
+
             window.removeEventListener("scroll", handleScrollEvents)
             window.removeEventListener('resize', handleResize)
         }
@@ -115,12 +136,15 @@ export default function OurTeam() {
             body.classList.add('stop_scrolling')
             body.style.paddingRight = `${scrollBarWidth}px`
             const elementTopPosition = entry.target.offsetTop + 53
+
             setTimeout(() => {
                 window.scrollTo({top: elementTopPosition, behavior: 'smooth'})
+                titleAnimation()
                 setTimeout(() => {
                     body.classList.remove('stop_scrolling')
                     body.style.paddingRight = ""
                 }, 1500)
+
             }, 1000)
             setState(true)
         }
@@ -129,54 +153,44 @@ export default function OurTeam() {
 
 
     const titleAnimation = () => {
+
         const absoluteTitlePosition = absoluteTitle.current.getBoundingClientRect().bottom
         const viewPortMiddleHeight = viewPortHeight / 2 - titleAnimationPosition
 
-        if ( (absoluteTitlePosition < viewPortMiddleHeight) && !ourTeamAnimationDone ) {
-            absoluteTitle.current.classList.add(`${style.end_animation}`)
-            relativeTitle.current.classList.add(`${style.agence_title_animation}`)
+        absoluteTitle.current.classList.add(`${style.end_animation}`)
+        relativeTitle.current.classList.add(`${style.agence_title_animation}`)
 
-            setTimeout(() => {
-                titleComponent.current.classList.add(`${style.end_animation}`)
-            }, 100)
-            setTimeout(() => {
-                collectifTitle.current.classList.add(`${style.collectif_title__animation}`)
-                titleText.current.classList.add(`${style.text_animation}`)
-            }, 1000)
-            setTimeout(() => {
-                agencyImageContainer.current.classList.remove(`${style.agency_image__before_animation}`)
-            }, 1200)
-            setTimeout(() => {
-
-                advantageContainer.current.classList.remove(`${style.our_team__advantages__before_animation}`)
-            }, 1500)
-            setTimeout(() => {
-                advantageItem1.current.classList.remove(`${style.advantage_item__before_animation}`)
-            },1600)
-            setTimeout(() => {
-                advantageItem2.current.classList.remove(`${style.advantage_item__before_animation}`)
-            },1750)
-            setTimeout(() => {
-                advantageItem3.current.classList.remove(`${style.advantage_item__before_animation}`)
-            },1900)
-            setTimeout(() => {
-                advantageItem4.current.classList.remove(`${style.advantage_item__before_animation}`)
-            },2050)
-
-        } else if (ourTeamAnimationDone) {
-            absoluteTitle.current.classList.add(`${style.end_animation}`)
-            relativeTitle.current.classList.add(`${style.agence_title_animation}`)
+        setTimeout(() => {
             titleComponent.current.classList.add(`${style.end_animation}`)
+        }, 100)
+        setTimeout(() => {
             collectifTitle.current.classList.add(`${style.collectif_title__animation}`)
             titleText.current.classList.add(`${style.text_animation}`)
+        }, 1000)
+        setTimeout(() => {
             agencyImageContainer.current.classList.remove(`${style.agency_image__before_animation}`)
-            advantageContainer.current.classList.remove(`${style.our_team__advantages__before_animation}`)
-            advantageItem1.current.classList.remove(`${style.advantage_item__before_animation}`)
-            advantageItem2.current.classList.remove(`${style.advantage_item__before_animation}`)
-            advantageItem3.current.classList.remove(`${style.advantage_item__before_animation}`)
-            advantageItem4.current.classList.remove(`${style.advantage_item__before_animation}`)
+        }, 1200)
+        setTimeout(() => {
 
-        }
+            advantageContainer.current.classList.remove(`${style.our_team__advantages__before_animation}`)
+        }, 1500)
+        setTimeout(() => {
+            advantageItem1.current.classList.remove(`${style.advantage_item__before_animation}`)
+        },1600)
+        setTimeout(() => {
+            advantageItem2.current.classList.remove(`${style.advantage_item__before_animation}`)
+        },1750)
+        setTimeout(() => {
+            advantageItem3.current.classList.remove(`${style.advantage_item__before_animation}`)
+        },1900)
+        setTimeout(() => {
+            console.log('TERMINE')
+            advantageItem4.current.classList.remove(`${style.advantage_item__before_animation}`)
+        },2050)
+
+
+
+
 
 
 
@@ -199,8 +213,9 @@ export default function OurTeam() {
     }
 
     const handleScrollEvents = () => {
+
         const viewPortWitth = window.innerWidth
-        titleAnimation();
+
 
 
 

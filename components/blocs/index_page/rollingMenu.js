@@ -31,7 +31,6 @@ export default function RollingMenu() {
         const viewPortHeightValue = window.innerHeight
         const viewPortWitth = window.innerWidth
         setViewPortHeight(viewPortHeightValue)
-        console.log(viewPortHeight)
         setAnimationDistance(0.25)
 
         window.addEventListener("scroll", handleScrollEvents)
@@ -61,7 +60,6 @@ export default function RollingMenu() {
 
 
     const handleScrollEvents = () => {
-        console.log("bouille")
         const viewPortWitth = window.innerWidth
         if (viewPortWitth > 719) {
             toggleFixedLeftContent();
@@ -80,8 +78,7 @@ export default function RollingMenu() {
         const menuHeight = ourLeft.current.offsetHeight
         const menuLeftPosition = ourLeft.current.getBoundingClientRect().left;
         const ourRightDomRect = ourRight.current.getBoundingClientRect();
-        console.log(ourRightDomRect.top)
-        console.log(viewPortDistance)
+
 
         if (ourRightDomRect.top -100 <= viewPortDistance && ourRightDomRect.bottom > (viewPortDistance + menuHeight )  ) {
             ourLeft.current.style.top = `${(viewPortDistance)}px`
@@ -94,11 +91,11 @@ export default function RollingMenu() {
             ourLeft.current.classList.add(`${style.our_team__fixed}`)
             ourLeft.current.classList.remove(`${style.our_team__bottom}`)
         } else if (ourRightDomRect.bottom <= (viewPortDistance + menuHeight  )) {
-            console.log("le else cherché ?")
+
             ourLeft.current.classList.remove(`${style.our_team__fixed}`)
             ourLeft.current.classList.add(`${style.our_team__bottom}`)
         } else {
-            console.log("else final")
+
             ourLeft.current.classList.remove(`${style.our_team__fixed}`)
             ourLeft.current.classList.remove(`${style.our_team__bottom}`)
         }

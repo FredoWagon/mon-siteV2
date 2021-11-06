@@ -68,7 +68,7 @@
         .item__content {
           @media (max-width: 719px) {
             display: flex;
-            align-items: start;
+            align-items: flex-start;
             height: 100px;
 
             .us_picture__image {

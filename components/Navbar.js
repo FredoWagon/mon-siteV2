@@ -11,8 +11,6 @@ export default function Navbar(props) {
 
     // Stock le nom de la classe à appliquer à la navbar (background color en fonction des pages)
     const [backgroundColor, setBackgroundColor] = useState("")
-    // Variable dynamique qui modifie le fontSize du titre du site => Manipulé dans handleFontSize
-    const [logoSize, setLogoSize] = useState(null)
     // Variable qui vérifie si l'on est en haut de la page ou non afin d'afficher une ligne grise par l'ajout d'une classe
     const [isNotOnTop, setIsNotOnTop] = useState(false)
     // Variable qui ouvre ou non le burger menu, sur click de l'icone burger
@@ -43,9 +41,7 @@ export default function Navbar(props) {
 
     // pour lanimation du logo
     const navBarTop = useRef(null);
-    const {ourTeamAnimationDone, setState} = useAppContext();
-    const pokouLogo = useRef(null);
-    const pokouLogoSize = useRef(null)
+
 
 
     // Changement du background de la navbar et modification de la couleur du navbar burger gestion du bullet
@@ -122,7 +118,7 @@ export default function Navbar(props) {
 
             window.removeEventListener('scroll', handleFontSize, {passive: true})
         }
-    }, [])
+    })
 
 
 
@@ -145,7 +141,7 @@ export default function Navbar(props) {
     // Partager la page
 
     const handleShare = async () => {
-        console.log('OLA')
+
         try {
             const shareData = {
                 title: "PokouWeb | Agence Digitale",
