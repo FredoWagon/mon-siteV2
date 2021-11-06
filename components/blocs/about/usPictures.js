@@ -46,7 +46,7 @@ export default function UsPictures() {
 
                                 <div className={style.us_picture__info}>
                                     <h3>Noémie Fournier</h3>
-                                    <p>Designer - Developpeuse Wordpress</p>
+                                    <p>Designeuse - Experte Wordpress</p>
 
                                 </div>
                             </div>

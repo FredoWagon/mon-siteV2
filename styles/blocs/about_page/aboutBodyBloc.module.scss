@@ -28,6 +28,7 @@
       color: #1c524f;
       font-weight: unset;
       font-size: 4.5rem;
+      margin-bottom: unset;
 
       padding: 0 2rem;
       @media (min-width: 960px) and (max-width: 1439px) {
@@ -42,6 +43,7 @@
         font-size: 2.2rem;
         line-height: 2.2rem;
         padding: unset;
+        text-align: center;
 
       }
     }
@@ -58,6 +60,10 @@
         display: flex;
         flex-direction: column;
 
+        &.special_margin__bottom {
+          margin-bottom: 4rem;
+        }
+
 
         @media (min-width: 960px) and (max-width: 1439px) {
 
@@ -68,13 +74,15 @@
         @media (max-width: 719px) {
           padding: unset;
           width: 100%;
+
         }
 
         h3 {
           color: #1c524f;
           font-weight: unset;
           font-size: 3rem;
-          margin: unset;
+          margin-top: 2rem;
+          margin-bottom: unset;
           @media (min-width: 960px) and (max-width: 1439px) {
             font-size: 2rem;
           }
@@ -99,14 +107,22 @@
             line-height: 1.6rem;
 
 
+
           }
         }
 
         .about_item__image {
-          height: fit-content;
+          width: 80%;
+
+          aspect-ratio: 1/1;
+          margin: 0 auto;
+
+
+
           filter: grayscale(1);
-          padding: 0rem 2rem 4rem 2rem;
+
           img {
+
 
             filter: sepia(1);
           }

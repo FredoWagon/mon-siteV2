@@ -30,7 +30,7 @@ export default function OurProcessBloc() {
                     </div>
                     <div className={style.our_process__items}>
                         <div className={style.our_process__image}>
-                            <Image  lazyBoundary="500px" layout={"fill"} alt="Concept" src="/pokouweb/abstrakt-design-05_x2b7e1_wznbto.webp"/>
+                            <Image  lazyBoundary="500px" layout={"fill"} alt="Concept" src="/pokouweb/abstrakt-design-05_x2b7e1_wznbto_vuccxg.webp"/>
                         </div>
                         <h3>Concept</h3>
                         <p>Nous formons une compréhension globale de votre entreprise et créons un concept mémorable avec vous.</p>
