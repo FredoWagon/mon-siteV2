@@ -8,8 +8,8 @@ export default function UxBloc() {
             <div className={style.ux_bloc}>
                 <div className={style.ux_bloc__first_content}>
                     <div className={style.ux_bloc__left}>
-                        <h2>Obsédé par l'utilisateur</h2>
-                        <p>Notre travail s'articule autour de la conception, de l'analyse, du développement, de l'optimisation et de la maintenance. L'idée principale qui traverse tout ce que nous faisons est d'être obsédé par l'utilisateur : d'abord et avant tout, nous pensons toujours aux personnes qui finiront par utiliser ce que nous créons.</p>
+                        <h2>L'utilisateur au coeur</h2>
+                        <p>Notre travail s'articule autour de la conception, de l'analyse, du développement, de l'optimisation et de la maintenance. L'idée principale qui traverse tout ce que nous faisons est de mettre l'utilisateur au coeur : d'abord et avant tout, nous pensons toujours aux personnes qui finiront par utiliser ce que nous créons.</p>
                     </div>
                     <div className={style.ux_bloc__right}>
                         <div className={style.ux_image}>

@@ -157,11 +157,13 @@ export default function OurTeam() {
         const absoluteTitlePosition = absoluteTitle.current.getBoundingClientRect().bottom
         const viewPortMiddleHeight = viewPortHeight / 2 - titleAnimationPosition
 
-        absoluteTitle.current.classList.add(`${style.end_animation}`)
-        relativeTitle.current.classList.add(`${style.agence_title_animation}`)
+
 
         setTimeout(() => {
+
             titleComponent.current.classList.add(`${style.end_animation}`)
+            absoluteTitle.current.classList.add(`${style.end_animation}`)
+            relativeTitle.current.classList.add(`${style.agence_title_animation}`)
         }, 100)
         setTimeout(() => {
             collectifTitle.current.classList.add(`${style.collectif_title__animation}`)

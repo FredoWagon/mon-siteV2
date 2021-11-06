@@ -21,7 +21,7 @@ export default function OurProcessBloc() {
 
                     <div className={style.our_process__items}>
                         <div className={style.our_process__image}>
-                            <Image  lazyBoundary="500px" width="320" height="320" alt="Recherche" src="/pokouweb/abstrakt-design-06_xb85nt_kcamot.webp"/>
+                            <Image  lazyBoundary="500px" layout={"fill"} alt="Recherche" src="/pokouweb/abstrakt-design-06_xb85nt_kcamot.webp"/>
                         </div>
                         <h3>Recherche</h3>
                         <p>Nous examinons en profondeur votre organisation, votre entreprise et votre marque.</p>
@@ -30,7 +30,7 @@ export default function OurProcessBloc() {
                     </div>
                     <div className={style.our_process__items}>
                         <div className={style.our_process__image}>
-                            <Image  lazyBoundary="500px" width="320" height="320" alt="Concept" src="/pokouweb/abstrakt-design-196_fwuver_pkgljr.webp"/>
+                            <Image  lazyBoundary="500px" layout={"fill"} alt="Concept" src="/pokouweb/abstrakt-design-05_x2b7e1_wznbto.webp"/>
                         </div>
                         <h3>Concept</h3>
                         <p>Nous formons une compréhension globale de votre entreprise et créons un concept mémorable avec vous.</p>
@@ -39,7 +39,7 @@ export default function OurProcessBloc() {
                     </div>
                     <div className={style.our_process__items}>
                         <div className={style.our_process__image}>
-                            <Image  lazyBoundary="500px" width="320" height="320" alt="Developpement" src="/pokouweb/abstrakt-design-134_m6yn5e_thcmba.webp"/>
+                            <Image  lazyBoundary="500px"layout={"fill"} alt="Developpement" src="/pokouweb/abstrakt-design-134_m6yn5e_thcmba.webp"/>
                         </div>
                         <h3>Design et développement</h3>
                         <p>Jouer, dessiner, concevoir et développer - ce sont les phases où les idées se transforment en un résultat final concret.</p>
@@ -48,7 +48,7 @@ export default function OurProcessBloc() {
                     </div>
                     <div className={style.our_process__items}>
                         <div className={style.our_process__image}>
-                            <Image  lazyBoundary="500px" width="320" height="320" alt="Lancement" src="/pokouweb/abstrakt-design-207_uyauup_pprfci.webp"/>
+                            <Image  lazyBoundary="500px" layout={"fill"} alt="Lancement" src="/pokouweb/abstrakt-design-207_uyauup_pprfci.webp"/>
                         </div>
                         <h3>Lancement et assistance</h3>
                         <p>Après le déploiement du produit, nous suivons également les étapes du produit et vous fournissons une assistance continue.</p>
