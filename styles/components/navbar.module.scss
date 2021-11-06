@@ -575,20 +575,28 @@
           opacity: 0;
           left: 1rem;
           display: flex;
+          justify-content: center;
           flex-direction: column;
           align-items: center;
+          border: 1px solid;
+          border-radius: 50%;
+          height: 2.5rem;
+          width: 2.5rem;
           .share_button {
-          }
-          p {
-            margin: unset;
-            font-size: 0.7rem;
-            opacity: 0.6;
           }
           &.active_share_logo {
               bottom: 0;
-              left: -2rem;
+              left: calc(0px - 1.25rem);
+              opacity: 0.8;
+              transition: opacity 0.5s ease, bottom 0.5s ease , left 0.5s ease;
+            &:hover {
+              transition: opacity 0.3s ease;
               opacity: 1;
-              transition: opacity 0.5s ease, bottom 0.8s ease , left 0.8s ease;
+            }
+            &:active {
+              transition: opacity 0.3s ease;
+              opacity: 1;
+            }
           }
         }
         .bisous_logo {
@@ -596,16 +604,30 @@
           position: absolute;
           bottom: -3rem;
           opacity: 0;
-          left: 1rem;
+          left: 2rem;
           display: flex;
           flex-direction: column;
           align-items: center;
+          border: 1px solid;
+          border-radius: 50%;
+          justify-content: center;
+          height: 2.5rem;
+          width: 2.5rem;
           .share_button {
           }
-          p {
-            margin: unset;
-            font-size: 0.7rem;
-            opacity: 0.6;
+          &.active_bisou_logo {
+            bottom: 0;
+            left: calc(95px - 1.25rem);
+            opacity: 0.8;
+            transition: opacity 0.5s ease, bottom 0.5s ease , left 0.5s ease;
+            &:hover {
+              transition: opacity 0.3s ease;
+              opacity: 1;
+            }
+            &:active {
+              transition: opacity 0.3s ease;
+              opacity: 1;
+            }
           }
         }
 
