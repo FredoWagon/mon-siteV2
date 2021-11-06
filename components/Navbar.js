@@ -142,6 +142,24 @@ export default function Navbar(props) {
     },[burgerOpen])
 
 
+    // Partager la page
+
+    const handleShare = async () => {
+        try {
+            const shareDate = {
+                title: "PokouWeb | Agence Digitale",
+                text: "Réalisez votre potentiel en ligne !",
+                url: "https://www.pokouweb.fr"
+            }
+            await navigator.share(shareData)
+            console.log("Partage lancé")
+        } catch (err) {
+            console.log("Une erreur lors du partage")
+        }
+    }
+
+
+
     // Animation sur le hover des liens
     const handleHover = (e) => {
         const navBarElement = desktopNav.current
@@ -336,7 +354,7 @@ export default function Navbar(props) {
                     </div> */}
                     <div className={style.burger_menu__logo}>
 
-                        <img src="/pokou_logo.svg" alt="Pokouweb logo"/>
+                        <img onClick={handleShare} src="/pokou_logo.svg" alt="Pokouweb logo"/>
 
                     </div>
 
