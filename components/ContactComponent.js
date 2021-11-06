@@ -179,7 +179,7 @@ export default function ContactComponent(props) {
 
                 <div className={`${style.contact_field} ${messageValid ? style.field_valid : ""}`}>
                     <label htmlFor="message">Votre Message <mark className={style.label__required}>*</mark></label>
-                    <textarea  onFocus={displayErrorMessage} value={message} onChange={handdleValidation} name="message" id="message" placeholder="Laissez nous un message..." cols="30" rows="10"/>
+                    <textarea  onFocus={displayErrorMessage} value={message} onChange={handdleValidation} name="message" id="message" placeholder="Votre message..." cols="30" rows="10"/>
                     <span className={`${activeErrorMessage && message === "" ? style.active__empty_message : ""} `}>Veuillez écrire un message</span>
                 </div>
                 <button className={style.contact_submit_btn} type="submit"  onClick={(e)=>{handleSubmit(e)}} >

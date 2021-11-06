@@ -1,4 +1,5 @@
 import style from '../styles/components/navbar.module.scss'
+import workBlocStyle from "../styles/blocs/index_page/WorkBloc.module.scss"
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/logo.svg'
@@ -6,6 +7,7 @@ import {useCallback, useEffect, useLayoutEffect, useRef, useState} from "react";
 import TranslateOnScroll from "./effects/navbarTranslateOnScroll";
 import pokou_logo from "../public/pokou_logo.svg"
 import {useAppContext} from "../context/state";
+import { useInView } from 'react-intersection-observer';
 
 export default function Navbar(props) {
 
@@ -41,6 +43,10 @@ export default function Navbar(props) {
 
     // pour lanimation du logo
     const navBarTop = useRef(null);
+
+    //Animation pour lien travaux
+    const workBlocRef = useRef();
+    const [inViewRef, inView] = useInView();
 
 
 
@@ -80,6 +86,11 @@ export default function Navbar(props) {
             setBulletInitialPosition(bulletPosition)
             setActiveBullet(true)
         }
+
+        if (!props.currentPage) {
+            workBlocRef.current = document.querySelector(`.${workBlocStyle.work_bloc__container}`);
+            inViewRef(workBlocRef.current);
+        }
         setBackgroundColor(props.backgroundColor)
         if (["background--white", "background--blue", "background--yellow"].includes(props.backgroundColor)) {
             setBurgerBlackVersion(true)
@@ -112,7 +123,6 @@ export default function Navbar(props) {
 
     // Modification font-size sur resize
     useEffect(() => {
-
         window.addEventListener('scroll', handleFontSize, {passive: true})
         return () => {
 
@@ -136,6 +146,23 @@ export default function Navbar(props) {
             bodyComponent.classList.remove('stop_scrolling')
         }
     },[burgerOpen])
+
+    // Animation du lien travaux
+
+    const travauxLinkAnimation = () => {
+        if (inView) {
+            const currentLink = travauxLink.current
+            const leftNavBarDistance = desktopNav.current.getBoundingClientRect().left
+            const currentLinkRect = currentLink.getBoundingClientRect()
+            const xCenterOfElement = currentLinkRect.left +  ((currentLinkRect.right - currentLinkRect.left -24) / 2)
+            const bulletPosition = xCenterOfElement - leftNavBarDistance
+            setBulletPosition(bulletPosition)
+            setBulletInitialPosition(bulletPosition)
+            setActiveBullet(true)
+        } else {
+            setActiveBullet(false)
+        }
+    }
 
 
     // Partager la page
@@ -173,7 +200,7 @@ export default function Navbar(props) {
     //Animation sur le out du hover
     const handleOut = (e) => {
         const bulletElement = bullet.current
-        if (!props.currentPage) {
+        if (!props.currentPage && !activeBullet ) {
             bulletElement.classList.remove(`${style.bullet_active}`)
         } else {
             setBulletPosition(bulletInitialPosition)
@@ -184,6 +211,10 @@ export default function Navbar(props) {
 
     // Gère la taille de la police en fonction du scroll, aussi utilisé lors de l'event resize
     const handleFontSize = () => {
+        if (!props.currentPage) {
+            travauxLinkAnimation()
+        }
+
         const body = window.scrollY
         const pokouTitle = titleLogo.current
         if (logoSizeValue.current === null) {
@@ -323,9 +354,9 @@ export default function Navbar(props) {
                 <div className={style.burger__menu__container}>
                     <div className={style.main_burger_menu__content}>
                         <ul>
-                            <li onClick={() => setBurgerOpen(false)} className={`${!props.currentPage? style.active_link : ""}`}><Link scroll={true} href="/"><a >Acceuil</a></Link></li>
+                            <li onClick={() => setBurgerOpen(false)} className={`${!props.currentPage && !inView? style.active_link : ""}`}><Link scroll={true} href="/"><a >Acceuil</a></Link></li>
                             <li className={`${props.currentPage === "services" ? style.active_link : ""}`}><Link href="/nos-services"><a >Services</a></Link></li>
-                            <li onClick={() => setBurgerOpen(false)}><Link href="/#travaux_anchor"><a >Travaux</a></Link></li>
+                            <li className={`${inView ? style.active_link : "" }`} onClick={() => setBurgerOpen(false)}><Link href="/#travaux_anchor"><a >Travaux</a></Link></li>
                             <li className={`${props.currentPage === "nous" ? style.active_link : ""}`}> <Link href="/a-propos"><a >A propos</a></Link></li>
                             <li className={`${props.currentPage === "contact" ? style.active_link : ""}`}>   <Link href="/contact"><a >Contact</a></Link></li>
                         </ul>

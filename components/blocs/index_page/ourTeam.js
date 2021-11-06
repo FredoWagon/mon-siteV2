@@ -23,6 +23,7 @@ export default function OurTeam() {
 
 
 
+
     const absoluteTitle = useRef();
     const relativeTitle = useRef();
     const titleComponent = useRef();
@@ -71,7 +72,19 @@ export default function OurTeam() {
 
 
         if (urlUri.includes('travaux_anchor')) {
+            console.log("salut")
             setState(true)
+            absoluteTitle.current.classList.add(`${style.end_animation}`)
+            relativeTitle.current.classList.add(`${style.agence_title_animation}`)
+            titleComponent.current.classList.add(`${style.end_animation}`)
+            collectifTitle.current.classList.add(`${style.collectif_title__animation}`)
+            titleText.current.classList.add(`${style.text_animation}`)
+            agencyImageContainer.current.classList.remove(`${style.agency_image__before_animation}`)
+            advantageContainer.current.classList.remove(`${style.our_team__advantages__before_animation}`)
+            advantageItem1.current.classList.remove(`${style.advantage_item__before_animation}`)
+            advantageItem2.current.classList.remove(`${style.advantage_item__before_animation}`)
+            advantageItem3.current.classList.remove(`${style.advantage_item__before_animation}`)
+            advantageItem4.current.classList.remove(`${style.advantage_item__before_animation}`)
         }
         console.log(ourTeamAnimationDone)
         if (ourTeamAnimationDone) {
@@ -132,7 +145,8 @@ export default function OurTeam() {
 
 
         const scrollBarWidth = window.innerWidth - body.clientWidth
-        if (inView && !ourTeamAnimationDone ) {
+        if (inView && !ourTeamAnimationDone && !window.location.href.includes('travaux_anchor') ) {
+            console.log("bonjour")
             body.classList.add('stop_scrolling')
             body.style.paddingRight = `${scrollBarWidth}px`
             const elementTopPosition = entry.target.offsetTop + 53
@@ -147,6 +161,20 @@ export default function OurTeam() {
 
             }, 1000)
             setState(true)
+        } else if (ourTeamAnimationDone || window.location.href.includes('travaux_anchor')) {
+            console.log("ok")
+            absoluteTitle.current.classList.add(`${style.end_animation}`)
+            relativeTitle.current.classList.add(`${style.agence_title_animation}`)
+            titleComponent.current.classList.add(`${style.end_animation}`)
+            collectifTitle.current.classList.add(`${style.collectif_title__animation}`)
+            titleText.current.classList.add(`${style.text_animation}`)
+            agencyImageContainer.current.classList.remove(`${style.agency_image__before_animation}`)
+            advantageContainer.current.classList.remove(`${style.our_team__advantages__before_animation}`)
+            advantageItem1.current.classList.remove(`${style.advantage_item__before_animation}`)
+            advantageItem2.current.classList.remove(`${style.advantage_item__before_animation}`)
+            advantageItem3.current.classList.remove(`${style.advantage_item__before_animation}`)
+            advantageItem4.current.classList.remove(`${style.advantage_item__before_animation}`)
+
         }
     }, [inView])
 
