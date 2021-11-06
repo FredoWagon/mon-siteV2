@@ -353,8 +353,17 @@ export default function Navbar(props) {
                         </ul>
                     </div> */}
                     <div className={style.burger_menu__logo}>
+                        <div className={style.interactive_logo_container}>
+                            <div onClick={handleShare} className={style.share_logo}>
+                                <img className={style.share_button} src="/share.svg" alt="Share icon"/>
+                                <p>Partager</p>
+                            </div>
 
-                        <img onClick={handleShare} src="/pokou_logo.svg" alt="Pokouweb logo"/>
+                        </div>
+
+                        <img src="/pokou_logo.svg" alt="Pokouweb logo"/>
+
+
 
                     </div>
 
