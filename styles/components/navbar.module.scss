@@ -546,6 +546,8 @@
     .burger_menu__logo {
 
 
+
+
       display: none;
       position: fixed;
       bottom: -3.2rem;
@@ -559,6 +561,7 @@
         transition: opacity 0.5s ease, transform 0.5s ease;
         .interactive_logo_container {
           display: block;
+
         }
       }
 
@@ -566,6 +569,21 @@
         display: none;
 
         position: relative;
+
+        .bisou_compteur {
+          position: absolute;
+          bottom: 0.5rem;
+          left: 7.5rem;
+          opacity: 0;
+
+
+          &.show_compteur {
+            opacity: 0.8;
+            transition: opacity 0.5s ease;
+
+          }
+
+        }
 
 
         .share_logo {
@@ -589,14 +607,23 @@
               left: calc(0px - 1.25rem);
               opacity: 0.8;
               transition: opacity 0.5s ease, bottom 0.5s ease , left 0.5s ease;
-            &:hover {
-              transition: opacity 0.3s ease;
-              opacity: 1;
+            img {
+              user-drag: none;
+              -webkit-user-drag: none;
+              user-select: none;
+              -moz-user-select: none;
+              -webkit-user-select: none;
+              -ms-user-select: none;
+              pointer-events: none;
+
             }
             &:active {
-              transition: opacity 0.3s ease;
-              opacity: 1;
+
+              opacity: 0.3;
+              transition: background-color 0.3s ease, border 0.3s ease, opacity 0.3s ease;
+
             }
+
           }
         }
         .bisous_logo {
@@ -613,6 +640,16 @@
           justify-content: center;
           height: 2.5rem;
           width: 2.5rem;
+          img {
+            user-drag: none;
+            -webkit-user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            pointer-events: none;
+
+          }
           .share_button {
           }
           &.active_bisou_logo {
@@ -620,29 +657,38 @@
             left: calc(95px - 1.25rem);
             opacity: 0.8;
             transition: opacity 0.5s ease, bottom 0.5s ease , left 0.5s ease;
-            &:hover {
-              transition: opacity 0.3s ease;
-              opacity: 1;
-            }
+
             &:active {
-              transition: opacity 0.3s ease;
-              opacity: 1;
+
+              opacity: 0.3;
+              transition: background-color 0.3s ease, border 0.3s ease, opacity 0.3s ease;
+
             }
           }
         }
 
       }
 
+      .bisous_container {
+        position: relative;
+        img {
+          position: absolute;
+          bottom: 1.7rem;
+          right: 1.5rem;
+          transform: scale(0.3);
+          opacity: 0.3;
+          pointer-events: none;
+
+        }
+
+
+      }
+
     }
-
-
-
-
-
-
   }
-
 }
+
+
 
 
 

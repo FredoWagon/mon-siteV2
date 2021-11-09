@@ -53,6 +53,11 @@ export default function Navbar(props) {
     const minimenu = useRef(null);
     const shareLogo = useRef(null);
     const bisouLogo = useRef(null);
+    const minimenuBtn = useRef(null);
+    const bisouContainer = useRef(null);
+
+    const {bisous, ajouterBisous} = useAppContext();
+    const bisouCompteur = useRef(null);
 
 
 
@@ -149,6 +154,7 @@ export default function Navbar(props) {
             bodyComponent.style.paddingRight= `${scrollBarWith}px`
             bodyComponent.classList.add('stop_scrolling')
         } else {
+            closeMiniMenu();
             bodyComponent.removeAttribute('style');
             bodyComponent.classList.remove('stop_scrolling')
         }
@@ -175,33 +181,47 @@ export default function Navbar(props) {
     // MiniMenuMobile
 
     const handleMiniMenu = (event) => {
-        console.log(event)
-        const pokouLogo = event.currentTarget.parentElement
+
+        const pokouLogo = minimenuBtn.current.parentElement
         const shareLogoElement = shareLogo.current
         const bisouElement = bisouLogo.current
         if (!pokouLogo.classList.contains(`${style.active_pokou}`)) {
-            pokouLogo.classList.add(`${style.active_pokou}`)
-            console.log(minimenu.current)
-
-            setTimeout(() => {
-                shareLogoElement.classList.add(`${style.active_share_logo}`)
-                bisouElement.classList.add(`${style.active_bisou_logo}`)
-            }, 200)
-
+            openMiniMenu()
         } else {
-            console.log("oups")
-            shareLogoElement.classList.remove(`${style.active_share_logo}`)
-            bisouElement.classList.remove(`${style.active_bisou_logo}`)
-            setTimeout(() => {
-                pokouLogo.classList.remove(`${style.active_pokou}`)
-
-            }, 300)
-
-
-
+            closeMiniMenu()
         }
     }
 
+    // Ouvrir minimenu
+    const openMiniMenu = () => {
+        const pokouLogo = minimenuBtn.current.parentElement
+        const shareLogoElement = shareLogo.current
+        const bisouElement = bisouLogo.current
+        const bisousCompteur = bisouCompteur.current
+        pokouLogo.classList.add(`${style.active_pokou}`)
+        setTimeout(() => {
+            shareLogoElement.classList.add(`${style.active_share_logo}`)
+            bisouElement.classList.add(`${style.active_bisou_logo}`)
+        }, 200)
+        setTimeout(() => {
+            bisousCompteur.classList.add(`${style.show_compteur}`)
+        },600)
+    }
+
+    // Fermer minimenu
+    const closeMiniMenu = () => {
+        const pokouLogo = minimenuBtn.current.parentElement
+        const shareLogoElement = shareLogo.current
+        const bisouElement = bisouLogo.current
+        const bisousCompteur = bisouCompteur.current
+        shareLogoElement.classList.remove(`${style.active_share_logo}`)
+        bisouElement.classList.remove(`${style.active_bisou_logo}`)
+        bisousCompteur.classList.remove(`${style.show_compteur}`)
+
+        setTimeout(() => {
+            pokouLogo.classList.remove(`${style.active_pokou}`)
+        }, 300)
+    }
 
     // Partager la page
 
@@ -318,7 +338,42 @@ export default function Navbar(props) {
         setBurgerOpen(!burgerOpen)
     }
 
+    // créer des bisous
 
+    const handleBisous = () => {
+        ajouterBisous()
+        const bisou = document.createElement('img')
+        const bisouParent = bisouContainer.current
+        bisou.src="/coeurrouge.svg"
+        bisouParent.appendChild(bisou)
+
+        let delay = Math.random() * 200;
+        let destinationX = (Math.random() - 0.5) * 300;
+        let destinationY = (Math.random() - 0.5) * 300;
+        let rotation = Math.random() * 520;
+        let size = (Math.random() *3) +0.5
+
+
+        const animation = bisou.animate([
+            {
+                opacity: 1
+            },
+            {
+                transform: `translate(-50%, -50%) translate(${destinationX}px, ${destinationY}px) rotate(${rotation}deg) scale(${size})`,
+                opacity: 0,
+
+            }
+        ], {
+            duration: Math.random() * 1000 + 5000,
+            easing: 'cubic-bezier(0, .9, .57, 1)',
+            delay: delay
+        })
+        animation.onfinish = removeBisou;
+    }
+
+    const removeBisou = (e) => {
+        e.target.effect.target.remove();
+    }
 
     return (
         <TranslateOnScroll ref={completeNavbar}   isBurgerOpen={burgerOpen}>
@@ -423,13 +478,25 @@ export default function Navbar(props) {
                             <div ref={shareLogo} onClick={handleShare} className={style.share_logo}>
                                 <img className={style.share_button} src="/share.svg" alt="Share icon"/>
                             </div>
-                            <div ref={bisouLogo} className={style.bisous_logo}>
+                            <div ref={bisouLogo} onClick={handleBisous} className={style.bisous_logo}>
                                 <img className={style.share_button} src="/coeurcoeur.svg" alt="Bisou icon"/>
                             </div>
 
+                            <span ref={bisouCompteur} className={style.bisou_compteur}>
+                                {bisous > 0 &&
+                                <p>{bisous}</p>
+                                }
+
+
+                            </span>
+
                         </div>
 
-                        <img onClick={handleMiniMenu} src="/pokou_logo.svg" alt="Pokouweb logo"/>
+                        <img ref={minimenuBtn} onClick={handleMiniMenu} src="/pokou_logo.svg" alt="Pokouweb logo"/>
+                        <div ref={bisouContainer} className={style.bisous_container}>
+
+
+                        </div>
 
 
 

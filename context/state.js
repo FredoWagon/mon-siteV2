@@ -8,6 +8,8 @@ export function AppWrapper({ children }) {
     const [ourTeamAnimationDone, setOurTeamAnimationDone] = useState(false)
     // Mémoire de l'animation du logo dans la nav
     const [logoAnimation, setLogoAnimation] = useState(false)
+    // Compteur bisous
+    const [bisous, setBisous] = useState(0);
     // Change l'état pour l'anim bloc nous
     const setState = () => {
         setOurTeamAnimationDone(true)
@@ -15,6 +17,10 @@ export function AppWrapper({ children }) {
     // Change l'état pour l'anim du logo
     const setLogoAnimationState = ( ) => {
         setLogoAnimation(true)
+    }
+    // Ajouter un bisou
+    const ajouterBisous = () => {
+        setBisous(bisous +1)
     }
 
 
@@ -25,7 +31,9 @@ export function AppWrapper({ children }) {
         ourTeamAnimationDone,
         logoAnimation,
         setState,
-        setLogoAnimationState
+        setLogoAnimationState,
+        bisous,
+        ajouterBisous
     }
 
     return (
