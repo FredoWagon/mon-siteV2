@@ -26,7 +26,7 @@ export default function EcommerceGreenContent() {
                     </div>
                     <div className={style.ecommerce_green_content__text_bloc}>
                         <h3>2. Améliorer la visibilité de votre marque</h3>
-                        <p>L'équilibre entre les caractéristiques techniques et le look de votre marque est important. Notre technologie modulaire Everblox garantit que les boutiques en ligne peuvent être entièrement adaptées aux visuels de votre marque. Il est facile de modifier l'apparence du magasin, même si votre stratégie de contenu change.</p>
+                        <p>L'équilibre entre les caractéristiques techniques et le look de votre marque est important. L'identité visuelle claire et agréable de votre e-boutique couplé à une technologie adaptée sont les prérequis de votre succés en ligne.</p>
 
                     </div>
                     <div className={style.ecommerce_green_content__text_bloc}>
@@ -35,13 +35,8 @@ export default function EcommerceGreenContent() {
 
                     </div>
                     <div className={style.ecommerce_green_content__text_bloc}>
-                        <h3>4. Surveiller activement les objectifs</h3>
-                        <p>Un plan de surveillance approfondi sert de base structurelle pour la mesure. Nous construisons une image de vos clients à partir de plusieurs sources de données, vous aidons à identifier les opportunités de croissance importantes et soutenons votre entreprise en définissant des indicateurs clés pertinents.</p>
-
-                    </div>
-                    <div className={style.ecommerce_green_content__text_bloc}>
-                        <h3>5. Poursuite du développement et de l'optimisation</h3>
-                        <p>Un site Web de commerce électronique ne doit pas être un projet ponctuel, c'est pourquoi nous investissons toujours dans son développement. Par exemple, nous effectuons des tests A/B dans le cadre de l'optimisation des conversions, où nous nous efforçons de trouver des solutions meilleures et plus productives pour votre boutique en ligne. Avec le référencement, nous améliorons votre classement dans les moteurs de recherche, ce qui augmente considérablement la valeur du contenu de votre produit.</p>
+                        <h3>4. Poursuite du développement et de l'optimisation</h3>
+                        <p>Un site Web de e-commerce ne doit pas être un projet ponctuel, c'est pourquoi nous investissons toujours dans son développement. Avec le référencement, nous améliorons votre classement dans les moteurs de recherche, ce qui augmente considérablement la valeur du contenu de votre produit.</p>
 
                     </div>
 

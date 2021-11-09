@@ -146,7 +146,7 @@ export default function  TechnologieContentBloc() {
                         <div className={style.techno_subcontent__container}>
 
                             <div className={`${style.bubble_icons} ${style.techno_subcontent}`}>
-                                <h5>Création d'application no-code avancé</h5>
+
                                 <div className={style.techno_subcontent__icons}>
                                     <div className={style.subicons__container}>
                                         <img src="/Bubble_logo.svg" alt="Bubble icon" title="Bubble.io"/>

@@ -13,7 +13,7 @@ export default function DeveloppementHeaderBloc() {
             <SpeedFadeIn customClass="custom_webapp_header">
                 <div className={style.siteweb_header}>
                     <div className={style.siteweb_header__left}>
-                        <h1>développement web</h1>
+                        <h1>Développement web</h1>
                         <p>La conception est la première partie du projet, mais dans la phase de développement, le service en ligne commence à être intégré dans un tout concret.</p>
 
                         <Link href="/contact">

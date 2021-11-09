@@ -12,8 +12,8 @@ export default function WhyUsBloc() {
             <div className={style.why_us}>
                 <div className={style.why_us__content}>
                     <h2>Pourquoi nous choisir comme partenaire SEO ?</h2>
-                    <p>Notre équipe de référencement expérimentée assure votre visibilité numérique en restant toujours au courant des tendances du secteur et des changements d'algorithmes. Nous prenons toujours en compte la stratégie commerciale et les besoins uniques de nos clients lors de la création de stratégies en ligne efficaces. Lorsque vous nous choisissez, vous pouvez être sûr que vous travaillez avec les meilleurs du secteur.</p>
-                    <h3>Nous croyons en</h3>
+                    <p>Notre assurons  votre visibilité numérique en restant toujours au courant des tendances du secteur et des changements d'algorithmes. Nous prenons toujours en compte la stratégie commerciale et les besoins uniques de nos clients lors de la création de stratégies en ligne efficaces.</p>
+                    <h3>Nous croyons en :</h3>
                     <ul>
                         <li>Une stratégie de moteur de recherche pour soutenir vos objectifs commerciaux</li>
                         <li>Des solutions techniques sur mesure pour assurer une haute visibilité de votre site</li>

@@ -16,7 +16,7 @@ export default function MainInfoBloc() {
                         <h2>Une bonne expérience utilisateur signifie des clients satisfaits et plus de ventes.</h2>
                         <p>Il est fort possible que l'acheteur ne voie jamais le produit dans la vraie vie avant de prendre la décision d'achat. Par conséquent, votre présentation doit être meilleure que celle de vos concurrents pour que votre produit survive. Nous voulons vous aider à y arriver!</p>
                         <p>Nous adaptons nos solutions pour servir vos objectifs commerciaux uniques et créer une expérience complète autour des achats en ligne. Notre objectif est de présenter votre produit au public cible dans sa forme la plus honnête, afin qu'ils puissent presque sentir qu'il est là, devant eux. Nos principaux outils incluent Shopify et la plate-forme open source WooCommerce, deux des principales plates-formes de commerce électronique au monde. Le choix de l'open source garantit que vous n'êtes pas lié à un seul fournisseur de services et vous permet d'éviter des coûts imprévus.</p>
-
+<p>Pour des projets de plus grandes tailles, qui nécessitent des performances à la pointe, nos solutions sur mesure sont priorisées.</p>
                     </div>
                     <div className={style.text__bloc}>
                         <h2>Chaque produit est unique.</h2>

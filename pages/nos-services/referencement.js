@@ -18,7 +18,7 @@ export default function Sitesweb() {
                 <title>Référencement | PokouWeb, agence web</title>
                 <meta property="og:title" content="Référencement | PokouWeb, agence web" key="title" />
 
-                <meta name="description" content="Notre équipe de référencement expérimentée assure votre visibilité numérique en restant toujours au courant des tendances du secteur et des changements d'algorithmes." key="description"/>
+                <meta name="description" content="Nous assurons votre visibilité numérique en restant toujours au courant des tendances du secteur et des changements d'algorithmes." key="description"/>
 
                 <link rel="canonical" href="https://www.pokouweb.fr/nos-services/referencement" key="url_canonical"/>
                 <meta property="og:url" content="https://www.pokouweb.fr/nos-services/referencement" key="url"/>
