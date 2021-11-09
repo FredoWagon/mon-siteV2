@@ -15,7 +15,7 @@ export default function Footer(props) {
         <div className={style.footer}>
             <div className={style.footer_desktop}>
                 <div className={style.footer__top}>
-                    <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>
+                    <p>Nous accompagnons nos clients pour qu'ils voient grand avec leur entreprise.</p>
                     <div className={style.footer__sitemap}>
                         <div className={style.sitemap_item}>
                             <ul>
@@ -138,7 +138,7 @@ export default function Footer(props) {
                 </div>
             </div>
             <div className={style.footer_mobile}>
-                <p>Nous libérons nos clients pour qu'ils voient grand avec leur marque.</p>
+                <p>Nous accompagnons nos clients pour qu'ils voient grand avec leur entreprise.</p>
                 <div className={style.footer_mobile__mail}>
                     <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
                     <span>TEL : <a href="tel:+33768178697">07 68 17 86 97</a> </span>
@@ -263,7 +263,14 @@ export default function Footer(props) {
 
             </div>
             <div className={style.footer_logo__image}>
-                <img width="96"  height="96" src="/pokou_logo.svg" alt="Pokouweb logo"/>
+                <div className={style.logo_image_footer__container}>
+                    <img width="96"  height="96" src="/pokou_logo.svg" alt="Pokouweb logo"/>
+                    <div className={style.image_text_animation}>
+                        <img src="/bulle.svg" alt="bulle db"/>
+                        <p>Pokoù signifie <mark>« bisous »</mark> en breton !</p>
+                    </div>
+                </div>
+
 
             </div>
         </div>

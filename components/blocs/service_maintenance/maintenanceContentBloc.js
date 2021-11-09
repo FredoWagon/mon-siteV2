@@ -12,7 +12,7 @@ export default function MaintenanceContentBloc() {
         <div className={style.maintenance_content__container}>
             <div className={style.maintenance_content}>
                 <div className={style.maintenance_intro_text}>
-                    <p>La maintenance du service, l'hébergement et le développement à petite échelle sont sous la responsabilité de notre équipe Care. Cela permet une surveillance et un développement proactifs des services, des réponses rapides aux tickets d'assistance et des réactions rapides en cas de problèmes. Nous nous assurons que votre service Web est sûr et à jour à tout moment et qu'il suit les changements constants du monde en ligne.</p>
+                    <p>La maintenance du service, l'hébergement et le développement à petite échelle sont sous la responsabilité de notre équipe. Cela permet une surveillance et un développement proactifs des services, des réponses rapides aux tickets d'assistance et des réactions rapides en cas de problèmes. Nous nous assurons que votre service Web est sûr et à jour à tout moment et qu'il suit les changements constants du monde en ligne.</p>
                 </div>
                 <div className={style.maintenance__menu}>
                     <div className={style.maintenance_menu__item}>
@@ -25,7 +25,7 @@ export default function MaintenanceContentBloc() {
                     </div>
                     <div className={style.maintenance_menu__item}>
                         <h2>N'attendez pas. Développer davantage.</h2>
-                        <p>Si vous avez une idée que vous souhaitez mettre en œuvre, faites-le nous savoir et nous la transformerons en quelque chose de tangible. Le temps de réaction moyen est de 5 heures et le temps de résolution de 36 heures à compter de la demande – souvent encore plus rapide.</p>
+                        <p>Si vous avez une idée que vous souhaitez mettre en œuvre, faites-le nous savoir et nous la transformerons en quelque chose de tangible.</p>
                     </div>
 
                 </div>

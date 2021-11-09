@@ -15,7 +15,7 @@ export default function WorkBloc() {
             <div className={style.work_bloc}>
 
                 <div id="travaux_anchor" className={style.work_intro}>
-                    <FadeTranslateTopWhenVisible tresholdOption={1} triggerOnceOption={false} animation="middle_mark_bleu">
+                    <FadeTranslateTopWhenVisible tresholdOption={0.5} triggerOnceOption={false} animation="middle_mark_bleu">
                         <h2>Nos derniers <mark>projets</mark> </h2>
                         <p>Regardez ce que nous pouvons créer ensemble, épaule contre épaule. Une excellente communication et des processus bien construits sont les clés du monde des projets parfaitement adaptés.</p>
 

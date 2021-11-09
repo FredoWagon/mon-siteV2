@@ -16,6 +16,12 @@
       opacity: 1;
       transition: transform 1s ease, opacity 0.3s ease;
       transform: translate(-3rem, -3rem);
+      .logo_image_footer__container {
+        .image_text_animation {
+          opacity: 1;
+          transition: opacity 1s ease;
+        }
+      }
     }
     @media (min-width: 960px) and (max-width: 1439px) {
       left: 63%;
@@ -25,6 +31,46 @@
     }
     @media (max-width: 719px) {
       display: none;
+    }
+    .logo_image_footer__container {
+      position: relative;
+      .image_text_animation {
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        position: absolute;
+        top: 0rem;
+        left: 7rem;
+        @media (min-width: 720px) and (max-width: 989px) {
+          left: 6.5rem;
+        }
+        img {
+          transform: rotate(90deg);
+
+        }
+        p {
+          font-family: 'Sue Ellen Francisco', cursive;
+          margin-left: 1rem;
+          white-space: nowrap;
+          font-size: 1.7rem;
+          transform: translateY(-0.3rem);
+          mark {
+            padding: unset;
+            background-color: unset;
+            color: #ff3737;
+            filter: invert(1);
+          }
+          @media (min-width: 720px) and (max-width: 989px) {
+            min-width: 8rem;
+            line-height: 1.5rem;
+            font-size: 1.4rem;
+            white-space: unset;
+            margin-left: 0.5rem;
+          }
+
+
+        }
+      }
     }
   }
 

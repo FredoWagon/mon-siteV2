@@ -15,16 +15,16 @@ export default function ConceptionContentBloc() {
                 <div className={style.conception_content__menu}>
                     <div className={style.conception_menu__item}>
                         <h3>Les inventions plutôt que les conventions</h3>
-                        <p>La perspicacité humaine et les idées originales nous font avancer</p>
+                        <p>La perspicacité humaine et les idées originales nous font avancer dans notre travail</p>
 
                     </div>
                     <div className={style.conception_menu__item}>
                         <h3>Curiosité</h3>
-                        <p>Nous apprenons et jouons</p>
+                        <p>Chaque projet est pour nous l'occasion d'apprendre et de nous amuser</p>
                     </div>
                     <div className={style.conception_menu__item}>
                         <h3>Fonctionnalisme</h3>
-                        <p>La cohérence et la modularité créent l'harmonie</p>
+                        <p>La cohérence et la modularité créent l'harmonie d'une solution aboutie</p>
                     </div>
                     <div className={style.conception_menu__item}>
                         <h3>Une première approche humaine</h3>
@@ -51,11 +51,11 @@ export default function ConceptionContentBloc() {
                     </div>
                     <div className={`${style.menu__item__bigger_with} ${style.conception_menu__item}`}>
                         <h3>Conception de l'expérience utilisateur</h3>
-                        <p>Une expérience utilisateur de premier ordre est essentielle pour faire aimer votre marque aux utilisateurs et les amener à revenir à votre service encore et encore. Notre équipe primée s'assure que les interactions entre l'utilisateur et le service fonctionnent bien à chaque étape du parcours de l'utilisateur.</p>
+                        <p>Une expérience utilisateur de premier ordre est essentielle pour faire aimer votre marque aux utilisateurs et les amener à revenir à votre service encore et encore. Nous nous assurons que les interactions entre l'utilisateur et le service fonctionnent bien à chaque étape du parcours de l'utilisateur.</p>
                     </div>
                     <div className={`${style.menu__item__bigger_with} ${style.conception_menu__item}`}>
                         <h3>Conception graphique</h3>
-                        <p>Logos, icônes, infographies – vous l'appelez. Nous créons des identités visuelles qui soutiennent votre marque, cultivons l'intérêt des bonnes personnes et vous démarquent de la foule.</p>
+                        <p>Logos, icônes, infographies.. Nous créons des identités visuelles qui soutiennent votre marque, cultivons l'intérêt des bonnes personnes et vous démarquent de la foule.</p>
                     </div>
                     <div className={`${style.menu__item__bigger_with} ${style.conception_menu__item}`}>
                         <h3>Compréhension commerciale</h3>

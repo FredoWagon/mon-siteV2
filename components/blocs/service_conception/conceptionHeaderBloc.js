@@ -13,10 +13,9 @@ export default function ConceptionHeaderBloc() {
             <SpeedFadeIn customClass="custom_siteweb_header">
                 <div className={style.siteweb_header}>
                     <div className={style.siteweb_header__left}>
-                        <h1>Design créatif</h1>
-                        <p>Le produit final de la conception numérique peut être un simple site Web - c'est ce que vous avez encore aujourd'hui. Le résultat final peut également être plus expérimental, comme un jeu, une application Web ou quelque chose entre les deux. Cela peut aussi être quelque chose de très concret, comme une exposition d'informations dans une université, une bibliothèque ou un musée.</p>
-
-                        <p>Nous aimons toutes sortes de conception numérique et sommes passionnés par la combinaison de technologies intéressantes et de créativité avec les besoins des utilisateurs.</p>
+                        <h1>Design et conception numérique</h1>
+                        <p>Nous aimons toutes sortes de conception numérique et sommes passionnés par la combinaison de la technologies et de la créativité au service des besoins des utilisateurs.</p>
+                        <p>Le produit final de la conception numérique peut être un simple site vitrine - comme celui ci, il peut également être plus expérimental, comme un jeu, une application Web ou quelque chose entre les deux.</p>
                         <Link href="/contact">
                             <a>
                                 <p>Parlons-en !</p>
