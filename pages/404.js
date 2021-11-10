@@ -13,11 +13,9 @@ export default function Custom404() {
         const currentPage = window.location.pathname.replace("/", "")
         setPageName(currentPage)
         console.log(currentPage)
-        document.addEventListener("DOMContentLoaded", animation);
-        return () => {
-            document.removeEventListener("DOMContentLoaded", animation);
-        }
+        animation();
     })
+    
 
 
     const animation = () => {
