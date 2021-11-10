@@ -30,16 +30,13 @@
       }
 
       .oups_image_container {
-        bottom: 32rem;
-
         right: calc(50% - 4.5rem);
+        bottom: 3rem;
         position: absolute;
         transform: translateY(-30rem);
         &.image_animation {
           transition: transform 1s ease;
           transform: translateY(0);
-
-          bottom: 3rem;
         }
 
         .oups_image {
