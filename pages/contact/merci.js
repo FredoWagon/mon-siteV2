@@ -9,7 +9,7 @@ export default function  Merci() {
 
 
     return (
-        <Layout currentPage="contact" navbarStyle="background--white">
+        <Layout currentPage="merci" navbarStyle="background--white">
             <MerciBloc/>
         </Layout>
     )

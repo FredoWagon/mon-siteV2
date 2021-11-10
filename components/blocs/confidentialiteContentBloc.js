@@ -132,7 +132,7 @@ export default function ConfidentialiteContentBloc() {
                         </div>
 
                         <Link href="/">
-                            <a>Retour à l'acceuil</a>
+                            <a>Retour à l'accueil</a>
                         </Link>
 
 

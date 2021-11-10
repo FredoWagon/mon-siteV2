@@ -83,7 +83,8 @@ export default function Navbar(props) {
                 referencement: serviceLink.current,
                 itineraire: travauxLink.current,
                 technologie: serviceLink.current,
-                maintenance: serviceLink.current
+                maintenance: serviceLink.current,
+                merci: contactLink.current
 
             }
 

@@ -3,6 +3,9 @@
   background-color: #222222;
   position: relative;
   overflow: hidden;
+  &.black_merci_background {
+    background-color: #060708;
+  }
 
   .footer_logo__image {
     position: absolute;

@@ -1,0 +1,120 @@
+.error__container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 526px) {
+    justify-content: unset;
+  }
+
+  .error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .animation_box {
+      position: relative;
+      h1 {
+        font-size: 9.5rem;
+        margin: unset;
+        opacity: 0;
+        span {
+          margin: 0 5rem;
+
+        }
+        &.title_animation {
+          opacity: 1;
+          transition: opacity 2s ease;
+        }
+      }
+
+      .oups_image_container {
+        bottom: 32rem;
+
+        right: calc(50% - 4.5rem);
+        position: absolute;
+        transform: translateY(-30rem);
+        &.image_animation {
+          transition: transform 1s ease;
+          transform: translateY(0);
+
+          bottom: 3rem;
+        }
+
+        .oups_image {
+          position: relative;
+          img {
+            width: 9rem;
+
+          }
+          .oups_text {
+            opacity: 0;
+            display: flex;
+            top: -3rem;
+            right: -7rem;
+            transform: rotate(
+                            -13deg);
+
+            position: absolute;
+            img {
+              width: 1rem;
+              transform: rotate(90deg);
+            }
+            p {
+              margin-left: 0.5rem;
+              font-size: 1.8rem;
+              transform: translateY(-0.2rem);
+            }
+            &.oups_animation {
+              opacity: 1;
+              transition:opacity 1s ease;
+            }
+          }
+        }
+
+      }
+
+
+    }
+    .animation_texte {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(4rem);
+      p {
+        font-size: 1.8rem;
+        mark {
+          color: #222;
+          font-size: 2rem;
+          background-color: unset;
+          padding: unset;
+          font-weight: 700;
+
+        }
+      }
+      a {
+        margin-top: 2rem;
+        border: 1px solid #222222;
+        padding: 1.3rem 2.3rem;
+
+        &:hover {
+          background-color: #222222;
+          color: white;
+        }
+      }
+
+      &.texte_animation {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 1s ease, transform 1s ease;
+      }
+
+    }
+
+
+
+  }
+
+}

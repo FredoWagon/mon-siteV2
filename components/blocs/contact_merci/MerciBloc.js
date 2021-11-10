@@ -24,7 +24,7 @@ export default function MerciBloc() {
                     <h1>Nous avons reçu votre message!</h1>
                     <p>Merci de nous avoir contacté! Nous vous répondrons sous peu.</p>
                     <Link href="/">
-                        <a>Aller à la page d'acceuil</a>
+                        <a>Aller à la page d'accueil</a>
                     </Link>
                 </div>
 

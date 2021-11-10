@@ -12,7 +12,7 @@ export default function Footer(props) {
 
 
     return (
-        <div className={style.footer}>
+        <div className={`${props.currentPage === "merci" ? style.black_merci_background : ""} ${style.footer}`}>
             <div className={style.footer_desktop}>
                 <div className={style.footer__top}>
                     <p>Nous accompagnons nos clients pour qu'ils voient grand avec leur entreprise.</p>
@@ -27,7 +27,7 @@ export default function Footer(props) {
                         </div>
                         <div className={style.sitemap_item}>
                             <ul>
-                                <li  className={ props.currentPage === "contact" ? style.active_current_page : ""}> <Link href="/contact" >Contact</Link></li>
+                                <li  className={ ["contact", "merci"].includes(props.currentPage) ? style.active_current_page : ""}> <Link href="/contact" >Contact</Link></li>
                                 <li  className={ props.currentPage === "confidentialite" ? style.active_current_page : ""}> <Link href="/politique-de-confidentialite" >Politique de confidentialité</Link></li>
                             </ul>
                         </div>
@@ -170,7 +170,7 @@ export default function Footer(props) {
                             <li className={`${ props.currentPage === "services" ? style.active_current_page : ""} ${["creationweb", "applicationweb", "ecommerce", "referencement", "developpement", "conception", "maintenance", "technologie"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/nos-services" >Nos services</Link></li>
                             <li className={`${["dashboard", "medtandem", "trendcorner", "onepalm", "itineraire"].includes(props.currentPage) ? style.active_parent_page : "" }`}> <Link href="/#travaux_anchor">Travaux</Link></li>
                             <li  className={ props.currentPage === "nous" ? style.active_current_page : ""}> <Link href="/a-propos">A propos</Link></li>
-                            <li  className={ props.currentPage === "contact" ? style.active_current_page : ""}> <Link href="/contact" >Contact</Link></li>
+                            <li  className={ ["contact", "merci"].includes(props.currentPage) ? style.active_current_page : ""}> <Link href="/contact" >Contact</Link></li>
                         </ul>
                     </div>
 

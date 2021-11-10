@@ -102,7 +102,7 @@ export default function MentionsContentBloc() {
 
                         </div>
                         <Link href="/">
-                            <a>Retour à l'acceuil</a>
+                            <a>Retour à l'accueil</a>
                         </Link>
 
 
