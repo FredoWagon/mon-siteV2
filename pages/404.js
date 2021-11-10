@@ -10,12 +10,12 @@ export default function Custom404() {
     const oupsText = useRef(null);
 
     useEffect(() => {
-        imageAnimation.current.classList.remove(`${style.image_animation}`)
+       
         const currentPage = window.location.pathname.replace("/", "")
         setPageName(currentPage)
         console.log(currentPage)
         animation();
-    })
+    }, [])
 
     const animation = () => {
         imageAnimation.current.classList.add(`${style.image_animation}`)
