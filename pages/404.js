@@ -15,11 +15,13 @@ export default function Custom404() {
         console.log(currentPage)
         animation();
     })
-    
+
 
 
     const animation = () => {
-        imageAnimation.current.classList.add(`${style.image_animation}`)
+        setTimeout(() => {
+            imageAnimation.current.classList.add(`${style.image_animation}`)
+        }, 50)
         setTimeout(() => {
             oupsText.current.classList.add(`${style.oups_animation}`)
         }, 900)
