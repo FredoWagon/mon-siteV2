@@ -85,6 +85,9 @@
       transform: translateY(4rem);
       p {
         font-size: 1.8rem;
+        span {
+          opacity: 0.5;
+        }
         mark {
           color: #222;
           font-size: 2rem;

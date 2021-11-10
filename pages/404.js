@@ -11,6 +11,7 @@ export default function Custom404() {
 
     useEffect(() => {
         const currentPage = window.location.pathname.replace("/", "")
+
         setPageName(currentPage)
         console.log(currentPage)
         animation();
@@ -52,7 +53,7 @@ export default function Custom404() {
                     </div>
                 </div>
                 <div ref={textAnimation} className={style.animation_texte}>
-                    <p>La page <mark>{pageName}</mark> n'existe pas.</p>
+                    <p>La page <span>pokouweb.fr/</span><mark>{pageName}</mark> n'existe pas.</p>
                     <Link href="/">
                         <a>Retourner à l'accueil</a>
                     </Link>
