@@ -168,6 +168,11 @@
 
   }
   &.webapp_header {
+
+    @media (min-width: 1440px) {
+      padding-bottom: 5rem;
+
+    }
     .siteweb_header {
       .siteweb_header__right {
         img {
@@ -210,6 +215,10 @@
     }
   }
   &.ecommerce_header {
+    @media (min-width: 1440px) {
+      padding-bottom: 5rem;
+
+    }
     .siteweb_header {
       .siteweb_header__right {
         img {

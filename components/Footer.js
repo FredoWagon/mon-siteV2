@@ -105,17 +105,19 @@ export default function Footer(props) {
                         <span>TEL : <a href="tel:+33768178697">07 68 17 86 97</a> </span>
 
                     </div>
-                    {/*    <div className={style.footer__social_links}>
+                    {/*
+                        <div className={style.footer__social_links}>
                         <span>
-                            <Image width="16" lazyBoundary="500px" height="16" alt="Facebook logo" src="/pokouweb/facebook_jfpi5f.svg"/>
-                            <Link href="/">FaceBook</Link>
+                             <img className={style.sociale_linkedin} src="/linkedin.svg" alt="Linkedin icon"/>
+                            <a target="_blank" href="https://www.linkedin.com/company/poko%C3%B9web/about/">LinkedIn</a>
                         </span>
                         <span>
                              <Image width="16" lazyBoundary="500px" height="16"  alt="Instagram logo" src="/pokouweb/instagram_ibds5h.svg"/>
                             <Link href="/">Instagram</Link>
                         </span>
 
-                    </div>*/}
+                    </div>
+                    */}
 
                     <div className={style.footer__adress}>
                         <div className={style.adress_item}>
@@ -151,13 +153,13 @@ export default function Footer(props) {
                     <span>TEL : <a href="tel:+33768178697">07 68 17 86 97</a> </span>
                 </div>
 
+                {/*
 
-                {/* <div className={style.footer_mobile__social}>
+                <div className={style.footer_mobile__social}>
                     <div className={style.footer_social__item}>
-                        <Link href="/">
-                            <a>
-                                <Image width="19" lazyBoundary="500px" height="19" alt="Facebook logo" src="/pokouweb/facebook_jfpi5f.svg"/>
-                            </a></Link>
+                            <a target="_blank" href="https://www.linkedin.com/company/poko%C3%B9web/about/" >
+                                <img className={style.sociale_linkedin} src="/linkedin.svg" alt="Linkedin icon"/>
+                            </a>
                     </div>
                     <div className={style.footer_social__item}>
                         <Link href="/">
@@ -168,7 +170,8 @@ export default function Footer(props) {
 
 
 
-                </div> */}
+                </div>
+                */}
 
                 <div className={style.footer_mobile__links}>
                     <div className={style.footer_mobile__links__global}>
