@@ -18,6 +18,16 @@ class MyDocument extends Document {
                     <meta property="og:image" content="https://res.cloudinary.com/dbzdlk98a/image/upload/v1634653847/pokouweb/test_pokouweb_esk1q3.png"/>
                     <meta property="og:site_name" content="PokouWeb, agence web à Rennes et Bordeaux"/>
                     <meta property="og:locale" content="fr_FR"/>
+                    {/* Lead the way */}
+                    <script
+                        strategy="afterInteractive"
+                        dangerouslySetInnerHTML={{
+                            __html: `
+    window.ltwAsyncInit = function(){init_multiplegl('https://gl.hostcg.com/',[['https://gl.hostcg.com/','4201','4nuo8woyqy']]);};
+  `,
+                        }}
+                    />
+                    <script type="text/javascript" src="https://gl.hostcg.com/js/genlead.js" defer/>
 
                     {/*google font*/}
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>

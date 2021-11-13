@@ -32,7 +32,6 @@ export default function Custom404() {
             textAnimation.current.classList.add(`${style.texte_animation}`)
         }, 1500)
     }
-
     return (
         <div className={style.error__container}>
             <div className={style.error}>

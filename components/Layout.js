@@ -24,6 +24,7 @@ export default function Layout(props) {
 
 
 
+
             <Navbar currentPage={props.currentPage} backgroundColor={props.navbarStyle}/>
 
             <main>{props.children}</main>

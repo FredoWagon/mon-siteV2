@@ -118,9 +118,16 @@ export default function Footer(props) {
                     </div>*/}
 
                     <div className={style.footer__adress}>
-                        <p>L'Hertimate</p>
-                        <p>9 Rue Jeanne Jugan</p>
-                        <p>35000 Rennes</p>
+                        <div className={style.adress_item}>
+                            <p className={style.adress_title}>L'Hertimate</p>
+                            <p>9 Rue Jeanne Jugan</p>
+                            <p>35590</p>
+                        </div>
+                        <div className={style.adress_item}>
+                            <p className={style.adress_title}>Lormont</p>
+                            <p> 43 Rue Marc Tallavi</p>
+                            <p>33310</p>
+                        </div>
                     </div>
                 </div>
                 <div className={style.footer__bottom}>

@@ -231,7 +231,7 @@ export default function Navbar(props) {
         try {
             const shareData = {
                 title: "PokouWeb | Agence Digitale",
-                text: "Réalisez votre potentiel en ligne !",
+                text: "Nous créons des sites Web intelligents et beaux!",
                 url: "https://www.pokouweb.fr"
             }
             await navigator.share(shareData)
@@ -354,7 +354,6 @@ export default function Navbar(props) {
         let rotation = Math.random() * 520;
         let size = (Math.random() *3) +0.5
 
-
         const animation = bisou.animate([
             {
                 opacity: 1
@@ -362,7 +361,6 @@ export default function Navbar(props) {
             {
                 transform: `translate(-50%, -50%) translate(${destinationX}px, ${destinationY}px) rotate(${rotation}deg) scale(${size})`,
                 opacity: 0,
-
             }
         ], {
             duration: Math.random() * 1000 + 5000,

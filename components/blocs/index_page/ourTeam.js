@@ -153,6 +153,7 @@ export default function OurTeam() {
                 window.scrollTo({top: elementTopPosition, behavior: 'smooth'})
                 titleAnimation()
                 setTimeout(() => {
+
                     body.classList.remove('stop_scrolling')
                     body.style.paddingRight = ""
                 }, 1500)
