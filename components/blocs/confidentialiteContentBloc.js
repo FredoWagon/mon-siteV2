@@ -75,16 +75,16 @@ export default function ConfidentialiteContentBloc() {
                             <p>Dans le cas où vous ne souhaitez pas que nous installions de cookies sur votre ordinateur, vous pouvez désactiver l’installation des cookies dans votre navigateur.
                                 Vous trouverez l’ensemble des informations pour désactiver les cookies pour chacun des navigateurs suivants :</p>
                             <p> Chrome :</p>
-                                <a href="https://support.google.com/chrome/answer/95647?hl=fr&ref_topic=14666" target="_blank">https://support.google.com/chrome/answer/95647?hl=fr&ref_topic=14666</a>
+                                <a rel="noreferrer" href="https://support.google.com/chrome/answer/95647?hl=fr&ref_topic=14666" target="_blank">https://support.google.com/chrome/answer/95647?hl=fr&ref_topic=14666</a>
                             <p> Internet Explorer:</p>
-                                <a href=" https://support.microsoft.com/fr-fr/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank"> https://support.microsoft.com/fr-fr/help/17442/windows-internet-explorer-delete-manage-cookies</a>
+                                <a rel="noreferrer" href=" https://support.microsoft.com/fr-fr/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank"> https://support.microsoft.com/fr-fr/help/17442/windows-internet-explorer-delete-manage-cookies</a>
                             <p> Firefox :</p>
-                                <a href="https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox-ordinateur" target="_blank">https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox-ordinateur</a>
+                                <a rel="noreferrer" href="https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox-ordinateur" target="_blank">https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox-ordinateur</a>
                             <p>
                                 Safari :</p>
-                                <a href="https://support.apple.com/fr-fr/HT201265" target="_blank">https://support.apple.com/fr-fr/HT201265</a>
+                                <a rel="noreferrer" href="https://support.apple.com/fr-fr/HT201265" target="_blank">https://support.apple.com/fr-fr/HT201265</a>
                             <p> Opéra :</p>
-                                <a href="https://help.opera.com/en/latest/web-preferences/" target="_blank">https://help.opera.com/en/latest/web-preferences/</a>
+                                <a rel="noreferrer" href="https://help.opera.com/en/latest/web-preferences/" target="_blank">https://help.opera.com/en/latest/web-preferences/</a>
                                </div>
                         <div className={style.confidentialite__maint__text_bloc}>
                             <h2>4. Comment nous utilisons les informations</h2>
