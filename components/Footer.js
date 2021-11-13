@@ -103,22 +103,16 @@ export default function Footer(props) {
                     <div className={style.footer__mail}>
                         <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
                         <span>TEL : <a href="tel:+33768178697">07 68 17 86 97</a> </span>
-
                     </div>
-                    {/*
+
                         <div className={style.footer__social_links}>
                         <span>
                              <img className={style.sociale_linkedin} src="/linkedin.svg" alt="Linkedin icon"/>
                             <a target="_blank" href="https://www.linkedin.com/company/poko%C3%B9web/about/">LinkedIn</a>
                         </span>
-                        <span>
-                             <Image width="16" lazyBoundary="500px" height="16"  alt="Instagram logo" src="/pokouweb/instagram_ibds5h.svg"/>
-                            <Link href="/">Instagram</Link>
-                        </span>
+
 
                     </div>
-                    */}
-
                     <div className={style.footer__adress}>
                         <div className={style.adress_item}>
                             <p className={style.adress_title}>L'Hertimate</p>
@@ -153,7 +147,7 @@ export default function Footer(props) {
                     <span>TEL : <a href="tel:+33768178697">07 68 17 86 97</a> </span>
                 </div>
 
-                {/*
+
 
                 <div className={style.footer_mobile__social}>
                     <div className={style.footer_social__item}>
@@ -161,17 +155,9 @@ export default function Footer(props) {
                                 <img className={style.sociale_linkedin} src="/linkedin.svg" alt="Linkedin icon"/>
                             </a>
                     </div>
-                    <div className={style.footer_social__item}>
-                        <Link href="/">
-                            <a><Image width="19" lazyBoundary="500px" height="19"  alt="Instagram logo" src="/pokouweb/instagram_ibds5h.svg"/></a></Link>
-                    </div>
-
-
-
-
 
                 </div>
-                */}
+
 
                 <div className={style.footer_mobile__links}>
                     <div className={style.footer_mobile__links__global}>
