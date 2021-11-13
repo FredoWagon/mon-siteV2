@@ -101,14 +101,14 @@ export default function Footer(props) {
                 </div>
                 <div className={style.footer__middle}>
                     <div className={style.footer__mail}>
-                        <a href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
+                        <a  href="mailto:contact@pokouweb.fr">contact@pokouweb.fr</a>
                         <span>TEL : <a href="tel:+33768178697">07 68 17 86 97</a> </span>
                     </div>
 
                         <div className={style.footer__social_links}>
                         <span>
                              <img className={style.sociale_linkedin} src="/linkedin.svg" alt="Linkedin icon"/>
-                            <a target="_blank" href="https://www.linkedin.com/company/poko%C3%B9web/about/">LinkedIn</a>
+                            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/poko%C3%B9web/about/">LinkedIn</a>
                         </span>
 
 
@@ -151,7 +151,7 @@ export default function Footer(props) {
 
                 <div className={style.footer_mobile__social}>
                     <div className={style.footer_social__item}>
-                            <a target="_blank" href="https://www.linkedin.com/company/poko%C3%B9web/about/" >
+                            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/poko%C3%B9web/about/" >
                                 <img className={style.sociale_linkedin} src="/linkedin.svg" alt="Linkedin icon"/>
                             </a>
                     </div>
