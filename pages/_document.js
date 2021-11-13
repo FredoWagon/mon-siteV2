@@ -20,7 +20,6 @@ class MyDocument extends Document {
                     <meta property="og:locale" content="fr_FR"/>
                     {/* Lead the way */}
                     <script
-                        strategy="afterInteractive"
                         dangerouslySetInnerHTML={{
                             __html: `
     window.ltwAsyncInit = function(){init_multiplegl('https://gl.hostcg.com/',[['https://gl.hostcg.com/','4201','4nuo8woyqy']]);};
