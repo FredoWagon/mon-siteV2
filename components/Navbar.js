@@ -429,9 +429,8 @@ export default function Navbar(props) {
                             </div>
                         </div>
                         <div className={style.navbar__bottom__mobile}>
-                            <Link  href="/"><a className={`${ style.is_visible}`}><span>P</span><span className={style.pokou_logo_mobile}>
-                              <Image width="23.36" priority={true} alt="Pokou web logo" height="23.36" src="/pokouweb/pokou_logo_cjfdqe.svg"/>
-                        </span>KOÙ WEB</a></Link>
+
+                            <Link  href="/"><a className={`${ style.is_visible}`}> <img ref={titleLogo} src="/pokou_title_black.svg" alt="Pokouweb Title" /></a></Link>
                             <div  onClick={openBurgerMenu} className={ `${style.burger__icon} ${burgerBlackVersion ? style.black_version : ""} ${burgerOpen ? style.is_open : ""}` }>
                                 <div className={style.icon__span}></div>
                                 <svg x="0" y="0"  width="54px" height="54px" viewBox="0 0 54 54">

@@ -24,9 +24,12 @@
     color: black !important;
 
     .navbar__bottom {
+      a {
+        filter: invert(0) !important;
+      }
       .navbar__bottom__mobile {
         .pokou_logo_mobile {
-          filter: invert(0) !important;
+
         }
         .burger__icon {
           svg {
@@ -180,24 +183,15 @@
         a {
           position: relative;
           font-weight: bold;
-          margin: 0.5rem 0;
-          font-size: 2rem;
+          margin: 0.25rem 0;
           opacity: 0;
-          padding-left: 2.85rem;
-
           &.is_visible {
             opacity: 1;
             transition: opacity 1.5s ;
           }
-          span {
-            position: absolute;
-            left: 0;
-          }
-          .pokou_logo_mobile {
-            position: absolute;
-            width: 1.46rem;
-            left: 1.35rem;
-
+          img {
+            height: 2rem;
+            margin: 0.5rem 0;
           }
         }
 
@@ -330,9 +324,10 @@
           }
         }
         .navbar__bottom__mobile {
-          .pokou_logo_mobile {
+          a {
             filter: invert(1);
           }
+
         }
       }
 
@@ -379,6 +374,9 @@
 
       }
       .navbar__bottom {
+        a {
+          filter: invert(1);
+        }
         .navbar__bottom__desktop {
           .nav__links_bullet {
             background-color: white;
@@ -423,6 +421,9 @@
 
       }
       .navbar__bottom {
+        a {
+          filter: invert(1);
+        }
         .navbar__bottom__desktop {
           .nav__links_bullet {
             background-color: white;

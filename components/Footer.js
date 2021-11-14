@@ -200,7 +200,7 @@ export default function Footer(props) {
                                     <Link href="/nos-services/site-web">Création web</Link>
                                 </li>
                                 <li className={props.currentPage === "applicationweb" ? style.active_current_page : ""}>  <Link href="/nos-services/application-web">Applications web</Link></li>
-                                <li className={props.currentPage === "ecommerce" ? style.active_current_page : ""}> <Link href="/nos-services/ec-ommerce">E-commerce</Link></li>
+                                <li className={props.currentPage === "ecommerce" ? style.active_current_page : ""}> <Link href="/nos-services/e-commerce">E-commerce</Link></li>
                             </ul>
                         </div>
                         <div className={style.footer_mobile__links__sub_services}>
