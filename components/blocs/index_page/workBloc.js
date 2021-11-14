@@ -95,7 +95,7 @@ export default function WorkBloc() {
                                         <div className={style.view_project}>
                                             <p>Voir le projet</p>
                                         </div>
-                                        <Image lazyBoundary="500px" alt="One palm - projet" layout="fill" src="/pokouweb/onepalm_card_bjcyv6_hydfyr.webp"/>
+                                        <Image lazyBoundary="500px" alt="One palm - projet" layout="fill" src="/pokouweb/onepalm_card2_ihdxjj_w8dasa.webp"/>
                                     </div>
                                 </div>
                                 <div className={style.work_item__text}>
