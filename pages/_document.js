@@ -22,7 +22,7 @@ class MyDocument extends Document {
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `
-    window.ltwAsyncInit = function(){init_multiplegl('https://gl.hostcg.com/',[['https://gl.hostcg.com/','4201','4nuo8woyqy']]);};
+    window.ltwAsyncInit = function(){init_multiplegl('https://gl.hostcg.com/',[['https://gl.hostcg.com/','4201','4nuo8woyqy']]);
   `,
                         }}
                     />
