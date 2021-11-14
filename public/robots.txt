@@ -1,6 +1,8 @@
 User-agent: *
-Allow: /*
 
 Disallow: /api/*
+Disallow: /travaux/*
+Disallow: /politique-de-confidentialite
+Disallow: mentions-legales
 
 Sitemap: https://www.pokouweb.fr/sitemap.xml
