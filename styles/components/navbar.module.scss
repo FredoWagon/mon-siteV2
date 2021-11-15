@@ -369,13 +369,17 @@
         a {
           opacity: 1;
           filter: invert(1);
+
         }
 
 
       }
       .navbar__bottom {
         a {
-          filter: invert(1);
+          img {
+            filter: invert(1);
+          }
+
         }
         .navbar__bottom__desktop {
           .nav__links_bullet {
@@ -422,7 +426,9 @@
       }
       .navbar__bottom {
         a {
-          filter: invert(1);
+          img {
+            filter: invert(1);
+          }
         }
         .navbar__bottom__desktop {
           .nav__links_bullet {
