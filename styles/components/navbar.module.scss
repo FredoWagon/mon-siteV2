@@ -375,18 +375,19 @@
 
       }
       .navbar__bottom {
-        a {
 
-            filter: invert(1);
-
-
-        }
         .navbar__bottom__desktop {
           .nav__links_bullet {
             background-color: white;
           }
         }
         .navbar__bottom__mobile {
+          a {
+
+            filter: invert(1);
+
+
+          }
           .pokou_logo_mobile {
             filter: invert(1);
           }
@@ -425,17 +426,18 @@
 
       }
       .navbar__bottom {
-        a {
-
-            filter: invert(1);
-
-        }
         .navbar__bottom__desktop {
           .nav__links_bullet {
             background-color: white;
           }
         }
         .navbar__bottom__mobile {
+          a {
+
+            filter: invert(1);
+
+
+          }
           .pokou_logo_mobile {
             filter: invert(1);
           }
