@@ -2,7 +2,7 @@
 
 A nice web agency website !
 
-!.[demo].(https://raw.githubusercontent.com/FredoWagon/pokouweb/main/public/git_presentation.png)
+![demo](https://raw.githubusercontent.com/FredoWagon/pokouweb/main/public/git_presentation.png)
 
 ```bash
 npm run dev
