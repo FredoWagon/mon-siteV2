@@ -8,6 +8,7 @@ Built with:
 
 - [Next.js](https://nextjs.org/)
 - [Netlify](https://www.netlify.com/)
+- [Cloudinary](https://cloudinary.com/)
 - [SASS](https://sass-lang.com/)
 - [React-intersection-observer](https://github.com/thebuilder/react-intersection-observer)
 
