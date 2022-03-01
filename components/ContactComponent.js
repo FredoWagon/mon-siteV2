@@ -160,8 +160,15 @@ export default function ContactComponent(props) {
 
             <form id="contact_form" >
                 <div className={ `${nameValid ? style.field_valid : ""} ${style.contact_field}`}>
+
+
+
                     <label htmlFor="name">Votre nom <mark className={style.label__required}>*</mark></label>
                     <input onFocus={displayErrorMessage} value={name} onChange={handdleValidation} autoComplete="new-password"  type="text" name="name" id="name" placeholder=""/>
+
+
+
+
                     <p className={` ${style.input__validation__bad } ${ name !== "" && !nameValid ? style.active__error : ""}`}>Pas bien</p>
                     <span className={`${activeErrorMessage && name === "" ? style.active__empty_message : ""} `}>Veuillez renseigner votre nom</span>
                 </div>

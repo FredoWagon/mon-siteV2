@@ -14,6 +14,7 @@ export default function Custom404() {
         setPageName(currentPage)
         console.log(currentPage)
         animation();
+        
     })
 
 
